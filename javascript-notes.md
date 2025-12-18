@@ -1,4 +1,4 @@
-# Increment (++) operator:
+### Increment (++) operator:
 The ++ operator is overloaded for two types of operands: number and BigInt. It first coerces the operand to a numeric value and tests the type of it. It performs BigInt increment if the operand becomes a BigInt; otherwise, it performs number increment.
 
 If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing.
@@ -19,3 +19,9 @@ const b = ++a;
 console.log(`a:${a}, b:${b}`);
 // Expected output: "a:4, b:4"
 ```
+### BigInt
+BigInt values represent integer values which are too high or too low to be represented by the number primitive.
+
+Description
+
+A BigInt value, also sometimes just called a BigInt, is a bigint primitive, created by appending n to the end of an integer literal, or by calling the BigInt() function (without the new operator) and giving it an integer value or string value.
