@@ -215,7 +215,71 @@ Rule of thumb
 
 If the next state depends on the previous state → always use functional update
 
-.
+### useEffect
+* Check this out https://react.dev/learn/you-might-not-need-an-effect
+* Check react docs
+  
+useEffect — What We Learned
+1) What useEffect is
+
+useEffect is React’s way to handle side effects in function components.
+
+A side effect is anything that:
+
+Interacts with something outside React’s render
+
+Needs setup and possibly cleanup
+
+Examples:
+
+Timers (setInterval, setTimeout)
+
+Event listeners
+
+Subscriptions
+
+API calls
+
+Syncing with browser APIs
+
+2) When useEffect runs (Lifecycle)
+
+Think of useEffect as replacing:
+
+componentDidMount
+
+componentDidUpdate
+
+componentWillUnmount  
+3) Why cleanup matters
+
+Without cleanup:
+
+Timers keep running
+
+Event listeners stack
+
+Memory leaks happen
+
+Bugs appear when navigating or re-rendering
+
+Your timer task demonstrated this clearly.
+4) Dependency array — the rules
+[]
+
+Run once (mount)
+
+Cleanup on unmount
+
+[value]
+
+Run when value changes
+
+Cleanup before re-run
+
+No array
+
+Run after every render (almost always wrong)
 
 
 ### ⏭️ Next Topics To Cover
