@@ -141,3 +141,23 @@ If you want next, we can:
 map adapter → clean architecture
 
 or show how Redux slices + API layer form a “port/adapter” setup without extra ceremony
+
+## Subscriptions 
+
+Not React-specific
+
+A subscription means:
+
+> Call me back when something changes.
+
+Examples:
+-event listeners
+-observers
+-pub/sub systems
+-stores notifying consumers
+
+A subscription has 3 parts:
+
+- Source (thing that changes)
+- Listener (callback)
+- Notify mechanism
