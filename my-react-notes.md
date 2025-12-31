@@ -61,3 +61,7 @@ function UncontrolledInput() {
 - React needs the value → **Controlled**
 - React reads value occasionally → **Uncontrolled**
 
+### Extracting State into a reducer (useState = useReducer)
+Components with many state updates spread across many event handlers can get overwhelming. For these cases, you can consolidate all the state update logic outside your component in a single function, called a reducer.
+Reference: https://react.dev/learn/extracting-state-logic-into-a-reducer
+
