@@ -61,3 +61,9 @@ Reading the current time
 Updating the DOM
 
 Mutating an object passed by reference
+___________________________
+### Array.prototype.slice()
+const animals = ["ant", "bison", "camel", "duck", "elephant"];
+
+console.log(animals.slice(2));
+// Expected output: Array ["camel", "duck", "elephant"]
