@@ -1,5 +1,27 @@
 # General Programming — Summary
 ## Programming Paradigms, Execution Models, and Design Patterns (CS Context)
+
+---
+
+## Boilerplate (Scope & Conventions)
+
+This document is a **taxonomy-driven, Computer Science–oriented summary**.
+
+It is intended to:
+- classify and connect CS concepts at a **conceptual (surface) level**
+- explain **where concepts belong** in CS, not how to implement them
+- focus on **program behavior, execution, and structure**
+
+This document does **not**:
+- define learning order
+- include implementation details
+- discuss algorithms, complexity, or hardware
+- provide framework-specific tutorials
+
+Depth beyond surface-level classification is **explicitly opt-in** and handled elsewhere.
+
+---
+
 ## Taxonomy (Organizing Principle)
 
 In this document, **taxonomy** refers to:
@@ -16,14 +38,14 @@ It is conceptually similar to:
 - biological taxonomy (classification by relation)
 - knowledge ontologies in computer science
 
-Examples of formal or semi-formal taxonomies include:
-- **Computer Science Ontology (CSO)** — for research topics and domain classification
-- **Bloom’s Taxonomy / SOLO Taxonomy** — for learning depth (used here only as reference, not structure)
+Examples of established taxonomies include:
+- **Computer Science Ontology (CSO)** — research topics and domain classification
+- **Bloom’s / SOLO taxonomies** — learning depth (referenced only, not used structurally)
 
 This document uses taxonomy to answer:
-- *Where does this concept belong in CS?*
-- *What other concepts is it adjacent to?*
-- *At what abstraction level does it operate?*
+- where a concept fits within CS
+- what concepts it is adjacent to
+- its level of abstraction
 
 It does **not** define:
 - learning sequence
@@ -34,20 +56,84 @@ It does **not** define:
 
 ## CS Classification (High-Level Placement)
 
-This document spans multiple **recognized areas of Computer Science**, mainly:
+This document spans multiple **recognized areas of Computer Science**, primarily:
 
 - **Programming Languages & Paradigms**
 - **Execution Models & Semantics**
-- **Software Engineering Design Patterns**
-- **Reactive / Event-Driven Systems (CS–SE overlap)**
+- **Design Patterns (Software Engineering layer)**
+- **Reactive / Event-Driven Systems** (CS–SE overlap)
 
-It focuses on **program behavior, interaction, and structure**, not algorithms or hardware.
+Focus:
+> program behavior, interaction, and structure  
+> (not algorithms or hardware)
+
+---
+
+## Core Definitions (Conceptual Grounding)
+
+### Programming Paradigms
+
+A **programming paradigm** defines:
+
+> the **style and conceptual model** used to structure programs  
+> and reason about computation.
+
+A paradigm answers questions such as:
+- How is computation expressed?
+- How is state represented or avoided?
+- How do components interact?
+
+Examples of paradigms:
+- Functional
+- Object-Oriented
+- Procedural
+- Declarative
+- Reactive
+
+Paradigms shape **how programs are written and thought about**,  
+not how they are executed at runtime.
+
+---
+
+### Execution Models
+
+An **execution model** defines:
+
+> how programs are **evaluated, scheduled, repeated, interrupted, or reordered**  
+> during runtime.
+
+An execution model answers questions such as:
+- When does code run?
+- Can it be paused or replayed?
+- Can execution be reordered or parallelized?
+- When do side effects occur?
+
+Execution models describe **runtime behavior and constraints**,  
+independent of syntax or programming style.
+
+---
+
+### Design Patterns
+
+A **design pattern** is:
+
+> a reusable, named solution to a recurring **structural or interaction problem**  
+> in software design.
+
+Design patterns:
+- operate at the **architectural or structural level**
+- do not define execution semantics
+- encode proven design decisions
+
+They belong primarily to **Software Engineering**,  
+but often sit at the boundary with CS concepts.
 
 ---
 
 ## 1. Programming Paradigms & Execution Models
 
-### Pure Functions
+### 1.1 Pure Functions
+
 A pure function:
 - returns the same output for the same input
 - does not modify external state
@@ -61,7 +147,7 @@ Purity enables:
 
 ---
 
-### Side Effects (General Programming Concept)
+### 1.2 Side Effects
 
 A side effect is any operation that:
 - affects something outside the function
@@ -81,24 +167,24 @@ Side effects are **necessary**, but must be **isolated and controlled**.
 
 ---
 
-### Determinism vs Non-Determinism
+### 1.3 Determinism vs Non-Determinism
 
-- Deterministic → same input, same output
-- Non-deterministic → output may vary
+- **Deterministic** → same input, same output
+- **Non-deterministic** → output may vary
 
 Common sources:
 - time
 - randomness
 - external systems
 
-Non-determinism leaking into core logic makes systems fragile.
+Non-determinism leaking into core logic increases fragility.
 
 ---
 
-### Mutation vs Immutability
+### 1.4 Mutation vs Immutability
 
-- Mutation: changing existing data in place
-- Immutability: creating new data instead of changing old data
+- **Mutation**: changing existing data in place
+- **Immutability**: creating new data instead of modifying existing data
 
 Immutability:
 - reduces hidden coupling
@@ -107,14 +193,14 @@ Immutability:
 
 ---
 
-### Execution vs Simulation
+### 1.5 Execution vs Simulation
 
 Some systems **execute** code once.
 
 Others:
 - simulate execution
 - may re-run code
-- may discard results
+- may discard intermediate results
 - may interrupt and resume work
 
 In simulation-based systems:
@@ -125,33 +211,31 @@ In simulation-based systems:
 
 ## 2. Subscriptions (Observer Model)
 
-### CS Classification
+### 2.1 CS Placement
+
 - **Field**: Computer Science
 - **Area**: Reactive / Event-Driven Systems
 - **Related Patterns**: Observer, Pub/Sub
 
-### Definition
+---
+
+### 2.2 Definition
+
 A subscription means:
 
 > “Notify me when something changes.”
 
-A subscription has three parts:
-1. **Source** — the thing that changes
-2. **Listener** — the callback or observer
-3. **Notification mechanism** — how changes are delivered
-
-Examples:
-- event listeners
-- observers
-- pub/sub systems
-- data stores notifying consumers
+A subscription consists of:
+1. **Source** — what changes
+2. **Listener** — observer or callback
+3. **Notification mechanism** — delivery channel
 
 Key property:
-> Subscriptions **signal change** — they do not decide how to react.
+> Subscriptions **signal change**; they do not decide behavior.
 
 ---
 
-### Signals vs Authority
+### 2.3 Signals vs Authority
 
 Good system design separates:
 - **signals** (“something changed”)
@@ -164,9 +248,9 @@ Benefits:
 
 ---
 
-## 3. Design Patterns: Adapter Pattern
+## 3. Design Patterns — Adapter Pattern
 
-### CS Classification
+### 3.1 CS Placement
 
 - **Field**: Software Engineering
 - **Sub-area**: Object-Oriented Design
@@ -183,7 +267,7 @@ It is a **formal design pattern**, not a buzzword.
 
 ---
 
-### Adapter Pattern — Definition
+### 3.2 Definition
 
 > Adapter Pattern:  
 > Converts the interface of a class or system into another interface that clients expect, allowing incompatible systems to work together.
@@ -194,28 +278,23 @@ Key ideas:
 
 ---
 
-### Example Mapping (Frontend Context)
+### 3.3 Example Mapping (Frontend Context)
 
 **Client**
 - React components
 - Redux thunks / slices
 
-They expect:
+**Expected interface**
 - `login()`
 - `getUser()`
 - `getProjects()`
 
 **Incompatible systems**
-- real backend (REST, latency, auth, failures)
-- mock data (local, synchronous, fake)
+- real backend (REST, auth, latency)
+- mock data (local, synchronous)
 
 **Adapter**
 - `APIHelper.ts`
-
-What it normalizes:
-- response shape
-- error shape
-- calling style
 
 Result:
 > Both backends appear identical to the application.
@@ -224,51 +303,28 @@ This is a textbook **Adapter Pattern**.
 
 ---
 
-### Adapter vs MVC (Important Distinction)
+### 3.4 Adapter vs MVC
 
 | Concept | Scope |
 |------|------|
-| MVC | Entire application structure (macro-architecture) |
-| Adapter | Boundary between incompatible parts (micro-architecture) |
-
-- MVC → how the app is organized
-- Adapter → how two parts communicate without knowing about each other
-
-Same design thinking, different scale.
+| MVC | Application-level structure |
+| Adapter | Boundary-level compatibility |
 
 ---
 
-### Why Frontend Developers Don’t Always Say “Adapter”
-
-In frontend contexts, adapters are often called:
-- API layer
-- service
-- client
-- wrapper
-
-Architecturally:
-> Many “API layers” **are adapters**, even if not named as such.
-
-Vocabulary varies by:
-- language
-- ecosystem
-- team maturity
-
----
-
-### Real-World Adapter Examples
+### 3.5 Real-World Adapter Examples
 
 - Axios wrapper over `fetch`
-- Redux selector adapting state shape
-- React Query custom fetcher
-- Payment gateway wrapper (Stripe / PayPal)
+- Redux selectors adapting state shape
+- React Query custom fetchers
+- Payment gateway wrappers
 - Browser compatibility layers
 
 ---
 
-### One-Line Mental Model
+### 3.6 One-Line Mental Model
 
-> If I change **how something works** without changing **how it’s used**, I’m probably using an **Adapter**.
+> If you change **how something works** without changing **how it’s used**, you’re using an **Adapter**.
 
 ---
 
@@ -276,12 +332,12 @@ Vocabulary varies by:
 
 Modern systems may:
 - split work into chunks
-- pause and resume work
+- pause and resume execution
 - discard partial work
 - prioritize urgent tasks
 
 This requires:
-- restartable computations
+- restartable computation
 - delayed side effects
 - explicit commit points
 
@@ -289,14 +345,12 @@ This requires:
 
 ## Summary of CS Placement
 
-In the general CS taxonomy, this document spans:
+This document spans:
 
 - **Programming Languages**
 - **Programming Paradigms**
 - **Execution Models & Semantics**
-- **Design Patterns (Software Engineering)**
+- **Design Patterns (Software Engineering layer)**
 - **Reactive / Event-Driven Systems**
 
-It explains **why modern systems behave the way they do**, not just how to use specific tools.
-
----
+It explains **why modern systems behave the way they do**, not how to use specific tools.
