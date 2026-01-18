@@ -1,3 +1,6 @@
+References: 
+- https://nextjs.org/learn/react-foundations/what-is-react-and-nextjs
+  
 # React Crash — Day 1  
 ## Mental Model, Rendering, Side Effects, Subscriptions, and Evolution
 
