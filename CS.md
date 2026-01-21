@@ -1,4 +1,17 @@
 # General Programming — Summary
+## Summary of CS Placement
+
+This document spans:
+
+- **Programming Languages**
+- **Programming Paradigms**
+- **Execution Models & Semantics**
+- **Design Patterns (Software Engineering layer)**
+- **Reactive / Event-Driven Systems**
+
+It explains **why modern systems behave the way they do**, not how to use specific tools.
+
+
 ## Programming Paradigms, Execution Models, and Design Patterns (CS Context)
 
 ---
@@ -384,15 +397,74 @@ This requires:
 - explicit commit points
 
 ---
+### Cybersecurity
 
-## Summary of CS Placement
+#### CS Classification
+- **Field**: Computer Science
+- **Area**: Computer Security
+- **Layer**: Core CS with Systems & Software Engineering overlap
+- **Focus**: Protection of computation, data, and trust
 
-This document spans:
+---
 
-- **Programming Languages**
-- **Programming Paradigms**
-- **Execution Models & Semantics**
-- **Design Patterns (Software Engineering layer)**
-- **Reactive / Event-Driven Systems**
+#### Definition
 
-It explains **why modern systems behave the way they do**, not how to use specific tools.
+**Cybersecurity** is concerned with:
+
+> protecting computer systems, software, and data  
+> from unauthorized access, manipulation, disruption, or destruction.
+
+It studies how systems **fail under attack** and how to design them to **resist, detect, and recover**.
+
+---
+
+#### Core Concerns
+
+Cybersecurity focuses on:
+- confidentiality (who can see data)
+- integrity (who can change data)
+- availability (who can access systems)
+
+These form the **CIA triad**, a foundational security model.
+
+---
+
+#### Conceptual Scope
+
+Cybersecurity examines:
+- threat models (who attacks, why, how)
+- trust boundaries
+- attack surfaces
+- failure modes under adversarial behavior
+
+It assumes systems are **hostile environments**, not ideal ones.
+
+---
+
+#### Relationship to Other CS Areas
+
+- **Operating Systems** → isolation, permissions
+- **Networks** → secure communication
+- **Programming Languages** → memory safety, type safety
+- **Software Engineering** → secure design and practices
+- **Distributed Systems** → trust and consensus
+
+Security cuts across **all layers of CS**.
+
+---
+
+#### Scope Boundaries
+
+Cybersecurity:
+- is not hacking tutorials
+- is not tooling-specific
+- is not only defensive practices
+
+It is about **reasoning under adversarial conditions**.
+
+---
+
+#### One-Line Mental Model
+
+> Cybersecurity studies how systems behave **when someone is actively trying to break them**.
+
