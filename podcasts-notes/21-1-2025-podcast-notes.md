@@ -1,6 +1,7 @@
-[podcast](https://www.linkedin.com/video/live/urn:li:ugcPost:7419085319607664640/)
+Reference: [podcast](https://www.linkedin.com/video/live/urn:li:ugcPost:7419085319607664640/)
 
-keywords:
+# keywords:
+
 - agi
 - open code, open router, claude code, codex, ai propmt (background about yourself) to be task oriented
 - sre
@@ -11,3 +12,18 @@ keywords:
 - Anthropic is an AI safety and research company that develops advanced large language models (LLMs), most notably the Claude family of AI assistants. Founded in 2021 by former OpenAI executives
 - persona vector ai
 - replit: Build apps
+
+# Notes:
+
+- Advices on how to get out, reach out to people, and share your thoughts. Go out and experience things out there, make interactions like chemicals and produce things with people.
+- How to use AI effeciently
+- Debrief meetings with Claude with heads up next time, produce action items. Check-in notes. Diary.
+- Organize your time by eliminate the uneccassery things like social media (time leaks), priotrize your day according to importance.
+- The AI he uses in daily like (keywords above) to maintain his work in terms of coding and organizing.
+
+---
+# later
+For me: (Revisions and adjustments to)
+- This fits in tasks system, or priority system
+- this fits in time management system
+- This fits in development systems (notion)
