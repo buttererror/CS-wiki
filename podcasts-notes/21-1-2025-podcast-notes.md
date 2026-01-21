@@ -22,7 +22,7 @@ Reference: [podcast](https://www.linkedin.com/video/live/urn:li:ugcPost:74190853
 - The AI he uses in daily like (keywords above) to maintain his work in terms of coding and organizing.
 
 ---
-# later
+# Action items
 For me: (Revisions and adjustments to)
 - This fits in tasks system, or priority system
 - this fits in time management system
