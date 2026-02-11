@@ -79,4 +79,25 @@ const sumWithInitial = array.reduce(
 
 console.log(sumWithInitial);
 // Expected output: 10
-```
+```javascript
+- double ampersand symbol `&&`
+- ternary operator syntax - the only operator that takes 3 operands, simple usage: `condition ? experssion : experssion`
+- backtick - used in template literals 
+- template literals - Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.
+  - tagged templates - example:
+    ```
+    function myTag(strings, personExp, ageExp) {
+  const str0 = strings[0]; // "That "
+  const str1 = strings[1]; // " is a "
+  const str2 = strings[2]; // "."
+
+  const ageStr = ageExp < 100 ? "youngster" : "centenarian";
+
+  // We can even return a string built using a template literal
+  return `${str0}${personExp}${str1}${ageStr}${str2}`;
+}
+
+const output = myTag`That ${person} is a ${age}.`;
+
+console.log(output);
+// That Mike is a youngster.
