@@ -286,3 +286,5 @@ echo $?
 - PATH decides which command runs
 - Logs show *what* happened, tracing shows *why*
 - Prefer safe flags (`-p`, `-i`) unless you need strict behavior
+---
+### `tree` command is a command-line utility used to recursively list and display the contents of a directory in a graphical, hierarchical tree-like format. It helps developers and administrators visually map out the relationships between files and deeply nested folders
