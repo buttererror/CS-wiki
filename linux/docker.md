@@ -334,3 +334,85 @@ This setup provides:
 * Reproducible local development environment
 * Persistent database storage
 * Easy startup and shutdown through Docker Compose
+
+---
+# Docker Compose Reset Commands
+
+```bash
+docker compose -f infra/docker/docker-compose.yml down -v
+```
+
+Stops and removes containers, networks, and associated named volumes created by the Compose file.
+
+Parameters:
+
+* `down` → Stop and remove resources
+* `-v` → Remove named volumes
+
+Use when:
+
+* PostgreSQL initialization settings have changed
+* You want a completely fresh database
+* You need to recreate users, passwords, or databases defined by environment variables
+
+Warning:
+
+* Deletes data stored in Docker volumes
+
+---
+
+```bash
+docker compose -f infra/docker/docker-compose.yml up -d
+```
+
+Creates and starts services again.
+
+After a volume reset (`down -v`), PostgreSQL performs a fresh initialization using the environment variables defined in the Compose file.
+
+Typical use:
+
+```bash
+docker compose -f infra/docker/docker-compose.yml down -v
+docker compose -f infra/docker/docker-compose.yml up -d
+```
+
+This recreates the PostgreSQL instance from scratch.
+
+---
+
+```bash
+docker volume ls
+```
+
+Lists all Docker volumes on the machine.
+
+Useful for:
+
+* Verifying volume creation
+* Inspecting persistent storage used by containers
+
+---
+
+```bash
+docker compose -f infra/docker/docker-compose.yml exec postgres psql
+```
+
+Opens the PostgreSQL CLI inside the running PostgreSQL service.
+
+Useful for:
+
+* Verifying users and databases
+* Running SQL commands
+* Troubleshooting authentication issues
+
+Example:
+
+```sql
+\du
+```
+
+Lists PostgreSQL roles (users).
+
+```sql
+\l
+```
