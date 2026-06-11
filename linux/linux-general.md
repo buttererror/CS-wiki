@@ -288,3 +288,45 @@ echo $?
 - Prefer safe flags (`-p`, `-i`) unless you need strict behavior
 ---
 ### `tree` command is a command-line utility used to recursively list and display the contents of a directory in a graphical, hierarchical tree-like format. It helps developers and administrators visually map out the relationships between files and deeply nested folders
+
+---
+# Group Configuration
+
+```bash
+sudo usermod -aG docker $USER
+```
+
+Adds the current user to the Docker group.
+
+Purpose:
+
+* Allows Docker commands without `sudo`
+* Improves developer experience
+
+Parameters:
+
+* `usermod` → Modify user account
+* `-a` → Append
+* `-G` → Add to supplementary group
+* `docker` → Target group
+
+---
+
+```bash
+newgrp docker
+```
+
+Applies the new group membership immediately without logging out and back in.
+
+After successful execution:
+
+```bash
+docker ps
+```
+
+can be used instead of:
+
+```bash
+sudo docker ps
+```
+
