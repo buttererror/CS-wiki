@@ -71,20 +71,98 @@ docker run hello-world
 ```
 ---
 ---
-# Docker commands
-1. Start PostgreSQL container
-```
+# Docker Runtime Commands
+
+```bash
 docker compose -f infra/docker/docker-compose.yml up -d
 ```
-```
-docker compose     use Docker Compose
--f                 specify compose file
-up                 create/start containers
--d                 detached mode (background)
-```
-2. Verify container
-```
+
+Starts all services defined in the specified Compose file.
+
+Parameters:
+
+* `compose` → Use Docker Compose
+* `-f` → Specify the Compose file location
+* `up` → Create and start services
+* `-d` → Run in detached mode (background)
+
+---
+
+```bash
 docker ps
+```
+
+Lists currently running containers.
+
+Useful for:
+
+* Verifying containers are running
+* Checking container names
+* Viewing exposed ports
+
+---
+
+```bash
+docker logs <container-name>
+```
+
+Displays logs produced by a container.
+
+Useful for:
+
+* Troubleshooting startup issues
+* Confirming application readiness
+* Inspecting runtime errors
+
+---
+
+```bash
+docker exec -it <container-name> <command>
+```
+
+Executes a command inside a running container.
+
+Parameters:
+
+* `exec` → Execute command
+* `-i` → Interactive input
+* `-t` → Allocate terminal
+
+Example:
+
+```bash
+docker exec -it <container-name> psql -U <user> -d <database>
+```
+
+Opens the PostgreSQL CLI inside the container.
+
+---
+
+```bash
+docker compose -f infra/docker/docker-compose.yml exec <service> <command>
+```
+
+Executes a command inside a service managed by Docker Compose.
+
+Example:
+
+```bash
+docker compose -f infra/docker/docker-compose.yml exec postgres psql -U <user> -d <database>
+```
+
+Useful because it uses the Compose service name instead of the container name.
+
+---
+
+```bash
+docker compose -f infra/docker/docker-compose.yml down
+```
+
+Stops and removes containers created by the Compose file.
+
+Data remains intact when persistent volumes are configured.
+
+```
 ```
 ---
 ---
