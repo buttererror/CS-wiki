@@ -155,4 +155,303 @@ Relationship:
 ### Related Concepts: 
 - DatabaseModeling → System Design & Architecture  
 - DataNormalization → Computer Science Foundations  
-- RelationalDatabase → Computer Science Foundations  
+- RelationalDatabase → Computer Science Foundations
+---
+# Prisma Learning Notes
+
+## What is Prisma?
+
+Prisma is an ORM (Object Relational Mapper) that provides a type-safe TypeScript API for interacting with a database.
+
+Architecture:
+
+```txt
+NestJS / TypeScript
+        ↓
+Prisma Client
+        ↓
+Prisma Engine
+        ↓
+PostgreSQL
+```
+
+---
+
+## Core Prisma Components
+
+### schema.prisma
+
+Defines:
+
+* Database provider
+* Models (tables)
+* Prisma Client generation settings
+
+Example:
+
+```prisma
+model Patient {
+  id        String   @id @default(uuid())
+  fullName  String
+  phone     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+```
+
+---
+
+### datasource
+
+Defines the database connection type.
+
+Example:
+
+```prisma
+datasource db {
+  provider = "postgresql"
+}
+```
+
+Database connection details are loaded from `DATABASE_URL`.
+
+---
+
+### generator
+
+Defines how Prisma Client is generated.
+
+Example:
+
+```prisma
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+```
+
+Generated client location:
+
+```txt
+apps/api/generated/prisma
+```
+
+---
+
+## DATABASE_URL
+
+Connection string format:
+
+```txt
+postgresql://user:password@host:port/database
+```
+
+Example:
+
+```txt
+postgresql://clinic:password@localhost:5433/clinic_db
+```
+
+Parts:
+
+```txt
+protocol  → postgresql
+user      → database user
+password  → database password
+host      → database server
+port      → database port
+database  → database name
+```
+
+---
+
+## Migration
+
+A migration is a version-controlled database structure change.
+
+Purpose:
+
+```txt
+schema.prisma
+        ↓
+Migration
+        ↓
+Database Tables
+```
+
+Prisma stores migrations in:
+
+```txt
+prisma/migrations/
+```
+
+Benefits:
+
+* Version history
+* Reproducible database setup
+* Team synchronization
+* Environment consistency
+
+---
+
+## prisma migrate dev
+
+Command:
+
+```bash
+pnpm exec prisma migrate dev --name <migration-name>
+```
+
+Responsibilities:
+
+1. Compare schema with database
+2. Generate SQL migration
+3. Apply migration to PostgreSQL
+4. Update migration history
+5. Generate Prisma Client (depending on configuration/version)
+
+Development-only workflow.
+
+Production uses:
+
+```bash
+prisma migrate deploy
+```
+
+---
+
+## prisma db pull
+
+Purpose:
+
+```txt
+Existing Database
+        ↓
+Prisma Models
+```
+
+Used when tables already exist.
+
+Error encountered:
+
+```txt
+P4001 The introspected database was empty
+```
+
+Meaning:
+
+```txt
+Prisma connected successfully
+Database contained no tables
+Nothing to import into schema.prisma
+```
+
+For a new project, migrations are preferred over `db pull`.
+
+---
+
+## Prisma Client
+
+Generated TypeScript API used by the application.
+
+Generation:
+
+```bash
+pnpm exec prisma generate
+```
+
+Flow:
+
+```txt
+schema.prisma
+        ↓
+prisma generate
+        ↓
+Prisma Client
+        ↓
+TypeScript API
+```
+
+Example usage:
+
+```ts
+await prisma.patient.findMany();
+
+await prisma.patient.create({
+  data: {
+    fullName: "Mahmoud Ahmed"
+  }
+});
+```
+
+Prisma Client provides:
+
+* Type safety
+* Autocomplete
+* Query validation
+* Database abstraction
+
+---
+
+## Prisma Initialization
+
+Initialization:
+
+```bash
+pnpm exec prisma init --datasource-provider postgresql
+```
+
+Generated files:
+
+```txt
+prisma/
+├── schema.prisma
+└── migrations/
+
+prisma.config.ts
+.env
+```
+
+---
+
+## Current Project Flow
+
+```txt
+Docker PostgreSQL
+        ↓
+Prisma Schema
+        ↓
+Migration
+        ↓
+Database Tables
+        ↓
+Prisma Client
+        ↓
+NestJS Service
+        ↓
+API Endpoints
+        ↓
+Admin Dashboard
+```
+
+---
+
+## Important Concepts Learned
+
+```txt
+Migration
+→ Updates the database
+
+Generate
+→ Updates TypeScript code
+
+db pull
+→ Reads existing database into Prisma schema
+
+Prisma Client
+→ Generated API used by the application
+
+schema.prisma
+→ Source of truth for database structure
+```
+
