@@ -91,6 +91,10 @@ Parameters:
 ```bash
 docker ps
 ```
+```bash
+docker ps -a
+```
+`- a`: show all containers (running and stopped)
 
 Lists currently running containers.
 
