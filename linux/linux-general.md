@@ -457,3 +457,160 @@ Current terminal immediately uses the new configuration
 - After creating aliases
 - After modifying environment variables (`export`)
 - After changing shell functions
+---
+### NVM vs NPM vs Corepack vs PNPM
+
+These tools work together but serve different purposes.
+
+```
+NVM
+ └── installs Node.js
+        │
+        ├── Node.js includes → npm
+        │
+        └── Node.js also includes → Corepack (modern Node versions)
+                                         │
+                                         ├── manages pnpm
+                                         └── manages Yarn
+```
+
+---
+
+### `nvm` (Node Version Manager)
+
+**Purpose:** Manage multiple Node.js versions.
+
+Example:
+
+```bash
+nvm install 22
+nvm use 22
+nvm ls
+```
+
+Use it when:
+- Switching Node versions between projects.
+- Installing the latest LTS version.
+
+---
+
+### `npm` (Node Package Manager)
+
+**Purpose:** Install JavaScript packages.
+
+Installed **automatically with Node.js**.
+
+Example:
+
+```bash
+npm install express
+npm install -g typescript
+```
+
+Use it when:
+- Installing project dependencies.
+- Publishing packages.
+- Running npm scripts.
+
+---
+
+### `corepack`
+
+**Purpose:** Manage package managers (pnpm and Yarn).
+
+Installed **with modern Node.js versions**.
+
+Example:
+
+```bash
+corepack enable
+corepack prepare pnpm@latest --activate
+```
+
+Use it when:
+- You want the version of pnpm/Yarn defined by a project.
+- Avoid installing package managers globally.
+
+---
+
+### `pnpm`
+
+**Purpose:** Alternative package manager to npm.
+
+Features:
+- Faster installs.
+- Saves disk space.
+- Better dependency management.
+- Common in modern monorepos (TurboRepo, Nx, etc.).
+
+Example:
+
+```bash
+pnpm install
+pnpm add prisma
+pnpm dev
+```
+
+---
+
+## Which tool installs `pnpm`?
+
+### Modern approach (Recommended)
+
+`Corepack` installs and manages `pnpm`.
+
+```bash
+corepack enable
+corepack prepare pnpm@latest --activate
+```
+
+or simply:
+
+```bash
+corepack enable
+```
+
+The first time you run:
+
+```bash
+pnpm install
+```
+
+Corepack automatically downloads the required pnpm version.
+
+---
+
+### Legacy approach
+
+Install pnpm globally using npm:
+
+```bash
+npm install -g pnpm
+```
+
+Works, but is no longer the recommended approach because you must manually update pnpm and it isn't project-version aware.
+
+---
+
+## Recommended Installation Flow
+
+```bash
+# Install Node
+nvm install --lts
+
+# Use that version
+nvm use --lts
+
+# Enable Corepack
+corepack enable
+
+# Verify
+pnpm --version
+```
+
+**Mental model**
+
+- **NVM** → installs **Node.js**
+- **Node.js** → includes **npm** and **Corepack**
+- **Corepack** → installs/manages **pnpm** (and Yarn)
+- **pnpm** → installs your project's dependencies
