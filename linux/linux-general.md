@@ -329,4 +329,64 @@ can be used instead of:
 ```bash
 sudo docker ps
 ```
+### `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh | bash`
 
+Downloads and immediately executes the official **NVM (Node Version Manager)** installation script.
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh | bash
+```
+
+Breakdown:
+
+- `curl` → download data from a URL.
+- `-o-` → write the downloaded content to **stdout** (`-` means "terminal output" instead of a file).
+- `https://.../install.sh` → the installation script hosted on GitHub.
+- `|` → pipe the downloaded script directly into another command.
+- `bash` → execute the script using the Bash shell.
+
+Typical use:
+
+- Install NVM without manually downloading the script.
+- Common first step before installing multiple Node.js versions.
+
+What the installer usually does:
+
+- Clones the NVM repository into:
+  ```text
+  ~/.nvm
+  ```
+- Adds initialization lines to your shell configuration (`~/.bashrc`, `~/.zshrc`, etc.).
+- Instructs you to reload your shell:
+  ```bash
+  source ~/.bashrc
+  ```
+
+After installation:
+
+```bash
+nvm --version
+nvm install --lts
+nvm install 22
+nvm use 22
+```
+
+⚠️ **Security Note**
+
+This pattern downloads a remote script and executes it immediately.
+
+While common for official installers (NVM, Rust, Bun, etc.), it's good practice to inspect the script first:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh
+```
+
+or save it locally:
+
+```bash
+curl -O https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh
+less install.sh
+bash install.sh
+```
+
+This lets you review what the script will do before executing it.
