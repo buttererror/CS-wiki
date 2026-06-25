@@ -390,3 +390,70 @@ bash install.sh
 ```
 
 This lets you review what the script will do before executing it.
+---
+### `source ~/.bashrc`
+
+Reloads the Bash configuration file and applies any changes to the **current terminal session**.
+
+```bash
+source ~/.bashrc
+```
+
+Breakdown:
+
+- `source` → execute the contents of a file in the **current shell**.
+- `~` → your home directory.
+- `.bashrc` → Bash configuration file containing aliases, environment variables, PATH updates, functions, etc.
+
+Typical use:
+
+- Apply changes after editing `.bashrc`.
+- Reload newly added environment variables.
+- Refresh aliases and shell functions.
+- Avoid closing and reopening the terminal.
+
+Example:
+
+```bash
+echo 'export PATH="$PATH:$HOME/flutter/bin"' >> ~/.bashrc
+source ~/.bashrc
+flutter --version
+```
+
+Equivalent command:
+
+```bash
+. ~/.bashrc
+```
+
+(`.` is shorthand for `source`.)
+
+**Mental model:**
+
+Without `source`:
+
+```text
+Edit .bashrc
+        ↓
+Changes are saved
+        ↓
+Current terminal is unchanged
+```
+
+With `source`:
+
+```text
+Edit .bashrc
+        ↓
+source ~/.bashrc
+        ↓
+Current terminal immediately uses the new configuration
+```
+
+**Common use cases:**
+
+- After installing NVM
+- After adding Flutter to `PATH`
+- After creating aliases
+- After modifying environment variables (`export`)
+- After changing shell functions
