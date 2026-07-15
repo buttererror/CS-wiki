@@ -614,3 +614,76 @@ pnpm --version
 - **Node.js** → includes **npm** and **Corepack**
 - **Corepack** → installs/manages **pnpm** (and Yarn)
 - **pnpm** → installs your project's dependencies
+
+---
+### `grep` — Filter Text by Pattern
+
+**Category:** Search / Text Processing
+
+**What it does:**  
+Searches for lines matching a text pattern. `grep` is commonly used to filter the output of another command through a pipe (`|`).
+
+Example:
+
+```bash
+sudo docker exec docker-postgres-1 env | grep POSTGRES
+```
+
+Breakdown:
+
+- `sudo docker exec docker-postgres-1 env`
+  - Executes the `env` command inside the running Docker container.
+  - `env` prints all environment variables.
+
+- `|`
+  - Pipes the output of `env` into another command.
+
+- `grep POSTGRES`
+  - Filters the output and displays only lines containing `POSTGRES`.
+
+Example output:
+
+```text
+POSTGRES_DB=xxx
+POSTGRES_USER=xxx
+POSTGRES_PASSWORD=xxxx
+```
+
+Common uses:
+
+```bash
+ps aux | grep node            # Find Node.js processes
+env | grep PATH               # Show PATH variable
+history | grep docker         # Search command history
+cat app.log | grep ERROR      # Find error messages in a log
+grep -r "TODO" src/           # Search recursively in files
+```
+
+Useful options:
+
+```bash
+grep -i "error" file.log      # Ignore case
+grep -n "TODO" app.js         # Show line numbers
+grep -v "DEBUG" app.log       # Exclude matching lines
+grep -r "config" .            # Search recursively
+```
+
+**Mental model:**
+
+Think of `grep` as a **filter**.
+
+```
+Command Output
+      │
+      ▼
+    grep
+      │
+      ▼
+Only the matching lines remain
+```
+
+**Rule of thumb:**
+
+- **`grep` searches text.**
+- **`find` searches files.**
+- They are often combined to quickly locate information in Linux.
