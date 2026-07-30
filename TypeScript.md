@@ -575,3 +575,252 @@ JwtPayload
 - **RuntimeValidation** → Software Engineering
 - **Generics** → Programming Languages
 ```
+---
+## Update
+
+### Additional Details
+
+#### TypeAssertion Is Not Completely Unchecked
+
+A common misconception is that `as` completely disables TypeScript's type checking.
+
+The actual behavior is more nuanced.
+
+A direct assertion:
+
+```ts
+value as TargetType
+```
+
+still performs a **compatibility (plausibility) check** between the source type and the asserted type.
+
+If the two types have little or no structural relationship, TypeScript reports:
+
+```text
+Conversion of type 'A' to type 'B' may be a mistake because neither type sufficiently overlaps with the other.
+If this was intentional, convert the expression to 'unknown' first.
+```
+
+This check exists to prevent accidental assertions between completely unrelated types.
+
+---
+
+#### Two Independent Checks During a Type Assertion
+
+When the compiler encounters:
+
+```ts
+return expression as TargetType;
+```
+
+it performs two separate checks.
+
+##### 1. Assertion Compatibility
+
+Can the source type reasonably be asserted as `TargetType`?
+
+```text
+Source Type
+      │
+      ▼
+Target Type
+```
+
+If the types are structurally unrelated, the assertion itself is rejected (TS2352).
+
+Example:
+
+```ts
+{
+  cookies: {}
+} as ExecutionContext
+```
+
+fails because the object shares almost nothing with `ExecutionContext`.
+
+---
+
+##### 2. Surrounding Context Compatibility
+
+If the assertion is accepted, the resulting expression is now considered to be `TargetType`.
+
+The compiler then checks whether **TargetType** satisfies the surrounding context.
+
+Examples:
+
+```ts
+const user = value as User;
+```
+
+Checks:
+
+```text
+User
+    │
+Assignment
+```
+
+---
+
+```ts
+return value as Request;
+```
+
+Checks:
+
+```text
+Request
+    │
+Return Type
+```
+
+---
+
+```ts
+someFunction(value as User);
+```
+
+Checks:
+
+```text
+User
+    │
+Parameter Type
+```
+
+The original source type is no longer considered after the assertion.
+
+---
+
+#### Why `unknown` Works
+
+The compiler recommends:
+
+```ts
+value as unknown as TargetType
+```
+
+because `unknown` is intentionally compatible with every type assertion.
+
+```text
+Source
+    │
+    ▼
+unknown
+    │
+    ▼
+Target
+```
+
+This bypasses the structural compatibility check.
+
+It **does not** make the assertion safer.
+
+Instead, it communicates:
+
+> "I understand these types are unrelated, and I intentionally want to bypass TypeScript's compatibility check."
+
+---
+
+#### Relationship Between `Partial<T>` and `as`
+
+`Partial<T>` and `as` solve different problems.
+
+`Partial<T>` provides compile-time checking **while constructing** an object.
+
+```ts
+const context: Partial<ExecutionContext> = {
+    getHandler: jest.fn(),
+};
+```
+
+Benefits:
+
+- Property names are validated.
+- Property types are validated.
+- Misspelled properties are detected.
+
+However, every property becomes optional.
+
+Therefore:
+
+```text
+Partial<ExecutionContext>
+≠
+ExecutionContext
+```
+
+A function returning `ExecutionContext` still requires:
+
+```ts
+return context as ExecutionContext;
+```
+
+The assertion tells the compiler to treat the intentionally incomplete mock as a complete implementation.
+
+---
+
+#### Test Double Pattern
+
+A common unit testing pattern is:
+
+```ts
+const context: Partial<ExecutionContext> = {
+    getHandler: jest.fn(),
+    getClass: jest.fn(),
+    switchToHttp: () => ({
+        getRequest: () => request,
+    }),
+};
+
+return context as ExecutionContext;
+```
+
+This pattern provides:
+
+- Type-safe construction.
+- Minimal implementation.
+- Explicit acknowledgment that the mock intentionally implements only the members required by the test.
+
+---
+
+### Additional Relationships
+
+- **PartialType** → Ensures safe construction of incomplete objects before a final assertion.
+- **StructuralTyping** → Determines whether a direct assertion is considered structurally plausible.
+- **ExecutionContext** → Demonstrates creating minimal test doubles for large framework interfaces.
+- **TypeCompatibility** → Governs both assertion plausibility and assignability to the surrounding context.
+
+---
+
+### Further Notes
+
+TypeScript distinguishes between **assertion compatibility** and **context compatibility**.
+
+The complete compiler reasoning is:
+
+```text
+Original Expression
+        │
+        ▼
+Assertion Compatibility Check
+(Is the assertion plausible?)
+
+        │
+        ▼
+Asserted Type
+
+        │
+        ▼
+Context Compatibility Check
+(Can the asserted type satisfy the assignment,
+return type, or parameter type?)
+```
+
+A type assertion **does not validate runtime truth**, but it also **does not completely disable the type system**.
+
+Instead, it:
+
+1. Performs a limited structural compatibility check.
+2. Reinterprets the expression as the asserted type.
+3. Continues normal type checking using the asserted type.
