@@ -917,5 +917,5 @@ Query Observer
 - [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
 - [Reactive Programming](../programming-paradigms/reactive-programming.md)
 - [Observer Pattern](../design-patterns/observer-pattern.md)
-- [Request / Response](../communication-mechanisms/request-response.md)
-- [Publish / Subscribe](../messaging-patterns/publish-subscribe.md)
+- [Request / Response](../communication-patterns/request-response.md)
+- [Publish / Subscribe](../communication-patterns/publish-subscribe.md)

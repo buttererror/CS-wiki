@@ -8,8 +8,9 @@ This document introduces Publish / Subscribe as a messaging pattern and distingu
 
 ## Taxonomy Classification
 
-- **Primary category:** Messaging Pattern
-- **Area:** Messaging and Communication Patterns
+- **Primary category:** Communication Pattern
+- **Type:** Messaging Pattern
+- **Area:** Indirect Messaging
 - **Abstraction level:** Communication between participants
 - **Common contexts:** In-process applications and distributed systems
 
@@ -427,7 +428,7 @@ This allows subscribers to be added or removed without changing the publisher, s
 ## Related Concepts
 
 - [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
-- [Messaging and Communication Patterns](communication-patterns.md)
+- [Communication Patterns](README.md)
 - [Observer Pattern](../design-patterns/observer-pattern.md)
 - [Gang of Four Design Patterns](../design-patterns/gang-of-four-design-patterns.md)
 - [Reactive Programming](../programming-paradigms/reactive-programming.md)

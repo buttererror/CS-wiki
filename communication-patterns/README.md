@@ -1,4 +1,4 @@
-# Messaging and Communication Patterns
+# Communication Patterns
 
 ## Purpose
 
@@ -10,7 +10,8 @@ Communication patterns describe how independent participants exchange informatio
 
 ## Taxonomy Classification
 
-- **Primary category:** Messaging / Communication Pattern
+- **Primary category:** Communication Pattern
+- **Type:** Category Overview
 - **Field:** Software Engineering
 - **Area:** Software communication and integration
 - **Abstraction level:** Interaction between participants
@@ -192,27 +193,44 @@ These dimensions should not be treated as equivalent.
 
 ---
 
-## Pattern vs. Protocol vs. Technology
+## Communication Pattern vs. Communication Mechanism
+
+A communication pattern and a communication mechanism belong to different levels:
+
+| Concept | Meaning | Answers |
+| --- | --- | --- |
+| Communication pattern | A reusable model of information flow between participants | How should participants exchange information? |
+| Communication mechanism | The operational process or structure that enables the exchange | What enables the interaction to happen? |
+| Protocol | The rules and formats governing an exchange | What rules do participants follow? |
+| Technology | A product, framework, or library that provides communication capabilities | What tool provides the capability? |
+| Concrete implementation | The application-specific code and configuration | How is it realized in this system? |
 
 ```text
 Communication pattern
-→ describes how information flows
+        ↓ realized through
+
+Communication mechanism
+        ↓ may use
 
 Protocol
-→ defines communication rules and message exchange
+        ↓ provided or supported by
 
 Technology
-→ provides concrete capabilities
+        ↓ configured and coded as
 
-Implementation
-→ applies them in a specific system
+Concrete implementation
 ```
+
+This is a realization model, not a strict classification tree. An in-process mechanism may not require a network protocol, and one technology may support several patterns and mechanisms.
 
 ### Request / Response Example
 
 ```text
 Request / Response
 → communication pattern
+
+Direct request followed by a correlated response
+→ communication mechanism
 
 HTTP
 → protocol
@@ -228,7 +246,7 @@ GET /patients controller and client request
 
 ```text
 Publish / Subscribe
-→ messaging/communication pattern
+→ communication pattern (messaging subtype)
 
 Broker + topics + subscriptions
 → communication mechanism
@@ -241,7 +259,7 @@ consumer groups, and application handlers
 → concrete implementation
 ```
 
-One technology may support several communication patterns, and one pattern may be implemented through many technologies.
+The mechanism is not an additional communication pattern. It is what operationally realizes the selected pattern.
 
 ---
 
@@ -282,7 +300,7 @@ A communication pattern describes an interaction. An architectural style organiz
 
 ```text
 Publish / Subscribe
-→ messaging/communication pattern
+→ communication pattern (messaging subtype)
 
 Event-Driven Architecture
 → architectural style that may use Publish / Subscribe
@@ -298,7 +316,7 @@ Using one communication pattern does not determine the architecture of the whole
 - Messaging patterns are a more specific kind of communication pattern.
 - Direct/indirect and synchronous/asynchronous are separate dimensions.
 - Protocols and technologies implement or support patterns; they are not the patterns themselves.
-- Publish / Subscribe is a messaging/communication pattern, not a GoF design pattern.
+- Publish / Subscribe is a communication pattern in the messaging subtype, not a GoF design pattern.
 - Communication patterns can support architectural styles without being architectural styles themselves.
 
 ---
@@ -309,6 +327,7 @@ Using one communication pattern does not determine the architecture of the whole
 - [Software Architecture](../computer-science-foundations/software-architecture.md)
 - [Architectural Styles](../architectural-styles/README.md)
 - [Architectural Patterns](../architectural-patterns/README.md)
+- [Request / Response](request-response.md)
 - [Publish / Subscribe](publish-subscribe.md)
 - [Observer Pattern](../design-patterns/observer-pattern.md)
 - [Event-Driven Architecture](../architectural-styles/event-driven-architecture.md)

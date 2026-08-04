@@ -239,9 +239,9 @@ This does not make Observer a programming paradigm. Observer remains a behaviora
 
 ---
 
-## Relationship to Messaging Patterns
+## Relationship to Communication Patterns
 
-A paradigm may also use messaging patterns. Reactive Programming may use Publish / Subscribe to propagate events.
+A paradigm may also use communication patterns. Reactive Programming may use a messaging pattern such as Publish / Subscribe to propagate events.
 
 ```text
 Reactive Programming
@@ -326,7 +326,7 @@ These concepts can work together, but they are not interchangeable.
 ## Relationships to Other Areas
 
 - **Design Pattern:** Paradigms may use design patterns to solve recurring collaboration problems.
-- **Messaging Pattern:** Paradigms may use messaging mechanisms such as Publish / Subscribe.
+- **Communication Pattern:** Paradigms may use communication mechanisms, including messaging patterns such as Publish / Subscribe.
 - **Architectural Style:** Paradigms influence code expression, while architecture organizes system components.
 - **Framework:** Frameworks implement and combine paradigms, patterns, and architectural ideas.
 - **Reactive Programming:** One of the paradigms discussed, focused on values and events changing over time.
@@ -338,5 +338,5 @@ These concepts can work together, but they are not interchangeable.
 - [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
 - [Reactive Programming](reactive-programming.md)
 - [Observer Pattern](../design-patterns/observer-pattern.md)
-- [Publish / Subscribe](../messaging-patterns/publish-subscribe.md)
+- [Publish / Subscribe](../communication-patterns/publish-subscribe.md)
 - [Event-Driven Architecture](../architectural-styles/event-driven-architecture.md)

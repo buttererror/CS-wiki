@@ -8,14 +8,20 @@ Many Computer Science concepts appear related because they solve similar problem
 
 ---
 
-# Abstraction Hierarchy
+# Concept Classification Hierarchy
 
 ```text
 Computer Science
 │
 ├── Programming Paradigm
 ├── Design Pattern
-├── Messaging / Communication Pattern
+├── Communication Pattern
+│   ├── Direct Communication Pattern
+│   │   └── Request / Response
+│   └── Messaging Pattern
+│       ├── Point-to-Point Messaging
+│       ├── Publish / Subscribe
+│       └── Event Streaming
 ├── Architectural Style
 ├── Architectural Pattern
 ├── Framework
@@ -23,7 +29,11 @@ Computer Science
 └── Implementation
 ```
 
-Each level answers a different question.
+This is a classification hierarchy: it shows what kind of concept something is. Messaging patterns are a subtype of communication patterns. Communication mechanisms do not appear as another subtype because they realize patterns rather than classify them.
+
+The direct and messaging branches are a learning model rather than rigid boundaries. For example, asynchronous Request / Reply may use messaging infrastructure.
+
+Each category answers a different question.
 
 ---
 
@@ -75,20 +85,22 @@ Instead, it describes how a small group of objects or components should collabor
 
 ---
 
-# Messaging / Communication Pattern
+# Communication Pattern
 
 ## Definition
 
-A messaging pattern defines how information flows between independent participants.
+A communication pattern defines how information flows between independent participants.
 
-These patterns focus on communication rather than object design.
+These patterns focus on communication rather than object design. Messaging patterns are a subtype concerned specifically with exchanging messages.
 
 They are frequently used in distributed systems but may also appear inside a single application.
 
 ## Examples
 
+- Request / Response
+- Point-to-Point Messaging
 - Publish / Subscribe
-- Request / Reply
+- Event Streaming
 - Competing Consumers
 - Event Notification
 
@@ -227,10 +239,10 @@ Programming Paradigm
         ↓ influences
 
 Architectural Style
-        ↓ uses
+        ↓ may use
 
-Design Patterns
-        ↓ implemented by
+Architectural, Design, and Communication Patterns
+        ↓ supported by
 
 Frameworks / Libraries
         ↓ realized as
@@ -251,13 +263,14 @@ Programming Paradigms
         │
         │ influence
         ▼
-Design and Messaging Patterns
+Design and Communication Patterns
 │
 ├── Design Pattern
 │   └── Observer
 │
-└── Messaging Pattern
-    └── Publish / Subscribe
+└── Communication Pattern
+    └── Messaging Pattern
+        └── Publish / Subscribe
         │
         │ used within
         ▼
@@ -294,7 +307,7 @@ These categories may work together, but they answer different questions.
 | Level | Question | Example |
 | --- | --- | --- |
 | Design Pattern | How should objects or components collaborate? | Observer |
-| Messaging / Communication Pattern | How should participants exchange information? | Publish / Subscribe |
+| Communication Pattern | How should participants exchange information? | Request / Response or Publish / Subscribe |
 | Architectural Style | How should major system components be organized? | Event-Driven Architecture |
 | Architectural Pattern | How can a recurring architecture-level problem be solved? | CQRS |
 
@@ -303,7 +316,7 @@ Observer
 → behavioral design pattern
 
 Publish / Subscribe
-→ messaging/communication pattern
+→ communication pattern (messaging subtype)
 
 Event-Driven Architecture
 → architectural style
@@ -315,7 +328,7 @@ Similarly, using Publish / Subscribe in one interaction does not automatically m
 
 ---
 
-# Pattern, Mechanism, Protocol, Technology, and Implementation
+# Realization Hierarchy: Pattern to Implementation
 
 These terms describe different parts of turning an idea into working software.
 
@@ -345,7 +358,9 @@ Technology
 Concrete Implementation
 ```
 
-This is not always a strict one-to-one chain. A technology can support multiple patterns and protocols, and an implementation can combine several technologies.
+This hierarchy shows how an abstract pattern can become working software. It is different from the concept-classification hierarchy at the beginning of this document.
+
+It is not always a strict one-to-one chain. An in-process mechanism may not require a network protocol, a technology can support multiple patterns and protocols, and an implementation can combine several technologies.
 
 ## Publish / Subscribe Example
 
@@ -483,7 +498,7 @@ The goal is not to use every pattern. It is to choose the smallest set that addr
 
 - Paradigms describe how programs are expressed.
 - Design patterns describe recurring collaboration between components.
-- Messaging patterns describe information flow.
+- Communication patterns describe information flow; messaging patterns are one subtype.
 - Architectural styles describe the organization of an entire system.
 - Architectural patterns solve recurring architecture-level problems.
 - Frameworks implement many patterns and architectural ideas.
@@ -501,7 +516,7 @@ Observer
 → Behavioral Design Pattern
 
 Publish / Subscribe
-→ Messaging Pattern
+→ Communication Pattern (Messaging subtype)
 
 Event-Driven Architecture
 → Architectural Style
@@ -524,6 +539,7 @@ NestJS
 - [Reactive Programming](../programming-paradigms/reactive-programming.md)
 - [Gang of Four Design Patterns](../design-patterns/gang-of-four-design-patterns.md)
 - [Observer Pattern](../design-patterns/observer-pattern.md)
-- [Messaging and Communication Patterns](../messaging-patterns/communication-patterns.md)
-- [Publish / Subscribe](../messaging-patterns/publish-subscribe.md)
+- [Communication Patterns](../communication-patterns/README.md)
+- [Request / Response](../communication-patterns/request-response.md)
+- [Publish / Subscribe](../communication-patterns/publish-subscribe.md)
 - [Event-Driven Architecture](../architectural-styles/event-driven-architecture.md)

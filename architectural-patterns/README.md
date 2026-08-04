@@ -121,4 +121,4 @@ Architectural Patterns
 - [Software Architecture](../computer-science-foundations/software-architecture.md)
 - [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
 - [Architectural Styles](../architectural-styles/README.md)
-- [Messaging and Communication Patterns](../messaging-patterns/communication-patterns.md)
+- [Communication Patterns](../communication-patterns/README.md)

@@ -98,4 +98,4 @@ This folder contains only concepts whose primary classification in this knowledg
 - [Software Architecture](../computer-science-foundations/software-architecture.md)
 - [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
 - [Architectural Patterns](../architectural-patterns/README.md)
-- [Messaging and Communication Patterns](../messaging-patterns/communication-patterns.md)
+- [Communication Patterns](../communication-patterns/README.md)

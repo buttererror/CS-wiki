@@ -289,4 +289,4 @@ Architecture must match the system's workload, team structure, operational capab
 - [Software Taxonomy](software-taxonomy.md)
 - [Architectural Styles](../architectural-styles/README.md)
 - [Architectural Patterns](../architectural-patterns/README.md)
-- [Messaging and Communication Patterns](../messaging-patterns/communication-patterns.md)
+- [Communication Patterns](../communication-patterns/README.md)
