@@ -460,4 +460,4 @@ It helps explain:
 - [Communication Patterns](../communication-patterns/README.md)
 - [Publish / Subscribe](../communication-patterns/publish-subscribe.md)
 - [TanStack Query](../framework-tooling/tanstack-query.md)
-- [Browser Event System](../web-paradigms/browser-event-system.md)
+- Browser Event System — future note
