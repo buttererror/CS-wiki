@@ -142,9 +142,8 @@ databases, credentials, or file deletion. Tool behavior and security guidance
 change over time; verify version-sensitive instructions against current official
 documentation.
 
-## Roadmap
+## Maintenance action items
 
-- Organize and distill imported notes into focused topic pages.
-- Finish placeholder pages and remove duplicate React material.
-- Standardize older file names and page structure without breaking links.
-- Add sources, cross-links, and practical examples across the wiki.
+- [ ] Conduct a thorough review of the current project state, including its
+  organization, overlapping or duplicate notes, placeholders, naming
+  consistency, navigation, and cross-links.
