@@ -1,4 +1,5 @@
 # Notes
+- [Reactivity Mechanisms: Vue and React as Case Studies](reactivity-in-vue-and-react.md)
 - `Vue@2.x` vs `Vue@3.x` 
 - [Vuex vs Pinia](https://www.vuemastery.com/blog/advantages-of-pinia-vs-vuex/#who-created-pinia)
   > Vuex provides you with just one store which can have multiple modules within it. Whereas in Pinia, you can create multiple stores that can be imported into components directly where they’re needed. This allows bundlers to better code split and provides better TypeScript inferences.

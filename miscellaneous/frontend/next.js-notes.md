@@ -111,3 +111,6 @@ export default function InvoiceStatus({ status }: { status: string }) {
     // ...
 )}
 ```
+# Related Canonical Material
+
+- [Next.js and React with Vite: Architecture, Performance, and JavaScript Delivery](../../framework-tooling/react-application-delivery/nextjs-vs-react-with-vite.md)

@@ -169,6 +169,8 @@ content and placement review.
 | --- | --- |
 | [Frontend Development](miscellaneous/frontend/README.md) | Landing page for browser UI, frontend frameworks, styling, and related client-development notes |
 | [Frontend Concepts](miscellaneous/frontend/frontend-related-concepts.md) | Runtime data, serialization, SSR, and hydration |
+| [React Application Delivery](framework-tooling/react-application-delivery/README.md) | React delivery architectures, rendering boundaries, JavaScript delivery, and evidence-based performance decisions |
+| [Reactivity Mechanisms: Vue and React as Case Studies](miscellaneous/frontend/reactivity-in-vue-and-react.md) | General reactivity concepts explored through proxy tracking, explicit updates, and stream-based models |
 | [React Reference](miscellaneous/frontend/react.md) | State, effects, memoization, code quality, and interview notes |
 | [React Crash Course](miscellaneous/frontend/react.js-crash-course.md) | Rendering, reconciliation, effects, and browser behavior |
 | [React Study Notes](miscellaneous/frontend/my-react.js-notes.md) | Forms, reducers, hooks, and learning notes |

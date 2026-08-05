@@ -1,5 +1,7 @@
 ### 📘 Core Concepts
 
+Related: [Reactivity Mechanisms: Vue and React as Case Studies](reactivity-in-vue-and-react.md)
+
 #### 🔹 React State Hooks
 - `useState`: For simple local state
 - `useReducer`: For complex or multi-step state logic
