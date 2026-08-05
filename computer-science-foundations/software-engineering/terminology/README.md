@@ -9,11 +9,13 @@ These documents clarify how a term is used in this knowledge base. They do not c
 ## Examples of Terms
 
 - [Mechanism](mechanism.md) — the operational process or capability through which behavior is enabled or realized.
+- [Pattern](pattern.md) — a reusable description of a recurring arrangement, interaction, or solution in context.
+- [Style](style.md) — principles and constraints that shape the overall character of a design.
 - Abstraction — a simplified interface or model that hides selected details.
 - Component — a distinguishable part of a larger software structure.
 - Runtime — the environment and period in which a program executes.
 
-Only Mechanism currently has a dedicated document. The remaining examples indicate possible future terminology notes.
+Mechanism, Pattern, and Style currently have dedicated documents. The remaining examples indicate possible future terminology notes.
 
 ## Relationship to the Knowledge Base
 
@@ -31,6 +33,8 @@ Topic documents
 ## Document Index
 
 - [Mechanism](mechanism.md)
+- [Pattern](pattern.md)
+- [Style](style.md)
 
 ## Related Concepts
 

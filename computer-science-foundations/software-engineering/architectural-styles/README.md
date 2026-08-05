@@ -96,6 +96,8 @@ This folder contains only concepts whose primary classification in this knowledg
 ## Related Concepts
 
 - [Software Engineering Foundations](../README.md)
+- [Style](../terminology/style.md)
+- [Pattern](../terminology/pattern.md)
 - [Software Architecture](../software-architecture.md)
 - [Software Taxonomy](../software-taxonomy.md)
 - [Architectural Patterns](../architectural-patterns/README.md)

@@ -287,6 +287,8 @@ Architecture must match the system's workload, team structure, operational capab
 ## Related Concepts
 
 - [Software Engineering Foundations](README.md)
+- [Pattern](terminology/pattern.md)
+- [Style](terminology/style.md)
 - [Software Taxonomy](software-taxonomy.md)
 - [Architectural Styles](architectural-styles/README.md)
 - [Architectural Patterns](architectural-patterns/README.md)

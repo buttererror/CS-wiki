@@ -324,6 +324,7 @@ Using one communication pattern does not determine the architecture of the whole
 ## Related Concepts
 
 - [Software Engineering Foundations](../README.md)
+- [Pattern](../terminology/pattern.md)
 - [Software Taxonomy](../software-taxonomy.md)
 - [Software Architecture](../software-architecture.md)
 - [Architectural Styles](../architectural-styles/README.md)
