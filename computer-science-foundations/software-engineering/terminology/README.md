@@ -34,7 +34,8 @@ Topic documents
 
 ## Related Concepts
 
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
+- [Software Engineering Foundations](../README.md)
+- [Software Taxonomy](../software-taxonomy.md)
 - [Software Design Principles](../software-design-principles/README.md)
-- [Frameworks, Libraries, and Tooling](../framework-tooling/README.md)
+- [Frameworks, Libraries, and Tooling](../../../framework-tooling/README.md)
 - [Communication Patterns](../communication-patterns/README.md)

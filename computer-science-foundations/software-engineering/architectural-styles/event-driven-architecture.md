@@ -556,8 +556,8 @@ Event-driven communication
 ## Related Concepts
 
 - [Architectural Styles](README.md)
-- [Software Architecture](../computer-science-foundations/software-architecture.md)
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
+- [Software Architecture](../software-architecture.md)
+- [Software Taxonomy](../software-taxonomy.md)
 - [Communication Patterns](../communication-patterns/README.md)
 - [Observer Pattern](../design-patterns/observer-pattern.md)
 - [Publish / Subscribe](../communication-patterns/publish-subscribe.md)

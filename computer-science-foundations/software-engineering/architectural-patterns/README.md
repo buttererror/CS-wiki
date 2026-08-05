@@ -118,7 +118,8 @@ Architectural Patterns
 
 ## Related Concepts
 
-- [Software Architecture](../computer-science-foundations/software-architecture.md)
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
+- [Software Engineering Foundations](../README.md)
+- [Software Architecture](../software-architecture.md)
+- [Software Taxonomy](../software-taxonomy.md)
 - [Architectural Styles](../architectural-styles/README.md)
 - [Communication Patterns](../communication-patterns/README.md)

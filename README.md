@@ -11,7 +11,11 @@ examples that are useful while learning or building.
 
 Choose a path based on what you want to learn:
 
-- **Build programming foundations:** [General Programming](CS.md) →
+- **Explore software foundations:**
+  [Computer Science Foundations](computer-science-foundations/README.md) →
+  [Software Engineering Foundations](computer-science-foundations/software-engineering/README.md) →
+  [Software Taxonomy](computer-science-foundations/software-engineering/software-taxonomy.md)
+- **Learn programming languages:** [General Programming](CS.md) →
   [JavaScript](JavaScript-notes.md) → [TypeScript](TypeScript.md)
 - **Learn frontend development:** [Frontend Concepts](frontend-related-concepts.md)
   → [React](react.md) → [Next.js](next.js-notes.md) → [Styling](styling-notes.md)
@@ -40,16 +44,17 @@ Choose a path based on what you want to learn:
 
 | Topic | What it covers |
 | --- | --- |
-| [Computer Science Foundations](computer-science-foundations/README.md) | Core distinctions among software concepts and abstraction levels |
-| [Software Taxonomy](computer-science-foundations/software-taxonomy.md) | Paradigms, patterns, architectures, tools, and implementations |
-| [Software Architecture](computer-science-foundations/software-architecture.md) | Systems, architectures, architectural styles, and architectural patterns |
-| [Programming Paradigms](programming-paradigms/README.md) | Object-oriented, functional, and reactive ways of expressing programs |
-| [Software Design Principles](software-design-principles/README.md) | Guidelines for reasoning about responsibilities, dependencies, change, and control |
-| [Software Engineering Terminology](terminology/README.md) | Recurring field terms whose meanings depend on abstraction level or context |
-| [Design Patterns](design-patterns/README.md) | Reusable solutions to recurring object and component design problems |
-| [Communication Patterns](communication-patterns/README.md) | Ways independent participants exchange information |
-| [Architectural Styles](architectural-styles/README.md) | Principles and constraints for organizing major system components |
-| [Architectural Patterns](architectural-patterns/README.md) | Reusable solutions to recurring architecture-level problems |
+| [Computer Science Foundations](computer-science-foundations/README.md) | Broad field map, reading mindset, and routes into the wiki's current foundations |
+| [Software Engineering Foundations](computer-science-foundations/software-engineering/README.md) | Mindset and map for relating software concepts without imposing rigid boundaries |
+| [Software Taxonomy](computer-science-foundations/software-engineering/software-taxonomy.md) | Paradigms, principles, patterns, architectures, tools, and implementations |
+| [Software Architecture](computer-science-foundations/software-engineering/software-architecture.md) | Systems, architectures, architectural styles, and architectural patterns |
+| [Programming Paradigms](computer-science-foundations/software-engineering/programming-paradigms/README.md) | Object-oriented, functional, and reactive ways of expressing programs |
+| [Software Design Principles](computer-science-foundations/software-engineering/software-design-principles/README.md) | Guidelines for reasoning about responsibilities, dependencies, change, and control |
+| [Software Engineering Terminology](computer-science-foundations/software-engineering/terminology/README.md) | Recurring field terms whose meanings depend on abstraction level or context |
+| [Design Patterns](computer-science-foundations/software-engineering/design-patterns/README.md) | Reusable solutions to recurring object and component design problems |
+| [Communication Patterns](computer-science-foundations/software-engineering/communication-patterns/README.md) | Ways independent participants exchange information |
+| [Architectural Styles](computer-science-foundations/software-engineering/architectural-styles/README.md) | Principles and constraints for organizing major system components |
+| [Architectural Patterns](computer-science-foundations/software-engineering/architectural-patterns/README.md) | Reusable solutions to recurring architecture-level problems |
 | [Frameworks, Libraries, and Tooling](framework-tooling/README.md) | Implementations and reusable infrastructure used to build applications |
 
 ### Frontend development

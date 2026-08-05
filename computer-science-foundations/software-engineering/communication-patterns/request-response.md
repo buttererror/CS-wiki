@@ -555,8 +555,8 @@ Asynchronous messaging can reduce direct and temporal coupling, but it introduce
 ## Related Concepts
 
 - [Communication Patterns](README.md)
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
-- [TanStack Query](../framework-tooling/tanstack-query.md)
+- [Software Taxonomy](../software-taxonomy.md)
+- [TanStack Query](../../../framework-tooling/tanstack-query.md)
 - [Publish / Subscribe](publish-subscribe.md)
 - [Event-Driven Architecture](../architectural-styles/event-driven-architecture.md)
 - [Microservice Architecture](../architectural-styles/microservice-architecture.md)

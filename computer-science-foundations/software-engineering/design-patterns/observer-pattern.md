@@ -454,10 +454,10 @@ It helps explain:
 
 ## Related Concepts
 
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
+- [Software Taxonomy](../software-taxonomy.md)
 - [Gang of Four Design Patterns](gang-of-four-design-patterns.md)
 - [Reactive Programming](../programming-paradigms/reactive-programming.md)
 - [Communication Patterns](../communication-patterns/README.md)
 - [Publish / Subscribe](../communication-patterns/publish-subscribe.md)
-- [TanStack Query](../framework-tooling/tanstack-query.md)
+- [TanStack Query](../../../framework-tooling/tanstack-query.md)
 - Browser Event System — future note

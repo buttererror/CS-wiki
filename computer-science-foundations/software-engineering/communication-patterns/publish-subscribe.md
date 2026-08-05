@@ -427,7 +427,7 @@ This allows subscribers to be added or removed without changing the publisher, s
 
 ## Related Concepts
 
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
+- [Software Taxonomy](../software-taxonomy.md)
 - [Communication Patterns](README.md)
 - [Observer Pattern](../design-patterns/observer-pattern.md)
 - [Gang of Four Design Patterns](../design-patterns/gang-of-four-design-patterns.md)

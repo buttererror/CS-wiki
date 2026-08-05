@@ -4,7 +4,7 @@
 
 This document defines architectural styles and acts as the index for style-specific documents in this knowledge base.
 
-Broader distinctions among software systems, system architecture, architectural styles, and architectural patterns belong in the [Software Architecture foundation](../computer-science-foundations/software-architecture.md).
+Broader distinctions among software systems, system architecture, architectural styles, and architectural patterns belong in the [Software Architecture foundation](../software-architecture.md).
 
 ---
 
@@ -95,7 +95,8 @@ This folder contains only concepts whose primary classification in this knowledg
 
 ## Related Concepts
 
-- [Software Architecture](../computer-science-foundations/software-architecture.md)
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
+- [Software Engineering Foundations](../README.md)
+- [Software Architecture](../software-architecture.md)
+- [Software Taxonomy](../software-taxonomy.md)
 - [Architectural Patterns](../architectural-patterns/README.md)
 - [Communication Patterns](../communication-patterns/README.md)

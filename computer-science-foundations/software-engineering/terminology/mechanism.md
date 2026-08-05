@@ -108,7 +108,7 @@ The phrase **communication mechanism** is therefore a contextual use of the broa
 ## Related Concepts
 
 - [Software Engineering Terminology](README.md)
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
+- [Software Taxonomy](../software-taxonomy.md)
 - [Inversion of Control](../software-design-principles/inversion-of-control.md)
 - [Observer Pattern](../design-patterns/observer-pattern.md)
 - [Publish / Subscribe](../communication-patterns/publish-subscribe.md)

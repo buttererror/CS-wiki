@@ -519,8 +519,8 @@ The goal is not to maximize the number of services. It is to choose boundaries t
 ## Related Concepts
 
 - [Architectural Styles](README.md)
-- [Software Architecture](../computer-science-foundations/software-architecture.md)
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
+- [Software Architecture](../software-architecture.md)
+- [Software Taxonomy](../software-taxonomy.md)
 - [Communication Patterns](../communication-patterns/README.md)
 - [Event-Driven Architecture](event-driven-architecture.md)
 - [Publish / Subscribe](../communication-patterns/publish-subscribe.md)

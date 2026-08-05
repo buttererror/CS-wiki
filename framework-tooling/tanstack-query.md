@@ -914,8 +914,8 @@ Query Observer
 ## Related Concepts
 
 - [Frameworks, Libraries, and Tooling](README.md)
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
-- [Reactive Programming](../programming-paradigms/reactive-programming.md)
-- [Observer Pattern](../design-patterns/observer-pattern.md)
-- [Request / Response](../communication-patterns/request-response.md)
-- [Publish / Subscribe](../communication-patterns/publish-subscribe.md)
+- [Software Taxonomy](../computer-science-foundations/software-engineering/software-taxonomy.md)
+- [Reactive Programming](../computer-science-foundations/software-engineering/programming-paradigms/reactive-programming.md)
+- [Observer Pattern](../computer-science-foundations/software-engineering/design-patterns/observer-pattern.md)
+- [Request / Response](../computer-science-foundations/software-engineering/communication-patterns/request-response.md)
+- [Publish / Subscribe](../computer-science-foundations/software-engineering/communication-patterns/publish-subscribe.md)

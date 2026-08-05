@@ -84,8 +84,9 @@ These relationships are not strict one-to-one mappings. One principle can guide 
 
 ## Related Concepts
 
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
+- [Software Engineering Foundations](../README.md)
+- [Software Taxonomy](../software-taxonomy.md)
 - [Design Patterns](../design-patterns/README.md)
-- [Software Architecture](../computer-science-foundations/software-architecture.md)
-- [Frameworks, Libraries, and Tooling](../framework-tooling/README.md)
+- [Software Architecture](../software-architecture.md)
+- [Frameworks, Libraries, and Tooling](../../../framework-tooling/README.md)
 - [Software Engineering Terminology](../terminology/README.md)

@@ -398,10 +398,10 @@ The paradigm may use these patterns, but they are not interchangeable.
 ## Related Concepts
 
 - [Programming Paradigm](programming-paradigm.md)
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
+- [Software Taxonomy](../software-taxonomy.md)
 - [Gang of Four Design Patterns](../design-patterns/gang-of-four-design-patterns.md)
 - [Observer Pattern](../design-patterns/observer-pattern.md)
 - [Communication Patterns](../communication-patterns/README.md)
 - [Publish / Subscribe](../communication-patterns/publish-subscribe.md)
 - [Event-Driven Architecture](../architectural-styles/event-driven-architecture.md)
-- [TanStack Query](../framework-tooling/tanstack-query.md)
+- [TanStack Query](../../../framework-tooling/tanstack-query.md)

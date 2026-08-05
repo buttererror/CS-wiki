@@ -10,7 +10,7 @@ This document distinguishes frameworks, libraries, framework mechanisms, technol
 
 A framework provides reusable infrastructure and controls significant parts of an application's structure, setup, or lifecycle.
 
-This framework-controlled lifecycle is a common form of [Inversion of Control](../software-design-principles/inversion-of-control.md): application code supplies components or behavior that the framework invokes at predefined points.
+This framework-controlled lifecycle is a common form of [Inversion of Control](../computer-science-foundations/software-engineering/software-design-principles/inversion-of-control.md): application code supplies components or behavior that the framework invokes at predefined points.
 
 ```text
 Application code
@@ -120,8 +120,8 @@ NestJS
 
 ## Related Concepts
 
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
-- [Programming Paradigm](../programming-paradigms/programming-paradigm.md)
-- [Gang of Four Design Patterns](../design-patterns/gang-of-four-design-patterns.md)
-- [Software Design Principles](../software-design-principles/README.md)
-- [Inversion of Control](../software-design-principles/inversion-of-control.md)
+- [Software Taxonomy](../computer-science-foundations/software-engineering/software-taxonomy.md)
+- [Programming Paradigm](../computer-science-foundations/software-engineering/programming-paradigms/programming-paradigm.md)
+- [Gang of Four Design Patterns](../computer-science-foundations/software-engineering/design-patterns/gang-of-four-design-patterns.md)
+- [Software Design Principles](../computer-science-foundations/software-engineering/software-design-principles/README.md)
+- [Inversion of Control](../computer-science-foundations/software-engineering/software-design-principles/inversion-of-control.md)

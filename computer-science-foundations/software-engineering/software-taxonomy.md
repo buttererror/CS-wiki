@@ -1,17 +1,19 @@
 # Software Taxonomy
 
-# Purpose
+## Purpose
 
-This document defines the major abstraction levels used throughout the knowledge base.
+This document defines the primary software-concept categories used throughout the knowledge base.
 
-Many Computer Science concepts appear related because they solve similar problems, but they belong to different abstraction levels. Distinguishing these levels prevents mixing concepts such as programming paradigms, design patterns, and architectures.
+Many concepts appear related because they influence the same software, but they answer different questions or operate at different scopes. Distinguishing them prevents concepts such as programming paradigms, design principles, patterns, architectures, frameworks, and implementations from being treated as interchangeable.
+
+The taxonomy is a navigation model rather than a complete or rigid ontology. Categories may overlap, classifications may vary across sources, and relationships between categories are generally optional and many-to-many.
 
 ---
 
-# Concept Classification Hierarchy
+## Primary Software Concept Categories
 
 ```text
-Computer Science
+Software Engineering Concepts
 │
 ├── Programming Paradigm
 ├── Software Design Principle
@@ -30,7 +32,9 @@ Computer Science
 └── Implementation
 ```
 
-This is a classification hierarchy: it shows what kind of concept something is. Messaging patterns are a subtype of communication patterns. Communication mechanisms do not appear as another subtype because they realize patterns rather than classify them.
+This view shows the primary categories used for navigation. Most entries are siblings rather than required stages in a process. The nested communication branches show one local subtype relationship; they do not turn the entire taxonomy into a strict hierarchy.
+
+Messaging patterns are treated as a subtype of communication patterns. Communication mechanisms do not appear as another subtype because they describe how patterns are operationally realized rather than identify another primary category.
 
 The direct and messaging branches are a learning model rather than rigid boundaries. For example, asynchronous Request / Reply may use messaging infrastructure.
 
@@ -38,9 +42,9 @@ Each category answers a different question.
 
 ---
 
-# Programming Paradigm
+## Programming Paradigm
 
-## Definition
+### Definition
 
 A programming paradigm is a fundamental style of expressing programs.
 
@@ -48,7 +52,7 @@ It shapes how developers think about solving problems and organizing code.
 
 A paradigm is broad and influences the structure of an entire program rather than solving one isolated problem.
 
-## Examples
+### Examples
 
 - Object-Oriented Programming (OOP)
 - Functional Programming (FP)
@@ -56,43 +60,43 @@ A paradigm is broad and influences the structure of an entire program rather tha
 - Procedural Programming
 - Logic Programming
 
-## Answers
+### Answers
 
 > How should software be written?
 
 ---
 
-# Software Design Principle
+## Software Design Principle
 
-## Definition
+### Definition
 
 A software design principle is a broad guideline for making decisions about responsibilities, dependencies, change, and control.
 
 Unlike a design pattern, a principle does not prescribe a recurring structure or collaboration. A pattern or technique may apply one or more principles.
 
-## Examples
+### Examples
 
 - Inversion of Control
 - Separation of Concerns
 - Dependency Inversion Principle
 - Single Responsibility Principle
 
-## Answers
+### Answers
 
 > What general guideline should inform this design decision?
 
 ---
 
-# Design Pattern
+## Design Pattern
 
-## Definition
+### Definition
 
 A design pattern is a proven, reusable solution to a recurring software design problem.
 
 A pattern does not define an entire application.
 Instead, it describes how a small group of objects or components should collaborate.
 
-## Examples
+### Examples
 
 - Observer
 - Factory
@@ -101,15 +105,15 @@ Instead, it describes how a small group of objects or components should collabor
 - Decorator (GoF)
 - Adapter
 
-## Answers
+### Answers
 
 > How should several objects collaborate to solve a recurring problem?
 
 ---
 
-# Communication Pattern
+## Communication Pattern
 
-## Definition
+### Definition
 
 A communication pattern defines how information flows between independent participants.
 
@@ -117,7 +121,7 @@ These patterns focus on communication rather than object design. Messaging patte
 
 They are frequently used in distributed systems but may also appear inside a single application.
 
-## Examples
+### Examples
 
 - Request / Response
 - Point-to-Point Messaging
@@ -126,15 +130,15 @@ They are frequently used in distributed systems but may also appear inside a sin
 - Competing Consumers
 - Event Notification
 
-## Answers
+### Answers
 
 > How should independent participants exchange information?
 
 ---
 
-# Architectural Style
+## Architectural Style
 
-## Definition
+### Definition
 
 An architectural style describes how the major parts of an application or system are organized and communicate.
 
@@ -142,7 +146,7 @@ Architectures operate at a much larger scale than design patterns.
 
 An architecture often combines many design patterns and communication mechanisms.
 
-## Examples
+### Examples
 
 - Layered Architecture
 - Client–Server
@@ -150,21 +154,21 @@ An architecture often combines many design patterns and communication mechanisms
 - Microservices
 - Hexagonal Architecture
 
-## Answers
+### Answers
 
 > How should an entire system be organized?
 
 ---
 
-# Architectural Pattern
+## Architectural Pattern
 
-## Definition
+### Definition
 
 An architectural pattern is a reusable solution to a recurring architecture-level problem in a particular context.
 
 Architectural patterns operate at a larger scope than object-level design patterns, but they may address a more specific problem than an architectural style.
 
-## Examples
+### Examples
 
 - MVC
 - CQRS
@@ -172,7 +176,7 @@ Architectural patterns operate at a larger scope than object-level design patter
 - Saga
 - Event Sourcing
 
-## Answers
+### Answers
 
 > How can a recurring architecture-level problem be solved?
 
@@ -180,57 +184,57 @@ The distinction between architectural style and architectural pattern varies acr
 
 ---
 
-# Framework
+## Framework
 
-## Definition
+### Definition
 
 A framework is an implementation that provides reusable infrastructure and enforces an application structure.
 
 Frameworks often implement multiple design patterns and architectural ideas.
 
-## Examples
+### Examples
 
-- React
 - NestJS
 - Angular
 - Spring Boot
 
-## Answers
+### Answers
 
 > What infrastructure helps implement an application?
 
 ---
 
-# Library
+## Library
 
-## Definition
+### Definition
 
 A library provides reusable functionality that applications call when needed.
 
 Unlike frameworks, libraries generally do not control the application's execution flow.
 
-## Examples
+### Examples
 
 - TanStack Query
+- React
 - RxJS
 - Lodash
 - Axios
 
-## Answers
+### Answers
 
 > What reusable functionality can my application use?
 
 ---
 
-# Implementation
+## Implementation
 
-## Definition
+### Definition
 
 Implementation is the concrete source code that realizes paradigms, patterns, and architectures.
 
 Different implementations may realize the same pattern differently.
 
-## Examples
+### Examples
 
 Observer Pattern:
 
@@ -254,84 +258,74 @@ useQuery(...)
 
 ---
 
-# Relationship Between Levels
+## Fluid Relationships Between Concepts
+
+Classification answers:
+
+> What kind of concept is this?
+
+A relationship answers:
+
+> How might this concept influence, guide, support, or realize another concept?
+
+These are separate views. A concept does not need to pass through the categories in a fixed order.
 
 ```text
-Programming Paradigm
-        ↓ influences
-
-Software Design Principles
-        ↓ guide
-
-Architectural Style
-        ↓ may use
-
-Architectural, Design, and Communication Patterns
-        ↓ supported by
-
-Frameworks / Libraries
-        ↓ realized as
-
-Source Code
+Programming Paradigms ─────┐
+                           │
+Software Design Principles ┤
+                           │
+Design and Communication   │
+Patterns ──────────────────┼── may influence or support ──→ Concrete Software
+                           │
+Architectural Styles and   │
+Patterns ──────────────────┤
+                           │
+Frameworks and Libraries ──┘
 ```
 
-## Example Concept Map
+The lines represent optional relationships such as **may influence**, **may guide**, **may apply**, **may support**, or **may realize**. They do not mean **must contain**, **must depend on**, or **must occur before**.
 
-The following diagram shows how specific examples may relate across abstraction levels:
+One principle may guide a function, pattern, framework, or system architecture. One pattern may be implemented using several technologies. One application may combine multiple paradigms, styles, and patterns.
+
+### Example Concept Network
+
+The following diagram places a concrete application at the center instead of presenting concepts as a pipeline:
 
 ```text
-Programming Paradigms
+Concrete Application
 │
-├── Object-Oriented Programming
-├── Functional Programming
-└── Reactive Programming
-        │
-        │ influence
-        ▼
-Software Design Principles
+├── may express
+│   ├── Object-Oriented Programming
+│   ├── Functional Programming
+│   └── Reactive Programming
 │
-└── Inversion of Control
-        │
-        │ guide
-        ▼
-Design and Communication Patterns
+├── may be guided by
+│   └── Inversion of Control
 │
-├── Design Pattern
-│   └── Observer
+├── may apply
+│   ├── Observer
+│   ├── Request / Response
+│   └── Publish / Subscribe
 │
-└── Communication Pattern
-    └── Messaging Pattern
-        └── Publish / Subscribe
-        │
-        │ used within
-        ▼
-Architectural Styles
+├── may combine
+│   ├── Client–Server
+│   ├── Layered Architecture
+│   └── Event-Driven Architecture
 │
-├── Client–Server
-├── Layered Architecture
-├── Event-Driven Architecture
-└── Microservices
-        │
-        │ supported by
-        ▼
-Frameworks and Libraries
+├── may use
+│   ├── NestJS
+│   ├── React
+│   ├── TanStack Query
+│   └── RxJS
 │
-├── Frameworks
-│   └── NestJS
-│
-└── Libraries
-    ├── React
-    ├── TanStack Query
-    └── RxJS
-        │
-        │ realized as
-        ▼
-Application Source Code
+└── is realized through
+    └── source code and configuration
 ```
 
 ---
 
-# Design Patterns, Communication Patterns, and Architectural Styles
+## Design Patterns, Communication Patterns, and Architectural Styles
 
 These categories may work together, but they answer different questions.
 
@@ -359,11 +353,11 @@ Similarly, using Publish / Subscribe in one interaction does not automatically m
 
 ---
 
-# Realization Hierarchy: Pattern to Implementation
+## Realization Hierarchy: Pattern to Implementation
 
 These terms describe different parts of turning an idea into working software.
 
-See [Mechanism](../terminology/mechanism.md) for the cross-context meaning of mechanism and its relationship to techniques, components, technologies, APIs, and implementations.
+See [Mechanism](terminology/mechanism.md) for the cross-context meaning of mechanism and its relationship to techniques, components, technologies, APIs, and implementations.
 
 | Level | Question | Example |
 | --- | --- | --- |
@@ -395,7 +389,7 @@ This hierarchy shows how an abstract pattern can become working software. It is 
 
 It is not always a strict one-to-one chain. An in-process mechanism may not require a network protocol, a technology can support multiple patterns and protocols, and an implementation can combine several technologies.
 
-## Publish / Subscribe Example
+### Publish / Subscribe Example
 
 ```text
 Publish / Subscribe
@@ -414,7 +408,7 @@ and application handlers
 → concrete implementation
 ```
 
-## Request / Response Example
+### Request / Response Example
 
 ```text
 Request / Response
@@ -436,7 +430,7 @@ and response handling
 → concrete implementation
 ```
 
-## Observer Example
+### Observer Example
 
 ```text
 Observer
@@ -454,7 +448,7 @@ addEventListener(...) or useQuery(...)
 
 ---
 
-# Relationship to Scalability
+## Relationship to Scalability
 
 Paradigms, patterns, and architectural styles can help a system evolve and scale, but they do not guarantee scalability.
 
@@ -476,7 +470,7 @@ Correct implementation and measurement
 produce an actually scalable system
 ```
 
-## Benefits and Trade-Offs
+### Benefits and Trade-Offs
 
 Every paradigm, pattern, and architectural style provides benefits while introducing constraints.
 
@@ -495,7 +489,7 @@ For example, Publish / Subscribe does not inherently create eventual consistency
 
 Likewise, Microservices do not automatically improve scalability. They provide boundaries that may be scaled independently, but only when the workload and system design benefit from those boundaries.
 
-## Scalability Requires Evidence
+### Scalability Requires Evidence
 
 A system becomes scalable through validated engineering decisions rather than through pattern selection alone.
 
@@ -527,7 +521,7 @@ The goal is not to use every pattern. It is to choose the smallest set that addr
 
 ---
 
-# Key Principles
+## Key Principles
 
 - Paradigms describe how programs are expressed.
 - Software design principles guide decisions about responsibilities, dependencies, change, and control.
@@ -541,7 +535,7 @@ The goal is not to use every pattern. It is to choose the smallest set that addr
 
 ---
 
-# Examples
+## Examples
 
 Reactive Programming
 → Programming Paradigm
@@ -566,19 +560,20 @@ NestJS
 
 ---
 
-# Related Concepts
+## Related Concepts
 
+- [Software Engineering Foundations](README.md)
 - [Software Architecture](software-architecture.md)
-- [Software Design Principles](../software-design-principles/README.md)
-- [Software Engineering Terminology](../terminology/README.md)
-- [Frameworks, Libraries, and Tooling](../framework-tooling/README.md)
-- [Architectural Styles](../architectural-styles/README.md)
-- [Architectural Patterns](../architectural-patterns/README.md)
-- [Programming Paradigm](../programming-paradigms/programming-paradigm.md)
-- [Reactive Programming](../programming-paradigms/reactive-programming.md)
-- [Gang of Four Design Patterns](../design-patterns/gang-of-four-design-patterns.md)
-- [Observer Pattern](../design-patterns/observer-pattern.md)
-- [Communication Patterns](../communication-patterns/README.md)
-- [Request / Response](../communication-patterns/request-response.md)
-- [Publish / Subscribe](../communication-patterns/publish-subscribe.md)
-- [Event-Driven Architecture](../architectural-styles/event-driven-architecture.md)
+- [Software Design Principles](software-design-principles/README.md)
+- [Software Engineering Terminology](terminology/README.md)
+- [Frameworks, Libraries, and Tooling](../../framework-tooling/README.md)
+- [Architectural Styles](architectural-styles/README.md)
+- [Architectural Patterns](architectural-patterns/README.md)
+- [Programming Paradigm](programming-paradigms/programming-paradigm.md)
+- [Reactive Programming](programming-paradigms/reactive-programming.md)
+- [Gang of Four Design Patterns](design-patterns/gang-of-four-design-patterns.md)
+- [Observer Pattern](design-patterns/observer-pattern.md)
+- [Communication Patterns](communication-patterns/README.md)
+- [Request / Response](communication-patterns/request-response.md)
+- [Publish / Subscribe](communication-patterns/publish-subscribe.md)
+- [Event-Driven Architecture](architectural-styles/event-driven-architecture.md)

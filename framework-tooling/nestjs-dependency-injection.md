@@ -49,7 +49,7 @@ The controller declares what it needs. NestJS resolves the corresponding provide
 
 ## Dependency Injection and Inversion of Control
 
-Inversion of Control is the broader principle: application code delegates control of object construction and lifecycle to an external system. See [Inversion of Control](../software-design-principles/inversion-of-control.md) for the general principle and examples beyond Dependency Injection.
+Inversion of Control is the broader principle: application code delegates control of object construction and lifecycle to an external system. See [Inversion of Control](../computer-science-foundations/software-engineering/software-design-principles/inversion-of-control.md) for the general principle and examples beyond Dependency Injection.
 
 Dependency Injection is a design technique that applies that principle by supplying required dependencies from outside an object.
 
@@ -526,9 +526,9 @@ Potential trade-offs include:
 ## Related Concepts
 
 - [Frameworks, Libraries, and Tooling](README.md)
-- [Inversion of Control](../software-design-principles/inversion-of-control.md)
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
-- [Programming Paradigm](../programming-paradigms/programming-paradigm.md)
-- [Gang of Four Design Patterns](../design-patterns/gang-of-four-design-patterns.md)
-- [Observer Pattern](../design-patterns/observer-pattern.md)
+- [Inversion of Control](../computer-science-foundations/software-engineering/software-design-principles/inversion-of-control.md)
+- [Software Taxonomy](../computer-science-foundations/software-engineering/software-taxonomy.md)
+- [Programming Paradigm](../computer-science-foundations/software-engineering/programming-paradigms/programming-paradigm.md)
+- [Gang of Four Design Patterns](../computer-science-foundations/software-engineering/design-patterns/gang-of-four-design-patterns.md)
+- [Observer Pattern](../computer-science-foundations/software-engineering/design-patterns/observer-pattern.md)
 - [TanStack Query](tanstack-query.md)

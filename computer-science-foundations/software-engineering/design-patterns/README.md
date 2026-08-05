@@ -13,6 +13,7 @@ Design patterns describe collaboration within a design. They are distinct from c
 
 ## Related Concepts
 
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
+- [Software Engineering Foundations](../README.md)
+- [Software Taxonomy](../software-taxonomy.md)
 - [Communication Patterns](../communication-patterns/README.md)
 - [Architectural Patterns](../architectural-patterns/README.md)

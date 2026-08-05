@@ -335,7 +335,7 @@ These concepts can work together, but they are not interchangeable.
 
 ## Related Concepts
 
-- [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
+- [Software Taxonomy](../software-taxonomy.md)
 - [Reactive Programming](reactive-programming.md)
 - [Observer Pattern](../design-patterns/observer-pattern.md)
 - [Publish / Subscribe](../communication-patterns/publish-subscribe.md)
