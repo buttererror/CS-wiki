@@ -105,6 +105,7 @@ System Design interacts with several perspectives without completely containing 
 | Computer Science | Computation, algorithms, information, and computational systems | Supplies foundational models and constraints |
 | Computer Engineering | Computing hardware and hardware–software interaction | Informs computer-system organization and physical constraints |
 | Software Architecture | Significant system-wide structures, constraints, and trade-offs | Guides and emerges from major design decisions |
+| Security | Threats, trust boundaries, identities, protections, and security guarantees | Constrains and participates in design at every scope |
 | Infrastructure Engineering | Compute, networking, storage, deployment, and runtime platforms | Enables and constrains the design |
 | Implementation and Operations | Concrete behavior and production evidence | Realize the design and provide feedback |
 
@@ -173,3 +174,4 @@ Applied questions include:
 - [Software Architecture](../computer-science-foundations/software-engineering/software-architecture.md)
 - [Software Development Practices](../software-development-practices/README.md)
 - [Frameworks, Libraries, and Tooling](../framework-tooling/README.md)
+- [Security](../security/README.md)

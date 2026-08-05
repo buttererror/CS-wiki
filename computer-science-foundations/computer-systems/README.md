@@ -105,5 +105,6 @@ These are practical or technology-focused notes, not substitutes for future foun
 - [Computer Science Foundations](../README.md)
 - [Software Engineering Foundations](../software-engineering/README.md)
 - [System Design](../../system-design/README.md)
+- [Security](../../security/README.md)
 - [Software System Design](../../system-design/software-system-design/README.md)
 - [Software Architecture](../software-engineering/software-architecture.md)

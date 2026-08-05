@@ -166,3 +166,4 @@ teams.
 - [Modular Monolith](../../computer-science-foundations/software-engineering/architectural-styles/modular-monolith.md)
 - [Microservice Architecture](../../computer-science-foundations/software-engineering/architectural-styles/microservice-architecture.md)
 - [Repository Organization](../../software-development-practices/repository-organization/README.md)
+- [Security](../../security/README.md)

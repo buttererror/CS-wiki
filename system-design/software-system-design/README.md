@@ -133,5 +133,7 @@ These perspectives form a feedback system rather than a one-way pipeline.
 - [Software Development Practices](../../software-development-practices/README.md)
 - [Communication Patterns](../../computer-science-foundations/software-engineering/communication-patterns/README.md)
 - [Architectural Styles](../../computer-science-foundations/software-engineering/architectural-styles/README.md)
+- [Security](../../security/README.md)
+- [Identity and Access Management](../../security/identity-and-access-management/README.md)
 - [Modular Monolith](../../computer-science-foundations/software-engineering/architectural-styles/modular-monolith.md)
 - [Repository Organization](../../software-development-practices/repository-organization/README.md)

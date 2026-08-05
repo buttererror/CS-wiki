@@ -43,6 +43,12 @@ Computer Science and Related Computing Foundations
 │   ├── Artificial intelligence
 │   └── Machine learning
 │
+├── Computer Security Foundations
+│   ├── Security properties and threat models
+│   ├── Cryptographic principles
+│   ├── Access-control models
+│   └── Security protocol foundations
+│
 └── Software Engineering
     ├── Design principles
     ├── Patterns and communication
@@ -59,6 +65,7 @@ Computer Science Foundations
 ├── Programming Languages
 ├── Computer Systems
 │   └── Distributed Systems
+├── Computer Security Foundations
 ├── Data and Intelligence
 └── Computation and Theory
         │
@@ -98,7 +105,9 @@ This is a relationship map, not a mandatory sequence. Foundational knowledge inf
 | --- | --- | --- |
 | Computer Science | Foundational study of computation and computational systems | What principles, properties, and limitations govern computation? |
 | Computer Systems | Hardware, system software, networking, storage, and distributed computation | How do computing components execute and coordinate? |
+| Computer Security Foundations | General security properties, adversary models, mechanisms, and limitations | Under which assumptions does a security mechanism provide a particular guarantee? |
 | Software Engineering | Engineering discipline for creating and evolving software | How should software be designed, built, maintained, and operated? |
+| Applied Security Engineering | Protection of particular systems under concrete threats and constraints | How should this system manage its security risks? |
 | General System Design | Systems containing people, processes, hardware, software, infrastructure, and operations | How should all parts of this system fit together? |
 | Software System Design | Applied design of software-intensive systems | How should this particular software system work? |
 | Software Development Practices | Organization of development and delivery work | How should the system be built and evolved? |
@@ -122,6 +131,30 @@ Distributed Systems
 
 Distributed Systems is a foundational Computer Systems area. Distributed-System Design applies those foundations when designing a particular system.
 
+## Security Through Two Lenses
+
+```text
+Security
+│
+├── Computer Science foundations lens
+│   └── security properties, adversary models,
+│       cryptographic principles, access-control models,
+│       and protocol behavior
+│
+└── Applied engineering lens
+    └── identity systems, application protections,
+        infrastructure controls, lifecycle decisions,
+        operations, and incident response
+```
+
+The foundational lens asks which guarantees a mechanism can provide and under
+which assumptions. The applied lens combines those foundations with a concrete
+system's threats, requirements, users, operations, and constraints.
+
+[Security](../security/README.md) is the canonical landing page for both lenses
+in this wiki. A dedicated foundational subdirectory should be introduced only
+when focused foundational documents exist.
+
 ## Current Scope
 
 The current foundation landing pages are:
@@ -134,6 +167,10 @@ Software Engineering currently has the more developed set of focused documents. 
 [System Design](../system-design/README.md) remains a top-level, cross-cutting
 area in this wiki. Computer Science informs it, but General System Design also
 draws from Systems Engineering, organizations, operations, and other fields.
+
+[Security](../security/README.md) is also top-level because its complete scope
+includes Computer Science foundations as well as engineering, operational,
+organizational, privacy, and risk perspectives.
 
 ## Start Here
 
@@ -164,5 +201,6 @@ Related applied areas
 - [General Programming](../miscellaneous/CS.md)
 - [Databases](../miscellaneous/backend/databases.md)
 - [Frameworks, Libraries, and Tooling](../framework-tooling/README.md)
+- [Security](../security/README.md)
 - [System Design](../system-design/README.md)
 - [Software Development Practices](../software-development-practices/README.md)

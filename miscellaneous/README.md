@@ -20,7 +20,6 @@ repository root readable while avoiding premature classification.
 
 ### Backend and Data
 
-- [Authentication](backend/authentication.md)
 - [Databases and Prisma](backend/databases.md)
 
 ### Artificial Intelligence
@@ -56,4 +55,5 @@ For each page:
 - [CS Wiki](../README.md)
 - [Computer Science Foundations](../computer-science-foundations/README.md)
 - [System Design](../system-design/README.md)
+- [Security](../security/README.md)
 - [Frontend Development](frontend/README.md)

@@ -14,11 +14,13 @@ cannot control pages rendered on `github.com`. Offline browser access therefore
 requires a separately built static website on an origin controlled by this
 project, such as GitHub Pages.
 
-The current collection is small enough to cache as one offline unit: it contains
-approximately 57 Markdown files and 366 KB of Markdown content. Precache the
-complete generated site instead of caching only pages the reader has already
-visited. This makes offline behavior predictable and includes the local search
-index.
+The current collection is small enough that caching it as one offline unit is a
+reasonable starting hypothesis. The decision should be validated against the
+production build output rather than a Markdown-file count because generated
+HTML, JavaScript, search data, fonts, and images determine the actual download
+and storage cost. If the complete build remains within an explicit precache
+budget, precache it so offline behavior is predictable and includes local
+search.
 
 ## Goals
 
@@ -88,7 +90,7 @@ GitHub Pages at /CS-wiki/
    - initial top-level navigation;
    - heading outlines;
    - the GitHub repository link;
-   - source exclusions for project-only documentation such as `docs/plans/**`.
+   - source exclusions for project-only documentation under `docs/**`.
 5. Add `index.md` as the VitePress home route while retaining `README.md` as
    the GitHub repository landing page. Include the README content from
    `index.md` and exclude the root `README.md` as a separately generated page.
@@ -139,11 +141,13 @@ service worker restricted to the repository path.
 1. Use Workbox's generated-service-worker strategy.
 2. Include all generated HTML, JavaScript, CSS, JSON/search data, icons, images,
    and local font files in the build-time precache manifest.
-3. Keep `cleanupOutdatedCaches` enabled.
-4. Use revisioned precaching instead of manually named version caches.
-5. Keep the update registration type as `prompt`; do not activate a waiting
+3. Define and document an explicit precache-size budget based on the production
+   build, then revisit the strategy if the generated site exceeds it.
+4. Keep `cleanupOutdatedCaches` enabled.
+5. Use revisioned precaching instead of manually named version caches.
+6. Keep the update registration type as `prompt`; do not activate a waiting
    worker automatically while an old page is open.
-6. Review handling for unknown or removed URLs so an invalid navigation does
+7. Review handling for unknown or removed URLs so an invalid navigation does
    not incorrectly render the home page as if it were the requested document.
 
 **Deliverable:** After one complete online load, an unvisited generated page and
@@ -236,6 +240,7 @@ server as proof of service-worker behavior.
 - Local search works online and offline without an external search service.
 - The complete wiki is available offline after the first successful load,
   including pages not individually visited beforehand.
+- The production build stays within the documented precache-size budget.
 - The manifest offers a valid installable experience with correct icons and
   `/CS-wiki/` scope.
 - A reader sees a confirmation when the offline cache is ready.

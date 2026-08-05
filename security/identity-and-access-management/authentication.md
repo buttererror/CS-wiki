@@ -1,10 +1,10 @@
-# Authentication Architecture for Web and Mobile Applications
+# Authentication and Credential Architecture
 
 ## Taxonomy
 
-* **Domain:** Software Engineering
-* **Category:** Application Security
-* **Subcategory:** Authentication Architecture
+* **Field:** Cybersecurity
+* **Area:** Identity and Access Management
+* **Focus:** Authentication, credential storage, and credential transport
 * **Document Type:** Learning Material
 * **Scope:** Browser applications, mobile applications, token storage, and future client support
 * **Status:** Active Reference
@@ -21,7 +21,10 @@ When adding authentication to a browser-based application, several design decisi
 * Should the authentication system support only the current web application?
 * What happens if a mobile application, desktop application, or public API is added later?
 
-A common early decision is whether to store a JSON Web Token, or JWT, in browser `localStorage` or send it through an HTTP-only cookie.
+A common early decision is whether to store an access token in browser
+`localStorage` or send a credential through an HttpOnly cookie. An access token
+may use [JSON Web Token](json-web-token.md) or another representation; JWT is a
+format rather than a storage or authentication architecture.
 
 This decision should not be based only on which implementation is easiest. It should consider the client type, security risks, future applications, and the responsibilities of the backend.
 
@@ -29,18 +32,22 @@ This decision should not be based only on which implementation is easiest. It sh
 
 ## Core Concept
 
-Authentication should be separated into two concerns:
+An identity and access design should separate at least three concerns:
 
 1. **Authentication logic**
-2. **Credential transport and storage**
+2. **Authorization logic**
+3. **Credential transport and storage**
 
 Authentication logic answers questions such as:
 
 * Does the user exist?
 * Is the submitted password correct?
-* What is the user’s role?
-* Is the token valid?
-* Is the user allowed to access this protected route?
+* Does the submitted credential establish the claimed identity?
+
+Authorization logic asks:
+
+* Is this principal allowed to perform this action?
+* Which roles, attributes, relationships, or resource state matter?
 
 Credential transport and storage answer different questions:
 
@@ -59,7 +66,7 @@ User credentials
 ↓
 Backend verifies identity
 ↓
-Backend creates an authenticated session or token
+Backend creates an authenticated session or issues a security token
 ↓
 Client stores and sends the credential appropriately
 ↓
@@ -102,9 +109,9 @@ User submits email and password
 ↓
 Backend verifies credentials
 ↓
-Backend creates a session or JWT
+Backend creates a session or issues an access token
 ↓
-Backend places it in an HTTP-only cookie
+Backend places the credential in an appropriately configured HttpOnly cookie
 ↓
 Browser automatically sends the cookie with future requests
 ↓
@@ -220,7 +227,10 @@ Browser sends it automatically with matching requests
 Backend verifies it
 ```
 
-This is generally a better security baseline for a browser-based application that handles sensitive or private data.
+This can be a strong baseline for a browser-based application that handles
+sensitive or private data, provided that cookie scope, cross-site request
+behavior, XSS exposure, session lifecycle, and the rest of the threat model are
+also addressed.
 
 ---
 
@@ -394,20 +404,20 @@ Relational database
 
 The current requirement is to authenticate staff members who use the browser dashboard.
 
-A suitable web flow is:
+One possible JWT-based web flow is:
 
 ```txt
 Staff member submits credentials
 ↓
 Backend verifies password
 ↓
-Backend creates signed JWT
+Backend issues an access token represented as a signed JWT
 ↓
 JWT is placed in HTTP-only cookie
 ↓
 Browser sends cookie with order API requests
 ↓
-Backend authentication guard verifies JWT
+Backend validates the JWT and evaluates authorization
 ```
 
 Later, the company may release a mobile application for warehouse employees.
@@ -425,7 +435,7 @@ Mobile app stores token in device secure storage
 ↓
 Mobile app sends bearer token
 ↓
-Backend guard verifies the same token format
+Backend validates the token according to the mobile client's token profile
 ```
 
 The following parts remain shared:
@@ -434,8 +444,8 @@ The following parts remain shared:
 * Password hashing
 * Login validation
 * Role information
-* Token creation
-* Token verification
+* Token or session issuance
+* Credential validation
 * Authorization rules
 * Authenticated user representation
 
@@ -513,7 +523,7 @@ Examples:
 
 * Verify email and password
 * Validate session
-* Validate JWT
+* Validate a security token when token-based authentication is used
 * Load authenticated user
 
 ### Authorization
@@ -608,7 +618,10 @@ Creating users manually during the first authentication phase is a reasonable MV
 
 ---
 
-## Token Payload Design
+## JWT Claims Design
+
+This section applies when the selected security token uses
+[JWT](json-web-token.md) as its representation.
 
 A token payload should contain only the information needed for authentication and common authorization decisions.
 
@@ -637,9 +650,10 @@ Avoid placing sensitive or frequently changing information in the token, such as
 * Full user profiles
 * Sensitive business data
 
-Tokens are signed, but they are not necessarily encrypted.
+Signed JWTs are not necessarily encrypted.
 
-A client that possesses a JWT can usually decode its payload even if it cannot modify it without invalidating the signature.
+A client that possesses a signed, unencrypted JWT can usually decode its claims
+even if it cannot modify them without invalidating the signature.
 
 ---
 
@@ -785,10 +799,12 @@ A backend can store session data in a database or cache and give the browser onl
 
 ## Recommended Decision
 
-For a browser-based application that handles private or sensitive data:
+For many browser-based applications that handle private or sensitive data, one
+reasonable baseline is:
 
 ```txt
-Use an HTTP-only secure cookie for the web authentication credential.
+Use an appropriately scoped HttpOnly, Secure cookie for the web authentication
+credential and implement the necessary cross-site request protections.
 ```
 
 Design the backend authentication layer so it can later accept:
@@ -826,7 +842,9 @@ Server integration
 → Service credential or OAuth token
 ```
 
-Do not store the web application’s long-term authentication token in `localStorage` merely because it is easier to implement.
+Do not store a long-lived bearer credential in `localStorage` merely because it
+is easier to implement. Choose storage and transport from the client model and
+threat model.
 
 Do not implement mobile-specific authentication flows before a mobile client exists.
 
@@ -991,3 +1009,16 @@ Do not build the future client before it exists.
 The final rule is:
 
 > Share identity verification and authorization logic across clients, but use the credential storage and transport mechanism appropriate for each client environment.
+
+## Related Concepts
+
+- [Identity and Access Management](README.md)
+- [JSON Web Token](json-web-token.md)
+- [Security](../README.md)
+- [Software System Design](../../system-design/software-system-design/README.md)
+
+## Authoritative References
+
+- [RFC 7519: JSON Web Token](https://www.rfc-editor.org/info/rfc7519/)
+- [RFC 8725: JSON Web Token Best Current Practices](https://www.rfc-editor.org/info/rfc8725/)
+- [RFC 10025: Cookies](https://www.rfc-editor.org/info/rfc10025)

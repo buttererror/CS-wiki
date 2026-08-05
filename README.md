@@ -7,47 +7,140 @@ examples that are useful while learning or building.
 > This is a living wiki, not a finished textbook. Some pages are polished
 > references, while others are working notes or topic placeholders.
 
+## How to Read the Structure
+
+The wiki is organized around useful perspectives, not one final or universally
+correct hierarchy.
+
+Perspective-dependent does not mean arbitrary. Classifications should be
+checked against established Computer Science and engineering usage, the actual
+definition and scope of the concept, and authoritative standards or literature
+when relevant. The repository structure should follow that understanding rather
+than determine it.
+
+In particular, **foundation** describes how a topic is being used in a learning
+or reasoning context. It usually means general knowledge that explains or
+constrains many concrete decisions. It is not an intrinsic label permanently
+attached to a concept.
+
+```text
+Foundational perspective
+→ studies general principles, properties, mechanisms, and limitations
+
+Applied perspective
+→ uses and combines that knowledge for a particular system and context
+```
+
+The same area may appear through both perspectives. For example:
+
+```text
+Distributed Systems
+→ foundational principles of coordination, consistency, and failure
+→ applied decisions about services, retries, and deployment
+
+Security
+→ foundational properties, threat models, and cryptographic principles
+→ applied decisions about identity, tokens, infrastructure, and operations
+```
+
+Categories and directories provide a primary home for navigation. They do not
+claim that concepts have perfectly fixed boundaries or only one valid
+relationship. Fields overlap, terminology changes with scale and context, and
+one concept may influence several areas without belonging exclusively to any
+one of them.
+
+When a proposed classification or relationship is added, it should first be
+validated conceptually:
+
+```text
+Real disciplinary meaning and evidence
+        ↓ establish
+Concept, scope, and relationships
+        ↓ guide
+Canonical document location and cross-links
+```
+
+The direction should not be reversed. An existing folder must not be used as
+evidence that a concept belongs to that field, and a proposed relationship
+should be corrected when it conflicts with the underlying science or
+engineering practice.
+
+The classifications should therefore be:
+
+- realistic enough to reflect established disciplinary usage;
+- explicit about the perspective and abstraction level being used;
+- open to overlapping and many-to-many relationships; and
+- revisable when deeper study reveals a better model.
+
+## Current Repository State
+
+The repository is in an active organization pass. Its directories currently
+serve three different purposes:
+
+```text
+Canonical subject areas
+→ stable landing pages and focused concept documents
+
+Review inbox
+→ useful working notes whose final scope or location is not settled
+
+Repository documentation
+→ maintenance records and plans for the wiki itself
+```
+
+| Directory | Current role | Current coverage |
+| --- | --- | --- |
+| [`computer-science-foundations/`](computer-science-foundations/README.md) | Foundational field maps and transferable concepts | Computer Systems overview and detailed Software Engineering foundations |
+| [`system-design/`](system-design/README.md) | Cross-cutting applied design area | General, computer-system, and software-system scopes; DDD and neighboring perspectives |
+| [`security/`](security/README.md) | Canonical cross-cutting security area | Foundational/applied distinction and current Identity and Access Management notes |
+| [`software-development-practices/`](software-development-practices/README.md) | Ways of organizing and evolving engineering work | Development strategy, lean delivery, and repository organization |
+| [`framework-tooling/`](framework-tooling/README.md) | Technology-specific learning | NestJS Dependency Injection and TanStack Query |
+| [`miscellaneous/`](miscellaneous/README.md) | Temporary review inbox | Older language, frontend, backend-data, AI, Linux, and tooling notes |
+| `docs/` | Documentation about this repository | Maintenance records and a proposed static-wiki/PWA plan |
+
+The detailed coverage is currently strongest in Software Engineering. The
+broader Computer Science map intentionally includes areas that do not yet have
+dedicated documents; the map describes the field, while the tables below
+describe the material that actually exists.
+
 ## Start here
 
 Choose a path based on what you want to learn:
 
-- **Explore software foundations:**
+- **Understand the wiki's foundation map:**
   [Computer Science Foundations](computer-science-foundations/README.md) →
   [Computer Systems](computer-science-foundations/computer-systems/README.md) or
   [Software Engineering Foundations](computer-science-foundations/software-engineering/README.md)
-- **Learn programming languages:** [General Programming](miscellaneous/CS.md) →
-  [JavaScript](miscellaneous/JavaScript-notes.md) →
-  [TypeScript](miscellaneous/TypeScript.md)
-- **Learn frontend development:**
-  [Frontend Development](miscellaneous/frontend/README.md) →
-  [Frontend Concepts](miscellaneous/frontend/frontend-related-concepts.md) →
-  [React](miscellaneous/frontend/react.md) →
-  [Next.js](miscellaneous/frontend/next.js-notes.md) →
-  [Styling](miscellaneous/frontend/styling-notes.md)
-- **Understand backend fundamentals:**
-  [Authentication](miscellaneous/backend/authentication.md)
-  → [JSON Web Tokens](programming-fundamentals/json-web-token.md) →
-  [Databases](miscellaneous/backend/databases.md)
-- **Work with development tools:** [Git](miscellaneous/git-space.md) →
-  [Linux](miscellaneous/linux/linux-general.md) →
-  [Docker](miscellaneous/linux/docker.md) →
-  [PostgreSQL](miscellaneous/linux/postgresql.md)
-- **Explore system design and delivery:**
-  [System Design](system-design/README.md) →
+- **Relate software concepts by abstraction level:**
+  [Software Taxonomy](computer-science-foundations/software-engineering/software-taxonomy.md)
+  → [Software Architecture](computer-science-foundations/software-engineering/software-architecture.md)
+- **Explore system design:** [System Design](system-design/README.md) →
   [Software System Design](system-design/software-system-design/README.md) →
+  [Domain-Driven Design](system-design/software-system-design/domain-driven-design.md)
+- **Explore security and identity:** [Security](security/README.md) →
+  [Identity and Access Management](security/identity-and-access-management/README.md)
+  → [Authentication](security/identity-and-access-management/authentication.md)
+  → [JSON Web Token](security/identity-and-access-management/json-web-token.md)
+- **Study engineering practices and concrete tools:**
   [Software Development Practices](software-development-practices/README.md) →
   [Lean MVP and Vertical Slices](software-development-practices/lean-mvp-vertical-slice-development.md)
+  or [Frameworks, Libraries, and Tooling](framework-tooling/README.md)
+- **Browse working notes awaiting deeper review:**
+  [Miscellaneous Notes](miscellaneous/README.md) →
+  [Frontend Development](miscellaneous/frontend/README.md)
 
 ## Knowledge map
 
-### Programming fundamentals
+### Programming and language notes awaiting review
+
+These documents remain in the review inbox. Their links are useful, but their
+current filenames, scope, and placement should not be read as final taxonomy.
 
 | Topic | What it covers |
 | --- | --- |
 | [General Programming](miscellaneous/CS.md) | Paradigms, execution models, design patterns, and core terminology |
 | [JavaScript](miscellaneous/JavaScript-notes.md) | Language features, closures, pure functions, and array methods |
 | [TypeScript](miscellaneous/TypeScript.md) | Tooling, package commands, and the `unknown` type |
-| [JSON Web Tokens](programming-fundamentals/json-web-token.md) | JWT structure, signatures, claims, and authentication flow |
 
 ### Software foundations and taxonomy
 
@@ -65,9 +158,12 @@ Choose a path based on what you want to learn:
 | [Communication Patterns](computer-science-foundations/software-engineering/communication-patterns/README.md) | Ways independent participants exchange information |
 | [Architectural Styles](computer-science-foundations/software-engineering/architectural-styles/README.md) | Principles and constraints for organizing major system components |
 | [Architectural Patterns](computer-science-foundations/software-engineering/architectural-patterns/README.md) | Reusable solutions to recurring architecture-level problems |
-| [Frameworks, Libraries, and Tooling](framework-tooling/README.md) | Implementations and reusable infrastructure used to build applications |
 
 ### Frontend development
+
+Frontend material currently has a practical landing page inside
+`miscellaneous/`. It is grouped for navigation but still awaits a deeper
+content and placement review.
 
 | Topic | What it covers |
 | --- | --- |
@@ -89,27 +185,51 @@ Additional frontend topic maps are being developed in
 
 | Topic | What it covers |
 | --- | --- |
-| [Authentication](miscellaneous/backend/authentication.md) | Web, mobile, and desktop authentication architecture and security tradeoffs |
 | [Databases](miscellaneous/backend/databases.md) | Data modeling, schemas, and entity-relationship diagrams |
 | [PostgreSQL](miscellaneous/linux/postgresql.md) | Local setup, roles, databases, and common `psql` operations |
 
-### Systems, tools, architecture, and delivery
+### Security and identity
+
+| Topic | What it covers |
+| --- | --- |
+| [Security](security/README.md) | Cross-cutting security areas and the wiki's current security coverage |
+| [Identity and Access Management](security/identity-and-access-management/README.md) | Identity, authentication, authorization, credentials, sessions, and federation |
+| [Authentication](security/identity-and-access-management/authentication.md) | Authentication logic, credential transport, client types, and lifecycle trade-offs |
+| [JSON Web Token](security/identity-and-access-management/json-web-token.md) | JWT claims representation, JWS/JWE protection, validation, storage, and state trade-offs |
+
+### System design and architecture
+
+| Topic | What it covers |
+| --- | --- |
+| [System Design](system-design/README.md) | General, computer-system, and software-system design scopes and their neighboring disciplines |
+| [Software System Design](system-design/software-system-design/README.md) | Applied design of software requirements, boundaries, components, data, and quality attributes |
+| [Domain-Driven Design](system-design/software-system-design/domain-driven-design.md) | Domain-centered modeling, language, boundaries, and tactical concepts |
+| [Neighboring Perspectives](system-design/software-system-design/neighboring-perspectives.md) | Business Analysis, Domain Modeling, System Design, Architecture, Infrastructure, and Operations |
+| [Event-Driven Architecture](computer-science-foundations/software-engineering/architectural-styles/event-driven-architecture.md) | System organization around events, producers, consumers, and asynchronous reactions |
+| [Microservice Architecture](computer-science-foundations/software-engineering/architectural-styles/microservice-architecture.md) | Independently deployable services organized around business capabilities |
+| [Modular Monolith](computer-science-foundations/software-engineering/architectural-styles/modular-monolith.md) | One deployable application with explicit internal module boundaries |
+
+### Development practices, frameworks, and tooling
+
+| Topic | What it covers |
+| --- | --- |
+| [Software Development Practices](software-development-practices/README.md) | Ways of organizing, validating, delivering, and evolving software |
+| [Repository Organization](software-development-practices/repository-organization/README.md) | Repository boundaries and their distinction from tooling and architecture |
+| [Monorepo](software-development-practices/repository-organization/monorepo.md) | Multiple related projects maintained in one version-control repository |
+| [Development Strategy](software-development-practices/development-strategy.md) | Horizontal and vertical development approaches |
+| [Lean MVP and Vertical Slices](software-development-practices/lean-mvp-vertical-slice-development.md) | YAGNI, MVP scope, and incremental delivery |
+| [Frameworks, Libraries, and Tooling](framework-tooling/README.md) | Framework/library control, mechanisms, and concrete API usage |
+| [NestJS Dependency Injection](framework-tooling/nestjs-dependency-injection.md) | NestJS's dependency-injection mechanism and its relationship to IoC |
+| [TanStack Query](framework-tooling/tanstack-query.md) | Server-state synchronization, observers, request/response, and cache behavior |
+
+### Operations and development-tool notes awaiting review
 
 | Topic | What it covers |
 | --- | --- |
 | [Git](miscellaneous/git-space.md) | Version-control workflows, commits, amend, and recovery notes |
 | [Linux](miscellaneous/linux/linux-general.md) | Categorized shell and package-management command reference |
 | [Docker](miscellaneous/linux/docker.md) | Installation, runtime commands, Compose, and reset workflows |
-| [System Design](system-design/README.md) | General, computer-system, and software-system design scopes and their neighboring disciplines |
-| [Software System Design](system-design/software-system-design/README.md) | Applied design of software requirements, boundaries, components, data, and quality attributes |
-| [Domain-Driven Design](system-design/software-system-design/domain-driven-design.md) | Domain-centered modeling, language, boundaries, and tactical concepts |
-| [Neighboring Perspectives](system-design/software-system-design/neighboring-perspectives.md) | Business Analysis, Domain Modeling, System Design, Architecture, Infrastructure, and Operations |
-| [Modular Monolith](computer-science-foundations/software-engineering/architectural-styles/modular-monolith.md) | One deployable application with explicit internal module boundaries |
-| [Software Development Practices](software-development-practices/README.md) | Ways of organizing, validating, delivering, and evolving software |
-| [Repository Organization](software-development-practices/repository-organization/README.md) | Repository boundaries and their distinction from tooling and architecture |
-| [Monorepo](software-development-practices/repository-organization/monorepo.md) | Multiple related projects maintained in one version-control repository |
-| [Development Strategy](software-development-practices/development-strategy.md) | Horizontal and vertical development approaches |
-| [Lean MVP and Vertical Slices](software-development-practices/lean-mvp-vertical-slice-development.md) | YAGNI, MVP scope, and incremental delivery |
+| [PostgreSQL](miscellaneous/linux/postgresql.md) | Local setup, roles, databases, and common `psql` operations |
 
 ### AI
 
@@ -124,12 +244,9 @@ mixed-scope notes. Moving a page there does not classify its subject as
 
 ## How to use this wiki
 
-Browse the links above, search the repository by keyword, or clone it for local
-access:
+Browse the links above or search a local clone by keyword:
 
 ```bash
-git clone <repository-url>
-cd CS-wiki
 rg "keyword"
 ```
 
@@ -174,8 +291,10 @@ databases, credentials, or file deletion. Tool behavior and security guidance
 change over time; verify version-sensitive instructions against current official
 documentation.
 
-## Maintenance action items
+## Maintenance status
 
-- [ ] Conduct a thorough review of the current project state, including its
-  organization, overlapping or duplicate notes, placeholders, naming
-  consistency, navigation, and cross-links.
+- [x] Complete the repository-wide structure, taxonomy, and navigation review.
+  See the [maintenance record](docs/maintenance/2026-08-05-taxonomy-and-organization.md).
+- [ ] Review material in [`miscellaneous/`](miscellaneous/README.md) page by
+  page for duplicate content, placeholders, naming, scope, and canonical
+  placement.
