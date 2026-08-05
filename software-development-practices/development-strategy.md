@@ -1,16 +1,19 @@
-## Concept: HorizontalDevelopmentVsVerticalDevelopment
+# Horizontal and Vertical Development
 
-## Primary Category: System Design & Architecture
-Because these approaches describe how software systems are built and evolved over time.
+## Purpose
 
-## Taxonomy Classification:
-- Field: Software Engineering
-- Area: Development Strategy & System Evolution
-- Level: Structural / Process
+This document compares two ways of sequencing software-development work.
 
-## Subcategories:
-- HorizontalDevelopment → build shared foundations first
-- VerticalDevelopment → build end-to-end business features first
+## Classification
+
+- **Field:** Software Engineering
+- **Primary area:** Software Development Practices
+- **Concern:** Development strategy and system evolution
+
+```text
+Horizontal Development → build shared foundations first
+Vertical Development   → build end-to-end business features first
+```
 
 ### Definition:
 
@@ -197,28 +200,33 @@ I was recommending:
 Vertical Development
 ```
 
-For your clinic platform:
+These choices can be combined, but they answer different questions:
 
 ```txt
-Monorepo
-+ DDD
-+ Modular Monolith
-+ Vertical Feature Delivery
+Monorepo                 → repository organization strategy
+Domain-Driven Design     → domain modeling and software design
+Modular Monolith         → architectural style
+Vertical Feature Delivery → development and delivery approach
 ```
 
-is likely the best combination.
+Choosing one does not require the others. Their suitability depends on the
+system's domain complexity, deployment needs, team structure, and delivery
+constraints.
 
 ### Relationships to Other Areas:
 
 - Agile Development → strongly favors vertical slices.
-- DomainDrivenDesign → vertical slices often align with domains.
-- ModularMonolith → modules make vertical development easier.
-- MicroserviceArchitecture → services are often extracted after successful vertical slices.
+- [Domain-Driven Design](../system-design/software-system-design/domain-driven-design.md)
+  → vertical slices may align with domain capabilities or Bounded Contexts.
+- Modular Monolith → modules can support vertical development.
+- Microservice Architecture → services may be extracted when independent
+  deployment is justified.
 
 ### Related Concepts:
 
 - VerticalSliceArchitecture → Software Engineering
 - AgileDevelopment → Software Engineering
-- DomainDrivenDesign → System Design & Architecture
-- ModularMonolith → System Design & Architecture
+- [Domain-Driven Design](../system-design/software-system-design/domain-driven-design.md)
+  → Domain Modeling and Software System Design
+- Modular Monolith → Architectural Style
 - FeatureDrivenDevelopment → Software Engineering

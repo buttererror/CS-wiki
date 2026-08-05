@@ -31,6 +31,7 @@ Choose a path based on what you want to learn:
   [PostgreSQL](linux/postgresql.md)
 - **Explore system design and delivery:**
   [System Design](system-design/README.md) →
+  [Software System Design](system-design/software-system-design/README.md) →
   [Software Development Practices](software-development-practices/README.md) →
   [Lean MVP and Vertical Slices](software-development-practices/lean-mvp-vertical-slice-development.md)
 
@@ -96,6 +97,8 @@ Additional frontend topic maps are being developed in
 | [Linux](linux/linux-general.md) | Categorized shell and package-management command reference |
 | [Docker](linux/docker.md) | Installation, runtime commands, Compose, and reset workflows |
 | [System Design](system-design/README.md) | General, computer-system, and software-system design scopes and their neighboring disciplines |
+| [Software System Design](system-design/software-system-design/README.md) | Applied design of software requirements, boundaries, components, data, and quality attributes |
+| [Domain-Driven Design](system-design/software-system-design/domain-driven-design.md) | Domain-centered modeling, language, boundaries, and tactical concepts |
 | [Software Development Practices](software-development-practices/README.md) | Ways of organizing, validating, delivering, and evolving software |
 | [Development Strategy](software-development-practices/development-strategy.md) | Horizontal and vertical development approaches |
 | [Lean MVP and Vertical Slices](software-development-practices/lean-mvp-vertical-slice-development.md) | YAGNI, MVP scope, and incremental delivery |

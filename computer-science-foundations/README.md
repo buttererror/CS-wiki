@@ -156,6 +156,7 @@ Related applied areas
 - [Software Taxonomy](software-engineering/software-taxonomy.md)
 - [Software Architecture](software-engineering/software-architecture.md)
 - [System Design](../system-design/README.md)
+- [Software System Design](../system-design/software-system-design/README.md)
 - [Software Development Practices](../software-development-practices/README.md)
 
 ## Related Areas

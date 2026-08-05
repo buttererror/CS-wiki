@@ -111,6 +111,8 @@ For example, a system may combine Object-Oriented and Functional Programming, fo
 ## Related Applied Areas
 
 - [System Design](../../system-design/README.md)
+- [Software System Design](../../system-design/software-system-design/README.md)
+- [Domain-Driven Design](../../system-design/software-system-design/domain-driven-design.md)
 - [Software Development Practices](../../software-development-practices/README.md)
 - [Frameworks, Libraries, and Tooling](../../framework-tooling/README.md)
 - [Backend Concepts](../../backend/authentication.md)

@@ -2,17 +2,24 @@
 
 ## Purpose
 
-This document defines the architecture terminology used throughout this knowledge base.
+This document defines the architecture terminology used throughout this
+knowledge base.
 
-It distinguishes the broad field of System Design & Architecture, an actual software system, its concrete system architecture, reusable architectural styles, architectural patterns, communication patterns, technologies, and implementations.
+It distinguishes Software System Design, an actual software system, its
+concrete system architecture, reusable architectural styles, architectural
+patterns, communication patterns, technologies, and implementations.
 
 ---
 
-## System Design & Architecture
+## Relationship to Software System Design
 
-System Design & Architecture is the broad engineering field concerned with organizing software systems and their components.
+[Software System Design](../../system-design/software-system-design/README.md)
+is the broader applied activity of deciding how a particular software system
+should satisfy its requirements and constraints.
 
-It includes decisions about:
+Software Architecture focuses on the significant system-wide structures,
+constraints, and trade-offs within that design. These decisions commonly
+include:
 
 - Component and service boundaries.
 - Communication paths.
@@ -22,9 +29,15 @@ It includes decisions about:
 - Infrastructure and technology choices.
 
 ```text
-System Design & Architecture
-→ broad engineering field
+Software System Design
+→ the full set of relevant design decisions
+
+Software Architecture
+→ significant structures, constraints, and trade-offs
 ```
+
+The boundary depends on context. Architecture interacts with design rather than
+following it as a separate mandatory phase.
 
 ---
 
@@ -166,8 +179,8 @@ A communication pattern describes an interaction. It does not by itself determin
 ## Complete Relationship
 
 ```text
-System Design & Architecture
-→ broad engineering field
+Software System Design
+→ broad applied design activity for a software system
 
 Software System
 → actual running product
@@ -215,7 +228,7 @@ Controllers, routes, topics, schemas, and configuration
 
 | Term | Represents | Example |
 | --- | --- | --- |
-| System Design & Architecture | Broad engineering field | Designing distributed software systems |
+| Software System Design | Applied design of a particular software system | Designing a clinic platform |
 | Software System | Actual working product | Clinic Platform |
 | System Architecture | Concrete organization of one system | Admin, API, database, and their connections |
 | Architectural Style | General organizational principles | Microservice Architecture |
@@ -273,7 +286,10 @@ Architecture must match the system's workload, team structure, operational capab
 
 ## Key Takeaways
 
-- System Design & Architecture is the broad engineering field.
+- Software System Design covers the relevant design decisions for a particular
+  software system.
+- Software Architecture emphasizes significant system structures, constraints,
+  and trade-offs.
 - A software system is the actual product and its runtime environment.
 - System Architecture is the concrete organization of one system.
 - Architectural styles provide reusable organizational principles.
@@ -289,6 +305,8 @@ Architecture must match the system's workload, team structure, operational capab
 - [Software Engineering Foundations](README.md)
 - [Computer Systems](../computer-systems/README.md)
 - [System Design](../../system-design/README.md)
+- [Software System Design](../../system-design/software-system-design/README.md)
+- [Domain-Driven Design](../../system-design/software-system-design/domain-driven-design.md)
 - [Pattern](terminology/pattern.md)
 - [Style](terminology/style.md)
 - [Software Taxonomy](software-taxonomy.md)

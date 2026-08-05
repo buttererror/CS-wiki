@@ -51,29 +51,26 @@ It draws from Computer Science and Computer Engineering and asks:
 
 ## Scope 3: Software System Design
 
-Software System Design applies system-design reasoning to software-intensive systems.
+Software System Design applies system-design reasoning to software-intensive
+systems.
 
 ```text
 Software System Design
 │
-├── Requirements and workflows
-├── Domain boundaries
-├── Components and services
-├── APIs and communication
-├── Data ownership and storage
-├── State and runtime behavior
-├── Security and reliability
-├── Performance and scalability
-├── Infrastructure and deployment
-└── Observability and operations
+├── Business and domain concerns
+├── Software structures and behavior
+├── Data and communication
+└── Quality attributes and operational constraints
 ```
 
 It asks:
 
-> How should this particular software system work and satisfy its requirements and constraints?
+> How should this particular software system work and satisfy its requirements
+> and constraints?
 
-Software System Design is the primary current scope of this directory, but the
-broader and lower-level scopes remain important context.
+The focused [Software System Design](software-system-design/README.md) landing
+page develops this scope and owns its detailed navigation. The broader and
+lower-level scopes remain important context.
 
 ## Relationship Between the Scopes and Disciplines
 
@@ -156,24 +153,20 @@ Applied questions include:
 - How should work be retried without duplicating effects?
 - How will the system be deployed, observed, and recovered?
 
-## Questions for Future Study
+## Current Focused Areas
 
-- How should requirements become system responsibilities?
-- Where should component, module, or service boundaries be drawn?
-- How should data be modeled, owned, and kept consistent?
-- When should communication be synchronous or asynchronous?
-- How should security and trust boundaries be designed?
-- What reliability, performance, and scalability requirements matter?
-- How should infrastructure constraints influence design?
-- How should production evidence change earlier decisions?
-
-Dedicated documents should be created only when these topics are studied in enough depth to support them.
+- [Software System Design](software-system-design/README.md) — applied design of
+  software-intensive systems.
+- [Domain-Driven Design](software-system-design/domain-driven-design.md) — using
+  domain understanding, language, models, and boundaries to manage complex
+  business software.
 
 ## Related Concepts
 
 - [Computer Science Foundations](../computer-science-foundations/README.md)
 - [Computer Systems](../computer-science-foundations/computer-systems/README.md)
 - [Software Engineering Foundations](../computer-science-foundations/software-engineering/README.md)
+- [Software System Design](software-system-design/README.md)
 - [Software Architecture](../computer-science-foundations/software-engineering/software-architecture.md)
 - [Software Development Practices](../software-development-practices/README.md)
 - [Frameworks, Libraries, and Tooling](../framework-tooling/README.md)
