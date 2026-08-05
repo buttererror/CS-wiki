@@ -131,6 +131,10 @@ The current foundation landing pages are:
 
 Software Engineering currently has the more developed set of focused documents. Other Computer Science areas appear throughout the wiki as practical notes but do not yet have equivalent foundation indexes. Future indexes should be created only when enough focused material exists to support them.
 
+[System Design](../system-design/README.md) remains a top-level, cross-cutting
+area in this wiki. Computer Science informs it, but General System Design also
+draws from Systems Engineering, organizations, operations, and other fields.
+
 ## Start Here
 
 ```text
@@ -141,8 +145,10 @@ Computer Science Foundations
 │
 └── Software Engineering Foundations
     └── taxonomy, principles, patterns, and architecture
-        │
-        └── Applied System Design and Development Practices
+
+Related applied areas
+├── System Design
+└── Software Development Practices
 ```
 
 - [Computer Systems](computer-systems/README.md)
@@ -154,7 +160,7 @@ Computer Science Foundations
 
 ## Related Areas
 
-- [General Programming](../CS.md)
+- [General Programming](../miscellaneous/CS.md)
 - [Databases](../backend/databases.md)
 - [Frameworks, Libraries, and Tooling](../framework-tooling/README.md)
 - [System Design](../system-design/README.md)

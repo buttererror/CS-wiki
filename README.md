@@ -15,14 +15,18 @@ Choose a path based on what you want to learn:
   [Computer Science Foundations](computer-science-foundations/README.md) →
   [Computer Systems](computer-science-foundations/computer-systems/README.md) or
   [Software Engineering Foundations](computer-science-foundations/software-engineering/README.md)
-- **Learn programming languages:** [General Programming](CS.md) →
-  [JavaScript](JavaScript-notes.md) → [TypeScript](TypeScript.md)
-- **Learn frontend development:** [Frontend Concepts](frontend-related-concepts.md)
-  → [React](react.md) → [Next.js](next.js-notes.md) → [Styling](styling-notes.md)
+- **Learn programming languages:** [General Programming](miscellaneous/CS.md) →
+  [JavaScript](miscellaneous/JavaScript-notes.md) →
+  [TypeScript](miscellaneous/TypeScript.md)
+- **Learn frontend development:**
+  [Frontend Concepts](miscellaneous/frontend-related-concepts.md) →
+  [React](miscellaneous/react.md) →
+  [Next.js](miscellaneous/next.js-notes.md) →
+  [Styling](miscellaneous/styling-notes.md)
 - **Understand backend fundamentals:** [Authentication](backend/authentication.md)
   → [JSON Web Tokens](programming-fundamentals/json-web-token.md) →
   [Databases](backend/databases.md)
-- **Work with development tools:** [Git](git-space.md) →
+- **Work with development tools:** [Git](miscellaneous/git-space.md) →
   [Linux](linux/linux-general.md) → [Docker](linux/docker.md) →
   [PostgreSQL](linux/postgresql.md)
 - **Explore system design and delivery:**
@@ -36,9 +40,9 @@ Choose a path based on what you want to learn:
 
 | Topic | What it covers |
 | --- | --- |
-| [General Programming](CS.md) | Paradigms, execution models, design patterns, and core terminology |
-| [JavaScript](JavaScript-notes.md) | Language features, closures, pure functions, and array methods |
-| [TypeScript](TypeScript.md) | Tooling, package commands, and the `unknown` type |
+| [General Programming](miscellaneous/CS.md) | Paradigms, execution models, design patterns, and core terminology |
+| [JavaScript](miscellaneous/JavaScript-notes.md) | Language features, closures, pure functions, and array methods |
+| [TypeScript](miscellaneous/TypeScript.md) | Tooling, package commands, and the `unknown` type |
 | [JSON Web Tokens](programming-fundamentals/json-web-token.md) | JWT structure, signatures, claims, and authentication flow |
 
 ### Software foundations and taxonomy
@@ -63,18 +67,18 @@ Choose a path based on what you want to learn:
 
 | Topic | What it covers |
 | --- | --- |
-| [Frontend Concepts](frontend-related-concepts.md) | Runtime data, serialization, SSR, and hydration |
-| [React Reference](react.md) | State, effects, memoization, code quality, and interview notes |
-| [React Crash Course](react.js-crash-course.md) | Rendering, reconciliation, effects, and browser behavior |
-| [React Study Notes](my-react.js-notes.md) | Forms, reducers, hooks, and learning notes |
-| [Next.js](next.js-notes.md) | Project setup, routing, CSS Modules, and conditional class names |
-| [Styling](styling-notes.md) | Style collisions, layout, and component-oriented CSS architecture |
-| [Vue](vue.md) | Early Vue notes and follow-up topics |
-| [Flutter](flutter.md) | Runtime, SDKs, toolchains, and build targets |
+| [Frontend Concepts](miscellaneous/frontend-related-concepts.md) | Runtime data, serialization, SSR, and hydration |
+| [React Reference](miscellaneous/react.md) | State, effects, memoization, code quality, and interview notes |
+| [React Crash Course](miscellaneous/react.js-crash-course.md) | Rendering, reconciliation, effects, and browser behavior |
+| [React Study Notes](miscellaneous/my-react.js-notes.md) | Forms, reducers, hooks, and learning notes |
+| [Next.js](miscellaneous/next.js-notes.md) | Project setup, routing, CSS Modules, and conditional class names |
+| [Styling](miscellaneous/styling-notes.md) | Style collisions, layout, and component-oriented CSS architecture |
+| [Vue](miscellaneous/vue.md) | Early Vue notes and follow-up topics |
+| [Flutter](miscellaneous/flutter.md) | Runtime, SDKs, toolchains, and build targets |
 
 Additional frontend topic maps are being developed in
-[Frontend Mapping](frontend-mapping.md) and
-[Frontend Frameworks](frontend-frameworks.md).
+[Frontend Mapping](miscellaneous/frontend-mapping.md) and
+[Frontend Frameworks](miscellaneous/frontend-frameworks.md).
 
 ### Backend and data
 
@@ -88,10 +92,10 @@ Additional frontend topic maps are being developed in
 
 | Topic | What it covers |
 | --- | --- |
-| [Git](git-space.md) | Version-control workflows, commits, amend, and recovery notes |
+| [Git](miscellaneous/git-space.md) | Version-control workflows, commits, amend, and recovery notes |
 | [Linux](linux/linux-general.md) | Categorized shell and package-management command reference |
 | [Docker](linux/docker.md) | Installation, runtime commands, Compose, and reset workflows |
-| [System Design](system-design/README.md) | General and software-system design scopes, neighboring perspectives, and future questions |
+| [System Design](system-design/README.md) | General, computer-system, and software-system design scopes and their neighboring disciplines |
 | [Software Development Practices](software-development-practices/README.md) | Ways of organizing, validating, delivering, and evolving software |
 | [Development Strategy](software-development-practices/development-strategy.md) | Horizontal and vertical development approaches |
 | [Lean MVP and Vertical Slices](software-development-practices/lean-mvp-vertical-slice-development.md) | YAGNI, MVP scope, and incremental delivery |
@@ -100,6 +104,12 @@ Additional frontend topic maps are being developed in
 
 - [LLMs vs. AI Agents](AI/LLM-vs.-AI-agent.md) — goals, reasoning loops,
   tool use, and self-correction.
+
+### Material awaiting classification
+
+[Miscellaneous](miscellaneous/README.md) is a temporary home for older,
+mixed-scope notes. Moving a page there does not classify its subject as
+"miscellaneous"; it marks the page for later review and placement.
 
 ## How to use this wiki
 

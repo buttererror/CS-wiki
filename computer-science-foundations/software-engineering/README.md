@@ -114,4 +114,4 @@ For example, a system may combine Object-Oriented and Functional Programming, fo
 - [Software Development Practices](../../software-development-practices/README.md)
 - [Frameworks, Libraries, and Tooling](../../framework-tooling/README.md)
 - [Backend Concepts](../../backend/authentication.md)
-- [Frontend Concepts](../../frontend-related-concepts.md)
+- [Frontend Concepts](../../miscellaneous/frontend-related-concepts.md)
