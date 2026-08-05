@@ -110,7 +110,8 @@ For example, a system may combine Object-Oriented and Functional Programming, fo
 
 ## Related Applied Areas
 
+- [System Design](../../system-design/README.md)
+- [Software Development Practices](../../software-development-practices/README.md)
 - [Frameworks, Libraries, and Tooling](../../framework-tooling/README.md)
-- [System Design and Development Strategy](../../system-design/development-strategy.md)
 - [Backend Concepts](../../backend/authentication.md)
 - [Frontend Concepts](../../frontend-related-concepts.md)

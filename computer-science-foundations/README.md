@@ -50,31 +50,112 @@ Computer Science and Related Computing Foundations
     └── Implementation practices
 ```
 
+## From Foundations to Applied Engineering
+
+```text
+Computer Science Foundations
+│
+├── Algorithms and Data Structures
+├── Programming Languages
+├── Computer Systems
+│   └── Distributed Systems
+├── Data and Intelligence
+└── Computation and Theory
+        │
+        │ inform and constrain
+        ▼
+Software Engineering Foundations
+│
+├── Paradigms
+├── Design Principles
+├── Patterns
+├── Architecture
+└── Terminology
+        │
+        │ guide and support
+        ▼
+Applied Software Engineering
+│
+├── Software System Design
+├── Software Development Practices
+├── Frameworks and Tooling
+├── Infrastructure
+└── Implementation
+        │
+        │ produces and evolves
+        ▼
+Concrete Software Systems
+        │
+        │ measurements and operational feedback
+        └───────────────────────────────↺
+```
+
+This is a relationship map, not a mandatory sequence. Foundational knowledge informs engineering decisions, while implementation experience and operational evidence feed back into requirements, design, and understanding.
+
+## Distinctions Used in This Wiki
+
+| Concept | Scope | Primary question |
+| --- | --- | --- |
+| Computer Science | Foundational study of computation and computational systems | What principles, properties, and limitations govern computation? |
+| Computer Systems | Hardware, system software, networking, storage, and distributed computation | How do computing components execute and coordinate? |
+| Software Engineering | Engineering discipline for creating and evolving software | How should software be designed, built, maintained, and operated? |
+| General System Design | Systems containing people, processes, hardware, software, infrastructure, and operations | How should all parts of this system fit together? |
+| Software System Design | Applied design of software-intensive systems | How should this particular software system work? |
+| Software Development Practices | Organization of development and delivery work | How should the system be built and evolved? |
+| Infrastructure Engineering | Runtime compute, networking, storage, deployment, and operational platforms | Where and how should the system run? |
+
+These are useful perspectives rather than isolated stages. Their responsibilities and terminology can overlap in real projects.
+
+## Distributed Systems Through Two Lenses
+
+```text
+Distributed Systems
+│
+├── Computer Science lens
+│   └── coordination, failure, consistency,
+│       replication, consensus, and time
+│
+└── Applied System Design lens
+    └── services, communication, retries,
+        partitioning, deployment, and observability
+```
+
+Distributed Systems is a foundational Computer Systems area. Distributed-System Design applies those foundations when designing a particular system.
+
 ## Current Scope
 
-The most developed foundation area in this wiki is [Software Engineering](software-engineering/README.md). It introduces the vocabulary and distinctions used to connect programming paradigms, design principles, patterns, architecture, frameworks, libraries, and implementations.
+The current foundation landing pages are:
 
-Other computer-science areas appear throughout the wiki as practical notes, but they do not yet have equivalent foundation indexes. Future indexes should be created only when enough focused material exists to support them.
+- [Computer Systems](computer-systems/README.md) — introduces hardware, operating systems, networking, storage, and distributed computation.
+- [Software Engineering](software-engineering/README.md) — connects programming paradigms, design principles, patterns, architecture, frameworks, libraries, and implementations.
+
+Software Engineering currently has the more developed set of focused documents. Other Computer Science areas appear throughout the wiki as practical notes but do not yet have equivalent foundation indexes. Future indexes should be created only when enough focused material exists to support them.
 
 ## Start Here
 
 ```text
 Computer Science Foundations
-        ↓
-Software Engineering Foundations
-        ↓
-Software Taxonomy and Concept Relationships
-        ↓
-Focused principle, pattern, architecture, and terminology documents
+│
+├── Computer Systems Foundations
+│   └── runtime, networking, storage, and distributed-system questions
+│
+└── Software Engineering Foundations
+    └── taxonomy, principles, patterns, and architecture
+        │
+        └── Applied System Design and Development Practices
 ```
 
+- [Computer Systems](computer-systems/README.md)
 - [Software Engineering Foundations](software-engineering/README.md)
 - [Software Taxonomy](software-engineering/software-taxonomy.md)
 - [Software Architecture](software-engineering/software-architecture.md)
+- [System Design](../system-design/README.md)
+- [Software Development Practices](../software-development-practices/README.md)
 
 ## Related Areas
 
 - [General Programming](../CS.md)
 - [Databases](../backend/databases.md)
 - [Frameworks, Libraries, and Tooling](../framework-tooling/README.md)
-- [System Design and Development Strategy](../system-design/development-strategy.md)
+- [System Design](../system-design/README.md)
+- [Software Development Practices](../software-development-practices/README.md)

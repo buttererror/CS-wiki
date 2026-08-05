@@ -13,8 +13,8 @@ Choose a path based on what you want to learn:
 
 - **Explore software foundations:**
   [Computer Science Foundations](computer-science-foundations/README.md) →
-  [Software Engineering Foundations](computer-science-foundations/software-engineering/README.md) →
-  [Software Taxonomy](computer-science-foundations/software-engineering/software-taxonomy.md)
+  [Computer Systems](computer-science-foundations/computer-systems/README.md) or
+  [Software Engineering Foundations](computer-science-foundations/software-engineering/README.md)
 - **Learn programming languages:** [General Programming](CS.md) →
   [JavaScript](JavaScript-notes.md) → [TypeScript](TypeScript.md)
 - **Learn frontend development:** [Frontend Concepts](frontend-related-concepts.md)
@@ -25,9 +25,10 @@ Choose a path based on what you want to learn:
 - **Work with development tools:** [Git](git-space.md) →
   [Linux](linux/linux-general.md) → [Docker](linux/docker.md) →
   [PostgreSQL](linux/postgresql.md)
-- **Explore architecture and delivery:**
-  [Development Strategy](system-design/development-strategy.md) →
-  [Lean MVP and Vertical Slices](system-design/lean-mvp-vertical-slice-development.md)
+- **Explore system design and delivery:**
+  [System Design](system-design/README.md) →
+  [Software Development Practices](software-development-practices/README.md) →
+  [Lean MVP and Vertical Slices](software-development-practices/lean-mvp-vertical-slice-development.md)
 
 ## Knowledge map
 
@@ -45,6 +46,7 @@ Choose a path based on what you want to learn:
 | Topic | What it covers |
 | --- | --- |
 | [Computer Science Foundations](computer-science-foundations/README.md) | Broad field map, reading mindset, and routes into the wiki's current foundations |
+| [Computer Systems](computer-science-foundations/computer-systems/README.md) | Hardware, operating systems, networking, storage, and distributed-system foundations |
 | [Software Engineering Foundations](computer-science-foundations/software-engineering/README.md) | Mindset and map for relating software concepts without imposing rigid boundaries |
 | [Software Taxonomy](computer-science-foundations/software-engineering/software-taxonomy.md) | Paradigms, principles, patterns, architectures, tools, and implementations |
 | [Software Architecture](computer-science-foundations/software-engineering/software-architecture.md) | Systems, architectures, architectural styles, and architectural patterns |
@@ -82,15 +84,17 @@ Additional frontend topic maps are being developed in
 | [Databases](backend/databases.md) | Data modeling, schemas, and entity-relationship diagrams |
 | [PostgreSQL](linux/postgresql.md) | Local setup, roles, databases, and common `psql` operations |
 
-### Systems, tools, and architecture
+### Systems, tools, architecture, and delivery
 
 | Topic | What it covers |
 | --- | --- |
 | [Git](git-space.md) | Version-control workflows, commits, amend, and recovery notes |
 | [Linux](linux/linux-general.md) | Categorized shell and package-management command reference |
 | [Docker](linux/docker.md) | Installation, runtime commands, Compose, and reset workflows |
-| [Development Strategy](system-design/development-strategy.md) | Horizontal and vertical development approaches |
-| [Lean MVP and Vertical Slices](system-design/lean-mvp-vertical-slice-development.md) | YAGNI, MVP scope, and incremental delivery |
+| [System Design](system-design/README.md) | General and software-system design scopes, neighboring perspectives, and future questions |
+| [Software Development Practices](software-development-practices/README.md) | Ways of organizing, validating, delivering, and evolving software |
+| [Development Strategy](software-development-practices/development-strategy.md) | Horizontal and vertical development approaches |
+| [Lean MVP and Vertical Slices](software-development-practices/lean-mvp-vertical-slice-development.md) | YAGNI, MVP scope, and incremental delivery |
 
 ### AI
 
