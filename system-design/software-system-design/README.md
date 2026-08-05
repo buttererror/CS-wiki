@@ -121,6 +121,9 @@ These perspectives form a feedback system rather than a one-way pipeline.
 
 - [Domain-Driven Design](domain-driven-design.md) — connects business-domain
   understanding to software models and boundaries.
+- [Neighboring Perspectives](neighboring-perspectives.md) — distinguishes
+  Business Analysis, Domain Modeling, Software System Design, Software
+  Architecture, Infrastructure Engineering, and Implementation and Operations.
 
 ## Related Concepts
 
@@ -130,3 +133,5 @@ These perspectives form a feedback system rather than a one-way pipeline.
 - [Software Development Practices](../../software-development-practices/README.md)
 - [Communication Patterns](../../computer-science-foundations/software-engineering/communication-patterns/README.md)
 - [Architectural Styles](../../computer-science-foundations/software-engineering/architectural-styles/README.md)
+- [Modular Monolith](../../computer-science-foundations/software-engineering/architectural-styles/modular-monolith.md)
+- [Repository Organization](../../software-development-practices/repository-organization/README.md)

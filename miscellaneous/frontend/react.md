@@ -20,6 +20,55 @@
 - Helps split unrelated concerns (SRP)
 - Example: separate data-fetching logic from UI using `useFetch`
 
+### Context API
+
+Context makes a value available to a component subtree without passing it
+through every intermediate component as a prop.
+
+```jsx
+const ThemeContext = createContext("light");
+
+<ThemeContext.Provider value="dark">
+  <App />
+</ThemeContext.Provider>
+
+const theme = useContext(ThemeContext);
+```
+
+It is useful for values such as themes, locale, or authenticated-user context.
+It is not automatically a complete state-management solution, and consumers
+re-render when the provided value changes.
+
+### Hooks
+
+Hooks are functions that let function components use React features such as
+state, context, refs, and effects. Custom Hooks package reusable stateful logic.
+
+- Call Hooks only at the top level of a React component or Custom Hook.
+- Name Custom Hooks with the `use` prefix.
+- Custom Hooks share logic, not an independent state instance by default.
+
+### Reducers
+
+A reducer calculates the next state from the current state and an action.
+`useReducer` is useful when state has several related transitions.
+
+```jsx
+function reducer(state, action) {
+  if (action.type === "increment") {
+    return { count: state.count + 1 };
+  }
+
+  return state;
+}
+
+const [state, dispatch] = useReducer(reducer, { count: 0 });
+dispatch({ type: "increment" });
+```
+
+A reducer centralizes transition logic. Combining `useReducer` with Context can
+share that state within a subtree, but it does not make the combination Redux.
+
 ---
 
 ### 🧠 React Side Effects

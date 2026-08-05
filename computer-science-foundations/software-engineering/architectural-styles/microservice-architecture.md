@@ -10,7 +10,7 @@ This document introduces Microservice Architecture and explains its service boun
 
 ## Taxonomy Classification
 
-- **Primary category:** System Design & Architecture
+- **Primary category:** Architectural Style
 - **Type:** Architectural Style
 - **Field:** Software Engineering
 - **Scope:** Major system components
@@ -519,6 +519,10 @@ The goal is not to maximize the number of services. It is to choose boundaries t
 ## Related Concepts
 
 - [Architectural Styles](README.md)
+- [Modular Monolith](modular-monolith.md)
+- [Software System Design](../../../system-design/software-system-design/README.md)
+- [Domain-Driven Design](../../../system-design/software-system-design/domain-driven-design.md)
+- [Monorepo](../../../software-development-practices/repository-organization/monorepo.md)
 - [Software Architecture](../software-architecture.md)
 - [Software Taxonomy](../software-taxonomy.md)
 - [Communication Patterns](../communication-patterns/README.md)

@@ -65,11 +65,15 @@ Practices and design still influence one another. For example, repository struct
 
 - [Development Strategy](development-strategy.md) — compares horizontal and vertical development approaches.
 - [Lean MVP and Vertical Slices](lean-mvp-vertical-slice-development.md) — connects YAGNI, MVP scope, vertical slices, incremental architecture, testing, DevOps, and documentation practices.
+- [Repository Organization](repository-organization/README.md) — distinguishes
+  repository boundaries from workspace tooling and runtime architecture.
+- [Monorepo](repository-organization/monorepo.md) — organizes multiple related
+  projects in one version-control repository.
 
 ## Future Topics
 
-- Monorepo and Polyrepo.
-- Repository and workspace management.
+- Polyrepo.
+- Workspace and build management.
 - Testing strategy.
 - Code review.
 - CI/CD and release strategies.
@@ -82,4 +86,5 @@ Future documents should be added when the topics are discussed in sufficient dep
 - [System Design](../system-design/README.md)
 - [Software Engineering Foundations](../computer-science-foundations/software-engineering/README.md)
 - [Software Architecture](../computer-science-foundations/software-engineering/software-architecture.md)
+- [Software System Design](../system-design/software-system-design/README.md)
 - [Frameworks, Libraries, and Tooling](../framework-tooling/README.md)

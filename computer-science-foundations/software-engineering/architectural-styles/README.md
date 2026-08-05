@@ -31,6 +31,7 @@ Concrete System Architecture
 Architectural Styles
 ├── Client–Server
 ├── Layered Architecture
+├── Modular Monolith
 ├── Microservice Architecture
 ├── Event-Driven Architecture
 └── Hexagonal Architecture
@@ -53,6 +54,9 @@ Concrete System Architecture
 ├── Layered Architecture
 │   └── API separates controllers, services, and persistence
 │
+├── Modular Monolith
+│   └── one deployment contains explicit internal modules
+│
 ├── Microservice Architecture
 │   └── capabilities are independently deployable
 │
@@ -65,6 +69,7 @@ Concrete System Architecture
 ## Style Index
 
 - [Event-Driven Architecture](event-driven-architecture.md)
+- [Modular Monolith](modular-monolith.md)
 - [Microservice Architecture](microservice-architecture.md)
 
 Detailed documents for Client–Server, Layered Architecture, and Hexagonal Architecture can be added when those styles are discussed.

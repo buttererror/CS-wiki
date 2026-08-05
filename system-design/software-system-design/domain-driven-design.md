@@ -235,9 +235,12 @@ complexity.
 ## Related Concepts
 
 - [Software System Design](README.md)
+- [Neighboring Perspectives](neighboring-perspectives.md)
 - [System Design](../README.md)
 - [Software Engineering Foundations](../../computer-science-foundations/software-engineering/README.md)
 - [Software Architecture](../../computer-science-foundations/software-engineering/software-architecture.md)
 - [Communication Patterns](../../computer-science-foundations/software-engineering/communication-patterns/README.md)
 - [Event-Driven Architecture](../../computer-science-foundations/software-engineering/architectural-styles/event-driven-architecture.md)
+- [Modular Monolith](../../computer-science-foundations/software-engineering/architectural-styles/modular-monolith.md)
+- [Monorepo](../../software-development-practices/repository-organization/monorepo.md)
 - [Software Development Practices](../../software-development-practices/README.md)

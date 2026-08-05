@@ -19,16 +19,19 @@ Choose a path based on what you want to learn:
   [JavaScript](miscellaneous/JavaScript-notes.md) →
   [TypeScript](miscellaneous/TypeScript.md)
 - **Learn frontend development:**
-  [Frontend Concepts](miscellaneous/frontend-related-concepts.md) →
-  [React](miscellaneous/react.md) →
-  [Next.js](miscellaneous/next.js-notes.md) →
-  [Styling](miscellaneous/styling-notes.md)
-- **Understand backend fundamentals:** [Authentication](backend/authentication.md)
+  [Frontend Development](miscellaneous/frontend/README.md) →
+  [Frontend Concepts](miscellaneous/frontend/frontend-related-concepts.md) →
+  [React](miscellaneous/frontend/react.md) →
+  [Next.js](miscellaneous/frontend/next.js-notes.md) →
+  [Styling](miscellaneous/frontend/styling-notes.md)
+- **Understand backend fundamentals:**
+  [Authentication](miscellaneous/backend/authentication.md)
   → [JSON Web Tokens](programming-fundamentals/json-web-token.md) →
-  [Databases](backend/databases.md)
+  [Databases](miscellaneous/backend/databases.md)
 - **Work with development tools:** [Git](miscellaneous/git-space.md) →
-  [Linux](linux/linux-general.md) → [Docker](linux/docker.md) →
-  [PostgreSQL](linux/postgresql.md)
+  [Linux](miscellaneous/linux/linux-general.md) →
+  [Docker](miscellaneous/linux/docker.md) →
+  [PostgreSQL](miscellaneous/linux/postgresql.md)
 - **Explore system design and delivery:**
   [System Design](system-design/README.md) →
   [Software System Design](system-design/software-system-design/README.md) →
@@ -68,44 +71,49 @@ Choose a path based on what you want to learn:
 
 | Topic | What it covers |
 | --- | --- |
-| [Frontend Concepts](miscellaneous/frontend-related-concepts.md) | Runtime data, serialization, SSR, and hydration |
-| [React Reference](miscellaneous/react.md) | State, effects, memoization, code quality, and interview notes |
-| [React Crash Course](miscellaneous/react.js-crash-course.md) | Rendering, reconciliation, effects, and browser behavior |
-| [React Study Notes](miscellaneous/my-react.js-notes.md) | Forms, reducers, hooks, and learning notes |
-| [Next.js](miscellaneous/next.js-notes.md) | Project setup, routing, CSS Modules, and conditional class names |
-| [Styling](miscellaneous/styling-notes.md) | Style collisions, layout, and component-oriented CSS architecture |
-| [Vue](miscellaneous/vue.md) | Early Vue notes and follow-up topics |
-| [Flutter](miscellaneous/flutter.md) | Runtime, SDKs, toolchains, and build targets |
+| [Frontend Development](miscellaneous/frontend/README.md) | Landing page for browser UI, frontend frameworks, styling, and related client-development notes |
+| [Frontend Concepts](miscellaneous/frontend/frontend-related-concepts.md) | Runtime data, serialization, SSR, and hydration |
+| [React Reference](miscellaneous/frontend/react.md) | State, effects, memoization, code quality, and interview notes |
+| [React Crash Course](miscellaneous/frontend/react.js-crash-course.md) | Rendering, reconciliation, effects, and browser behavior |
+| [React Study Notes](miscellaneous/frontend/my-react.js-notes.md) | Forms, reducers, hooks, and learning notes |
+| [Next.js](miscellaneous/frontend/next.js-notes.md) | Project setup, routing, CSS Modules, and conditional class names |
+| [Styling](miscellaneous/frontend/styling-notes.md) | Style collisions, layout, and component-oriented CSS architecture |
+| [Vue](miscellaneous/frontend/vue.md) | Early Vue notes and follow-up topics |
+| [Flutter](miscellaneous/frontend/flutter.md) | Runtime, SDKs, toolchains, and build targets |
 
 Additional frontend topic maps are being developed in
-[Frontend Mapping](miscellaneous/frontend-mapping.md) and
-[Frontend Frameworks](miscellaneous/frontend-frameworks.md).
+[Frontend Mapping](miscellaneous/frontend/frontend-mapping.md) and
+[Frontend Frameworks](miscellaneous/frontend/frontend-frameworks.md).
 
 ### Backend and data
 
 | Topic | What it covers |
 | --- | --- |
-| [Authentication](backend/authentication.md) | Web, mobile, and desktop authentication architecture and security tradeoffs |
-| [Databases](backend/databases.md) | Data modeling, schemas, and entity-relationship diagrams |
-| [PostgreSQL](linux/postgresql.md) | Local setup, roles, databases, and common `psql` operations |
+| [Authentication](miscellaneous/backend/authentication.md) | Web, mobile, and desktop authentication architecture and security tradeoffs |
+| [Databases](miscellaneous/backend/databases.md) | Data modeling, schemas, and entity-relationship diagrams |
+| [PostgreSQL](miscellaneous/linux/postgresql.md) | Local setup, roles, databases, and common `psql` operations |
 
 ### Systems, tools, architecture, and delivery
 
 | Topic | What it covers |
 | --- | --- |
 | [Git](miscellaneous/git-space.md) | Version-control workflows, commits, amend, and recovery notes |
-| [Linux](linux/linux-general.md) | Categorized shell and package-management command reference |
-| [Docker](linux/docker.md) | Installation, runtime commands, Compose, and reset workflows |
+| [Linux](miscellaneous/linux/linux-general.md) | Categorized shell and package-management command reference |
+| [Docker](miscellaneous/linux/docker.md) | Installation, runtime commands, Compose, and reset workflows |
 | [System Design](system-design/README.md) | General, computer-system, and software-system design scopes and their neighboring disciplines |
 | [Software System Design](system-design/software-system-design/README.md) | Applied design of software requirements, boundaries, components, data, and quality attributes |
 | [Domain-Driven Design](system-design/software-system-design/domain-driven-design.md) | Domain-centered modeling, language, boundaries, and tactical concepts |
+| [Neighboring Perspectives](system-design/software-system-design/neighboring-perspectives.md) | Business Analysis, Domain Modeling, System Design, Architecture, Infrastructure, and Operations |
+| [Modular Monolith](computer-science-foundations/software-engineering/architectural-styles/modular-monolith.md) | One deployable application with explicit internal module boundaries |
 | [Software Development Practices](software-development-practices/README.md) | Ways of organizing, validating, delivering, and evolving software |
+| [Repository Organization](software-development-practices/repository-organization/README.md) | Repository boundaries and their distinction from tooling and architecture |
+| [Monorepo](software-development-practices/repository-organization/monorepo.md) | Multiple related projects maintained in one version-control repository |
 | [Development Strategy](software-development-practices/development-strategy.md) | Horizontal and vertical development approaches |
 | [Lean MVP and Vertical Slices](software-development-practices/lean-mvp-vertical-slice-development.md) | YAGNI, MVP scope, and incremental delivery |
 
 ### AI
 
-- [LLMs vs. AI Agents](AI/LLM-vs.-AI-agent.md) — goals, reasoning loops,
+- [LLMs vs. AI Agents](miscellaneous/ai/llm-vs-ai-agent.md) — goals, reasoning loops,
   tool use, and self-correction.
 
 ### Material awaiting classification

@@ -162,7 +162,7 @@ Related applied areas
 ## Related Areas
 
 - [General Programming](../miscellaneous/CS.md)
-- [Databases](../backend/databases.md)
+- [Databases](../miscellaneous/backend/databases.md)
 - [Frameworks, Libraries, and Tooling](../framework-tooling/README.md)
 - [System Design](../system-design/README.md)
 - [Software Development Practices](../software-development-practices/README.md)

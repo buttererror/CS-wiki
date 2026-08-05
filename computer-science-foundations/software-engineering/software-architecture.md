@@ -311,5 +311,6 @@ Architecture must match the system's workload, team structure, operational capab
 - [Style](terminology/style.md)
 - [Software Taxonomy](software-taxonomy.md)
 - [Architectural Styles](architectural-styles/README.md)
+- [Modular Monolith](architectural-styles/modular-monolith.md)
 - [Architectural Patterns](architectural-patterns/README.md)
 - [Communication Patterns](communication-patterns/README.md)

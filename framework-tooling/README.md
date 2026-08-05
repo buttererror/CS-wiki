@@ -125,3 +125,4 @@ NestJS
 - [Gang of Four Design Patterns](../computer-science-foundations/software-engineering/design-patterns/gang-of-four-design-patterns.md)
 - [Software Design Principles](../computer-science-foundations/software-engineering/software-design-principles/README.md)
 - [Inversion of Control](../computer-science-foundations/software-engineering/software-design-principles/inversion-of-control.md)
+- [Monorepo](../software-development-practices/repository-organization/monorepo.md)

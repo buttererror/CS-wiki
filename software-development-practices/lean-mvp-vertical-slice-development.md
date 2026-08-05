@@ -68,7 +68,7 @@ If the current workflow does not need it, defer it.
 
 ### Related Category
 
-- **Primary Category:** System Design & Architecture
+- **Primary Category:** Software Design Principle
 - **Field:** Software Engineering
 - **Area:** Scope Control / Architecture Decision-Making
 - **Level:** System-level
@@ -124,7 +124,7 @@ Build the smallest useful version, learn from it, then improve.
 
 ### Related Category
 
-- **Primary Category:** System Design & Architecture
+- **Primary Category:** Product and Delivery Strategy
 - **Field:** Software Engineering
 - **Area:** Product Delivery Strategy
 - **Level:** System-level
@@ -167,7 +167,7 @@ Prefer one working feature across all layers over many unfinished layers.
 
 ### Related Category
 
-- **Primary Category:** System Design & Architecture
+- **Primary Category:** Software Development Practice
 - **Field:** Software Engineering
 - **Area:** Feature Slicing / Incremental Architecture
 - **Level:** System-level
@@ -208,7 +208,7 @@ Avoid building many system layers before proving one real workflow.
 
 ### Related Category
 
-- **Primary Category:** System Design & Architecture
+- **Primary Category:** Software Development Practice
 - **Field:** Software Engineering
 - **Area:** Delivery Models
 - **Level:** Structural / System-level
@@ -241,7 +241,7 @@ Let repeated needs create abstractions.
 
 ### Related Category
 
-- **Primary Category:** System Design & Architecture
+- **Primary Category:** Evolutionary Design Practice
 - **Field:** Software Engineering
 - **Area:** Evolutionary Design / Incremental Architecture
 - **Level:** System-level
@@ -290,7 +290,7 @@ Extract shared code only after repetition appears.
 
 ### Related Category
 
-- **Primary Category:** System Design & Architecture
+- **Primary Category:** Code Organization Practice
 - **Field:** Software Engineering
 - **Area:** Code Organization / Frontend Architecture
 - **Level:** Structural
@@ -336,7 +336,7 @@ A few valuable tests are better than many brittle tests.
 
 ### Related Category
 
-- **Primary Category:** System Design & Architecture
+- **Primary Category:** Quality Practice
 - **Field:** Software Engineering
 - **Area:** Testing Strategy / Quality Assurance
 - **Level:** Behavioral / System-level
@@ -373,7 +373,7 @@ Add DevOps infrastructure when there is something meaningful to ship.
 
 ### Related Category
 
-- **Primary Category:** Framework / Tooling
+- **Primary Category:** Delivery Practice
 - **Field:** Software Engineering
 - **Area:** DevOps / Delivery Automation
 - **Level:** System-level
@@ -410,7 +410,7 @@ Use agents to accelerate implementation, not to outsource judgment.
 
 ### Related Category
 
-- **Primary Category:** Framework / Tooling
+- **Primary Category:** Developer Workflow Practice
 - **Field:** Software Engineering
 - **Area:** Developer Workflow / AI-Assisted Development
 - **Level:** Behavioral / System-level

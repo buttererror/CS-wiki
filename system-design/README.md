@@ -160,6 +160,9 @@ Applied questions include:
 - [Domain-Driven Design](software-system-design/domain-driven-design.md) — using
   domain understanding, language, models, and boundaries to manage complex
   business software.
+- [Neighboring Perspectives](software-system-design/neighboring-perspectives.md)
+  — distinguishes the disciplines and engineering perspectives that interact
+  during software system design.
 
 ## Related Concepts
 

@@ -18,19 +18,24 @@ repository root readable while avoiding premature classification.
 - [TypeScript](TypeScript.md)
 - [General Notes](general.md)
 
-### Frontend Development
+### Backend and Data
 
-- [Frontend Concepts](frontend-related-concepts.md)
-- [Frontend Mapping](frontend-mapping.md)
-- [Frontend Frameworks](frontend-frameworks.md)
-- [React Reference](react.md)
-- [React Crash Course](react.js-crash-course.md)
-- [React Crash Course 2](react-crash-course-2.md)
-- [React Study Notes](my-react.js-notes.md)
-- [Next.js](next.js-notes.md)
-- [Styling](styling-notes.md)
-- [Vue](vue.md)
-- [Flutter](flutter.md)
+- [Authentication](backend/authentication.md)
+- [Databases and Prisma](backend/databases.md)
+
+### Artificial Intelligence
+
+- [LLMs vs. AI Agents](ai/llm-vs-ai-agent.md)
+
+### Frontend and Client UI
+
+- [Frontend Development](frontend/README.md)
+
+### Systems and Local Infrastructure
+
+- [Linux](linux/linux-general.md)
+- [Docker](linux/docker.md)
+- [PostgreSQL](linux/postgresql.md)
 
 ### Tools and Troubleshooting
 
@@ -51,3 +56,4 @@ For each page:
 - [CS Wiki](../README.md)
 - [Computer Science Foundations](../computer-science-foundations/README.md)
 - [System Design](../system-design/README.md)
+- [Frontend Development](frontend/README.md)

@@ -93,10 +93,10 @@ The foundation explains properties and limitations. Distributed-System Design ap
 
 Related practical notes currently exist for:
 
-- [Linux](../../linux/linux-general.md)
-- [Docker](../../linux/docker.md)
-- [PostgreSQL](../../linux/postgresql.md)
-- [Databases](../../backend/databases.md)
+- [Linux](../../miscellaneous/linux/linux-general.md)
+- [Docker](../../miscellaneous/linux/docker.md)
+- [PostgreSQL](../../miscellaneous/linux/postgresql.md)
+- [Databases](../../miscellaneous/backend/databases.md)
 
 These are practical or technology-focused notes, not substitutes for future foundational documents on operating systems, networking, storage, or distributed systems.
 

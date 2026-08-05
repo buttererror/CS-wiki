@@ -115,5 +115,6 @@ For example, a system may combine Object-Oriented and Functional Programming, fo
 - [Domain-Driven Design](../../system-design/software-system-design/domain-driven-design.md)
 - [Software Development Practices](../../software-development-practices/README.md)
 - [Frameworks, Libraries, and Tooling](../../framework-tooling/README.md)
-- [Backend Concepts](../../backend/authentication.md)
-- [Frontend Concepts](../../miscellaneous/frontend-related-concepts.md)
+- [Backend Concepts](../../miscellaneous/backend/authentication.md)
+- [Frontend Development](../../miscellaneous/frontend/README.md)
+- [Frontend Concepts](../../miscellaneous/frontend/frontend-related-concepts.md)

@@ -6,7 +6,7 @@ Event-Driven Architecture is an architectural style in which major system compon
 
 ## Taxonomy Classification
 
-- **Primary category:** System Design & Architecture
+- **Primary category:** Architectural Style
 - **Type:** Architectural Style
 - **Field:** Software Engineering
 - **Scope:** Major system components
@@ -542,7 +542,8 @@ Event-driven communication
 
 ## Key Takeaways
 
-- Event-Driven Architecture is an architectural style within System Design & Architecture.
+- Event-Driven Architecture is an architectural style that may guide a
+  concrete software architecture.
 - An event announces something that happened; a command requests an action.
 - Producers publish events without directly coordinating every consumer.
 - Brokers are common delivery mechanisms but are not mandatory.
@@ -562,4 +563,6 @@ Event-driven communication
 - [Observer Pattern](../design-patterns/observer-pattern.md)
 - [Publish / Subscribe](../communication-patterns/publish-subscribe.md)
 - [Microservice Architecture](microservice-architecture.md)
+- [Modular Monolith](modular-monolith.md)
+- [Software System Design](../../../system-design/software-system-design/README.md)
 - [Request / Response](../communication-patterns/request-response.md)

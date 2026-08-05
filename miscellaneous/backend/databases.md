@@ -1,6 +1,6 @@
 ## Concept: DatabaseModelingVsSchema
 
-## Primary Category: System Design & Architecture >> It defines how data systems are structured and represented
+## Primary Category: Database Systems and Data Modeling
 
 ## Taxonomy Classification: 
 - Field: Database Systems
@@ -59,7 +59,7 @@ OrderItems(order_id, product_id)
 
 ## Concept: EntityRelationshipDiagram (ERD)
 
-## Primary Category: System Design & Architecture >> Visual tool for modeling data systems
+## Primary Category: Database Systems and Data Modeling
 
 ## Taxonomy Classification: 
 - Field: Database Systems
@@ -153,7 +153,7 @@ Relationship:
 ---
 
 ### Related Concepts: 
-- DatabaseModeling → System Design & Architecture  
+- Database Modeling → Database Systems and Data Modeling
 - DataNormalization → Computer Science Foundations  
 - RelationalDatabase → Computer Science Foundations
 ---
@@ -454,4 +454,3 @@ Prisma Client
 schema.prisma
 → Source of truth for database structure
 ```
-

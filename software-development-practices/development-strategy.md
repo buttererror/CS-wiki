@@ -216,9 +216,12 @@ constraints.
 ### Relationships to Other Areas:
 
 - Agile Development → strongly favors vertical slices.
+- [Monorepo](repository-organization/monorepo.md) → repository organization can
+  support coordinated changes across a vertical slice.
 - [Domain-Driven Design](../system-design/software-system-design/domain-driven-design.md)
   → vertical slices may align with domain capabilities or Bounded Contexts.
-- Modular Monolith → modules can support vertical development.
+- [Modular Monolith](../computer-science-foundations/software-engineering/architectural-styles/modular-monolith.md)
+  → modules can support vertical development.
 - Microservice Architecture → services may be extracted when independent
   deployment is justified.
 
@@ -228,5 +231,7 @@ constraints.
 - AgileDevelopment → Software Engineering
 - [Domain-Driven Design](../system-design/software-system-design/domain-driven-design.md)
   → Domain Modeling and Software System Design
-- Modular Monolith → Architectural Style
+- [Monorepo](repository-organization/monorepo.md) → Repository Organization
+- [Modular Monolith](../computer-science-foundations/software-engineering/architectural-styles/modular-monolith.md)
+  → Architectural Style
 - FeatureDrivenDevelopment → Software Engineering
