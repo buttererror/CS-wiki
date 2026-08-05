@@ -26,10 +26,6 @@ repository root readable while avoiding premature classification.
 
 - [LLMs vs. AI Agents](ai/llm-vs-ai-agent.md)
 
-### Frontend and Client UI
-
-- [Frontend Development](frontend/README.md)
-
 ### Systems and Local Infrastructure
 
 - [Linux](linux/linux-general.md)
@@ -56,4 +52,5 @@ For each page:
 - [Computer Science Foundations](../computer-science-foundations/README.md)
 - [System Design](../system-design/README.md)
 - [Security](../security/README.md)
-- [Frontend Development](frontend/README.md)
+- [Frontend Development](../frontend-development/README.md)
+- [Frontend Frameworks and Tooling](../framework-tooling/frontend/README.md)

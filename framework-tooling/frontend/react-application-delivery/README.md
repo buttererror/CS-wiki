@@ -39,8 +39,8 @@ React.
 
 ## Related Areas
 
-- [Frameworks, Libraries, and Tooling](../README.md)
-- [Frontend Development](../../miscellaneous/frontend/README.md)
-- [Frontend Frameworks](../../miscellaneous/frontend/frontend-frameworks.md)
-- [Next.js Notes](../../miscellaneous/frontend/next.js-notes.md)
-- [React Reference](../../miscellaneous/frontend/react.md)
+- [Frameworks, Libraries, and Tooling](../../README.md)
+- [Frontend Development](../../../frontend-development/README.md)
+- [Frontend Frameworks and Tooling](../README.md)
+- [Next.js Notes](../nextjs/notes.md)
+- [React](../react/README.md)

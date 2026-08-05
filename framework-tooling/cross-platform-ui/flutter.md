@@ -14,8 +14,10 @@
   - lifecycle during execution
 
 In Flutter:
-- Mobile/Desktop: Dart code is compiled to native code, runtime is bundled with the app.
-- Web: Dart is compiled to JavaScript, runtime is the browser’s JS engine.
+- Mobile/Desktop: release builds compile Dart code for the target and ship the
+  Flutter engine and required runtime support with the application.
+- Web: Flutter can compile application code to JavaScript or WebAssembly,
+  depending on the selected build mode and platform support.
 - Users do **not** need Flutter or Dart installed.
 
 ---
@@ -33,7 +35,9 @@ Examples:
 - Web adapter connects Flutter rendering to browser APIs (Canvas/WebGL/DOM).
 - Desktop adapters connect Flutter to native windowing systems.
 
-Flutter swaps adapters per platform without changing app code.
+Flutter's platform integration enables substantial shared application code,
+although plugins, capabilities, and platform-specific behavior can still
+require target-specific adaptation.
 
 ---
 
@@ -47,7 +51,8 @@ It includes:
 - Flutter CLI tools
 - Platform adapters and build orchestration
 
-Flutter itself is platform-agnostic and delegates platform-specific work to external toolchains.
+Flutter's shared framework is cross-platform, while platform-specific embedders
+and external toolchains handle target integration.
 
 ---
 
@@ -105,4 +110,6 @@ Equivalent native formats exist for macOS and Linux.
 
 ---
 
-End of current finalized topics.
+## Source
+
+- [Flutter architectural overview](https://docs.flutter.dev/resources/architectural-overview)

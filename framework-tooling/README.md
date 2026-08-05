@@ -113,8 +113,10 @@ NestJS
 
 ## Document Index
 
+- [Frontend Frameworks and Tooling](frontend/README.md)
+- [Cross-Platform UI Tooling](cross-platform-ui/README.md)
 - [NestJS Dependency Injection](nestjs-dependency-injection.md)
-- [React Application Delivery](react-application-delivery/README.md)
+- [React Application Delivery](frontend/react-application-delivery/README.md)
 - [TanStack Query](tanstack-query.md)
 
 ---
@@ -127,3 +129,4 @@ NestJS
 - [Software Design Principles](../computer-science-foundations/software-engineering/software-design-principles/README.md)
 - [Inversion of Control](../computer-science-foundations/software-engineering/software-design-principles/inversion-of-control.md)
 - [Monorepo](../software-development-practices/repository-organization/monorepo.md)
+- [Frontend Development](../frontend-development/README.md)

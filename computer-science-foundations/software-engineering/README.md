@@ -117,5 +117,5 @@ For example, a system may combine Object-Oriented and Functional Programming, fo
 - [Frameworks, Libraries, and Tooling](../../framework-tooling/README.md)
 - [Security](../../security/README.md)
 - [Identity and Access Management](../../security/identity-and-access-management/README.md)
-- [Frontend Development](../../miscellaneous/frontend/README.md)
-- [Frontend Concepts](../../miscellaneous/frontend/frontend-related-concepts.md)
+- [Frontend Development](../../frontend-development/README.md)
+- [Frontend Frameworks and Tooling](../../framework-tooling/frontend/README.md)

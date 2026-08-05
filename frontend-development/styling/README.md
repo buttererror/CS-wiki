@@ -1,11 +1,24 @@
-# Styling notes
+# Frontend Styling
+
+## Purpose
+
+This document introduces styling as an engineering system concerned with
+scope, layout, predictability, presentation, and long-term maintenance.
+
+## Classification
+
+- **Primary area:** Frontend Development
+- **Related areas:** CSS, design systems, component architecture, and browser
+  rendering
+- **Abstraction level:** General applied concepts
+
 ---
 
-## 3. Style Collision (Key Concept)
+## Style Collision
 
 ### Definition
 
-**Reference**: [Avoiding CSS style collissions](https://dev.to/manu4216/avoiding-css-style-collisions-when-building-a-ui-widget-2633)
+**Reference**: [Avoiding CSS style collisions](https://dev.to/manu4216/avoiding-css-style-collisions-when-building-a-ui-widget-2633)
 
 **Style collision** occurs when CSS rules unintentionally override or affect elements they were not meant to.
 
@@ -42,7 +55,7 @@ This is one of the main reasons CSS becomes hard to maintain in large projects.
 
 ---
 
-## 4. Preventing Style Collision
+## Preventing Style Collision
 
 Modern styling strategies exist mainly to **control scope**.
 
@@ -57,7 +70,7 @@ The goal is not to eliminate CSS behavior, but to **make it predictable**.
 
 ---
 
-## 5. Layout as a Root Cause of Styling Bugs
+## Layout as a Root Cause of Styling Bugs
 
 Many styling problems are actually **layout problems**.
 
@@ -76,7 +89,7 @@ Choosing the right layout system early prevents styling complexity later.
 
 ---
 
-## 6. Styling Architecture Matters More Than Syntax
+## Styling Architecture Matters More Than Syntax
 
 CSS becomes problematic when:
 - structure is unclear
@@ -92,7 +105,7 @@ This is why methodologies and conventions exist — not as rules, but as **guard
 
 ---
 
-## 7. Modern Styling Is Component-Oriented
+## Modern Styling Is Component-Oriented
 
 In modern apps:
 - styles are expected to live near components
@@ -103,7 +116,7 @@ Framework tools help, but understanding **why isolation matters** is more import
 
 ---
 
-## 8. Styling as a System, Not Decoration
+## Styling as a System, Not Decoration
 
 At scale, styling becomes:
 - a system of tokens (colors, spacing, typography)
@@ -118,12 +131,10 @@ Good styling decisions reduce:
 
 ---
 
-## 9. Learning Philosophy for This Path
+## Learning Philosophy for This Path
 
 - This is **iterative**, not linear
 - Concepts are revisited, not “finished”
 - Depth is added only when needed
 - Understanding > memorization
 - Predictability > cleverness
-
----

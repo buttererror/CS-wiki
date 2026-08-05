@@ -399,5 +399,5 @@ explicit.
 - [React: Updating Objects in State](https://react.dev/learn/updating-objects-in-state)
 - [MDN: Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
 - [Reactive Programming](../../computer-science-foundations/software-engineering/programming-paradigms/reactive-programming.md)
-- [Vue Notes](vue.md)
-- [React Reference](react.md)
+- [Vue Notes](../../framework-tooling/frontend/vue/notes.md)
+- [React](../../framework-tooling/frontend/react/README.md)

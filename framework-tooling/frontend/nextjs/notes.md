@@ -1,40 +1,42 @@
-# Project Initialization
+# Next.js Notes
 
-## Command Used
+## Purpose
+
+This document contains reviewed Next.js-specific setup, routing, and styling
+notes. General rendering and hydration concepts live under
+[Frontend Development](../../../frontend-development/README.md).
+
+## Project Initialization Example
+
 ```bash
 npx create-next-app@latest nextjs-dashboard \
   --example "https://github.com/vercel/next-learn/tree/main/dashboard/starter-example" \
   --use-pnpm
 ```
 
-# Next.js Routing Comparison: App Router vs Pages Router
+## App Router and Pages Router
 
----
+### App Router (`app/`)
 
-## App Router (`app/`)
-
-- Modern routing system in Next.js
+- Current routing system for new Next.js features
 - Server Components by default
 - Supports nested layouts and layout persistence
 - Enables streaming and progressive rendering
 - Supports Route Handlers and Server Actions
 - Used by the official Next.js dashboard tutorial
-- Recommended for new projects
+- Supports the current Server and Client Component model
 
----
+### Pages Router (`pages/`)
 
-## Pages Router (`pages/`)
-
-- Legacy / classic routing system
-- Client Components by default
+- Earlier routing system that remains supported
+- Uses the traditional React component model rather than App Router Server
+  Components
 - Uses `getServerSideProps`, `getStaticProps`, `getInitialProps`
-- Simpler and more explicit data-fetching model
 - Large ecosystem of existing examples and patterns
 - Suitable for older codebases or incremental migration
 
----
-# CSS Styling
----
+## CSS Styling
+
 Next.js provides several ways to style your application using CSS, including:
 
 - Tailwind CSS
@@ -44,12 +46,11 @@ Next.js provides several ways to style your application using CSS, including:
 - Sass
 - CSS-in-JS
 
-## CSS modules
----
+### CSS Modules
 
 **Reference**: [CSS modules docs](https://nextjs.org/docs/app/getting-started/css)
 
-### Definition
+#### Definition
 
 - CSS Modules provide **locally scoped CSS**
 - Class names are automatically namespaced
@@ -58,7 +59,7 @@ Next.js provides several ways to style your application using CSS, including:
 
 ---
 
-### File Naming
+#### File Naming
 
 - Files must be named using:
   - `*.module.css`
@@ -68,9 +69,7 @@ Only files with `.module.` are treated as CSS Modules.
 
 ---
 
-### Basic Usage
-
-#### CSS Module
+#### Basic Usage
 
 ```css
 /* Button.module.css */
@@ -79,24 +78,15 @@ Only files with `.module.` are treated as CSS Modules.
   border-radius: 6px;
 }
 ```
----
 
-## Using the clsx library to toggle class names
+### Conditional Class Names with `clsx`
 
-There may be cases where you may need to conditionally style an element based on state or some other condition.
+`clsx` builds a class string from conditional values. For example, a status
+component can select presentation classes from its `status` prop:
 
-### clsx
-is a library that lets you toggle class names easily. We recommend taking a look at documentation
+```tsx
+import clsx from 'clsx'
 
-for more details, but here's the basic usage:
-Suppose that you want to create an InvoiceStatus component which accepts status. The status can be 'pending' or 'paid'.
-If it's 'paid', you want the color to be green. If it's 'pending', you want the color to be gray.
-
-You can use clsx to conditionally apply the classes, like this:
-
-```js
-import clsx from 'clsx';
- 
 export default function InvoiceStatus({ status }: { status: string }) {
   return (
     <span
@@ -108,9 +98,16 @@ export default function InvoiceStatus({ status }: { status: string }) {
         },
       )}
     >
-    // ...
-)}
+      {status}
+    </span>
+  )
+}
 ```
-# Related Canonical Material
 
-- [Next.js and React with Vite: Architecture, Performance, and JavaScript Delivery](../../framework-tooling/react-application-delivery/nextjs-vs-react-with-vite.md)
+## Related Canonical Material
+
+- [Next.js: App Router](https://nextjs.org/docs/app)
+- [Next.js: Pages Router](https://nextjs.org/docs/pages)
+- [React Application Delivery](../react-application-delivery/README.md)
+- [Next.js and React with Vite](../react-application-delivery/nextjs-vs-react-with-vite.md)
+- [Hydration](../../../frontend-development/rendering/hydration.md)

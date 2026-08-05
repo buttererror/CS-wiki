@@ -94,8 +94,9 @@ Repository documentation
 | [`system-design/`](system-design/README.md) | Cross-cutting applied design area | General, computer-system, and software-system scopes; DDD and neighboring perspectives |
 | [`security/`](security/README.md) | Canonical cross-cutting security area | Foundational/applied distinction and current Identity and Access Management notes |
 | [`software-development-practices/`](software-development-practices/README.md) | Ways of organizing and evolving engineering work | Development strategy, lean delivery, and repository organization |
-| [`framework-tooling/`](framework-tooling/README.md) | Technology-specific learning | NestJS Dependency Injection and TanStack Query |
-| [`miscellaneous/`](miscellaneous/README.md) | Temporary review inbox | Older language, frontend, backend-data, AI, Linux, and tooling notes |
+| [`frontend-development/`](frontend-development/README.md) | Canonical applied frontend area | Browser runtime, rendering, hydration, serialization, reactivity, and styling |
+| [`framework-tooling/`](framework-tooling/README.md) | Technology-specific learning | Backend, frontend, and cross-platform frameworks, libraries, and tooling |
+| [`miscellaneous/`](miscellaneous/README.md) | Temporary review inbox | Older language, backend-data, AI, Linux, and tooling notes |
 | [`docs/`](docs/README.md) | Documentation about this repository | Maintenance records and a proposed static-wiki/PWA plan |
 
 The detailed coverage is currently strongest in Software Engineering. The
@@ -125,9 +126,11 @@ Choose a path based on what you want to learn:
   [Software Development Practices](software-development-practices/README.md) →
   [Lean MVP and Vertical Slices](software-development-practices/lean-mvp-vertical-slice-development.md)
   or [Frameworks, Libraries, and Tooling](framework-tooling/README.md)
+- **Study frontend concepts and their implementations:**
+  [Frontend Development](frontend-development/README.md) →
+  [Frontend Frameworks and Tooling](framework-tooling/frontend/README.md)
 - **Browse working notes awaiting deeper review:**
-  [Miscellaneous Notes](miscellaneous/README.md) →
-  [Frontend Development](miscellaneous/frontend/README.md)
+  [Miscellaneous Notes](miscellaneous/README.md)
 
 ## Knowledge map
 
@@ -161,27 +164,34 @@ current filenames, scope, and placement should not be read as final taxonomy.
 
 ### Frontend development
 
-Frontend material currently has a practical landing page inside
-`miscellaneous/`. It is grouped for navigation but still awaits a deeper
-content and placement review.
+Frontend material separates two overlapping scopes:
+
+```text
+frontend-development/
+→ general frontend engineering, browser runtime, rendering, state, and styling
+
+framework-tooling/frontend/
+→ React, Next.js, Vue, Vite, and other concrete frontend technologies
+```
+
+Framework placement is an ownership and navigation choice, not a claim that
+general frontend development is a subset of tooling.
 
 | Topic | What it covers |
 | --- | --- |
-| [Frontend Development](miscellaneous/frontend/README.md) | Landing page for browser UI, frontend frameworks, styling, and related client-development notes |
-| [Frontend Concepts](miscellaneous/frontend/frontend-related-concepts.md) | Runtime data, serialization, SSR, and hydration |
-| [React Application Delivery](framework-tooling/react-application-delivery/README.md) | React delivery architectures, rendering boundaries, JavaScript delivery, and evidence-based performance decisions |
-| [Reactivity Mechanisms: Vue and React as Case Studies](miscellaneous/frontend/reactivity-in-vue-and-react.md) | General reactivity concepts explored through proxy tracking, explicit updates, and stream-based models |
-| [React Reference](miscellaneous/frontend/react.md) | State, effects, memoization, code quality, and interview notes |
-| [React Crash Course](miscellaneous/frontend/react.js-crash-course.md) | Rendering, reconciliation, effects, and browser behavior |
-| [React Study Notes](miscellaneous/frontend/my-react.js-notes.md) | Forms, reducers, hooks, and learning notes |
-| [Next.js](miscellaneous/frontend/next.js-notes.md) | Project setup, routing, CSS Modules, and conditional class names |
-| [Styling](miscellaneous/frontend/styling-notes.md) | Style collisions, layout, and component-oriented CSS architecture |
-| [Vue](miscellaneous/frontend/vue.md) | Early Vue notes and follow-up topics |
-| [Flutter](miscellaneous/frontend/flutter.md) | Runtime, SDKs, toolchains, and build targets |
-
-Additional frontend topic maps are being developed in
-[Frontend Mapping](miscellaneous/frontend/frontend-mapping.md) and
-[Frontend Frameworks](miscellaneous/frontend/frontend-frameworks.md).
+| [Frontend Development](frontend-development/README.md) | Framework-independent frontend map and reading path |
+| [Browser Runtime](frontend-development/browser-runtime/README.md) | Browser execution environment, runtime values, and boundaries |
+| [Server and Client Rendering](frontend-development/rendering/server-and-client-rendering.md) | Client rendering, server rendering, static generation, and Server Components |
+| [Hydration](frontend-development/rendering/hydration.md) | Client adoption of server-rendered markup and mismatch causes |
+| [Serialization](frontend-development/data-across-boundaries/serialization.md) | Transferable representations across frontend boundaries |
+| [Reactivity Mechanisms](frontend-development/state-and-reactivity/reactivity-mechanisms.md) | Proxy tracking, explicit updates, and stream-based models |
+| [Styling](frontend-development/styling/README.md) | Style isolation, layout, and component-oriented styling architecture |
+| [Frontend Frameworks and Tooling](framework-tooling/frontend/README.md) | React, Next.js, Vue, Vite, and technology comparisons |
+| [React](framework-tooling/frontend/react/README.md) | Rendering, state, Effects, context, forms, and performance |
+| [React Application Delivery](framework-tooling/frontend/react-application-delivery/README.md) | React delivery architectures, JavaScript boundaries, and performance decisions |
+| [Next.js](framework-tooling/frontend/nextjs/notes.md) | Setup, routing, CSS Modules, and related application-framework notes |
+| [Vue](framework-tooling/frontend/vue/notes.md) | Vue reactivity, state-management, testing, and SSR study topics |
+| [Flutter](framework-tooling/cross-platform-ui/flutter.md) | Runtime, SDKs, toolchains, and build targets |
 
 ### Backend and data
 

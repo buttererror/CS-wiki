@@ -398,7 +398,7 @@ The paradigm may use these patterns, but they are not interchangeable.
 ## Related Concepts
 
 - [Programming Paradigm](programming-paradigm.md)
-- [Reactivity Mechanisms: Vue and React as Case Studies](../../../miscellaneous/frontend/reactivity-in-vue-and-react.md)
+- [Reactivity Mechanisms: Vue and React as Case Studies](../../../frontend-development/state-and-reactivity/reactivity-mechanisms.md)
 - [Software Taxonomy](../software-taxonomy.md)
 - [Gang of Four Design Patterns](../design-patterns/gang-of-four-design-patterns.md)
 - [Observer Pattern](../design-patterns/observer-pattern.md)
