@@ -14,6 +14,7 @@ Many Computer Science concepts appear related because they solve similar problem
 Computer Science
 │
 ├── Programming Paradigm
+├── Software Design Principle
 ├── Design Pattern
 ├── Communication Pattern
 │   ├── Direct Communication Pattern
@@ -58,6 +59,27 @@ A paradigm is broad and influences the structure of an entire program rather tha
 ## Answers
 
 > How should software be written?
+
+---
+
+# Software Design Principle
+
+## Definition
+
+A software design principle is a broad guideline for making decisions about responsibilities, dependencies, change, and control.
+
+Unlike a design pattern, a principle does not prescribe a recurring structure or collaboration. A pattern or technique may apply one or more principles.
+
+## Examples
+
+- Inversion of Control
+- Separation of Concerns
+- Dependency Inversion Principle
+- Single Responsibility Principle
+
+## Answers
+
+> What general guideline should inform this design decision?
 
 ---
 
@@ -238,6 +260,9 @@ useQuery(...)
 Programming Paradigm
         ↓ influences
 
+Software Design Principles
+        ↓ guide
+
 Architectural Style
         ↓ may use
 
@@ -262,6 +287,12 @@ Programming Paradigms
 └── Reactive Programming
         │
         │ influence
+        ▼
+Software Design Principles
+│
+└── Inversion of Control
+        │
+        │ guide
         ▼
 Design and Communication Patterns
 │
@@ -331,6 +362,8 @@ Similarly, using Publish / Subscribe in one interaction does not automatically m
 # Realization Hierarchy: Pattern to Implementation
 
 These terms describe different parts of turning an idea into working software.
+
+See [Mechanism](../terminology/mechanism.md) for the cross-context meaning of mechanism and its relationship to techniques, components, technologies, APIs, and implementations.
 
 | Level | Question | Example |
 | --- | --- | --- |
@@ -497,6 +530,7 @@ The goal is not to use every pattern. It is to choose the smallest set that addr
 # Key Principles
 
 - Paradigms describe how programs are expressed.
+- Software design principles guide decisions about responsibilities, dependencies, change, and control.
 - Design patterns describe recurring collaboration between components.
 - Communication patterns describe information flow; messaging patterns are one subtype.
 - Architectural styles describe the organization of an entire system.
@@ -511,6 +545,9 @@ The goal is not to use every pattern. It is to choose the smallest set that addr
 
 Reactive Programming
 → Programming Paradigm
+
+Inversion of Control
+→ Software Design Principle
 
 Observer
 → Behavioral Design Pattern
@@ -532,6 +569,8 @@ NestJS
 # Related Concepts
 
 - [Software Architecture](software-architecture.md)
+- [Software Design Principles](../software-design-principles/README.md)
+- [Software Engineering Terminology](../terminology/README.md)
 - [Frameworks, Libraries, and Tooling](../framework-tooling/README.md)
 - [Architectural Styles](../architectural-styles/README.md)
 - [Architectural Patterns](../architectural-patterns/README.md)

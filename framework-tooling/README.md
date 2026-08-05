@@ -10,6 +10,8 @@ This document distinguishes frameworks, libraries, framework mechanisms, technol
 
 A framework provides reusable infrastructure and controls significant parts of an application's structure, setup, or lifecycle.
 
+This framework-controlled lifecycle is a common form of [Inversion of Control](../software-design-principles/inversion-of-control.md): application code supplies components or behavior that the framework invokes at predefined points.
+
 ```text
 Application code
         ↓ declares components and requirements
@@ -53,6 +55,8 @@ TanStack Query
 
 A library may still manage internal state, scheduling, subscriptions, or cache lifecycles. The framework/library distinction is useful, but real tools can exhibit characteristics of both.
 
+The common summary—application code calls a library, while a framework calls application code—describes the dominant control relationship rather than an absolute boundary.
+
 ---
 
 ## Framework Mechanism
@@ -67,7 +71,7 @@ NestJS Dependency Injection
 → framework mechanism
 
 Dependency Injection
-→ underlying software design pattern or technique
+→ underlying software design technique
 ```
 
 ---
@@ -119,3 +123,5 @@ NestJS
 - [Software Taxonomy](../computer-science-foundations/software-taxonomy.md)
 - [Programming Paradigm](../programming-paradigms/programming-paradigm.md)
 - [Gang of Four Design Patterns](../design-patterns/gang-of-four-design-patterns.md)
+- [Software Design Principles](../software-design-principles/README.md)
+- [Inversion of Control](../software-design-principles/inversion-of-control.md)

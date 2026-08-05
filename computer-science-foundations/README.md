@@ -12,6 +12,8 @@ This directory contains foundational distinctions used to classify and connect s
 ## Related Concepts
 
 - [Programming Paradigms](../programming-paradigms/README.md)
+- [Software Design Principles](../software-design-principles/README.md)
+- [Software Engineering Terminology](../terminology/README.md)
 - [Design Patterns](../design-patterns/README.md)
 - [Communication Patterns](../communication-patterns/README.md)
 - [Architectural Styles](../architectural-styles/README.md)

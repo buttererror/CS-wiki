@@ -44,6 +44,8 @@ Choose a path based on what you want to learn:
 | [Software Taxonomy](computer-science-foundations/software-taxonomy.md) | Paradigms, patterns, architectures, tools, and implementations |
 | [Software Architecture](computer-science-foundations/software-architecture.md) | Systems, architectures, architectural styles, and architectural patterns |
 | [Programming Paradigms](programming-paradigms/README.md) | Object-oriented, functional, and reactive ways of expressing programs |
+| [Software Design Principles](software-design-principles/README.md) | Guidelines for reasoning about responsibilities, dependencies, change, and control |
+| [Software Engineering Terminology](terminology/README.md) | Recurring field terms whose meanings depend on abstraction level or context |
 | [Design Patterns](design-patterns/README.md) | Reusable solutions to recurring object and component design problems |
 | [Communication Patterns](communication-patterns/README.md) | Ways independent participants exchange information |
 | [Architectural Styles](architectural-styles/README.md) | Principles and constraints for organizing major system components |
