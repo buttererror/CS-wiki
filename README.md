@@ -96,7 +96,7 @@ Repository documentation
 | [`software-development-practices/`](software-development-practices/README.md) | Ways of organizing and evolving engineering work | Development strategy, lean delivery, and repository organization |
 | [`framework-tooling/`](framework-tooling/README.md) | Technology-specific learning | NestJS Dependency Injection and TanStack Query |
 | [`miscellaneous/`](miscellaneous/README.md) | Temporary review inbox | Older language, frontend, backend-data, AI, Linux, and tooling notes |
-| `docs/` | Documentation about this repository | Maintenance records and a proposed static-wiki/PWA plan |
+| [`docs/`](docs/README.md) | Documentation about this repository | Maintenance records and a proposed static-wiki/PWA plan |
 
 The detailed coverage is currently strongest in Software Engineering. The
 broader Computer Science map intentionally includes areas that do not yet have
