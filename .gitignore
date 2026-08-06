@@ -1,6 +1,10 @@
 # Dependencies
 node_modules/
 
-.vscode/
+# Editor files
+.vscode/*
+
+#VitePress cache and build outputs
 .vitepress/cache
-build/
+.vitepress/dist
+.vitepress/.temp/
