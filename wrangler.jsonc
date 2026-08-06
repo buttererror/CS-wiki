@@ -2,7 +2,5 @@
     "$schema": "./node_modules/wrangler/config-schema.json",
     "name": "cs-wiki",
     "compatibility_date": "2026-08-06",
-    "assets": {
-        "directory": ".vitepress/dist"
-    }
+    "pages_build_output_dir": ".vitepress/dist"
 }
