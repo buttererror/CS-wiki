@@ -4,6 +4,8 @@ A practical, evolving knowledge base for computer science and software developme
 The notes favor mental models, concise explanations, comparisons, commands, and
 examples that are useful while learning or building.
 
+**Live preview:** [wiki.buttererror.com](https://wiki.buttererror.com/)
+
 > This is a living wiki, not a finished textbook. Some pages are polished
 > references, while others are working notes or topic placeholders.
 
