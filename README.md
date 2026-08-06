@@ -97,7 +97,7 @@ Repository documentation
 | [`frontend-development/`](frontend-development/README.md) | Canonical applied frontend area | Browser runtime, rendering, hydration, serialization, reactivity, and styling |
 | [`framework-tooling/`](framework-tooling/README.md) | Technology-specific learning | Backend, frontend, and cross-platform frameworks, libraries, and tooling |
 | [`miscellaneous/`](miscellaneous/README.md) | Temporary review inbox | Older language, backend-data, AI, Linux, and tooling notes |
-| [`docs/`](docs/README.md) | Documentation about this repository | Maintenance records and a proposed static-wiki/PWA plan |
+| `docs/` | Repository documentation excluded from the published wiki | Maintenance records and a proposed static-wiki/PWA plan |
 
 The detailed coverage is currently strongest in Software Engineering. The
 broader Computer Science map intentionally includes areas that do not yet have
@@ -306,7 +306,7 @@ documentation.
 ## Maintenance status
 
 - [x] Complete the repository-wide structure, taxonomy, and navigation review.
-  See the [maintenance record](docs/maintenance/2026-08-05-taxonomy-and-organization.md).
+  The maintenance record is stored in `docs/maintenance/`.
 - [ ] Review material in [`miscellaneous/`](miscellaneous/README.md) page by
   page for duplicate content, placeholders, naming, scope, and canonical
   placement.

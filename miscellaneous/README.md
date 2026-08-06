@@ -48,7 +48,7 @@ For each page:
 
 ## Related Concepts
 
-- [CS Wiki](../README.md)
+- [CS Wiki](../)
 - [Computer Science Foundations](../computer-science-foundations/README.md)
 - [System Design](../system-design/README.md)
 - [Security](../security/README.md)
