@@ -254,6 +254,10 @@ export default defineConfig({
                                     link: '/frontend-development/rendering/server-and-client-rendering',
                                 },
                                 {
+                                    text: 'SSR versus ISR',
+                                    link: '/frontend-development/rendering/ssr-and-isr',
+                                },
+                                {
                                     text: 'Hydration',
                                     link: '/frontend-development/rendering/hydration',
                                 },

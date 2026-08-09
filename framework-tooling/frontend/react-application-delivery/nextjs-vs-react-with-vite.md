@@ -460,6 +460,7 @@ include:
 - [Vite: Building for Production](https://vite.dev/guide/build.html)
 - [React Application Delivery](README.md)
 - [Frontend Development](../../../frontend-development/README.md)
+- [SSR versus ISR](../../../frontend-development/rendering/ssr-and-isr.md)
 - [Hydration](../../../frontend-development/rendering/hydration.md)
 - [Serialization](../../../frontend-development/data-across-boundaries/serialization.md)
 - [Next.js Notes](../nextjs/notes.md)

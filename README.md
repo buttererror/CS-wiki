@@ -201,6 +201,7 @@ general frontend development is a subset of tooling.
 | [Browser Runtime](frontend-development/browser-runtime/README.md) | Browser execution environment, runtime values, and boundaries |
 | [Timers and Event Scheduling](frontend-development/browser-runtime/timers-and-event-scheduling.md) | Timers, tasks, microtasks, animation frames, debounce, and throttle |
 | [Server and Client Rendering](frontend-development/rendering/server-and-client-rendering.md) | Client rendering, server rendering, static generation, and Server Components |
+| [SSR versus ISR](frontend-development/rendering/ssr-and-isr.md) | Request-time rendering versus cached output with time-based or on-demand regeneration; currently marked not read yet |
 | [Hydration](frontend-development/rendering/hydration.md) | Client adoption of server-rendered markup and mismatch causes |
 | [Serialization](frontend-development/data-across-boundaries/serialization.md) | Transferable representations across frontend boundaries |
 | [Reactivity Mechanisms](frontend-development/state-and-reactivity/reactivity-mechanisms.md) | Proxy tracking, explicit updates, and stream-based models |

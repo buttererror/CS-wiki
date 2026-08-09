@@ -41,6 +41,7 @@ React.
 
 - [Frameworks, Libraries, and Tooling](../../README.md)
 - [Frontend Development](../../../frontend-development/README.md)
+- [SSR versus ISR](../../../frontend-development/rendering/ssr-and-isr.md)
 - [Frontend Frameworks and Tooling](../README.md)
 - [Next.js Notes](../nextjs/notes.md)
 - [React](../react/README.md)

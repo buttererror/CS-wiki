@@ -9,6 +9,7 @@ build, on a server, or in the browser.
 ## Document Index
 
 - [Server and Client Rendering](server-and-client-rendering.md)
+- [SSR versus ISR](ssr-and-isr.md)
 - [Hydration](hydration.md)
 
 ## Concept Map
@@ -21,7 +22,8 @@ UI description or template
 Rendering strategy
 ├── browser creates or updates DOM
 ├── server produces initial HTML
-└── build produces static HTML
+├── build produces static HTML
+└── regeneration replaces cached route output
         ↓
 Browser displays and updates the page
 ```
@@ -33,6 +35,6 @@ across routes and components.
 ## Related Concepts
 
 - [Browser Runtime](../browser-runtime/README.md)
+- [SSR versus ISR](ssr-and-isr.md)
 - [Serialization](../data-across-boundaries/serialization.md)
 - [React Application Delivery](../../framework-tooling/frontend/react-application-delivery/README.md)
-

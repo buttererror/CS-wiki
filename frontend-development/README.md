@@ -31,6 +31,7 @@ Frontend Development
 ├── Rendering
 │   ├── Client rendering
 │   ├── Server rendering
+│   ├── Static generation and ISR
 │   └── Hydration
 ├── Data across boundaries
 ├── State and reactivity
@@ -64,11 +65,13 @@ Framework-specific implementations
    explains browser timers, task queues, and timing controls.
 3. [Server and Client Rendering](rendering/server-and-client-rendering.md)
    explains where UI output can be produced.
-4. [Serialization](data-across-boundaries/serialization.md) explains how data
+4. [SSR versus ISR](rendering/ssr-and-isr.md) compares request-time rendering
+   with cached output that can be regenerated.
+5. [Serialization](data-across-boundaries/serialization.md) explains how data
    crosses storage, network, process, and server/client boundaries.
-5. [Hydration](rendering/hydration.md) explains how a client framework adopts
+6. [Hydration](rendering/hydration.md) explains how a client framework adopts
    server-rendered markup.
-6. [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)
+7. [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)
    compares automatic dependency tracking, explicit updates, and streams.
 
 ## Document Index
@@ -77,6 +80,7 @@ Framework-specific implementations
 - [Timers and Event Scheduling](browser-runtime/timers-and-event-scheduling.md)
 - [Rendering](rendering/README.md)
 - [Server and Client Rendering](rendering/server-and-client-rendering.md)
+- [SSR versus ISR](rendering/ssr-and-isr.md)
 - [Hydration](rendering/hydration.md)
 - [Serialization](data-across-boundaries/serialization.md)
 - [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)

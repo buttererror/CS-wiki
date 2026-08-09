@@ -97,7 +97,7 @@ Client Component hydration → activates client-side React behavior
 ## Related Concepts
 
 - [Rendering](README.md)
+- [SSR versus ISR](ssr-and-isr.md)
 - [Hydration](hydration.md)
 - [Serialization](../data-across-boundaries/serialization.md)
 - [Next.js and React with Vite](../../framework-tooling/frontend/react-application-delivery/nextjs-vs-react-with-vite.md)
-
