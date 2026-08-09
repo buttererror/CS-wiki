@@ -59,6 +59,26 @@ export default defineConfig({
                             link: '/computer-science-foundations/computer-systems/',
                         },
                         {
+                            text: 'Programming Languages',
+                            link: '/computer-science-foundations/programming-languages/',
+                            items: [
+                                {
+                                    text: 'JavaScript',
+                                    link: '/computer-science-foundations/programming-languages/javascript/',
+                                    items: [
+                                        {
+                                            text: 'Functions, Closures, and Identity',
+                                            link: '/computer-science-foundations/programming-languages/javascript/functions-closures-and-identity',
+                                        },
+                                        {
+                                            text: 'Hoisting and Binding Initialization',
+                                            link: '/computer-science-foundations/programming-languages/javascript/hoisting',
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                        {
                             text: 'Software Engineering',
                             link: '/computer-science-foundations/software-engineering/',
                             collapsed: false,
@@ -200,6 +220,12 @@ export default defineConfig({
                         {
                             text: 'Browser Runtime',
                             link: '/frontend-development/browser-runtime/',
+                            items: [
+                                {
+                                    text: 'Timers and Event Scheduling',
+                                    link: '/frontend-development/browser-runtime/timers-and-event-scheduling',
+                                },
+                            ],
                         },
                         {
                             text: 'Rendering',
@@ -283,6 +309,10 @@ export default defineConfig({
                                             link: '/framework-tooling/frontend/react/forms',
                                         },
                                         {
+                                            text: 'Debouncing',
+                                            link: '/framework-tooling/frontend/react/debouncing',
+                                        },
+                                        {
                                             text: 'Performance',
                                             link: '/framework-tooling/frontend/react/performance',
                                         },
@@ -332,7 +362,7 @@ export default defineConfig({
                             link: '/miscellaneous/CS',
                         },
                         {
-                            text: 'JavaScript',
+                            text: 'Legacy JavaScript Notes',
                             link: '/miscellaneous/JavaScript-notes',
                         },
                         {

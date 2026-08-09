@@ -14,7 +14,7 @@ repository root readable while avoiding premature classification.
 ### Programming and Languages
 
 - [General Programming](CS.md)
-- [JavaScript](JavaScript-notes.md)
+- [Legacy JavaScript Notes](JavaScript-notes.md)
 - [TypeScript](TypeScript.md)
 - [General Notes](general.md)
 

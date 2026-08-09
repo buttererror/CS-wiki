@@ -52,7 +52,8 @@ and Effects. Custom Hooks compose reusable stateful logic.
 3. [Effects and External Synchronization](effects-and-external-synchronization.md)
 4. [Context and External Stores](context-and-external-stores.md)
 5. [Forms](forms.md)
-6. [Performance](performance.md)
+6. [Debouncing](debouncing.md)
+7. [Performance](performance.md)
 
 ## Document Index
 
@@ -65,6 +66,8 @@ and Effects. Custom Hooks compose reusable stateful logic.
 - [Context and External Stores](context-and-external-stores.md) — deep value
   distribution, reducers, selectors, and external subscriptions.
 - [Forms](forms.md) — controlled and uncontrolled inputs.
+- [Debouncing](debouncing.md) — timers, delayed value propagation, callback
+  identity, and cleanup.
 - [Performance](performance.md) — measurement, memoization, rendering cost,
   code splitting, and data-loading waterfalls.
 

@@ -160,6 +160,8 @@ when focused foundational documents exist.
 The current foundation landing pages are:
 
 - [Computer Systems](computer-systems/README.md) — introduces hardware, operating systems, networking, storage, and distributed computation.
+- [Programming Languages](programming-languages/README.md) — introduces
+  language-level concepts and the current JavaScript material.
 - [Software Engineering](software-engineering/README.md) — connects programming paradigms, design principles, patterns, architecture, frameworks, libraries, and implementations.
 
 Software Engineering currently has the more developed set of focused documents. Other Computer Science areas appear throughout the wiki as practical notes but do not yet have equivalent foundation indexes. Future indexes should be created only when enough focused material exists to support them.
@@ -180,6 +182,9 @@ Computer Science Foundations
 ├── Computer Systems Foundations
 │   └── runtime, networking, storage, and distributed-system questions
 │
+├── Programming Languages
+│   └── syntax, bindings, functions, and language semantics
+│
 └── Software Engineering Foundations
     └── taxonomy, principles, patterns, and architecture
 
@@ -189,6 +194,8 @@ Related applied areas
 ```
 
 - [Computer Systems](computer-systems/README.md)
+- [Programming Languages](programming-languages/README.md)
+- [JavaScript](programming-languages/javascript/README.md)
 - [Software Engineering Foundations](software-engineering/README.md)
 - [Software Taxonomy](software-engineering/software-taxonomy.md)
 - [Software Architecture](software-engineering/software-architecture.md)

@@ -92,7 +92,7 @@ Repository documentation
 
 | Directory | Current role | Current coverage |
 | --- | --- | --- |
-| [`computer-science-foundations/`](computer-science-foundations/README.md) | Foundational field maps and transferable concepts | Computer Systems overview and detailed Software Engineering foundations |
+| [`computer-science-foundations/`](computer-science-foundations/README.md) | Foundational field maps and transferable concepts | Computer Systems, Programming Languages, and Software Engineering foundations |
 | [`system-design/`](system-design/README.md) | Cross-cutting applied design area | General, computer-system, and software-system scopes; DDD and neighboring perspectives |
 | [`security/`](security/README.md) | Canonical cross-cutting security area | Foundational/applied distinction and current Identity and Access Management notes |
 | [`software-development-practices/`](software-development-practices/README.md) | Ways of organizing and evolving engineering work | Development strategy, lean delivery, and repository organization |
@@ -114,6 +114,9 @@ Choose a path based on what you want to learn:
   [Computer Science Foundations](computer-science-foundations/README.md) →
   [Computer Systems](computer-science-foundations/computer-systems/README.md) or
   [Software Engineering Foundations](computer-science-foundations/software-engineering/README.md)
+- **Study programming-language behavior:**
+  [Programming Languages](computer-science-foundations/programming-languages/README.md) →
+  [JavaScript](computer-science-foundations/programming-languages/javascript/README.md)
 - **Relate software concepts by abstraction level:**
   [Software Taxonomy](computer-science-foundations/software-engineering/software-taxonomy.md)
   → [Software Architecture](computer-science-foundations/software-engineering/software-architecture.md)
@@ -136,6 +139,15 @@ Choose a path based on what you want to learn:
 
 ## Knowledge map
 
+### Programming languages
+
+| Topic | What it covers |
+| --- | --- |
+| [Programming Languages](computer-science-foundations/programming-languages/README.md) | Language-level syntax, semantics, bindings, functions, and runtime models |
+| [JavaScript](computer-science-foundations/programming-languages/javascript/README.md) | Reviewed JavaScript foundations; currently marked not read yet |
+| [Functions, Closures, and Identity](computer-science-foundations/programming-languages/javascript/functions-closures-and-identity.md) | Function objects, lexical closures, reference identity, and React as an application |
+| [Hoisting and Binding Initialization](computer-science-foundations/programming-languages/javascript/hoisting.md) | Declaration processing, initialization timing, and the temporal dead zone |
+
 ### Programming and language notes awaiting review
 
 These documents remain in the review inbox. Their links are useful, but their
@@ -144,7 +156,7 @@ current filenames, scope, and placement should not be read as final taxonomy.
 | Topic | What it covers |
 | --- | --- |
 | [General Programming](miscellaneous/CS.md) | Paradigms, execution models, design patterns, and core terminology |
-| [JavaScript](miscellaneous/JavaScript-notes.md) | Language features, closures, pure functions, and array methods |
+| [Legacy JavaScript Notes](miscellaneous/JavaScript-notes.md) | Mixed language notes pending review and migration |
 | [TypeScript](miscellaneous/TypeScript.md) | Tooling, package commands, and the `unknown` type |
 
 ### Software foundations and taxonomy
@@ -183,6 +195,7 @@ general frontend development is a subset of tooling.
 | --- | --- |
 | [Frontend Development](frontend-development/README.md) | Framework-independent frontend map and reading path |
 | [Browser Runtime](frontend-development/browser-runtime/README.md) | Browser execution environment, runtime values, and boundaries |
+| [Timers and Event Scheduling](frontend-development/browser-runtime/timers-and-event-scheduling.md) | Timers, tasks, microtasks, animation frames, debounce, and throttle |
 | [Server and Client Rendering](frontend-development/rendering/server-and-client-rendering.md) | Client rendering, server rendering, static generation, and Server Components |
 | [Hydration](frontend-development/rendering/hydration.md) | Client adoption of server-rendered markup and mismatch causes |
 | [Serialization](frontend-development/data-across-boundaries/serialization.md) | Transferable representations across frontend boundaries |

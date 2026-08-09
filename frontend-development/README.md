@@ -60,18 +60,21 @@ Framework-specific implementations
 
 1. [Browser Runtime](browser-runtime/README.md) explains where frontend code
    executes and what the environment provides.
-2. [Server and Client Rendering](rendering/server-and-client-rendering.md)
+2. [Timers and Event Scheduling](browser-runtime/timers-and-event-scheduling.md)
+   explains browser timers, task queues, and timing controls.
+3. [Server and Client Rendering](rendering/server-and-client-rendering.md)
    explains where UI output can be produced.
-3. [Serialization](data-across-boundaries/serialization.md) explains how data
+4. [Serialization](data-across-boundaries/serialization.md) explains how data
    crosses storage, network, process, and server/client boundaries.
-4. [Hydration](rendering/hydration.md) explains how a client framework adopts
+5. [Hydration](rendering/hydration.md) explains how a client framework adopts
    server-rendered markup.
-5. [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)
+6. [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)
    compares automatic dependency tracking, explicit updates, and streams.
 
 ## Document Index
 
 - [Browser Runtime](browser-runtime/README.md)
+- [Timers and Event Scheduling](browser-runtime/timers-and-event-scheduling.md)
 - [Rendering](rendering/README.md)
 - [Server and Client Rendering](rendering/server-and-client-rendering.md)
 - [Hydration](rendering/hydration.md)
@@ -92,4 +95,3 @@ Framework-specific implementations
 - [Software Engineering Foundations](../computer-science-foundations/software-engineering/README.md)
 - [Security](../security/README.md)
 - [Software Development Practices](../software-development-practices/README.md)
-
