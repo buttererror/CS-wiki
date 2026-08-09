@@ -327,6 +327,10 @@ export default defineConfig({
                                             link: '/framework-tooling/frontend/react/forms',
                                         },
                                         {
+                                            text: 'Function Identity and Closures',
+                                            link: '/framework-tooling/frontend/react/function-identity-and-closures',
+                                        },
+                                        {
                                             text: 'Debouncing',
                                             link: '/framework-tooling/frontend/react/debouncing',
                                         },

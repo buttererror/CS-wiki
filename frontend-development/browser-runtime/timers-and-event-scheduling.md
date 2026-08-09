@@ -60,6 +60,22 @@ better fit for visual work that should follow the browser's rendering cadence.
 **Debounce** waits for activity to become quiet. Each new call cancels the
 previous pending timer, so only the final call triggers the work.
 
+```text
+event → start timer
+event → cancel old timer → start new timer
+event → cancel old timer → start new timer
+quiet period → callback runs once
+```
+
+The debounced function owns its timer through a closure. Calls must reach that
+same function instance to reset the same pending timer:
+
+```text
+call 1 ─┐
+call 2 ─┼──→ one debounced function → one timer slot
+call 3 ─┘
+```
+
 ```ts
 type DebouncedFunction<TArgs extends unknown[]> = {
   (...args: TArgs): void;

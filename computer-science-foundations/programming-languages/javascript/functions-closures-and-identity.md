@@ -35,6 +35,11 @@ const secondHandler = createHandler();
 firstHandler === secondHandler; // false
 ```
 
+```text
+evaluate function expression → create function object → return a reference
+evaluate it again            → create another object  → different reference
+```
+
 This is **function identity** (or referential identity). It matters only when
 another API compares, stores, removes, or caches a function by reference.
 
@@ -64,6 +69,11 @@ increment(); // 2
 returned. Calling `createCounter()` again creates a separate environment and a
 separate counter.
 
+```text
+createCounter call 1 → lexical environment 1 → returned function 1
+createCounter call 2 → lexical environment 2 → returned function 2
+```
+
 ## When Identity Matters
 
 Examples include:
@@ -91,6 +101,7 @@ callback should be memoized. See:
 - [React Rendering Model](../../../framework-tooling/frontend/react/rendering-model.md)
 - [React State and Updates](../../../framework-tooling/frontend/react/state-and-updates.md)
 - [React Performance](../../../framework-tooling/frontend/react/performance.md)
+- [React Function Identity and Closures](../../../framework-tooling/frontend/react/function-identity-and-closures.md)
 - [Debouncing in React](../../../framework-tooling/frontend/react/debouncing.md)
 
 `useCallback` can cache a function while its dependencies remain the same, but

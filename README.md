@@ -206,7 +206,9 @@ general frontend development is a subset of tooling.
 | [Reactivity Mechanisms](frontend-development/state-and-reactivity/reactivity-mechanisms.md) | Proxy tracking, explicit updates, and stream-based models |
 | [Styling](frontend-development/styling/README.md) | Style isolation, layout, and component-oriented styling architecture |
 | [Frontend Frameworks and Tooling](framework-tooling/frontend/README.md) | React, Next.js, Vue, Vite, and technology comparisons |
-| [React](framework-tooling/frontend/react/README.md) | Rendering, state, Effects, context, forms, and performance |
+| [React](framework-tooling/frontend/react/README.md) | Rendering, state, Effects, function identity, debouncing, forms, and performance |
+| [React Function Identity and Closures](framework-tooling/frontend/react/function-identity-and-closures.md) | Render-local functions, closure snapshots, memoization, and identity-sensitive consumers |
+| [Debouncing in React](framework-tooling/frontend/react/debouncing.md) | Responsive inputs, debounced values and callbacks, query flows, and timer cleanup |
 | [React Application Delivery](framework-tooling/frontend/react-application-delivery/README.md) | React delivery architectures, JavaScript boundaries, and performance decisions |
 | [Next.js](framework-tooling/frontend/nextjs/notes.md) | Setup, routing, CSS Modules, and related application-framework notes |
 | [Vue](framework-tooling/frontend/vue/notes.md) | Vue reactivity, state-management, testing, and SSR study topics |
