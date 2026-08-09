@@ -63,6 +63,10 @@ export default defineConfig({
                             link: '/computer-science-foundations/programming-languages/',
                             items: [
                                 {
+                                    text: 'Type Systems',
+                                    link: '/computer-science-foundations/programming-languages/type-systems',
+                                },
+                                {
                                     text: 'JavaScript',
                                     link: '/computer-science-foundations/programming-languages/javascript/',
                                     items: [
@@ -73,6 +77,20 @@ export default defineConfig({
                                         {
                                             text: 'Hoisting and Binding Initialization',
                                             link: '/computer-science-foundations/programming-languages/javascript/hoisting',
+                                        },
+                                    ],
+                                },
+                                {
+                                    text: 'TypeScript',
+                                    link: '/computer-science-foundations/programming-languages/typescript/',
+                                    items: [
+                                        {
+                                            text: 'Type-System Foundations',
+                                            link: '/computer-science-foundations/programming-languages/typescript/type-system',
+                                        },
+                                        {
+                                            text: 'Toolchain and Type Checking',
+                                            link: '/computer-science-foundations/programming-languages/typescript/toolchain',
                                         },
                                     ],
                                 },
@@ -366,7 +384,7 @@ export default defineConfig({
                             link: '/miscellaneous/JavaScript-notes',
                         },
                         {
-                            text: 'TypeScript',
+                            text: 'TypeScript Learning Notes',
                             link: '/miscellaneous/TypeScript',
                         },
                         {

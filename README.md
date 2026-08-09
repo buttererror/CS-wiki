@@ -144,9 +144,13 @@ Choose a path based on what you want to learn:
 | Topic | What it covers |
 | --- | --- |
 | [Programming Languages](computer-science-foundations/programming-languages/README.md) | Language-level syntax, semantics, bindings, functions, and runtime models |
+| [Type Systems](computer-science-foundations/programming-languages/type-systems.md) | Static and dynamic checking, inference, narrowing, generics, and runtime boundaries |
 | [JavaScript](computer-science-foundations/programming-languages/javascript/README.md) | Reviewed JavaScript foundations; currently marked not read yet |
 | [Functions, Closures, and Identity](computer-science-foundations/programming-languages/javascript/functions-closures-and-identity.md) | Function objects, lexical closures, reference identity, and React as an application |
 | [Hoisting and Binding Initialization](computer-science-foundations/programming-languages/javascript/hoisting.md) | Declaration processing, initialization timing, and the temporal dead zone |
+| [TypeScript](computer-science-foundations/programming-languages/typescript/README.md) | Static type-system foundations for JavaScript; currently marked not read yet |
+| [TypeScript Type-System Foundations](computer-science-foundations/programming-languages/typescript/type-system.md) | `unknown`, `any`, narrowing, generics, tuples, and utility types |
+| [TypeScript Toolchain and Type Checking](computer-science-foundations/programming-languages/typescript/toolchain.md) | Project-local setup, running TypeScript, and full type checking |
 
 ### Programming and language notes awaiting review
 
@@ -157,7 +161,7 @@ current filenames, scope, and placement should not be read as final taxonomy.
 | --- | --- |
 | [General Programming](miscellaneous/CS.md) | Paradigms, execution models, design patterns, and core terminology |
 | [Legacy JavaScript Notes](miscellaneous/JavaScript-notes.md) | Mixed language notes pending review and migration |
-| [TypeScript](miscellaneous/TypeScript.md) | Tooling, package commands, and the `unknown` type |
+| [TypeScript Learning Notes](miscellaneous/TypeScript.md) | Original learning notes, mental models, examples, and follow-up details preserved for review |
 
 ### Software foundations and taxonomy
 

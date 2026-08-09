@@ -15,7 +15,7 @@ repository root readable while avoiding premature classification.
 
 - [General Programming](CS.md)
 - [Legacy JavaScript Notes](JavaScript-notes.md)
-- [TypeScript](TypeScript.md)
+- [TypeScript Learning Notes](TypeScript.md)
 - [General Notes](general.md)
 
 ### Backend and Data
