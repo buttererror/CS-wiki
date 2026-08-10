@@ -23,6 +23,7 @@ of duplicating it.
 - [Pattern](pattern.md) — a reusable description of a recurring arrangement, interaction, or solution in context.
 - [Style](style.md) — principles and constraints that shape the overall character of a design.
 - [Client](client.md) — an interaction role that initiates use of a capability, plus the related meanings of client libraries and client objects.
+- [Post-Authentication Redirects](../../../frontend-development/routing-and-interaction/post-authentication-redirects.md) — a return-to navigation pattern that resumes a validated internal destination after sign-in.
 - Abstraction — a simplified interface or model that hides selected details.
 - Component — a distinguishable part of a larger software structure.
 - Runtime — the environment and period in which a program executes.

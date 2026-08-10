@@ -88,6 +88,12 @@ and Effects. Custom Hooks compose reusable stateful logic.
 - [React Application Delivery](../react-application-delivery/README.md)
 - [Frontend Frameworks and Tooling](../README.md)
 
+## Related Frontend Concepts
+
+- [Post-Authentication Redirects](../../../frontend-development/routing-and-interaction/post-authentication-redirects.md)
+  — a framework-independent return-to navigation pattern with a React Router
+  implementation example.
+
 ## Sources
 
 - [React documentation](https://react.dev/)

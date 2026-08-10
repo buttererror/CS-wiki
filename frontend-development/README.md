@@ -84,6 +84,8 @@ Framework-specific implementations
 - [Hydration](rendering/hydration.md)
 - [Serialization](data-across-boundaries/serialization.md)
 - [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)
+- [Routing and Interaction](routing-and-interaction/README.md)
+- [Post-Authentication Redirects](routing-and-interaction/post-authentication-redirects.md)
 - [Styling](styling/README.md)
 
 ## Framework Applications

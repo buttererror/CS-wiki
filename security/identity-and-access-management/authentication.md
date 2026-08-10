@@ -1016,6 +1016,7 @@ The final rule is:
 - [JSON Web Token](json-web-token.md)
 - [Security](../README.md)
 - [Software System Design](../../system-design/software-system-design/README.md)
+- [Post-Authentication Redirects](../../frontend-development/routing-and-interaction/post-authentication-redirects.md)
 
 ## Authoritative References
 
