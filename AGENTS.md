@@ -40,3 +40,11 @@ When proposing placement for a new concept, explain:
 When useful, briefly suggest the correct engineering terminology and correct up
 to three important English issues in the user's message. Prioritize the
 engineering task and avoid full English lessons unless explicitly requested.
+
+## Keyword Navigation
+
+Use a short `**Keywords:**` line near the beginning of every new or substantially updated canonical reference page. Include exact terminology, common aliases, symbols or syntax, and likely search wording that help a reader reach that page.
+
+When a user mentions a keyword, first search the page that owns the concept and the [Software Engineering Terminology](computer-science-foundations/software-engineering/terminology/README.md) directory. Add the keyword to the owning page by default. Also add it to the terminology index or a dedicated terminology page only when it is cross-topic, ambiguous, or likely to be reused as a search term across the wiki.
+
+Do not mechanically add empty keyword lists to historical notes, navigation pages, or material awaiting review. Keep one canonical explanation and use keywords and links to reach it.

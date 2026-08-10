@@ -567,7 +567,28 @@ Old request cannot replace the new state
 
 ## Query Client
 
-`useQueryClient()` gives a React component access to the Query Client.
+For the general interaction role and the distinction between browser, API,
+database, and library clients, see [Client](../computer-science-foundations/software-engineering/terminology/client.md).
+
+`QueryClient` is TanStack Query's central client-side coordinator for query
+state. It manages the Query Cache, Mutation Cache, and query coordination APIs.
+It is not an HTTP client and does not replace `fetch` or an application's API
+client; the query function is still responsible for performing the actual
+request.
+
+```text
+React component
+    ↓ useQuery(...)
+QueryClient and Query Cache
+    ↓ query function
+API client or fetch
+    ↓ HTTP request
+Server
+```
+
+In a React application, one `QueryClient` is normally created for the
+application and exposed through `QueryClientProvider`. `useQueryClient()` then
+gives a component access to that same client instance.
 
 ```ts
 const queryClient = useQueryClient()
@@ -579,9 +600,19 @@ Operations discussed include:
 cancelQueries()
 setQueryData()
 invalidateQueries()
+removeQueries()
 ```
 
-The Query Client provides the imperative coordination APIs that connect mutations and existing query state.
+The Query Client provides imperative coordination APIs that connect mutations
+and existing query state. It can update cache data after a mutation, mark data
+stale, cancel matching query work, or remove cache entries. It does not make
+the backend the source of truth disappear: cached data remains a synchronized
+client-side representation of data owned by the server.
+
+`gcTime` is one QueryClient cache policy. It controls how long an inactive
+query remains in the Query Cache; it does not control freshness, request
+timeouts, authentication duration, or JavaScript's own garbage collector. See
+[`gcTime`](#gctime) for the full cache-lifetime explanation.
 
 ---
 

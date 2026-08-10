@@ -297,10 +297,17 @@ New reference notes should aim for a consistent, scannable structure:
 3. **Example** — code, a command, or a concrete scenario.
 4. **Tradeoffs** — when it helps, when it does not, and common pitfalls.
 5. **Related concepts** — links to nearby pages in the wiki.
+6. **Keywords** — exact terms, common aliases, symbols, and likely search wording that help readers find the page.
 
 Use descriptive, lowercase file names with hyphens for new pages, group related
 topics in directories, and prefer relative links so the wiki works locally and
 on GitHub.
+
+Put focused keywords near the beginning of the page as a short `**Keywords:**`
+line. Put a term in [Software Engineering Terminology](computer-science-foundations/software-engineering/terminology/README.md)
+only when it needs a cross-topic definition, an alias map, or a dedicated
+terminology explanation. Otherwise, the topic page remains the canonical place
+for the keyword.
 
 ## Contributing
 

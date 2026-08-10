@@ -51,7 +51,7 @@ manual schedule chosen independently of the Effect's code.
 
 - No dependency array: the Effect is eligible after every commit.
 - `[]`: the setup does not depend on changing component values, but development
-  Strict Mode can perform an extra setup/cleanup cycle.
+  [Strict Mode](strict-mode.md) can perform an extra setup/cleanup cycle.
 - `[value]`: rerun when `value` changes according to `Object.is()`.
 
 Do not omit dependencies to force timing. Restructure the code or use an event
@@ -88,7 +88,9 @@ application logic.
 
 Fetching in an Effect is possible, but a router, framework, or server-state
 library can often preload, cache, deduplicate, and avoid client waterfalls more
-effectively. Choose the owner based on the application's delivery model.
+effectively. Choose the owner based on the application's delivery model. See
+[Strict Mode](strict-mode.md) when an Effect appears to call an API twice during
+development.
 
 ## `useLayoutEffect`
 
@@ -106,4 +108,3 @@ Effects do not block the browser in the same way.
 - [React: Synchronizing with Effects](https://react.dev/learn/synchronizing-with-effects)
 - [React: You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect)
 - [React: `useLayoutEffect`](https://react.dev/reference/react/useLayoutEffect)
-

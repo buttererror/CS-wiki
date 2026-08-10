@@ -50,11 +50,12 @@ and Effects. Custom Hooks compose reusable stateful logic.
 1. [Rendering Model](rendering-model.md)
 2. [State and Updates](state-and-updates.md)
 3. [Effects and External Synchronization](effects-and-external-synchronization.md)
-4. [Context and External Stores](context-and-external-stores.md)
-5. [Forms](forms.md)
-6. [Function Identity and Closures](function-identity-and-closures.md)
-7. [Debouncing](debouncing.md)
-8. [Performance](performance.md)
+4. [Strict Mode](strict-mode.md)
+5. [Context and External Stores](context-and-external-stores.md)
+6. [Forms](forms.md)
+7. [Function Identity and Closures](function-identity-and-closures.md)
+8. [Debouncing](debouncing.md)
+9. [Performance](performance.md)
 
 ## Document Index
 
@@ -64,6 +65,8 @@ and Effects. Custom Hooks compose reusable stateful logic.
   updates, reducers, refs, and state ownership.
 - [Effects and External Synchronization](effects-and-external-synchronization.md)
   — pure rendering, event handlers, Effects, dependencies, and cleanup.
+- [Strict Mode](strict-mode.md) — development-only repeated rendering and
+  Effect setup, duplicate development requests, and request cleanup.
 - [Context and External Stores](context-and-external-stores.md) — deep value
   distribution, reducers, selectors, and external subscriptions.
 - [Forms](forms.md) — controlled and uncontrolled inputs.
