@@ -89,7 +89,9 @@ application logic.
 Fetching in an Effect is possible, but a router, framework, or server-state
 library can often preload, cache, deduplicate, and avoid client waterfalls more
 effectively. Choose the owner based on the application's delivery model. See
-[Strict Mode](strict-mode.md) when an Effect appears to call an API twice during
+[Stale-Response Races and Server-State Ownership](stale-response-races.md)
+when changing inputs can leave several requests in flight, and [Strict
+Mode](strict-mode.md) when an Effect appears to call an API twice during
 development.
 
 ## `useLayoutEffect`

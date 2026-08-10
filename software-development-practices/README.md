@@ -25,6 +25,9 @@ Software Development Practices
 │   ├── Code Review
 │   └── Documentation Strategy
 │
+├── Version Control
+│   └── Detached HEAD
+│
 ├── Repository Strategy
 │   ├── Monorepo
 │   └── Polyrepo
@@ -67,6 +70,10 @@ Practices and design still influence one another. For example, repository struct
 - [Lean MVP and Vertical Slices](lean-mvp-vertical-slice-development.md) — connects YAGNI, MVP scope, vertical slices, incremental architecture, testing, DevOps, and documentation practices.
 - [Repository Organization](repository-organization/README.md) — distinguishes
   repository boundaries from workspace tooling and runtime architecture.
+- [Version Control](version-control/README.md) — tracks commits, branches,
+  merges, rebases, recovery, and branch-state changes.
+- [Detached HEAD](version-control/detached-head.md) — explains the branchless
+  Git state and how to recover or reuse the commit.
 - [Monorepo](repository-organization/monorepo.md) — organizes multiple related
   projects in one version-control repository.
 

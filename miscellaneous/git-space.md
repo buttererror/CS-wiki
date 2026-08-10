@@ -9,6 +9,7 @@
 
 This chat is dedicated to Git-related discussions, fixes, and practices. In this session:
 - We clarified how to revert the last commit using different methods.
+- We moved detached `HEAD` recovery into a dedicated canonical page.
 - We established that this chat will store Git-focused knowledge.
 ---
 
@@ -19,6 +20,8 @@ This chat is dedicated to Git-related discussions, fixes, and practices. In this
   - `git reset --hard HEAD~1` → undo commit and discard changes.
   - `git revert HEAD` → safely revert commit with a new commit.
 - [x] **Clarified Git reset vs revert usage, especially for pushed commits.**
+- [x] **Detached `HEAD` recovery now lives in**
+  [Detached HEAD](../software-development-practices/version-control/detached-head.md).
 
 ---
 
@@ -26,6 +29,8 @@ This chat is dedicated to Git-related discussions, fixes, and practices. In this
 
 - Use `git revert` for public/shared branches to avoid rewriting history.
 - Use `reset` for local-only changes when you want a clean slate.
+- Use the dedicated detached-`HEAD` page for branch rescue and cherry-pick
+  recovery patterns.
 ---
 
 ## 🔗 Resources / Commands / Links
@@ -34,6 +39,7 @@ This chat is dedicated to Git-related discussions, fixes, and practices. In this
 git reset --soft HEAD~1   # Undo commit, keep changes
 git reset --hard HEAD~1   # Undo commit and changes
 git revert HEAD           # Safe revert with new commit
+```
 
 ---
 # 📘 Chat Revision Log – AmendCommit

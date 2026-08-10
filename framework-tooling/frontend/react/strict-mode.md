@@ -79,7 +79,10 @@ useEffect(() => {
 
 Ignoring the first result can protect UI state, but it does not erase a request
 that already reached the server. This is why a server log can still show two
-requests even when the UI uses a guard against stale responses.
+requests even when the UI uses a guard against stale responses. See
+[Stale-Response Races and Server-State Ownership](stale-response-races.md) for
+the request-ordering problem and the boundary between query-owned server data
+and UI workflow state.
 
 ## Distinguish Expected And Real Duplicates
 
@@ -104,6 +107,7 @@ understanding the Effect lifecycle.
 ## Related Concepts
 
 - [Effects and External Synchronization](effects-and-external-synchronization.md)
+- [Stale-Response Races and Server-State Ownership](stale-response-races.md)
 - [Rendering Model](rendering-model.md)
 - [TanStack Query](../../tanstack-query.md)
 

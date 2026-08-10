@@ -50,12 +50,13 @@ and Effects. Custom Hooks compose reusable stateful logic.
 1. [Rendering Model](rendering-model.md)
 2. [State and Updates](state-and-updates.md)
 3. [Effects and External Synchronization](effects-and-external-synchronization.md)
-4. [Strict Mode](strict-mode.md)
-5. [Context and External Stores](context-and-external-stores.md)
-6. [Forms](forms.md)
-7. [Function Identity and Closures](function-identity-and-closures.md)
-8. [Debouncing](debouncing.md)
-9. [Performance](performance.md)
+4. [Stale-Response Races and Server-State Ownership](stale-response-races.md)
+5. [Strict Mode](strict-mode.md)
+6. [Context and External Stores](context-and-external-stores.md)
+7. [Forms](forms.md)
+8. [Function Identity and Closures](function-identity-and-closures.md)
+9. [Debouncing](debouncing.md)
+10. [Performance](performance.md)
 
 ## Document Index
 
@@ -65,6 +66,9 @@ and Effects. Custom Hooks compose reusable stateful logic.
   updates, reducers, refs, and state ownership.
 - [Effects and External Synchronization](effects-and-external-synchronization.md)
   — pure rendering, event handlers, Effects, dependencies, and cleanup.
+- [Stale-Response Races and Server-State Ownership](stale-response-races.md)
+  — out-of-order asynchronous responses, request cancellation, and the
+  boundary between UI workflow state and query-owned server state.
 - [Strict Mode](strict-mode.md) — development-only repeated rendering and
   Effect setup, duplicate development requests, and request cleanup.
 - [Context and External Stores](context-and-external-stores.md) — deep value

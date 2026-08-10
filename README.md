@@ -249,6 +249,8 @@ general frontend development is a subset of tooling.
 | --- | --- |
 | [Software Development Practices](software-development-practices/README.md) | Ways of organizing, validating, delivering, and evolving software |
 | [Repository Organization](software-development-practices/repository-organization/README.md) | Repository boundaries and their distinction from tooling and architecture |
+| [Version Control](software-development-practices/version-control/README.md) | Commit graphs, branches, merges, recovery, and detached `HEAD` states |
+| [Detached HEAD](software-development-practices/version-control/detached-head.md) | Git state where `HEAD` points directly at a commit; branch rescue and cherry-pick recovery |
 | [Monorepo](software-development-practices/repository-organization/monorepo.md) | Multiple related projects maintained in one version-control repository |
 | [Development Strategy](software-development-practices/development-strategy.md) | Horizontal and vertical development approaches |
 | [Lean MVP and Vertical Slices](software-development-practices/lean-mvp-vertical-slice-development.md) | YAGNI, MVP scope, and incremental delivery |
@@ -260,7 +262,7 @@ general frontend development is a subset of tooling.
 
 | Topic | What it covers |
 | --- | --- |
-| [Git](miscellaneous/git-space.md) | Version-control workflows, commits, amend, and recovery notes |
+| [Git](miscellaneous/git-space.md) | Version-control workflows, commits, amend, and broader recovery notes |
 | [Linux](miscellaneous/linux/linux-general.md) | Categorized shell and package-management command reference |
 | [Docker](miscellaneous/linux/docker.md) | Installation, runtime commands, Compose, and reset workflows |
 | [PostgreSQL](miscellaneous/linux/postgresql.md) | Local setup, roles, databases, and common `psql` operations |
