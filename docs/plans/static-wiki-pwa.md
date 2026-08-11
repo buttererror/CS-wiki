@@ -1,10 +1,15 @@
 # Static Wiki and Offline PWA Plan
 
-**Status:** Proposed
+**Status:** Implemented locally; GitHub Pages verification pending
 
 **Scope:** Build and deployment infrastructure for the CS Wiki
 
 **Target hosting:** GitHub Pages at `/CS-wiki/`
+
+**Implementation note (2026-08-11):** The VitePress build now generates the
+manifest and revisioned Workbox service worker, precaches the static wiki, and
+shows an in-page offline-ready or update prompt. Verify the deployed GitHub
+Pages site and its update cycle before treating this plan as fully complete.
 
 ## Context
 

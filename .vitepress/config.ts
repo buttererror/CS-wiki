@@ -1,10 +1,17 @@
+import { withPwa } from '@vite-pwa/vitepress'
 import { defineConfig } from 'vitepress'
 
-export default defineConfig({
+export default withPwa(defineConfig({
     title: 'CS Wiki',
     description: "A practical, evolving knowledge base for computer science and software development.",
-    base: "/",
+    base: '/CS-wiki/',
     cleanUrls: true,
+    head: [
+        ['link', { rel: 'icon', href: '/CS-wiki/pwa-icon.svg', type: 'image/svg+xml' }],
+    ],
+    vite: {
+        publicDir: '.vitepress/public',
+    },
     srcExclude: ['docs/**', 'README.md', 'AGENTS.md'],
     rewrites: (id) => {
         if (id.endsWith('/README.md')) {
@@ -553,8 +560,33 @@ export default defineConfig({
                 },
             ],
         }
-
-
     },
-
-})
+    pwa: {
+        registerType: 'prompt',
+        manifest: {
+            id: '/CS-wiki/',
+            name: 'CS Wiki',
+            short_name: 'CS Wiki',
+            description: 'A practical knowledge base for computer science and software development.',
+            start_url: '/CS-wiki/',
+            scope: '/CS-wiki/',
+            display: 'standalone',
+            theme_color: '#1b1b1f',
+            background_color: '#1b1b1f',
+            icons: [
+                {
+                    src: '/CS-wiki/pwa-icon.svg',
+                    sizes: 'any',
+                    type: 'image/svg+xml',
+                    purpose: 'any maskable',
+                },
+            ],
+        },
+        workbox: {
+            cleanupOutdatedCaches: true,
+            globPatterns: ['**/*.{css,html,ico,js,json,svg,webmanifest,woff2}'],
+            maximumFileSizeToCacheInBytes: 12 * 1024 * 1024,
+            navigateFallback: null,
+        },
+    },
+}))
