@@ -21,7 +21,7 @@ Software Development Practices
 │   └── YAGNI
 │
 ├── Quality Practices
-│   ├── Testing Strategy
+│   ├── Software Testing
 │   ├── Code Review
 │   └── Documentation Strategy
 │
@@ -66,6 +66,8 @@ Practices and design still influence one another. For example, repository struct
 
 ## Document Index
 
+- [Software Testing](testing/README.md) — classifies tests independently by
+  boundary, execution, purpose, quality focus, and subject under test.
 - [Development Strategy](development-strategy.md) — compares horizontal and vertical development approaches.
 - [Lean MVP and Vertical Slices](lean-mvp-vertical-slice-development.md) — connects YAGNI, MVP scope, vertical slices, incremental architecture, testing, DevOps, and documentation practices.
 - [Repository Organization](repository-organization/README.md) — distinguishes
@@ -81,7 +83,6 @@ Practices and design still influence one another. For example, repository struct
 
 - Polyrepo.
 - Workspace and build management.
-- Testing strategy.
 - Code review.
 - CI/CD and release strategies.
 - Documentation practices.

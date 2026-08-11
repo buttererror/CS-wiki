@@ -292,6 +292,10 @@ export default defineConfig({
                             link: '/software-development-practices/lean-mvp-vertical-slice-development',
                         },
                         {
+                            text: 'Software Testing',
+                            link: '/software-development-practices/testing/',
+                        },
+                        {
                             text: 'Repository Organization',
                             link: '/software-development-practices/repository-organization/',
                             items: [

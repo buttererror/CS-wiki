@@ -248,6 +248,7 @@ general frontend development is a subset of tooling.
 | Topic | What it covers |
 | --- | --- |
 | [Software Development Practices](software-development-practices/README.md) | Ways of organizing, validating, delivering, and evolving software |
+| [Software Testing](software-development-practices/testing/README.md) | Test boundaries, execution modes, purposes, quality focuses, and subjects under test |
 | [Repository Organization](software-development-practices/repository-organization/README.md) | Repository boundaries and their distinction from tooling and architecture |
 | [Version Control](software-development-practices/version-control/README.md) | Commit graphs, branches, merges, recovery, and detached `HEAD` states |
 | [Detached HEAD](software-development-practices/version-control/detached-head.md) | Git state where `HEAD` points directly at a commit; branch rescue and cherry-pick recovery |
