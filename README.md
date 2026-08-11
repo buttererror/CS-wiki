@@ -96,7 +96,7 @@ Repository documentation
 | [`system-design/`](system-design/README.md) | Cross-cutting applied design area | General, computer-system, and software-system scopes; DDD and neighboring perspectives |
 | [`security/`](security/README.md) | Canonical cross-cutting security area | Foundational/applied distinction and current Identity and Access Management notes |
 | [`software-development-practices/`](software-development-practices/README.md) | Ways of organizing and evolving engineering work | Development strategy, lean delivery, and repository organization |
-| [`frontend-development/`](frontend-development/README.md) | Canonical applied frontend area | Browser runtime, rendering, hydration, serialization, reactivity, and styling |
+| [`frontend-development/`](frontend-development/README.md) | Canonical applied frontend area | Browser runtime, offline web apps, rendering, hydration, serialization, reactivity, and styling |
 | [`framework-tooling/`](framework-tooling/README.md) | Technology-specific learning | Backend, frontend, and cross-platform frameworks, libraries, and tooling |
 | [`miscellaneous/`](miscellaneous/README.md) | Temporary review inbox | Older language, backend-data, AI, Linux, and tooling notes |
 | `docs/` | Repository documentation excluded from the published wiki | Maintenance records and a proposed static-wiki/PWA plan |

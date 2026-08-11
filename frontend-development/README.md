@@ -48,6 +48,8 @@ Frontend Development
 ```text
 Browser Runtime
         ↓
+Progressive Web Apps and Offline Caching
+        ↓
 Server and Client Rendering
         ↓
 Serialization across boundaries
@@ -63,21 +65,25 @@ Framework-specific implementations
    executes and what the environment provides.
 2. [Timers and Event Scheduling](browser-runtime/timers-and-event-scheduling.md)
    explains browser timers, task queues, and timing controls.
-3. [Server and Client Rendering](rendering/server-and-client-rendering.md)
+3. [Progressive Web Apps, Service Workers, and Offline Caching](offline-web-apps/README.md)
+   explains service-worker lifecycles, precaching, installability, updates, and
+   offline testing.
+4. [Server and Client Rendering](rendering/server-and-client-rendering.md)
    explains where UI output can be produced.
-4. [SSR versus ISR](rendering/ssr-and-isr.md) compares request-time rendering
+5. [SSR versus ISR](rendering/ssr-and-isr.md) compares request-time rendering
    with cached output that can be regenerated.
-5. [Serialization](data-across-boundaries/serialization.md) explains how data
+6. [Serialization](data-across-boundaries/serialization.md) explains how data
    crosses storage, network, process, and server/client boundaries.
-6. [Hydration](rendering/hydration.md) explains how a client framework adopts
+7. [Hydration](rendering/hydration.md) explains how a client framework adopts
    server-rendered markup.
-7. [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)
+8. [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)
    compares automatic dependency tracking, explicit updates, and streams.
 
 ## Document Index
 
 - [Browser Runtime](browser-runtime/README.md)
 - [Timers and Event Scheduling](browser-runtime/timers-and-event-scheduling.md)
+- [Progressive Web Apps, Service Workers, and Offline Caching](offline-web-apps/README.md)
 - [Rendering](rendering/README.md)
 - [Server and Client Rendering](rendering/server-and-client-rendering.md)
 - [SSR versus ISR](rendering/ssr-and-isr.md)
