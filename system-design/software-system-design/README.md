@@ -55,7 +55,7 @@ System Design
 └── Software System Design
 ```
 
-[Root System Design](../README.md) owns the broad definition and distinguishes
+[Root System Design](../) owns the broad definition and distinguishes
 the scopes. This page is the canonical landing page for the software-focused
 scope.
 
@@ -69,7 +69,7 @@ Software System Design
 Implementation and Operations
 ```
 
-[Software Engineering Foundations](../../computer-science-foundations/software-engineering/README.md)
+[Software Engineering Foundations](../../computer-science-foundations/software-engineering/)
 provides paradigms, principles, patterns, architecture concepts, and shared
 terminology. Software System Design applies and combines them for a concrete
 system. Production evidence can then change both the design and the team's
@@ -127,13 +127,13 @@ These perspectives form a feedback system rather than a one-way pipeline.
 
 ## Related Concepts
 
-- [System Design](../README.md)
-- [Software Engineering Foundations](../../computer-science-foundations/software-engineering/README.md)
+- [System Design](../)
+- [Software Engineering Foundations](../../computer-science-foundations/software-engineering/)
 - [Software Architecture](../../computer-science-foundations/software-engineering/software-architecture.md)
-- [Software Development Practices](../../software-development-practices/README.md)
-- [Communication Patterns](../../computer-science-foundations/software-engineering/communication-patterns/README.md)
-- [Architectural Styles](../../computer-science-foundations/software-engineering/architectural-styles/README.md)
-- [Security](../../security/README.md)
-- [Identity and Access Management](../../security/identity-and-access-management/README.md)
+- [Software Development Practices](../../software-development-practices/)
+- [Communication Patterns](../../computer-science-foundations/software-engineering/communication-patterns/)
+- [Architectural Styles](../../computer-science-foundations/software-engineering/architectural-styles/)
+- [Security](../../security/)
+- [Identity and Access Management](../../security/identity-and-access-management/)
 - [Modular Monolith](../../computer-science-foundations/software-engineering/architectural-styles/modular-monolith.md)
-- [Repository Organization](../../software-development-practices/repository-organization/README.md)
+- [Repository Organization](../../software-development-practices/repository-organization/)

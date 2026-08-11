@@ -383,8 +383,8 @@ content, performance, links, and crawler behavior still matter.
 - [Server and Client Rendering](server-and-client-rendering.md)
 - [Hydration](hydration.md)
 - [Serialization](../data-across-boundaries/serialization.md)
-- [Browser Runtime](../browser-runtime/README.md)
-- [React Application Delivery](../../framework-tooling/frontend/react-application-delivery/README.md)
+- [Browser Runtime](../browser-runtime/)
+- [React Application Delivery](../../framework-tooling/frontend/react-application-delivery/)
 - [Next.js versus React with Vite](../../framework-tooling/frontend/react-application-delivery/nextjs-vs-react-with-vite.md)
 
 ## Key Takeaway

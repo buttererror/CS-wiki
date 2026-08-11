@@ -136,9 +136,9 @@ Many implementations can realize the same style differently.
 
 ## Related Concepts
 
-- [Software Engineering Terminology](README.md)
+- [Software Engineering Terminology](./)
 - [Pattern](pattern.md)
 - [Software Taxonomy](../software-taxonomy.md)
 - [Software Architecture](../software-architecture.md)
-- [Architectural Styles](../architectural-styles/README.md)
-- [Architectural Patterns](../architectural-patterns/README.md)
+- [Architectural Styles](../architectural-styles/)
+- [Architectural Patterns](../architectural-patterns/)

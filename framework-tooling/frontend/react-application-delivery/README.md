@@ -39,9 +39,9 @@ React.
 
 ## Related Areas
 
-- [Frameworks, Libraries, and Tooling](../../README.md)
-- [Frontend Development](../../../frontend-development/README.md)
+- [Frameworks, Libraries, and Tooling](../../)
+- [Frontend Development](../../../frontend-development/)
 - [SSR versus ISR](../../../frontend-development/rendering/ssr-and-isr.md)
-- [Frontend Frameworks and Tooling](../README.md)
+- [Frontend Frameworks and Tooling](../)
 - [Next.js Notes](../nextjs/notes.md)
-- [React](../react/README.md)
+- [React](../react/)

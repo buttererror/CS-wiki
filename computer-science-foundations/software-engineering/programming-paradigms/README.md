@@ -13,7 +13,7 @@ A programming paradigm is broader than a design pattern or communication pattern
 
 ## Related Concepts
 
-- [Software Engineering Foundations](../README.md)
+- [Software Engineering Foundations](../)
 - [Software Taxonomy](../software-taxonomy.md)
-- [Design Patterns](../design-patterns/README.md)
-- [Communication Patterns](../communication-patterns/README.md)
+- [Design Patterns](../design-patterns/)
+- [Communication Patterns](../communication-patterns/)

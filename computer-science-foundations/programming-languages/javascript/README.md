@@ -26,8 +26,8 @@ host environment rather than the language itself.
 
 ## Neighboring Areas
 
-- [Programming Languages](../README.md)
-- [Browser Runtime](../../../frontend-development/browser-runtime/README.md)
+- [Programming Languages](../)
+- [Browser Runtime](../../../frontend-development/browser-runtime/)
 - [React Rendering Model](../../../framework-tooling/frontend/react/rendering-model.md)
 - [React State and Updates](../../../framework-tooling/frontend/react/state-and-updates.md)
 - [React Function Identity and Closures](../../../framework-tooling/frontend/react/function-identity-and-closures.md)

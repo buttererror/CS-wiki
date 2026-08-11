@@ -280,7 +280,7 @@ Set    → Have I already stored this value?
 
 ## Related Concepts
 
-- [JavaScript](README.md)
+- [JavaScript](./)
 - [Functions, Closures, and Identity](functions-closures-and-identity.md)
 - [Route Map](../../software-engineering/terminology/route-map.md)
 - [Type Systems](../type-systems.md)

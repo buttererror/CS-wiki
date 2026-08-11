@@ -124,11 +124,11 @@ the other.
 
 ## Related Concepts
 
-- [Repository Organization](README.md)
-- [Software Development Practices](../README.md)
+- [Repository Organization](./)
+- [Software Development Practices](../)
 - [Development Strategy](../development-strategy.md)
-- [Software System Design](../../system-design/software-system-design/README.md)
-- [Frameworks, Libraries, and Tooling](../../framework-tooling/README.md)
+- [Software System Design](../../system-design/software-system-design/)
+- [Frameworks, Libraries, and Tooling](../../framework-tooling/)
 - [Domain-Driven Design](../../system-design/software-system-design/domain-driven-design.md)
 - [Modular Monolith](../../computer-science-foundations/software-engineering/architectural-styles/modular-monolith.md)
 - [Microservice Architecture](../../computer-science-foundations/software-engineering/architectural-styles/microservice-architecture.md)

@@ -4,7 +4,7 @@
 
 This document contains reviewed Next.js-specific setup, routing, and styling
 notes. General rendering and hydration concepts live under
-[Frontend Development](../../../frontend-development/README.md).
+[Frontend Development](../../../frontend-development/).
 
 ## Project Initialization Example
 
@@ -108,6 +108,6 @@ export default function InvoiceStatus({ status }: { status: string }) {
 
 - [Next.js: App Router](https://nextjs.org/docs/app)
 - [Next.js: Pages Router](https://nextjs.org/docs/pages)
-- [React Application Delivery](../react-application-delivery/README.md)
+- [React Application Delivery](../react-application-delivery/)
 - [Next.js and React with Vite](../react-application-delivery/nextjs-vs-react-with-vite.md)
 - [Hydration](../../../frontend-development/rendering/hydration.md)

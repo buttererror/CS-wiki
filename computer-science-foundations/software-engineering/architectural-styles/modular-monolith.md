@@ -139,9 +139,9 @@ deployment organization. Either can exist without the other.
 
 ## Related Concepts
 
-- [Architectural Styles](README.md)
+- [Architectural Styles](./)
 - [Software Architecture](../software-architecture.md)
-- [Software System Design](../../../system-design/software-system-design/README.md)
+- [Software System Design](../../../system-design/software-system-design/)
 - [Domain-Driven Design](../../../system-design/software-system-design/domain-driven-design.md)
 - [Microservice Architecture](microservice-architecture.md)
 - [Event-Driven Architecture](event-driven-architecture.md)

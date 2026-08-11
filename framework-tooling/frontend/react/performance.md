@@ -106,5 +106,5 @@ windowing or `content-visibility` may reduce rendering cost after measurement.
 - [React: `useMemo`](https://react.dev/reference/react/useMemo)
 - [React: `useCallback`](https://react.dev/reference/react/useCallback)
 - [React Compiler](https://react.dev/learn/react-compiler)
-- [React Application Delivery](../react-application-delivery/README.md)
+- [React Application Delivery](../react-application-delivery/)
 

@@ -13,6 +13,6 @@ toolchain, and distribution model vary by platform.
 
 ## Related Areas
 
-- [Frameworks, Libraries, and Tooling](../README.md)
-- [Frontend Development](../../frontend-development/README.md)
+- [Frameworks, Libraries, and Tooling](../)
+- [Frontend Development](../../frontend-development/)
 

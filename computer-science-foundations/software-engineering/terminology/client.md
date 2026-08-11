@@ -136,9 +136,9 @@ transport, deployment topology, or architectural style.
 
 ## Related Concepts
 
-- [Software Engineering Terminology](README.md)
+- [Software Engineering Terminology](./)
 - [Request / Response](../communication-patterns/request-response.md)
 - [Software Architecture](../software-architecture.md)
-- [Frameworks, Libraries, and Tooling](../../../framework-tooling/README.md)
+- [Frameworks, Libraries, and Tooling](../../../framework-tooling/)
 - [TanStack Query](../../../framework-tooling/tanstack-query.md)
 - [Server and Client Rendering](../../../frontend-development/rendering/server-and-client-rendering.md)

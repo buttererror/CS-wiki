@@ -323,12 +323,12 @@ Using one communication pattern does not determine the architecture of the whole
 
 ## Related Concepts
 
-- [Software Engineering Foundations](../README.md)
+- [Software Engineering Foundations](../)
 - [Pattern](../terminology/pattern.md)
 - [Software Taxonomy](../software-taxonomy.md)
 - [Software Architecture](../software-architecture.md)
-- [Architectural Styles](../architectural-styles/README.md)
-- [Architectural Patterns](../architectural-patterns/README.md)
+- [Architectural Styles](../architectural-styles/)
+- [Architectural Patterns](../architectural-patterns/)
 - [Request / Response](request-response.md)
 - [Publish / Subscribe](publish-subscribe.md)
 - [Observer Pattern](../design-patterns/observer-pattern.md)

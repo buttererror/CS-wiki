@@ -47,6 +47,6 @@ and organizational coordination.
 
 ## Related Concepts
 
-- [Software Development Practices](../README.md)
-- [Frameworks, Libraries, and Tooling](../../framework-tooling/README.md)
-- [Software System Design](../../system-design/software-system-design/README.md)
+- [Software Development Practices](../)
+- [Frameworks, Libraries, and Tooling](../../framework-tooling/)
+- [Software System Design](../../system-design/software-system-design/)

@@ -16,6 +16,6 @@ organized and synchronized, not how the runtime system behaves.
 
 ## Related Concepts
 
-- [Software Development Practices](../README.md)
-- [Repository Organization](../repository-organization/README.md)
+- [Software Development Practices](../)
+- [Repository Organization](../repository-organization/)
 - [Monorepo](../repository-organization/monorepo.md)

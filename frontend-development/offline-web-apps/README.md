@@ -780,10 +780,10 @@ The following must also remain pending rather than being implied by the build:
 
 ## Related Concepts
 
-- [Frontend Development](../README.md)
-- [Browser Runtime](../browser-runtime/README.md)
+- [Frontend Development](../)
+- [Browser Runtime](../browser-runtime/)
 - [Server and Client Rendering](../rendering/server-and-client-rendering.md)
 - [Serialization](../data-across-boundaries/serialization.md)
-- [Software Testing](../../software-development-practices/testing/README.md)
+- [Software Testing](../../software-development-practices/testing/)
 - [Implementation plan on GitHub](https://github.com/buttererror/CS-wiki/blob/057522d337e17706fb3bfae40e399ebf6e93c576/docs/plans/static-wiki-pwa.md)
 - [Initial PWA implementation commit](https://github.com/buttererror/CS-wiki/commit/057522d337e17706fb3bfae40e399ebf6e93c576)

@@ -1012,10 +1012,10 @@ The final rule is:
 
 ## Related Concepts
 
-- [Identity and Access Management](README.md)
+- [Identity and Access Management](./)
 - [JSON Web Token](json-web-token.md)
-- [Security](../README.md)
-- [Software System Design](../../system-design/software-system-design/README.md)
+- [Security](../)
+- [Software System Design](../../system-design/software-system-design/)
 - [Post-Authentication Redirects](../../frontend-development/routing-and-interaction/post-authentication-redirects.md)
 
 ## Authoritative References

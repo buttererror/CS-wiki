@@ -157,13 +157,13 @@ teams.
 
 ## Related Concepts
 
-- [Software System Design](README.md)
-- [System Design](../README.md)
+- [Software System Design](./)
+- [System Design](../)
 - [Domain-Driven Design](domain-driven-design.md)
 - [Software Architecture](../../computer-science-foundations/software-engineering/software-architecture.md)
-- [Software Engineering Foundations](../../computer-science-foundations/software-engineering/README.md)
-- [Software Development Practices](../../software-development-practices/README.md)
+- [Software Engineering Foundations](../../computer-science-foundations/software-engineering/)
+- [Software Development Practices](../../software-development-practices/)
 - [Modular Monolith](../../computer-science-foundations/software-engineering/architectural-styles/modular-monolith.md)
 - [Microservice Architecture](../../computer-science-foundations/software-engineering/architectural-styles/microservice-architecture.md)
-- [Repository Organization](../../software-development-practices/repository-organization/README.md)
-- [Security](../../security/README.md)
+- [Repository Organization](../../software-development-practices/repository-organization/)
+- [Security](../../security/)

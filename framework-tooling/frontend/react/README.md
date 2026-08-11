@@ -85,8 +85,8 @@ and Effects. Custom Hooks compose reusable stateful logic.
 ## Neighboring Technologies
 
 - [Next.js Notes](../nextjs/notes.md)
-- [React Application Delivery](../react-application-delivery/README.md)
-- [Frontend Frameworks and Tooling](../README.md)
+- [React Application Delivery](../react-application-delivery/)
+- [Frontend Frameworks and Tooling](../)
 
 ## Related Frontend Concepts
 

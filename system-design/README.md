@@ -68,7 +68,7 @@ It asks:
 > How should this particular software system work and satisfy its requirements
 > and constraints?
 
-The focused [Software System Design](software-system-design/README.md) landing
+The focused [Software System Design](software-system-design/) landing
 page develops this scope and owns its detailed navigation. The broader and
 lower-level scopes remain important context.
 
@@ -123,7 +123,7 @@ Implementation and Operations ───┘
 
 ## Relationship to Computer Systems
 
-[Computer Systems](../computer-science-foundations/computer-systems/README.md) studies foundational behavior and limitations involving hardware, operating systems, networking, storage, and distributed computation.
+[Computer Systems](../computer-science-foundations/computer-systems/) studies foundational behavior and limitations involving hardware, operating systems, networking, storage, and distributed computation.
 
 Computer System Design applies those foundations to computing platforms and
 infrastructure. Software System Design applies them through choices about
@@ -156,7 +156,7 @@ Applied questions include:
 
 ## Current Focused Areas
 
-- [Software System Design](software-system-design/README.md) — applied design of
+- [Software System Design](software-system-design/) — applied design of
   software-intensive systems.
 - [Domain-Driven Design](software-system-design/domain-driven-design.md) — using
   domain understanding, language, models, and boundaries to manage complex
@@ -167,11 +167,11 @@ Applied questions include:
 
 ## Related Concepts
 
-- [Computer Science Foundations](../computer-science-foundations/README.md)
-- [Computer Systems](../computer-science-foundations/computer-systems/README.md)
-- [Software Engineering Foundations](../computer-science-foundations/software-engineering/README.md)
-- [Software System Design](software-system-design/README.md)
+- [Computer Science Foundations](../computer-science-foundations/)
+- [Computer Systems](../computer-science-foundations/computer-systems/)
+- [Software Engineering Foundations](../computer-science-foundations/software-engineering/)
+- [Software System Design](software-system-design/)
 - [Software Architecture](../computer-science-foundations/software-engineering/software-architecture.md)
-- [Software Development Practices](../software-development-practices/README.md)
-- [Frameworks, Libraries, and Tooling](../framework-tooling/README.md)
-- [Security](../security/README.md)
+- [Software Development Practices](../software-development-practices/)
+- [Frameworks, Libraries, and Tooling](../framework-tooling/)
+- [Security](../security/)

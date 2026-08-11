@@ -13,7 +13,7 @@ patterns, communication patterns, technologies, and implementations.
 
 ## Relationship to Software System Design
 
-[Software System Design](../../system-design/software-system-design/README.md)
+[Software System Design](../../system-design/software-system-design/)
 is the broader applied activity of deciding how a particular software system
 should satisfy its requirements and constraints.
 
@@ -302,15 +302,15 @@ Architecture must match the system's workload, team structure, operational capab
 
 ## Related Concepts
 
-- [Software Engineering Foundations](README.md)
-- [Computer Systems](../computer-systems/README.md)
-- [System Design](../../system-design/README.md)
-- [Software System Design](../../system-design/software-system-design/README.md)
+- [Software Engineering Foundations](./)
+- [Computer Systems](../computer-systems/)
+- [System Design](../../system-design/)
+- [Software System Design](../../system-design/software-system-design/)
 - [Domain-Driven Design](../../system-design/software-system-design/domain-driven-design.md)
 - [Pattern](terminology/pattern.md)
 - [Style](terminology/style.md)
 - [Software Taxonomy](software-taxonomy.md)
-- [Architectural Styles](architectural-styles/README.md)
+- [Architectural Styles](architectural-styles/)
 - [Modular Monolith](architectural-styles/modular-monolith.md)
-- [Architectural Patterns](architectural-patterns/README.md)
-- [Communication Patterns](communication-patterns/README.md)
+- [Architectural Patterns](architectural-patterns/)
+- [Communication Patterns](communication-patterns/)

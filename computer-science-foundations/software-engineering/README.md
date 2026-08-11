@@ -100,22 +100,22 @@ For example, a system may combine Object-Oriented and Functional Programming, fo
 
 - [Software Taxonomy](software-taxonomy.md) — primary concept categories and the questions they answer.
 - [Software Architecture](software-architecture.md) — systems, concrete architectures, architectural styles, and architectural patterns.
-- [Programming Paradigms](programming-paradigms/README.md) — fundamental ways of expressing programs.
-- [Software Design Principles](software-design-principles/README.md) — broad guidelines for design decisions.
-- [Design Patterns](design-patterns/README.md) — reusable object- and component-level design solutions.
-- [Communication Patterns](communication-patterns/README.md) — reusable models for exchanging information.
-- [Architectural Styles](architectural-styles/README.md) — principles and constraints for organizing systems.
-- [Architectural Patterns](architectural-patterns/README.md) — recurring architecture-level solutions.
-- [Software Engineering Terminology](terminology/README.md) — contextual definitions for recurring field terms.
+- [Programming Paradigms](programming-paradigms/) — fundamental ways of expressing programs.
+- [Software Design Principles](software-design-principles/) — broad guidelines for design decisions.
+- [Design Patterns](design-patterns/) — reusable object- and component-level design solutions.
+- [Communication Patterns](communication-patterns/) — reusable models for exchanging information.
+- [Architectural Styles](architectural-styles/) — principles and constraints for organizing systems.
+- [Architectural Patterns](architectural-patterns/) — recurring architecture-level solutions.
+- [Software Engineering Terminology](terminology/) — contextual definitions for recurring field terms.
 
 ## Related Applied Areas
 
-- [System Design](../../system-design/README.md)
-- [Software System Design](../../system-design/software-system-design/README.md)
+- [System Design](../../system-design/)
+- [Software System Design](../../system-design/software-system-design/)
 - [Domain-Driven Design](../../system-design/software-system-design/domain-driven-design.md)
-- [Software Development Practices](../../software-development-practices/README.md)
-- [Frameworks, Libraries, and Tooling](../../framework-tooling/README.md)
-- [Security](../../security/README.md)
-- [Identity and Access Management](../../security/identity-and-access-management/README.md)
-- [Frontend Development](../../frontend-development/README.md)
-- [Frontend Frameworks and Tooling](../../framework-tooling/frontend/README.md)
+- [Software Development Practices](../../software-development-practices/)
+- [Frameworks, Libraries, and Tooling](../../framework-tooling/)
+- [Security](../../security/)
+- [Identity and Access Management](../../security/identity-and-access-management/)
+- [Frontend Development](../../frontend-development/)
+- [Frontend Frameworks and Tooling](../../framework-tooling/frontend/)

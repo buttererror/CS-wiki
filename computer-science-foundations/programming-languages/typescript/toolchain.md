@@ -57,7 +57,7 @@ between inferred, unknown, nullable, and unchecked values.
 
 - [TypeScript Type-System Foundations](type-system.md)
 - [Type Systems](../type-systems.md)
-- [Browser Runtime](../../../frontend-development/browser-runtime/README.md)
+- [Browser Runtime](../../../frontend-development/browser-runtime/)
 
 ## Sources
 

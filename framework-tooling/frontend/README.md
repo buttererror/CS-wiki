@@ -7,7 +7,7 @@ applications: UI libraries, application frameworks, build tools, framework
 mechanisms, and comparisons between concrete technology configurations.
 
 General frontend concepts remain under
-[Frontend Development](../../frontend-development/README.md).
+[Frontend Development](../../frontend-development/).
 
 ## Classification
 
@@ -37,10 +37,10 @@ multiple frameworks.
 
 ## Document Index
 
-- [React](react/README.md)
+- [React](react/)
 - [Next.js Notes](nextjs/notes.md)
 - [Vue Notes](vue/notes.md)
-- [React Application Delivery](react-application-delivery/README.md)
+- [React Application Delivery](react-application-delivery/)
 
 ## Future Study
 
@@ -53,7 +53,7 @@ multiple frameworks.
 
 ## Related Areas
 
-- [Frameworks, Libraries, and Tooling](../README.md)
-- [Frontend Development](../../frontend-development/README.md)
+- [Frameworks, Libraries, and Tooling](../)
+- [Frontend Development](../../frontend-development/)
 - [Reactivity Mechanisms](../../frontend-development/state-and-reactivity/reactivity-mechanisms.md)
 

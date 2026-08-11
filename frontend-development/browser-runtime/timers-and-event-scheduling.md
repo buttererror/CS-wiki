@@ -129,7 +129,7 @@ The React-specific application is covered in
 
 ## Related Concepts
 
-- [Browser Runtime](README.md)
+- [Browser Runtime](./)
 - [Functions, Closures, and Identity](../../computer-science-foundations/programming-languages/javascript/functions-closures-and-identity.md)
 - [React Debouncing](../../framework-tooling/frontend/react/debouncing.md)
 

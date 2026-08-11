@@ -94,8 +94,8 @@ They often cooperate, but they are separate mechanisms.
 
 ## Related Concepts
 
-- [Browser Runtime](../browser-runtime/README.md)
+- [Browser Runtime](../browser-runtime/)
 - [Server and Client Rendering](../rendering/server-and-client-rendering.md)
 - [Hydration](../rendering/hydration.md)
-- [React Application Delivery](../../framework-tooling/frontend/react-application-delivery/README.md)
+- [React Application Delivery](../../framework-tooling/frontend/react-application-delivery/)
 

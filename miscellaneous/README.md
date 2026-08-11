@@ -49,8 +49,8 @@ For each page:
 ## Related Concepts
 
 - [CS Wiki](../)
-- [Computer Science Foundations](../computer-science-foundations/README.md)
-- [System Design](../system-design/README.md)
-- [Security](../security/README.md)
-- [Frontend Development](../frontend-development/README.md)
-- [Frontend Frameworks and Tooling](../framework-tooling/frontend/README.md)
+- [Computer Science Foundations](../computer-science-foundations/)
+- [System Design](../system-design/)
+- [Security](../security/)
+- [Frontend Development](../frontend-development/)
+- [Frontend Frameworks and Tooling](../framework-tooling/frontend/)

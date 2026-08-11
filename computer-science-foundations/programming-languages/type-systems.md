@@ -64,14 +64,14 @@ necessary at system boundaries.
 
 ## Application: TypeScript
 
-- [TypeScript](typescript/README.md)
+- [TypeScript](typescript/)
 - [TypeScript Type-System Foundations](typescript/type-system.md)
 
 ## Related Concepts
 
-- [Programming Languages](README.md)
-- [JavaScript](javascript/README.md)
-- [Browser Runtime](../../frontend-development/browser-runtime/README.md)
+- [Programming Languages](./)
+- [JavaScript](javascript/)
+- [Browser Runtime](../../frontend-development/browser-runtime/)
 
 ## Sources
 

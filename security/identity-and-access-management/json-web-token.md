@@ -314,6 +314,6 @@ opposites: a JWT can participate in a stateful session architecture.
 
 ## Related Concepts
 
-- [Identity and Access Management](README.md)
+- [Identity and Access Management](./)
 - [Authentication](authentication.md)
-- [Security](../README.md)
+- [Security](../)

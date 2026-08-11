@@ -100,13 +100,13 @@ competing Security hierarchies.
 
 ## Current Documents
 
-- [Identity and Access Management](identity-and-access-management/README.md)
+- [Identity and Access Management](identity-and-access-management/)
 - [Authentication](identity-and-access-management/authentication.md)
 - [JSON Web Token](identity-and-access-management/json-web-token.md)
 
 ## Related Concepts
 
-- [Computer Science Foundations](../computer-science-foundations/README.md)
-- [Software Engineering Foundations](../computer-science-foundations/software-engineering/README.md)
-- [Software System Design](../system-design/software-system-design/README.md)
-- [Computer Systems](../computer-science-foundations/computer-systems/README.md)
+- [Computer Science Foundations](../computer-science-foundations/)
+- [Software Engineering Foundations](../computer-science-foundations/software-engineering/)
+- [Software System Design](../system-design/software-system-design/)
+- [Computer Systems](../computer-science-foundations/computer-systems/)

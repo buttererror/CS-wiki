@@ -135,7 +135,7 @@ response.
 
 ## Related Concepts
 
-- [Software Engineering Terminology](README.md)
+- [Software Engineering Terminology](./)
 - [JavaScript `Set`, `Map`, and `Object`](../../programming-languages/javascript/set-map-and-object.md)
 - [Request / Response](../communication-patterns/request-response.md)
 - [Client](client.md)

@@ -94,7 +94,7 @@ of conventional hydration.
 - [React: `hydrateRoot`](https://react.dev/reference/react-dom/client/hydrateRoot)
 - [Vue: Server-Side Rendering](https://vuejs.org/guide/scaling-up/ssr.html)
 - [Server and Client Rendering](server-and-client-rendering.md)
-- [Browser Runtime](../browser-runtime/README.md)
+- [Browser Runtime](../browser-runtime/)
 - [Serialization](../data-across-boundaries/serialization.md)
 - [React Rendering Model](../../framework-tooling/frontend/react/rendering-model.md)
 - [Next.js and React with Vite](../../framework-tooling/frontend/react-application-delivery/nextjs-vs-react-with-vite.md)

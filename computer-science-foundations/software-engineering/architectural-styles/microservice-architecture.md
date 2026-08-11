@@ -518,14 +518,14 @@ The goal is not to maximize the number of services. It is to choose boundaries t
 
 ## Related Concepts
 
-- [Architectural Styles](README.md)
+- [Architectural Styles](./)
 - [Modular Monolith](modular-monolith.md)
-- [Software System Design](../../../system-design/software-system-design/README.md)
+- [Software System Design](../../../system-design/software-system-design/)
 - [Domain-Driven Design](../../../system-design/software-system-design/domain-driven-design.md)
 - [Monorepo](../../../software-development-practices/repository-organization/monorepo.md)
 - [Software Architecture](../software-architecture.md)
 - [Software Taxonomy](../software-taxonomy.md)
-- [Communication Patterns](../communication-patterns/README.md)
+- [Communication Patterns](../communication-patterns/)
 - [Event-Driven Architecture](event-driven-architecture.md)
 - [Publish / Subscribe](../communication-patterns/publish-subscribe.md)
 - [Request / Response](../communication-patterns/request-response.md)

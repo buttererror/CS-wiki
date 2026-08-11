@@ -82,6 +82,6 @@ access token may use JWT or an opaque format.
 
 ## Related Concepts
 
-- [Security](../README.md)
-- [Software System Design](../../system-design/software-system-design/README.md)
-- [Communication Patterns](../../computer-science-foundations/software-engineering/communication-patterns/README.md)
+- [Security](../)
+- [Software System Design](../../system-design/software-system-design/)
+- [Communication Patterns](../../computer-science-foundations/software-engineering/communication-patterns/)

@@ -9,7 +9,7 @@ accessibility, styling, performance, and delivery.
 
 This directory owns transferable frontend concepts. Concrete frameworks,
 libraries, and build tools live under
-[Frontend Frameworks and Tooling](../framework-tooling/frontend/README.md).
+[Frontend Frameworks and Tooling](../framework-tooling/frontend/).
 
 ## Classification
 
@@ -61,11 +61,11 @@ State and Reactivity
 Framework-specific implementations
 ```
 
-1. [Browser Runtime](browser-runtime/README.md) explains where frontend code
+1. [Browser Runtime](browser-runtime/) explains where frontend code
    executes and what the environment provides.
 2. [Timers and Event Scheduling](browser-runtime/timers-and-event-scheduling.md)
    explains browser timers, task queues, and timing controls.
-3. [Progressive Web Apps, Service Workers, and Offline Caching](offline-web-apps/README.md)
+3. [Progressive Web Apps, Service Workers, and Offline Caching](offline-web-apps/)
    explains service-worker lifecycles, precaching, installability, updates, and
    offline testing.
 4. [Server and Client Rendering](rendering/server-and-client-rendering.md)
@@ -81,29 +81,29 @@ Framework-specific implementations
 
 ## Document Index
 
-- [Browser Runtime](browser-runtime/README.md)
+- [Browser Runtime](browser-runtime/)
 - [Timers and Event Scheduling](browser-runtime/timers-and-event-scheduling.md)
-- [Progressive Web Apps, Service Workers, and Offline Caching](offline-web-apps/README.md)
-- [Rendering](rendering/README.md)
+- [Progressive Web Apps, Service Workers, and Offline Caching](offline-web-apps/)
+- [Rendering](rendering/)
 - [Server and Client Rendering](rendering/server-and-client-rendering.md)
 - [SSR versus ISR](rendering/ssr-and-isr.md)
 - [Hydration](rendering/hydration.md)
 - [Serialization](data-across-boundaries/serialization.md)
 - [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)
-- [Routing and Interaction](routing-and-interaction/README.md)
+- [Routing and Interaction](routing-and-interaction/)
 - [Post-Authentication Redirects](routing-and-interaction/post-authentication-redirects.md)
-- [Styling](styling/README.md)
+- [Styling](styling/)
 
 ## Framework Applications
 
-- [Frontend Frameworks and Tooling](../framework-tooling/frontend/README.md)
-- [React](../framework-tooling/frontend/react/README.md)
+- [Frontend Frameworks and Tooling](../framework-tooling/frontend/)
+- [React](../framework-tooling/frontend/react/)
 - [Next.js](../framework-tooling/frontend/nextjs/notes.md)
 - [Vue](../framework-tooling/frontend/vue/notes.md)
-- [React Application Delivery](../framework-tooling/frontend/react-application-delivery/README.md)
+- [React Application Delivery](../framework-tooling/frontend/react-application-delivery/)
 
 ## Related Areas
 
-- [Software Engineering Foundations](../computer-science-foundations/software-engineering/README.md)
-- [Security](../security/README.md)
-- [Software Development Practices](../software-development-practices/README.md)
+- [Software Engineering Foundations](../computer-science-foundations/software-engineering/)
+- [Security](../security/)
+- [Software Development Practices](../software-development-practices/)

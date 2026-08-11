@@ -371,9 +371,9 @@ Potential trade-offs include:
 
 ## Related Concepts
 
-- [Software Design Principles](README.md)
+- [Software Design Principles](./)
 - [Software Taxonomy](../software-taxonomy.md)
 - [NestJS Dependency Injection](../../../framework-tooling/nestjs-dependency-injection.md)
-- [Frameworks, Libraries, and Tooling](../../../framework-tooling/README.md)
+- [Frameworks, Libraries, and Tooling](../../../framework-tooling/)
 - [Observer Pattern](../design-patterns/observer-pattern.md)
 - [Mechanism](../terminology/mechanism.md)

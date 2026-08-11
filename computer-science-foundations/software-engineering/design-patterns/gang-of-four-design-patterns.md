@@ -241,6 +241,6 @@ Patterns also introduce trade-offs. Singleton can create shared-state contention
 
 - [Software Taxonomy](../software-taxonomy.md)
 - [Observer Pattern](observer-pattern.md)
-- [Communication Patterns](../communication-patterns/README.md)
+- [Communication Patterns](../communication-patterns/)
 - [Publish / Subscribe](../communication-patterns/publish-subscribe.md)
 - [Event-Driven Architecture](../architectural-styles/event-driven-architecture.md)

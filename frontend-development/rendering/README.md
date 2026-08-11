@@ -34,7 +34,7 @@ across routes and components.
 
 ## Related Concepts
 
-- [Browser Runtime](../browser-runtime/README.md)
+- [Browser Runtime](../browser-runtime/)
 - [SSR versus ISR](ssr-and-isr.md)
 - [Serialization](../data-across-boundaries/serialization.md)
-- [React Application Delivery](../../framework-tooling/frontend/react-application-delivery/README.md)
+- [React Application Delivery](../../framework-tooling/frontend/react-application-delivery/)

@@ -556,13 +556,13 @@ Event-driven communication
 
 ## Related Concepts
 
-- [Architectural Styles](README.md)
+- [Architectural Styles](./)
 - [Software Architecture](../software-architecture.md)
 - [Software Taxonomy](../software-taxonomy.md)
-- [Communication Patterns](../communication-patterns/README.md)
+- [Communication Patterns](../communication-patterns/)
 - [Observer Pattern](../design-patterns/observer-pattern.md)
 - [Publish / Subscribe](../communication-patterns/publish-subscribe.md)
 - [Microservice Architecture](microservice-architecture.md)
 - [Modular Monolith](modular-monolith.md)
-- [Software System Design](../../../system-design/software-system-design/README.md)
+- [Software System Design](../../../system-design/software-system-design/)
 - [Request / Response](../communication-patterns/request-response.md)

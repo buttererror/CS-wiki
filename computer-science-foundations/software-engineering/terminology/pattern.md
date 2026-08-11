@@ -137,10 +137,10 @@ Kafka producer, topic, and consumer configuration
 
 ## Related Concepts
 
-- [Software Engineering Terminology](README.md)
+- [Software Engineering Terminology](./)
 - [Style](style.md)
 - [Mechanism](mechanism.md)
 - [Software Taxonomy](../software-taxonomy.md)
-- [Design Patterns](../design-patterns/README.md)
-- [Communication Patterns](../communication-patterns/README.md)
-- [Architectural Patterns](../architectural-patterns/README.md)
+- [Design Patterns](../design-patterns/)
+- [Communication Patterns](../communication-patterns/)
+- [Architectural Patterns](../architectural-patterns/)

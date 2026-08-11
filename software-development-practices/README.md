@@ -66,13 +66,13 @@ Practices and design still influence one another. For example, repository struct
 
 ## Document Index
 
-- [Software Testing](testing/README.md) — classifies tests independently by
+- [Software Testing](testing/) — classifies tests independently by
   boundary, execution, purpose, quality focus, and subject under test.
 - [Development Strategy](development-strategy.md) — compares horizontal and vertical development approaches.
 - [Lean MVP and Vertical Slices](lean-mvp-vertical-slice-development.md) — connects YAGNI, MVP scope, vertical slices, incremental architecture, testing, DevOps, and documentation practices.
-- [Repository Organization](repository-organization/README.md) — distinguishes
+- [Repository Organization](repository-organization/) — distinguishes
   repository boundaries from workspace tooling and runtime architecture.
-- [Version Control](version-control/README.md) — tracks commits, branches,
+- [Version Control](version-control/) — tracks commits, branches,
   merges, rebases, recovery, and branch-state changes.
 - [Detached HEAD](version-control/detached-head.md) — explains the branchless
   Git state and how to recover or reuse the commit.
@@ -91,8 +91,8 @@ Future documents should be added when the topics are discussed in sufficient dep
 
 ## Related Concepts
 
-- [System Design](../system-design/README.md)
-- [Software Engineering Foundations](../computer-science-foundations/software-engineering/README.md)
+- [System Design](../system-design/)
+- [Software Engineering Foundations](../computer-science-foundations/software-engineering/)
 - [Software Architecture](../computer-science-foundations/software-engineering/software-architecture.md)
-- [Software System Design](../system-design/software-system-design/README.md)
-- [Frameworks, Libraries, and Tooling](../framework-tooling/README.md)
+- [Software System Design](../system-design/software-system-design/)
+- [Frameworks, Libraries, and Tooling](../framework-tooling/)

@@ -525,7 +525,7 @@ Potential trade-offs include:
 
 ## Related Concepts
 
-- [Frameworks, Libraries, and Tooling](README.md)
+- [Frameworks, Libraries, and Tooling](./)
 - [Inversion of Control](../computer-science-foundations/software-engineering/software-design-principles/inversion-of-control.md)
 - [Software Taxonomy](../computer-science-foundations/software-engineering/software-taxonomy.md)
 - [Programming Paradigm](../computer-science-foundations/software-engineering/programming-paradigms/programming-paradigm.md)

@@ -92,13 +92,13 @@ Repository documentation
 
 | Directory | Current role | Current coverage |
 | --- | --- | --- |
-| [`computer-science-foundations/`](computer-science-foundations/README.md) | Foundational field maps and transferable concepts | Computer Systems, Programming Languages, and Software Engineering foundations |
-| [`system-design/`](system-design/README.md) | Cross-cutting applied design area | General, computer-system, and software-system scopes; DDD and neighboring perspectives |
-| [`security/`](security/README.md) | Canonical cross-cutting security area | Foundational/applied distinction and current Identity and Access Management notes |
-| [`software-development-practices/`](software-development-practices/README.md) | Ways of organizing and evolving engineering work | Development strategy, lean delivery, and repository organization |
-| [`frontend-development/`](frontend-development/README.md) | Canonical applied frontend area | Browser runtime, offline web apps, rendering, hydration, serialization, reactivity, and styling |
-| [`framework-tooling/`](framework-tooling/README.md) | Technology-specific learning | Backend, frontend, and cross-platform frameworks, libraries, and tooling |
-| [`miscellaneous/`](miscellaneous/README.md) | Temporary review inbox | Older language, backend-data, AI, Linux, and tooling notes |
+| [`computer-science-foundations/`](computer-science-foundations/) | Foundational field maps and transferable concepts | Computer Systems, Programming Languages, and Software Engineering foundations |
+| [`system-design/`](system-design/) | Cross-cutting applied design area | General, computer-system, and software-system scopes; DDD and neighboring perspectives |
+| [`security/`](security/) | Canonical cross-cutting security area | Foundational/applied distinction and current Identity and Access Management notes |
+| [`software-development-practices/`](software-development-practices/) | Ways of organizing and evolving engineering work | Development strategy, lean delivery, and repository organization |
+| [`frontend-development/`](frontend-development/) | Canonical applied frontend area | Browser runtime, offline web apps, rendering, hydration, serialization, reactivity, and styling |
+| [`framework-tooling/`](framework-tooling/) | Technology-specific learning | Backend, frontend, and cross-platform frameworks, libraries, and tooling |
+| [`miscellaneous/`](miscellaneous/) | Temporary review inbox | Older language, backend-data, AI, Linux, and tooling notes |
 | `docs/` | Repository documentation excluded from the published wiki | Maintenance records and a proposed static-wiki/PWA plan |
 
 The detailed coverage is currently strongest in Software Engineering. The
@@ -111,31 +111,31 @@ describe the material that actually exists.
 Choose a path based on what you want to learn:
 
 - **Understand the wiki's foundation map:**
-  [Computer Science Foundations](computer-science-foundations/README.md) →
-  [Computer Systems](computer-science-foundations/computer-systems/README.md) or
-  [Software Engineering Foundations](computer-science-foundations/software-engineering/README.md)
+  [Computer Science Foundations](computer-science-foundations/) →
+  [Computer Systems](computer-science-foundations/computer-systems/) or
+  [Software Engineering Foundations](computer-science-foundations/software-engineering/)
 - **Study programming-language behavior:**
-  [Programming Languages](computer-science-foundations/programming-languages/README.md) →
-  [JavaScript](computer-science-foundations/programming-languages/javascript/README.md)
+  [Programming Languages](computer-science-foundations/programming-languages/) →
+  [JavaScript](computer-science-foundations/programming-languages/javascript/)
 - **Relate software concepts by abstraction level:**
   [Software Taxonomy](computer-science-foundations/software-engineering/software-taxonomy.md)
   → [Software Architecture](computer-science-foundations/software-engineering/software-architecture.md)
-- **Explore system design:** [System Design](system-design/README.md) →
-  [Software System Design](system-design/software-system-design/README.md) →
+- **Explore system design:** [System Design](system-design/) →
+  [Software System Design](system-design/software-system-design/) →
   [Domain-Driven Design](system-design/software-system-design/domain-driven-design.md)
-- **Explore security and identity:** [Security](security/README.md) →
-  [Identity and Access Management](security/identity-and-access-management/README.md)
+- **Explore security and identity:** [Security](security/) →
+  [Identity and Access Management](security/identity-and-access-management/)
   → [Authentication](security/identity-and-access-management/authentication.md)
   → [JSON Web Token](security/identity-and-access-management/json-web-token.md)
 - **Study engineering practices and concrete tools:**
-  [Software Development Practices](software-development-practices/README.md) →
+  [Software Development Practices](software-development-practices/) →
   [Lean MVP and Vertical Slices](software-development-practices/lean-mvp-vertical-slice-development.md)
-  or [Frameworks, Libraries, and Tooling](framework-tooling/README.md)
+  or [Frameworks, Libraries, and Tooling](framework-tooling/)
 - **Study frontend concepts and their implementations:**
-  [Frontend Development](frontend-development/README.md) →
-  [Frontend Frameworks and Tooling](framework-tooling/frontend/README.md)
+  [Frontend Development](frontend-development/) →
+  [Frontend Frameworks and Tooling](framework-tooling/frontend/)
 - **Browse working notes awaiting deeper review:**
-  [Miscellaneous Notes](miscellaneous/README.md)
+  [Miscellaneous Notes](miscellaneous/)
 
 ## Knowledge map
 
@@ -143,12 +143,12 @@ Choose a path based on what you want to learn:
 
 | Topic | What it covers |
 | --- | --- |
-| [Programming Languages](computer-science-foundations/programming-languages/README.md) | Language-level syntax, semantics, bindings, functions, and runtime models |
+| [Programming Languages](computer-science-foundations/programming-languages/) | Language-level syntax, semantics, bindings, functions, and runtime models |
 | [Type Systems](computer-science-foundations/programming-languages/type-systems.md) | Static and dynamic checking, inference, narrowing, generics, and runtime boundaries |
-| [JavaScript](computer-science-foundations/programming-languages/javascript/README.md) | Reviewed JavaScript foundations; currently marked not read yet |
+| [JavaScript](computer-science-foundations/programming-languages/javascript/) | Reviewed JavaScript foundations; currently marked not read yet |
 | [Functions, Closures, and Identity](computer-science-foundations/programming-languages/javascript/functions-closures-and-identity.md) | Function objects, lexical closures, reference identity, and React as an application |
 | [Hoisting and Binding Initialization](computer-science-foundations/programming-languages/javascript/hoisting.md) | Declaration processing, initialization timing, and the temporal dead zone |
-| [TypeScript](computer-science-foundations/programming-languages/typescript/README.md) | Static type-system foundations for JavaScript; currently marked not read yet |
+| [TypeScript](computer-science-foundations/programming-languages/typescript/) | Static type-system foundations for JavaScript; currently marked not read yet |
 | [TypeScript Type-System Foundations](computer-science-foundations/programming-languages/typescript/type-system.md) | `unknown`, `any`, narrowing, generics, tuples, and utility types |
 | [TypeScript Toolchain and Type Checking](computer-science-foundations/programming-languages/typescript/toolchain.md) | Project-local setup, running TypeScript, and full type checking |
 
@@ -167,18 +167,18 @@ current filenames, scope, and placement should not be read as final taxonomy.
 
 | Topic | What it covers |
 | --- | --- |
-| [Computer Science Foundations](computer-science-foundations/README.md) | Broad field map, reading mindset, and routes into the wiki's current foundations |
-| [Computer Systems](computer-science-foundations/computer-systems/README.md) | Hardware, operating systems, networking, storage, and distributed-system foundations |
-| [Software Engineering Foundations](computer-science-foundations/software-engineering/README.md) | Mindset and map for relating software concepts without imposing rigid boundaries |
+| [Computer Science Foundations](computer-science-foundations/) | Broad field map, reading mindset, and routes into the wiki's current foundations |
+| [Computer Systems](computer-science-foundations/computer-systems/) | Hardware, operating systems, networking, storage, and distributed-system foundations |
+| [Software Engineering Foundations](computer-science-foundations/software-engineering/) | Mindset and map for relating software concepts without imposing rigid boundaries |
 | [Software Taxonomy](computer-science-foundations/software-engineering/software-taxonomy.md) | Paradigms, principles, patterns, architectures, tools, and implementations |
 | [Software Architecture](computer-science-foundations/software-engineering/software-architecture.md) | Systems, architectures, architectural styles, and architectural patterns |
-| [Programming Paradigms](computer-science-foundations/software-engineering/programming-paradigms/README.md) | Object-oriented, functional, and reactive ways of expressing programs |
-| [Software Design Principles](computer-science-foundations/software-engineering/software-design-principles/README.md) | Guidelines for reasoning about responsibilities, dependencies, change, and control |
-| [Software Engineering Terminology](computer-science-foundations/software-engineering/terminology/README.md) | Recurring field terms whose meanings depend on abstraction level or context |
-| [Design Patterns](computer-science-foundations/software-engineering/design-patterns/README.md) | Reusable solutions to recurring object and component design problems |
-| [Communication Patterns](computer-science-foundations/software-engineering/communication-patterns/README.md) | Ways independent participants exchange information |
-| [Architectural Styles](computer-science-foundations/software-engineering/architectural-styles/README.md) | Principles and constraints for organizing major system components |
-| [Architectural Patterns](computer-science-foundations/software-engineering/architectural-patterns/README.md) | Reusable solutions to recurring architecture-level problems |
+| [Programming Paradigms](computer-science-foundations/software-engineering/programming-paradigms/) | Object-oriented, functional, and reactive ways of expressing programs |
+| [Software Design Principles](computer-science-foundations/software-engineering/software-design-principles/) | Guidelines for reasoning about responsibilities, dependencies, change, and control |
+| [Software Engineering Terminology](computer-science-foundations/software-engineering/terminology/) | Recurring field terms whose meanings depend on abstraction level or context |
+| [Design Patterns](computer-science-foundations/software-engineering/design-patterns/) | Reusable solutions to recurring object and component design problems |
+| [Communication Patterns](computer-science-foundations/software-engineering/communication-patterns/) | Ways independent participants exchange information |
+| [Architectural Styles](computer-science-foundations/software-engineering/architectural-styles/) | Principles and constraints for organizing major system components |
+| [Architectural Patterns](computer-science-foundations/software-engineering/architectural-patterns/) | Reusable solutions to recurring architecture-level problems |
 
 ### Frontend development
 
@@ -197,20 +197,20 @@ general frontend development is a subset of tooling.
 
 | Topic | What it covers |
 | --- | --- |
-| [Frontend Development](frontend-development/README.md) | Framework-independent frontend map and reading path |
-| [Browser Runtime](frontend-development/browser-runtime/README.md) | Browser execution environment, runtime values, and boundaries |
+| [Frontend Development](frontend-development/) | Framework-independent frontend map and reading path |
+| [Browser Runtime](frontend-development/browser-runtime/) | Browser execution environment, runtime values, and boundaries |
 | [Timers and Event Scheduling](frontend-development/browser-runtime/timers-and-event-scheduling.md) | Timers, tasks, microtasks, animation frames, debounce, and throttle |
 | [Server and Client Rendering](frontend-development/rendering/server-and-client-rendering.md) | Client rendering, server rendering, static generation, and Server Components |
 | [SSR versus ISR](frontend-development/rendering/ssr-and-isr.md) | Request-time rendering versus cached output with time-based or on-demand regeneration; currently marked not read yet |
 | [Hydration](frontend-development/rendering/hydration.md) | Client adoption of server-rendered markup and mismatch causes |
 | [Serialization](frontend-development/data-across-boundaries/serialization.md) | Transferable representations across frontend boundaries |
 | [Reactivity Mechanisms](frontend-development/state-and-reactivity/reactivity-mechanisms.md) | Proxy tracking, explicit updates, and stream-based models |
-| [Styling](frontend-development/styling/README.md) | Style isolation, layout, and component-oriented styling architecture |
-| [Frontend Frameworks and Tooling](framework-tooling/frontend/README.md) | React, Next.js, Vue, Vite, and technology comparisons |
-| [React](framework-tooling/frontend/react/README.md) | Rendering, state, Effects, function identity, debouncing, forms, and performance |
+| [Styling](frontend-development/styling/) | Style isolation, layout, and component-oriented styling architecture |
+| [Frontend Frameworks and Tooling](framework-tooling/frontend/) | React, Next.js, Vue, Vite, and technology comparisons |
+| [React](framework-tooling/frontend/react/) | Rendering, state, Effects, function identity, debouncing, forms, and performance |
 | [React Function Identity and Closures](framework-tooling/frontend/react/function-identity-and-closures.md) | Render-local functions, closure snapshots, memoization, and identity-sensitive consumers |
 | [Debouncing in React](framework-tooling/frontend/react/debouncing.md) | Responsive inputs, debounced values and callbacks, query flows, and timer cleanup |
-| [React Application Delivery](framework-tooling/frontend/react-application-delivery/README.md) | React delivery architectures, JavaScript boundaries, and performance decisions |
+| [React Application Delivery](framework-tooling/frontend/react-application-delivery/) | React delivery architectures, JavaScript boundaries, and performance decisions |
 | [Next.js](framework-tooling/frontend/nextjs/notes.md) | Setup, routing, CSS Modules, and related application-framework notes |
 | [Vue](framework-tooling/frontend/vue/notes.md) | Vue reactivity, state-management, testing, and SSR study topics |
 | [Flutter](framework-tooling/cross-platform-ui/flutter.md) | Runtime, SDKs, toolchains, and build targets |
@@ -226,8 +226,8 @@ general frontend development is a subset of tooling.
 
 | Topic | What it covers |
 | --- | --- |
-| [Security](security/README.md) | Cross-cutting security areas and the wiki's current security coverage |
-| [Identity and Access Management](security/identity-and-access-management/README.md) | Identity, authentication, authorization, credentials, sessions, and federation |
+| [Security](security/) | Cross-cutting security areas and the wiki's current security coverage |
+| [Identity and Access Management](security/identity-and-access-management/) | Identity, authentication, authorization, credentials, sessions, and federation |
 | [Authentication](security/identity-and-access-management/authentication.md) | Authentication logic, credential transport, client types, and lifecycle trade-offs |
 | [JSON Web Token](security/identity-and-access-management/json-web-token.md) | JWT claims representation, JWS/JWE protection, validation, storage, and state trade-offs |
 
@@ -235,8 +235,8 @@ general frontend development is a subset of tooling.
 
 | Topic | What it covers |
 | --- | --- |
-| [System Design](system-design/README.md) | General, computer-system, and software-system design scopes and their neighboring disciplines |
-| [Software System Design](system-design/software-system-design/README.md) | Applied design of software requirements, boundaries, components, data, and quality attributes |
+| [System Design](system-design/) | General, computer-system, and software-system design scopes and their neighboring disciplines |
+| [Software System Design](system-design/software-system-design/) | Applied design of software requirements, boundaries, components, data, and quality attributes |
 | [Domain-Driven Design](system-design/software-system-design/domain-driven-design.md) | Domain-centered modeling, language, boundaries, and tactical concepts |
 | [Neighboring Perspectives](system-design/software-system-design/neighboring-perspectives.md) | Business Analysis, Domain Modeling, System Design, Architecture, Infrastructure, and Operations |
 | [Event-Driven Architecture](computer-science-foundations/software-engineering/architectural-styles/event-driven-architecture.md) | System organization around events, producers, consumers, and asynchronous reactions |
@@ -247,15 +247,15 @@ general frontend development is a subset of tooling.
 
 | Topic | What it covers |
 | --- | --- |
-| [Software Development Practices](software-development-practices/README.md) | Ways of organizing, validating, delivering, and evolving software |
-| [Software Testing](software-development-practices/testing/README.md) | Test boundaries, execution modes, purposes, quality focuses, and subjects under test |
-| [Repository Organization](software-development-practices/repository-organization/README.md) | Repository boundaries and their distinction from tooling and architecture |
-| [Version Control](software-development-practices/version-control/README.md) | Commit graphs, branches, merges, recovery, and detached `HEAD` states |
+| [Software Development Practices](software-development-practices/) | Ways of organizing, validating, delivering, and evolving software |
+| [Software Testing](software-development-practices/testing/) | Test boundaries, execution modes, purposes, quality focuses, and subjects under test |
+| [Repository Organization](software-development-practices/repository-organization/) | Repository boundaries and their distinction from tooling and architecture |
+| [Version Control](software-development-practices/version-control/) | Commit graphs, branches, merges, recovery, and detached `HEAD` states |
 | [Detached HEAD](software-development-practices/version-control/detached-head.md) | Git state where `HEAD` points directly at a commit; branch rescue and cherry-pick recovery |
 | [Monorepo](software-development-practices/repository-organization/monorepo.md) | Multiple related projects maintained in one version-control repository |
 | [Development Strategy](software-development-practices/development-strategy.md) | Horizontal and vertical development approaches |
 | [Lean MVP and Vertical Slices](software-development-practices/lean-mvp-vertical-slice-development.md) | YAGNI, MVP scope, and incremental delivery |
-| [Frameworks, Libraries, and Tooling](framework-tooling/README.md) | Framework/library control, mechanisms, and concrete API usage |
+| [Frameworks, Libraries, and Tooling](framework-tooling/) | Framework/library control, mechanisms, and concrete API usage |
 | [NestJS Dependency Injection](framework-tooling/nestjs-dependency-injection.md) | NestJS's dependency-injection mechanism and its relationship to IoC |
 | [TanStack Query](framework-tooling/tanstack-query.md) | Server-state synchronization, observers, request/response, and cache behavior |
 
@@ -275,7 +275,7 @@ general frontend development is a subset of tooling.
 
 ### Material awaiting classification
 
-[Miscellaneous](miscellaneous/README.md) is a temporary home for older,
+[Miscellaneous](miscellaneous/) is a temporary home for older,
 mixed-scope notes. Moving a page there does not classify its subject as
 "miscellaneous"; it marks the page for later review and placement.
 
@@ -307,7 +307,7 @@ topics in directories, and prefer relative links so the wiki works locally and
 on GitHub.
 
 Put focused keywords near the beginning of the page as a short `**Keywords:**`
-line. Put a term in [Software Engineering Terminology](computer-science-foundations/software-engineering/terminology/README.md)
+line. Put a term in [Software Engineering Terminology](computer-science-foundations/software-engineering/terminology/)
 only when it needs a cross-topic definition, an alias map, or a dedicated
 terminology explanation. Otherwise, the topic page remains the canonical place
 for the keyword.
@@ -339,6 +339,6 @@ documentation.
 
 - [x] Complete the repository-wide structure, taxonomy, and navigation review.
   The maintenance record is stored in `docs/maintenance/`.
-- [ ] Review material in [`miscellaneous/`](miscellaneous/README.md) page by
+- [ ] Review material in [`miscellaneous/`](miscellaneous/) page by
   page for duplicate content, placeholders, naming, scope, and canonical
   placement.

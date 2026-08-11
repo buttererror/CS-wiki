@@ -202,5 +202,5 @@ wait for authentication to finish, and resume the user's task.
 ## Related Concepts
 
 - [Authentication and Credential Architecture](../../security/identity-and-access-management/authentication.md)
-- [Frontend Development](../README.md)
-- [React](../../framework-tooling/frontend/react/README.md)
+- [Frontend Development](../)
+- [React](../../framework-tooling/frontend/react/)

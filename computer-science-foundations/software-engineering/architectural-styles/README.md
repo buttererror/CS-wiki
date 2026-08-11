@@ -94,16 +94,16 @@ Publish / Subscribe
 
 Architectural style and architectural pattern are overlapping terms in software literature.
 
-This folder contains only concepts whose primary classification in this knowledge base is **Architectural Style**. Concepts classified primarily as architectural patterns belong in the [Architectural Patterns index](../architectural-patterns/README.md).
+This folder contains only concepts whose primary classification in this knowledge base is **Architectural Style**. Concepts classified primarily as architectural patterns belong in the [Architectural Patterns index](../architectural-patterns/).
 
 ---
 
 ## Related Concepts
 
-- [Software Engineering Foundations](../README.md)
+- [Software Engineering Foundations](../)
 - [Style](../terminology/style.md)
 - [Pattern](../terminology/pattern.md)
 - [Software Architecture](../software-architecture.md)
 - [Software Taxonomy](../software-taxonomy.md)
-- [Architectural Patterns](../architectural-patterns/README.md)
-- [Communication Patterns](../communication-patterns/README.md)
+- [Architectural Patterns](../architectural-patterns/)
+- [Communication Patterns](../communication-patterns/)

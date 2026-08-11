@@ -81,9 +81,9 @@ See [Functions, Closures, and Identity](functions-closures-and-identity.md).
 
 ## Related Concepts
 
-- [JavaScript](README.md)
+- [JavaScript](./)
 - [Functions, Closures, and Identity](functions-closures-and-identity.md)
-- [Browser Runtime](../../../frontend-development/browser-runtime/README.md)
+- [Browser Runtime](../../../frontend-development/browser-runtime/)
 
 ## Sources
 

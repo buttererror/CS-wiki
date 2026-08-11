@@ -26,10 +26,10 @@ Most type-only syntax is erased when code is emitted as JavaScript.
 
 ## Neighboring Areas
 
-- [Programming Languages](../README.md)
+- [Programming Languages](../)
 - [Type Systems](../type-systems.md)
-- [JavaScript](../javascript/README.md)
-- [Browser Runtime](../../../frontend-development/browser-runtime/README.md)
+- [JavaScript](../javascript/)
+- [Browser Runtime](../../../frontend-development/browser-runtime/)
 
 ## Original Learning Notes
 

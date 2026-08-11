@@ -96,8 +96,8 @@ question is which code and data belong on each side of the boundary.
 
 ## Related Concepts
 
-- [Frontend Development](../README.md)
-- [Programming Languages](../../computer-science-foundations/programming-languages/README.md)
+- [Frontend Development](../)
+- [Programming Languages](../../computer-science-foundations/programming-languages/)
 - [Server and Client Rendering](../rendering/server-and-client-rendering.md)
 - [Serialization](../data-across-boundaries/serialization.md)
 - [Hydration](../rendering/hydration.md)

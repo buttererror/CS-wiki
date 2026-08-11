@@ -5,7 +5,7 @@ the user actions that move between those states, submit forms, or resume an
 interrupted workflow.
 
 This area owns framework-independent navigation patterns. Framework-specific
-route APIs belong under [Frontend Frameworks and Tooling](../../framework-tooling/frontend/README.md).
+route APIs belong under [Frontend Frameworks and Tooling](../../framework-tooling/frontend/).
 
 ## Document Index
 
@@ -15,6 +15,6 @@ route APIs belong under [Frontend Frameworks and Tooling](../../framework-toolin
 
 ## Related Areas
 
-- [Frontend Development](../README.md)
+- [Frontend Development](../)
 - [Authentication and Credential Architecture](../../security/identity-and-access-management/authentication.md)
-- [Frontend Frameworks and Tooling](../../framework-tooling/frontend/README.md)
+- [Frontend Frameworks and Tooling](../../framework-tooling/frontend/)

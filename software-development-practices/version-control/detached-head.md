@@ -54,7 +54,7 @@ preserve. Use the second when the change belongs on a different branch.
 
 ## Related Concepts
 
-- [Version Control](README.md)
-- [Software Development Practices](../README.md)
-- [Repository Organization](../repository-organization/README.md)
+- [Version Control](./)
+- [Software Development Practices](../)
+- [Repository Organization](../repository-organization/)
 - [Monorepo](../repository-organization/monorepo.md)

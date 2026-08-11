@@ -151,7 +151,7 @@ The foundational lens asks which guarantees a mechanism can provide and under
 which assumptions. The applied lens combines those foundations with a concrete
 system's threats, requirements, users, operations, and constraints.
 
-[Security](../security/README.md) is the canonical landing page for both lenses
+[Security](../security/) is the canonical landing page for both lenses
 in this wiki. A dedicated foundational subdirectory should be introduced only
 when focused foundational documents exist.
 
@@ -159,18 +159,18 @@ when focused foundational documents exist.
 
 The current foundation landing pages are:
 
-- [Computer Systems](computer-systems/README.md) — introduces hardware, operating systems, networking, storage, and distributed computation.
-- [Programming Languages](programming-languages/README.md) — introduces
+- [Computer Systems](computer-systems/) — introduces hardware, operating systems, networking, storage, and distributed computation.
+- [Programming Languages](programming-languages/) — introduces
   language-level concepts and the current JavaScript material.
-- [Software Engineering](software-engineering/README.md) — connects programming paradigms, design principles, patterns, architecture, frameworks, libraries, and implementations.
+- [Software Engineering](software-engineering/) — connects programming paradigms, design principles, patterns, architecture, frameworks, libraries, and implementations.
 
 Software Engineering currently has the more developed set of focused documents. Other Computer Science areas appear throughout the wiki as practical notes but do not yet have equivalent foundation indexes. Future indexes should be created only when enough focused material exists to support them.
 
-[System Design](../system-design/README.md) remains a top-level, cross-cutting
+[System Design](../system-design/) remains a top-level, cross-cutting
 area in this wiki. Computer Science informs it, but General System Design also
 draws from Systems Engineering, organizations, operations, and other fields.
 
-[Security](../security/README.md) is also top-level because its complete scope
+[Security](../security/) is also top-level because its complete scope
 includes Computer Science foundations as well as engineering, operational,
 organizational, privacy, and risk perspectives.
 
@@ -193,21 +193,21 @@ Related applied areas
 └── Software Development Practices
 ```
 
-- [Computer Systems](computer-systems/README.md)
-- [Programming Languages](programming-languages/README.md)
-- [JavaScript](programming-languages/javascript/README.md)
-- [Software Engineering Foundations](software-engineering/README.md)
+- [Computer Systems](computer-systems/)
+- [Programming Languages](programming-languages/)
+- [JavaScript](programming-languages/javascript/)
+- [Software Engineering Foundations](software-engineering/)
 - [Software Taxonomy](software-engineering/software-taxonomy.md)
 - [Software Architecture](software-engineering/software-architecture.md)
-- [System Design](../system-design/README.md)
-- [Software System Design](../system-design/software-system-design/README.md)
-- [Software Development Practices](../software-development-practices/README.md)
+- [System Design](../system-design/)
+- [Software System Design](../system-design/software-system-design/)
+- [Software Development Practices](../software-development-practices/)
 
 ## Related Areas
 
 - [General Programming](../miscellaneous/CS.md)
 - [Databases](../miscellaneous/backend/databases.md)
-- [Frameworks, Libraries, and Tooling](../framework-tooling/README.md)
-- [Security](../security/README.md)
-- [System Design](../system-design/README.md)
-- [Software Development Practices](../software-development-practices/README.md)
+- [Frameworks, Libraries, and Tooling](../framework-tooling/)
+- [Security](../security/)
+- [System Design](../system-design/)
+- [Software Development Practices](../software-development-practices/)
