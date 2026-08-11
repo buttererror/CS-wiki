@@ -10,6 +10,7 @@ Design patterns describe collaboration within a design. They are distinct from c
 
 - [Gang of Four Design Patterns](gang-of-four-design-patterns.md) — introduces the GoF catalog and its creational, structural, and behavioral hierarchy.
 - [Observer Pattern](observer-pattern.md) — explains how a subject notifies interested observers when its state changes.
+- [Observer Pattern — Wikipedia Study Notes](observer-pattern-wikipedia.md) — expands the canonical Observer page with source-guided structure, examples, tradeoffs, and attribution.
 
 ## Related Concepts
 
