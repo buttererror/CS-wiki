@@ -71,6 +71,10 @@ export default defineConfig({
                                     link: '/computer-science-foundations/programming-languages/javascript/',
                                     items: [
                                         {
+                                            text: 'Set, Map, and Object',
+                                            link: '/computer-science-foundations/programming-languages/javascript/set-map-and-object',
+                                        },
+                                        {
                                             text: 'Functions, Closures, and Identity',
                                             link: '/computer-science-foundations/programming-languages/javascript/functions-closures-and-identity',
                                         },

@@ -16,7 +16,7 @@ technology-specific behavior belongs with the relevant framework or tool.
 | Area or language | Focus | Reading status |
 | --- | --- | --- |
 | [Type Systems](type-systems.md) | Static and dynamic checking, inference, narrowing, generics, and runtime boundaries | Not read yet |
-| [JavaScript](javascript/README.md) | Function objects, closures, identity, and binding initialization | Not read yet |
+| [JavaScript](javascript/README.md) | Objects, keyed collections, functions, closures, identity, and binding initialization | Not read yet |
 | [TypeScript](typescript/README.md) | JavaScript with static type-system foundations and a local toolchain | Not read yet |
 
 ## Related Areas

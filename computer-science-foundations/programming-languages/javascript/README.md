@@ -11,11 +11,14 @@ host environment rather than the language itself.
 
 ## Reading Path
 
-1. [Functions, Closures, and Identity](functions-closures-and-identity.md)
-2. [Hoisting and Binding Initialization](hoisting.md)
+1. [JavaScript `Set`, `Map`, and `Object`](set-map-and-object.md)
+2. [Functions, Closures, and Identity](functions-closures-and-identity.md)
+3. [Hoisting and Binding Initialization](hoisting.md)
 
 ## Document Index
 
+- [JavaScript `Set`, `Map`, and `Object`](set-map-and-object.md) — choosing
+  between structured records, keyed collections, and unique-value collections.
 - [Functions, Closures, and Identity](functions-closures-and-identity.md) —
   function objects, reference equality, lexical closures, and framework cases.
 - [Hoisting and Binding Initialization](hoisting.md) — declaration processing,
