@@ -2,7 +2,7 @@
 
 **Reading status:** Not read yet
 
-**Keywords:** progressive web app, PWA, service worker, offline web app,
+**Keywords:** progressive web app, PWA, service worker, `sw`, `sw.js`, offline web app,
 offline-first, precache, runtime cache, Cache Storage API, Workbox,
 `@vite-pwa/vitepress`, `virtual:pwa-register`, web app manifest, installable web
 app, service-worker scope, waiting worker, update prompt, `registerSW`,
