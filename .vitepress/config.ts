@@ -18,7 +18,16 @@ export default defineConfig({
         siteTitle: "CS Wiki",
         search: {
             provider: 'local',
-
+            options: {
+                detailedView: true,
+                miniSearch: {
+                    searchOptions: {
+                        combineWith: 'AND',
+                        fuzzy: 0.1,
+                        prefix: true,
+                    },
+                },
+            },
         },
         outline: [2, 3],
 
