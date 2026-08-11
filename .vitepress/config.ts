@@ -4,10 +4,10 @@ import { defineConfig } from 'vitepress'
 export default withPwa(defineConfig({
     title: 'CS Wiki',
     description: "A practical, evolving knowledge base for computer science and software development.",
-    base: '/CS-wiki/',
+    base: '/',
     cleanUrls: true,
     head: [
-        ['link', { rel: 'icon', href: '/CS-wiki/pwa-icon.svg', type: 'image/svg+xml' }],
+        ['link', { rel: 'icon', href: '/pwa-icon.svg', type: 'image/svg+xml' }],
     ],
     vite: {
         publicDir: '.vitepress/public',
@@ -342,6 +342,10 @@ export default withPwa(defineConfig({
                             ],
                         },
                         {
+                            text: 'Offline Web Apps',
+                            link: '/frontend-development/offline-web-apps/',
+                        },
+                        {
                             text: 'Rendering',
                             link: '/frontend-development/rendering/',
                             items: [
@@ -564,18 +568,18 @@ export default withPwa(defineConfig({
     pwa: {
         registerType: 'prompt',
         manifest: {
-            id: '/CS-wiki/',
+            id: '/',
             name: 'CS Wiki',
             short_name: 'CS Wiki',
             description: 'A practical knowledge base for computer science and software development.',
-            start_url: '/CS-wiki/',
-            scope: '/CS-wiki/',
+            start_url: '/',
+            scope: '/',
             display: 'standalone',
             theme_color: '#1b1b1f',
             background_color: '#1b1b1f',
             icons: [
                 {
-                    src: '/CS-wiki/pwa-icon.svg',
+                    src: '/pwa-icon.svg',
                     sizes: 'any',
                     type: 'image/svg+xml',
                     purpose: 'any maskable',
