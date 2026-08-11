@@ -125,22 +125,84 @@ export default defineConfig({
                                 {
                                     text: 'Programming Paradigms',
                                     link: '/computer-science-foundations/software-engineering/programming-paradigms/',
+                                    items: [
+                                        {
+                                            text: 'Programming Paradigm',
+                                            link: '/computer-science-foundations/software-engineering/programming-paradigms/programming-paradigm',
+                                        },
+                                        {
+                                            text: 'Reactive Programming',
+                                            link: '/computer-science-foundations/software-engineering/programming-paradigms/reactive-programming',
+                                        },
+                                    ],
                                 },
                                 {
                                     text: 'Software Design Principles',
                                     link: '/computer-science-foundations/software-engineering/software-design-principles/',
+                                    items: [
+                                        {
+                                            text: 'Inversion of Control',
+                                            link: '/computer-science-foundations/software-engineering/software-design-principles/inversion-of-control',
+                                        },
+                                    ],
                                 },
                                 {
                                     text: 'Terminology',
                                     link: '/computer-science-foundations/software-engineering/terminology/',
+                                    items: [
+                                        {
+                                            text: 'Client',
+                                            link: '/computer-science-foundations/software-engineering/terminology/client',
+                                        },
+                                        {
+                                            text: 'Mechanism',
+                                            link: '/computer-science-foundations/software-engineering/terminology/mechanism',
+                                        },
+                                        {
+                                            text: 'Pattern',
+                                            link: '/computer-science-foundations/software-engineering/terminology/pattern',
+                                        },
+                                        {
+                                            text: 'Route Map',
+                                            link: '/computer-science-foundations/software-engineering/terminology/route-map',
+                                        },
+                                        {
+                                            text: 'Style',
+                                            link: '/computer-science-foundations/software-engineering/terminology/style',
+                                        },
+                                    ],
                                 },
                                 {
                                     text: 'Communication Patterns',
                                     link: '/computer-science-foundations/software-engineering/communication-patterns/',
+                                    items: [
+                                        {
+                                            text: 'Publish/Subscribe',
+                                            link: '/computer-science-foundations/software-engineering/communication-patterns/publish-subscribe',
+                                        },
+                                        {
+                                            text: 'Request/Response',
+                                            link: '/computer-science-foundations/software-engineering/communication-patterns/request-response',
+                                        },
+                                    ],
                                 },
                                 {
                                     text: 'Design Patterns',
                                     link: '/computer-science-foundations/software-engineering/design-patterns/',
+                                    items: [
+                                        {
+                                            text: 'Gang of Four Design Patterns',
+                                            link: '/computer-science-foundations/software-engineering/design-patterns/gang-of-four-design-patterns',
+                                        },
+                                        {
+                                            text: 'Observer Pattern',
+                                            link: '/computer-science-foundations/software-engineering/design-patterns/observer-pattern',
+                                        },
+                                        {
+                                            text: 'Observer Pattern - Wikipedia Study',
+                                            link: '/computer-science-foundations/software-engineering/design-patterns/observer-pattern-wikipedia',
+                                        },
+                                    ],
                                 },
                                 {
                                     text: 'Architectural Patterns',
@@ -239,6 +301,16 @@ export default defineConfig({
                                 },
                             ],
                         },
+                        {
+                            text: 'Version Control',
+                            link: '/software-development-practices/version-control/',
+                            items: [
+                                {
+                                    text: 'Detached HEAD',
+                                    link: '/software-development-practices/version-control/detached-head',
+                                },
+                            ],
+                        },
                     ],
                 },
             ],
@@ -273,6 +345,16 @@ export default defineConfig({
                                 {
                                     text: 'Hydration',
                                     link: '/frontend-development/rendering/hydration',
+                                },
+                            ],
+                        },
+                        {
+                            text: 'Routing and Interaction',
+                            link: '/frontend-development/routing-and-interaction/',
+                            items: [
+                                {
+                                    text: 'Post-Authentication Redirects',
+                                    link: '/frontend-development/routing-and-interaction/post-authentication-redirects',
                                 },
                             ],
                         },
@@ -354,6 +436,14 @@ export default defineConfig({
                                         {
                                             text: 'Performance',
                                             link: '/framework-tooling/frontend/react/performance',
+                                        },
+                                        {
+                                            text: 'Strict Mode',
+                                            link: '/framework-tooling/frontend/react/strict-mode',
+                                        },
+                                        {
+                                            text: 'Stale Response Races',
+                                            link: '/framework-tooling/frontend/react/stale-response-races',
                                         },
                                     ],
                                 },
