@@ -27,13 +27,13 @@ of duplicating it.
   route identifiers with handlers, components, or responses.
 - [Cache Invalidation](cache-invalidation.md) — the process of declaring cached representations stale when the source of truth changes.
 - [Caveat](caveat.md) — a warning, non-obvious limitation, or specific condition associated with a design choice, API, or framework feature.
-- [Type Narrowing](type-narrowing.md) — the process by which a compiler or static analyzer refines a broad type into a more specific type based on conditional checks.
+- [Narrowing](narrowing.md) — restricting a broad domain, requirement scope, fault space, or type into a precise, well-bounded subset.
 - [Post-Authentication Redirects](../../../frontend-development/routing-and-interaction/post-authentication-redirects.md) — a return-to navigation pattern that resumes a validated internal destination after sign-in.
 - Abstraction — a simplified interface or model that hides selected details.
 - Component — a distinguishable part of a larger software structure.
 - Runtime — the environment and period in which a program executes.
 
-Mechanism, Pattern, Style, Client, Route Map, Cache Invalidation, Caveat, and Type Narrowing currently have dedicated
+Mechanism, Pattern, Style, Client, Route Map, Cache Invalidation, Caveat, and Narrowing currently have dedicated
 documents. The remaining examples indicate possible future terminology notes.
 
 ## Relationship to the Knowledge Base
@@ -58,7 +58,7 @@ Topic documents
 - [Route Map](route-map.md)
 - [Cache Invalidation](cache-invalidation.md)
 - [Caveat](caveat.md)
-- [Type Narrowing](type-narrowing.md)
+- [Narrowing](narrowing.md)
 
 ## Related Concepts
 
