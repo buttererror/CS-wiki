@@ -21,6 +21,10 @@ export default withPwa(defineConfig({
         return id
     },
 
+    ignoreDeadLinks: [
+        /\/testing\//,
+    ],
+
     themeConfig: {
         siteTitle: "CS Wiki",
         search: {
@@ -157,6 +161,10 @@ export default withPwa(defineConfig({
                                     text: 'Terminology',
                                     link: '/computer-science-foundations/software-engineering/terminology/',
                                     items: [
+                                        {
+                                            text: 'Cache Invalidation',
+                                            link: '/computer-science-foundations/software-engineering/terminology/cache-invalidation',
+                                        },
                                         {
                                             text: 'Client',
                                             link: '/computer-science-foundations/software-engineering/terminology/client',

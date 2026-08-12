@@ -512,6 +512,8 @@ Invalidation communicates:
 
 > This cached data may no longer match its source.
 
+See the general [Cache Invalidation](../computer-science-foundations/software-engineering/terminology/cache-invalidation.md) terminology note for systemic contexts and principles across software architecture.
+
 ---
 
 ## Query Cancellation
