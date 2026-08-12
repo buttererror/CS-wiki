@@ -44,7 +44,7 @@ In testing, operations, and troubleshooting, narrowing isolates the root cause o
 - **Techniques:**
   - **Git Bisecting:** Narrowing down the specific commit that introduced a regression via binary search over commit history.
   - **Subsystem Isolation:** Replacing external APIs with mocks or stubs to isolate whether a failure originates in client code, network transport, or backend services.
-- **Reference:** [Software Testing](../../software-development-practices/testing/)
+- **Reference:** [Software Testing](../../../software-development-practices/testing/)
 
 ### 4. Language & Type System Narrowing
 

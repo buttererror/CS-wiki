@@ -68,6 +68,9 @@ Practices and design still influence one another. For example, repository struct
 
 - [Software Testing](testing/) — classifies tests independently by
   boundary, execution, purpose, quality focus, and subject under test.
+- [Testing Infrastructure and Strategy](testing/testing-infrastructure.md) —
+  testing layers, backend database E2E, test database isolation, database
+  reset strategies, self-contained commands, and browser E2E deferral.
 - [Development Strategy](development-strategy.md) — compares horizontal and vertical development approaches.
 - [Lean MVP and Vertical Slices](lean-mvp-vertical-slice-development.md) — connects YAGNI, MVP scope, vertical slices, incremental architecture, testing, DevOps, and documentation practices.
 - [Repository Organization](repository-organization/) — distinguishes

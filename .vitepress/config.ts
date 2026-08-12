@@ -22,7 +22,6 @@ export default withPwa(defineConfig({
     },
 
     ignoreDeadLinks: [
-        /\/testing\//,
     ],
 
     themeConfig: {
@@ -317,6 +316,12 @@ export default withPwa(defineConfig({
                         {
                             text: 'Software Testing',
                             link: '/software-development-practices/testing/',
+                            items: [
+                                {
+                                    text: 'Testing Infrastructure and Strategy',
+                                    link: '/software-development-practices/testing/testing-infrastructure',
+                                },
+                            ],
                         },
                         {
                             text: 'Repository Organization',
