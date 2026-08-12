@@ -189,6 +189,10 @@ export default withPwa(defineConfig({
                                             text: 'Style',
                                             link: '/computer-science-foundations/software-engineering/terminology/style',
                                         },
+                                        {
+                                            text: 'Type Narrowing',
+                                            link: '/computer-science-foundations/software-engineering/terminology/type-narrowing',
+                                        },
                                     ],
                                 },
                                 {
