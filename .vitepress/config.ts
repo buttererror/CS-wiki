@@ -166,6 +166,10 @@ export default withPwa(defineConfig({
                                             link: '/computer-science-foundations/software-engineering/terminology/cache-invalidation',
                                         },
                                         {
+                                            text: 'Caveat',
+                                            link: '/computer-science-foundations/software-engineering/terminology/caveat',
+                                        },
+                                        {
                                             text: 'Client',
                                             link: '/computer-science-foundations/software-engineering/terminology/client',
                                         },
