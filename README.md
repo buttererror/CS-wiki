@@ -263,7 +263,8 @@ general frontend development is a subset of tooling.
 
 | Topic | What it covers |
 | --- | --- |
-| [Git](miscellaneous/git-space.md) | Version-control workflows, commits, amend, and broader recovery notes |
+| [Git Notes](miscellaneous/git-space.md) | Version-control workflows, commits, amend, and broader recovery notes |
+| [Git Commands](miscellaneous/git-commands.md) | Reference table of commands, syntax breakdowns, use cases, and concrete examples |
 | [Linux](miscellaneous/linux/linux-general.md) | Categorized shell and package-management command reference |
 | [Docker](miscellaneous/linux/docker.md) | Installation, runtime commands, Compose, and reset workflows |
 | [PostgreSQL](miscellaneous/linux/postgresql.md) | Local setup, roles, databases, and common `psql` operations |

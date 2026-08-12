@@ -34,7 +34,8 @@ repository root readable while avoiding premature classification.
 
 ### Tools and Troubleshooting
 
-- [Git](git-space.md)
+- [Git Notes](git-space.md)
+- [Git Command Reference](git-commands.md)
 - [Technical Fixes and Solutions](technical-fixes-and-solutions.md)
 
 ## Future Review

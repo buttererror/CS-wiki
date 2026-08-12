@@ -539,7 +539,16 @@ export default withPwa(defineConfig({
                         },
                         {
                             text: 'Git',
-                            link: '/miscellaneous/git-space',
+                            items: [
+                                {
+                                    text: 'Git Notes',
+                                    link: '/miscellaneous/git-space',
+                                },
+                                {
+                                    text: 'Git Commands',
+                                    link: '/miscellaneous/git-commands',
+                                },
+                            ],
                         },
                         {
                             text: 'AI',
