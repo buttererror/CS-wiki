@@ -22,5 +22,6 @@ technology-specific behavior belongs with the relevant framework or tool.
 ## Related Areas
 
 - [Computer Science Foundations](../)
+- [Collections and Data Structures](../algorithms-and-data-structures/collections.md)
 - [Programming Paradigms](../software-engineering/programming-paradigms/)
 - [Browser Runtime](../../frontend-development/browser-runtime/)

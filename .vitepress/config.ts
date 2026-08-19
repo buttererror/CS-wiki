@@ -74,6 +74,16 @@ export default withPwa(defineConfig({
                     link: '/computer-science-foundations/',
                     items: [
                         {
+                            text: 'Algorithms and Data Structures',
+                            link: '/computer-science-foundations/algorithms-and-data-structures/',
+                            items: [
+                                {
+                                    text: 'Collections and Data Structures',
+                                    link: '/computer-science-foundations/algorithms-and-data-structures/collections',
+                                },
+                            ],
+                        },
+                        {
                             text: 'Computer Systems',
                             link: '/computer-science-foundations/computer-systems/',
                         },

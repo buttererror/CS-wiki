@@ -19,6 +19,9 @@ of duplicating it.
 
 ## Examples of Terms
 
+- [Collection](../../algorithms-and-data-structures/collections.md) — broad,
+  context-dependent vocabulary for grouping values; the canonical page
+  distinguishes abstract data types, concrete structures, and language APIs.
 - [Mechanism](mechanism.md) — the operational process or capability through which behavior is enabled or realized.
 - [Atomicity](atomicity.md) — all-or-nothing behavior within a stated operation and resource boundary.
 - [Pattern](pattern.md) — a reusable description of a recurring arrangement, interaction, or solution in context.

@@ -92,7 +92,7 @@ Repository documentation
 
 | Directory | Current role | Current coverage |
 | --- | --- | --- |
-| [`computer-science-foundations/`](computer-science-foundations/) | Foundational field maps and transferable concepts | Computer Systems, Programming Languages, and Software Engineering foundations |
+| [`computer-science-foundations/`](computer-science-foundations/) | Foundational field maps and transferable concepts | Algorithms and Data Structures, Computer Systems, Programming Languages, and Software Engineering foundations |
 | [`system-design/`](system-design/) | Cross-cutting applied design area | General, computer-system, and software-system scopes; DDD and neighboring perspectives |
 | [`security/`](security/) | Canonical cross-cutting security area | Foundational/applied distinction and current Identity and Access Management notes |
 | [`software-development-practices/`](software-development-practices/) | Ways of organizing and evolving engineering work | Development strategy, lean delivery, and repository organization |
@@ -112,6 +112,7 @@ Choose a path based on what you want to learn:
 
 - **Understand the wiki's foundation map:**
   [Computer Science Foundations](computer-science-foundations/) →
+  [Algorithms and Data Structures](computer-science-foundations/algorithms-and-data-structures/),
   [Computer Systems](computer-science-foundations/computer-systems/) or
   [Software Engineering Foundations](computer-science-foundations/software-engineering/)
 - **Study programming-language behavior:**
@@ -138,6 +139,20 @@ Choose a path based on what you want to learn:
   [Miscellaneous Notes](miscellaneous/)
 
 ## Knowledge map
+
+### Algorithms and data structures
+
+This area owns language-independent collection abstractions and their concrete
+representations. Language-specific collection classes and APIs remain under
+Programming Languages and link back to these concepts. In particular,
+`collection` is treated as broad vocabulary rather than a universal type
+hierarchy: a list, set, map, stack, and queue express different relationships
+and operations.
+
+| Topic | What it covers |
+| --- | --- |
+| [Algorithms and Data Structures](computer-science-foundations/algorithms-and-data-structures/) | Data abstractions and representations, algorithm families and design strategies, correctness, and complexity analysis |
+| [Collections and Data Structures](computer-science-foundations/algorithms-and-data-structures/collections.md) | Sequences, lists, arrays, sets, maps, stacks, queues, language APIs, and the distinction between abstractions and implementations |
 
 ### Programming languages
 

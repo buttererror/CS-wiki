@@ -23,9 +23,9 @@ Computer Science and Related Computing Foundations
 │   └── Computational complexity
 │
 ├── Algorithms and Data Structures
-│   ├── Problem-solving procedures
-│   ├── Data organization
-│   └── Efficiency analysis
+│   ├── Data abstractions and concrete representations
+│   ├── Fundamental algorithm families and design strategies
+│   └── Correctness and efficiency analysis
 │
 ├── Programming Languages
 │   ├── Syntax and semantics
@@ -104,6 +104,7 @@ This is a relationship map, not a mandatory sequence. Foundational knowledge inf
 | Concept | Scope | Primary question |
 | --- | --- | --- |
 | Computer Science | Foundational study of computation and computational systems | What principles, properties, and limitations govern computation? |
+| Algorithms and Data Structures | Abstract operations, computational procedures, concrete data organization, and efficiency | Which abstraction represents the required operations, how can it be implemented, and what does it cost? |
 | Computer Systems | Hardware, system software, networking, storage, and distributed computation | How do computing components execute and coordinate? |
 | Computer Security Foundations | General security properties, adversary models, mechanisms, and limitations | Under which assumptions does a security mechanism provide a particular guarantee? |
 | Software Engineering | Engineering discipline for creating and evolving software | How should software be designed, built, maintained, and operated? |
@@ -159,6 +160,9 @@ when focused foundational documents exist.
 
 The current foundation landing pages are:
 
+- [Algorithms and Data Structures](algorithms-and-data-structures/) —
+  distinguishes abstract data types, concrete representations, algorithms,
+  and language collection APIs.
 - [Computer Systems](computer-systems/) — introduces hardware, operating systems, networking, storage, and distributed computation.
 - [Programming Languages](programming-languages/) — introduces
   language-level concepts and the current JavaScript material.
@@ -179,6 +183,9 @@ organizational, privacy, and risk perspectives.
 ```text
 Computer Science Foundations
 │
+├── Algorithms and Data Structures
+│   └── collections, representations, operations, and efficiency
+│
 ├── Computer Systems Foundations
 │   └── runtime, networking, storage, and distributed-system questions
 │
@@ -194,6 +201,8 @@ Related applied areas
 ```
 
 - [Computer Systems](computer-systems/)
+- [Algorithms and Data Structures](algorithms-and-data-structures/)
+- [Collections and Data Structures](algorithms-and-data-structures/collections.md)
 - [Programming Languages](programming-languages/)
 - [JavaScript](programming-languages/javascript/)
 - [Software Engineering Foundations](software-engineering/)
