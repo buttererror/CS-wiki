@@ -20,6 +20,7 @@ of duplicating it.
 ## Examples of Terms
 
 - [Mechanism](mechanism.md) — the operational process or capability through which behavior is enabled or realized.
+- [Atomicity](atomicity.md) — all-or-nothing behavior within a stated operation and resource boundary.
 - [Pattern](pattern.md) — a reusable description of a recurring arrangement, interaction, or solution in context.
 - [Style](style.md) — principles and constraints that shape the overall character of a design.
 - [Client](client.md) — an interaction role that initiates use of a capability, plus the related meanings of client libraries and client objects.
@@ -28,12 +29,13 @@ of duplicating it.
 - [Cache Invalidation](cache-invalidation.md) — the process of declaring cached representations stale when the source of truth changes.
 - [Caveat](caveat.md) — a warning, non-obvious limitation, or specific condition associated with a design choice, API, or framework feature.
 - [Narrowing](narrowing.md) — restricting a broad domain, requirement scope, fault space, or type into a precise, well-bounded subset.
+- [Unbounded](unbounded.md) — having no relevant enforced upper limit on size, duration, count, growth, or resource consumption.
 - [Post-Authentication Redirects](../../../frontend-development/routing-and-interaction/post-authentication-redirects.md) — a return-to navigation pattern that resumes a validated internal destination after sign-in.
 - Abstraction — a simplified interface or model that hides selected details.
 - Component — a distinguishable part of a larger software structure.
 - Runtime — the environment and period in which a program executes.
 
-Mechanism, Pattern, Style, Client, Route Map, Cache Invalidation, Caveat, and Narrowing currently have dedicated
+Mechanism, Atomicity, Pattern, Style, Client, Route Map, Cache Invalidation, Caveat, Narrowing, and Unbounded currently have dedicated
 documents. The remaining examples indicate possible future terminology notes.
 
 ## Relationship to the Knowledge Base
@@ -52,6 +54,7 @@ Topic documents
 ## Document Index
 
 - [Mechanism](mechanism.md)
+- [Atomicity](atomicity.md)
 - [Pattern](pattern.md)
 - [Style](style.md)
 - [Client](client.md)
@@ -59,6 +62,7 @@ Topic documents
 - [Cache Invalidation](cache-invalidation.md)
 - [Caveat](caveat.md)
 - [Narrowing](narrowing.md)
+- [Unbounded](unbounded.md)
 
 ## Related Concepts
 

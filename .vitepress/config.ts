@@ -169,6 +169,10 @@ export default withPwa(defineConfig({
                                             link: '/computer-science-foundations/software-engineering/terminology/caveat',
                                         },
                                         {
+                                            text: 'Atomicity',
+                                            link: '/computer-science-foundations/software-engineering/terminology/atomicity',
+                                        },
+                                        {
                                             text: 'Client',
                                             link: '/computer-science-foundations/software-engineering/terminology/client',
                                         },
@@ -191,6 +195,10 @@ export default withPwa(defineConfig({
                                         {
                                             text: 'Narrowing',
                                             link: '/computer-science-foundations/software-engineering/terminology/narrowing',
+                                        },
+                                        {
+                                            text: 'Unbounded',
+                                            link: '/computer-science-foundations/software-engineering/terminology/unbounded',
                                         },
                                     ],
                                 },
