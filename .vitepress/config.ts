@@ -210,6 +210,10 @@ export default withPwa(defineConfig({
                                             text: 'Unbounded',
                                             link: '/computer-science-foundations/software-engineering/terminology/unbounded',
                                         },
+                                        {
+                                            text: 'Status-Transition Matrix',
+                                            link: '/computer-science-foundations/software-engineering/terminology/status-transition-matrix',
+                                        },
                                     ],
                                 },
                                 {
