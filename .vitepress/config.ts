@@ -214,6 +214,10 @@ export default withPwa(defineConfig({
                                             text: 'Status-Transition Matrix',
                                             link: '/computer-science-foundations/software-engineering/terminology/status-transition-matrix',
                                         },
+                                        {
+                                            text: 'Deduplication',
+                                            link: '/computer-science-foundations/software-engineering/terminology/deduplication',
+                                        },
                                     ],
                                 },
                                 {

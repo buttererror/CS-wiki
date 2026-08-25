@@ -34,12 +34,13 @@ of duplicating it.
 - [Narrowing](narrowing.md) — restricting a broad domain, requirement scope, fault space, or type into a precise, well-bounded subset.
 - [Unbounded](unbounded.md) — having no relevant enforced upper limit on size, duration, count, growth, or resource consumption.
 - [Status-Transition Matrix](status-transition-matrix.md) — a two-dimensional grid or lookup model defining permitted and forbidden transitions between lifecycle states.
+- [Deduplication](deduplication.md) — the process or technique of identifying and eliminating redundant copies of identical or equivalent data, operations, requests, or events.
 - [Post-Authentication Redirects](../../../frontend-development/routing-and-interaction/post-authentication-redirects.md) — a return-to navigation pattern that resumes a validated internal destination after sign-in.
 - Abstraction — a simplified interface or model that hides selected details.
 - Component — a distinguishable part of a larger software structure.
 - Runtime — the environment and period in which a program executes.
 
-Mechanism, Atomicity, Pattern, Style, Client, Route Map, Cache Invalidation, Caveat, Narrowing, Unbounded, and Status-Transition Matrix currently have dedicated
+Mechanism, Atomicity, Pattern, Style, Client, Route Map, Cache Invalidation, Caveat, Narrowing, Unbounded, Status-Transition Matrix, and Deduplication currently have dedicated
 documents. The remaining examples indicate possible future terminology notes.
 
 ## Relationship to the Knowledge Base
@@ -68,6 +69,7 @@ Topic documents
 - [Narrowing](narrowing.md)
 - [Unbounded](unbounded.md)
 - [Status-Transition Matrix](status-transition-matrix.md)
+- [Deduplication](deduplication.md)
 
 ## Related Concepts
 

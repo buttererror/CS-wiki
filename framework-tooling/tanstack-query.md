@@ -880,7 +880,7 @@ TanStack Query continues to manage mutation state and lifecycle callbacks.
 Potential benefits include:
 
 - Shared asynchronous server-state coordination.
-- Request deduplication for matching query work.
+- [Request deduplication](../computer-science-foundations/software-engineering/terminology/deduplication.md) for matching query work.
 - Cache reuse and background synchronization.
 - Consistent pending and error state.
 - Targeted invalidation and direct updates.
@@ -948,6 +948,8 @@ Query Observer
 
 - [Frameworks, Libraries, and Tooling](./)
 - [Software Taxonomy](../computer-science-foundations/software-engineering/software-taxonomy.md)
+- [Deduplication](../computer-science-foundations/software-engineering/terminology/deduplication.md)
+- [Cache Invalidation](../computer-science-foundations/software-engineering/terminology/cache-invalidation.md)
 - [Reactive Programming](../computer-science-foundations/software-engineering/programming-paradigms/reactive-programming.md)
 - [Observer Pattern](../computer-science-foundations/software-engineering/design-patterns/observer-pattern.md)
 - [Request / Response](../computer-science-foundations/software-engineering/communication-patterns/request-response.md)
