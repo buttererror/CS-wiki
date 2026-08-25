@@ -36,6 +36,7 @@ of duplicating it.
 - [Status-Transition Matrix](status-transition-matrix.md) — a two-dimensional grid or lookup model defining permitted and forbidden transitions between lifecycle states.
 - [Deduplication](deduplication.md) — the process or technique of identifying and eliminating redundant copies of identical or equivalent data, operations, requests, or events.
 - [Post-Authentication Redirects](../../../frontend-development/routing-and-interaction/post-authentication-redirects.md) — a return-to navigation pattern that resumes a validated internal destination after sign-in.
+- [Testing Terminology](../../../software-development-practices/testing/#testing-terminology-umbrella) — the relationship among test boundaries, the subject under test, real and controlled dependencies, dependency replacement, test doubles, dummy, stub, spy, mock, fake, controlled persistence, and test evidence.
 - Abstraction — a simplified interface or model that hides selected details.
 - Component — a distinguishable part of a larger software structure.
 - Runtime — the environment and period in which a program executes.
@@ -70,6 +71,7 @@ Topic documents
 - [Unbounded](unbounded.md)
 - [Status-Transition Matrix](status-transition-matrix.md)
 - [Deduplication](deduplication.md)
+- [Testing Terminology](../../../software-development-practices/testing/#testing-terminology-umbrella)
 
 ## Related Concepts
 

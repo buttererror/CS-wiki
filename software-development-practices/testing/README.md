@@ -4,7 +4,9 @@
 level, test boundary, unit test, integration test, system test, end-to-end test,
 E2E, manual testing, automated testing, smoke test, acceptance test, regression
 test, exploratory testing, authentication transport verification, refresh
-persistence
+persistence, subject under test, system under test, SUT, dependency, external
+dependency, controlled dependency, dependency replacement, test double, dummy,
+stub, spy, mock, fake, controlled persistence, in-memory fake
 
 ## Purpose
 
@@ -48,6 +50,109 @@ Subject: session restoration after a browser refresh
 
 The subject identifies the behavior being checked; it does not create another
 test level.
+
+## Testing Terminology Umbrella
+
+Testing is the broad practice. Related terms describe the selected boundary,
+the behavior or system being tested, which participants remain real, which
+dependencies are controlled, how replacements behave, and what evidence the
+test evaluates.
+
+```text
+Software Testing
+├── Test classification
+│   ├── boundary or level
+│   ├── execution
+│   ├── purpose
+│   ├── quality focus
+│   └── subject under test
+├── Participants
+│   ├── subject or system under test
+│   ├── real application layers
+│   └── dependencies and external dependencies
+├── Dependency control
+│   ├── dependency replacement
+│   ├── controlled persistence
+│   └── test double
+│       ├── dummy
+│       ├── stub
+│       ├── spy
+│       ├── mock
+│       └── fake
+└── Test evidence
+    ├── returned value or response
+    ├── state change
+    └── recorded interactions
+```
+
+### Subject and Dependencies
+
+- The **subject under test** or **system under test (SUT)** is the code,
+  component, service, workflow, or system whose behavior the test intends to
+  evaluate. The word *system* is relative to the chosen boundary; an SUT can be
+  one class in a unit test or a complete application in a system test.
+- A **dependency** is a participant the SUT calls or requires. A database,
+  external API, email service, clock, filesystem, network, or another
+  application service can be an **external dependency** relative to the
+  selected boundary.
+- A **real dependency** uses its production implementation during the test. A
+  **controlled dependency** is configured, isolated, observed, or replaced so
+  the test can determine its behavior reliably.
+- **Dependency replacement** substitutes a real dependency with a controlled
+  test implementation. Dependency injection, module replacement, monkey
+  patching, and framework mock APIs are mechanisms that can perform the
+  replacement; they are not themselves test-double categories.
+
+### Test Double and Related Roles
+
+A **test double** is the umbrella term for a controlled replacement used in
+place of a real dependency during a test. The name follows the idea of a stunt
+double: the replacement stands in for the real participant while the test
+exercises surrounding behavior.
+
+| Role | Main purpose | Example |
+| --- | --- | --- |
+| Dummy | Fill a required position without participating in the tested behavior | Placeholder logger passed to a path that does not log |
+| Stub | Return prepared values | User lookup that always returns one prepared record |
+| Spy | Record calls and arguments | Wrapped function inspected after the action |
+| Mock | Use programmed behavior together with interaction expectations | Configured client whose expected request is asserted |
+| Fake | Provide a simplified working implementation | In-memory repository that creates, updates, and filters records |
+
+These roles can overlap. A framework mock function may return a stubbed value
+and record calls like a spy. An in-memory repository can be a fake while its
+methods also act as spies. The terms describe roles in a test, not necessarily
+five separate objects or five mutually exclusive implementation types.
+
+Use **test double** when the subtype is unimportant. Use a narrower term when it
+communicates the design more clearly, such as “in-memory persistence fake” or
+“API client stub.” Mocking libraries often use *mock* as a broad product term,
+so local code may use “mock” even when the configured object plays a stub, spy,
+or fake role in testing terminology.
+
+### Controlled Persistence and Request Boundaries
+
+**Controlled persistence** means database-facing behavior is simulated,
+constrained, or replaced while the real database remains outside the selected
+test boundary. An **in-memory fake** can store temporary records in arrays or
+maps and implement only the operations needed by the tests.
+
+For example, a backend HTTP integration test can keep the request, routing,
+authentication, validation, controller, and service real while replacing the
+database client and database:
+
+```text
+HTTP request
+  -> real route
+  -> real authentication and validation
+  -> real controller and service
+  -> controlled persistence test double
+       instead of a real database client and database
+```
+
+This boundary can prove that the application request pipeline cooperates. It
+does not prove real queries, constraints, migrations, transactions, network
+behavior, or database-engine behavior. Those require a test whose boundary
+includes the real infrastructure.
 
 ## Boundary or Test Level
 
@@ -171,6 +276,7 @@ boundary, execution method, and protected behavior clear.
 ## Related Concepts
 
 - [Software Development Practices](../README.md)
+- [Software Engineering Terminology](../../computer-science-foundations/software-engineering/terminology/README.md)
 - [Software Engineering Foundations](../../computer-science-foundations/software-engineering/README.md)
 - [Communication Patterns](../../computer-science-foundations/software-engineering/communication-patterns/README.md)
 - [Security](../../security/README.md)
