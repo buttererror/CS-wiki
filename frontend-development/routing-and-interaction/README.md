@@ -9,6 +9,9 @@ route APIs belong under [Frontend Frameworks and Tooling](../../framework-toolin
 
 ## Document Index
 
+- [Controlled and Uncontrolled Inputs](controlled-and-uncontrolled-inputs.md) —
+  determine current-value ownership between the host DOM element and frontend
+  application state.
 - [Post-Authentication Redirects](post-authentication-redirects.md) — preserve
   an intended internal destination while sign-in is required, then continue to
   it after authentication succeeds.

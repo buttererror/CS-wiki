@@ -218,6 +218,10 @@ export default withPwa(defineConfig({
                                             text: 'Deduplication',
                                             link: '/computer-science-foundations/software-engineering/terminology/deduplication',
                                         },
+                                        {
+                                            text: 'Frontend Terminology',
+                                            link: '/computer-science-foundations/software-engineering/terminology/frontend-terminology',
+                                        },
                                     ],
                                 },
                                 {
@@ -414,6 +418,10 @@ export default withPwa(defineConfig({
                             text: 'Routing and Interaction',
                             link: '/frontend-development/routing-and-interaction/',
                             items: [
+                                {
+                                    text: 'Controlled and Uncontrolled Inputs',
+                                    link: '/frontend-development/routing-and-interaction/controlled-and-uncontrolled-inputs',
+                                },
                                 {
                                     text: 'Post-Authentication Redirects',
                                     link: '/frontend-development/routing-and-interaction/post-authentication-redirects',

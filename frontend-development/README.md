@@ -91,6 +91,7 @@ Framework-specific implementations
 - [Serialization](data-across-boundaries/serialization.md)
 - [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)
 - [Routing and Interaction](routing-and-interaction/)
+- [Controlled and Uncontrolled Inputs](routing-and-interaction/controlled-and-uncontrolled-inputs.md)
 - [Post-Authentication Redirects](routing-and-interaction/post-authentication-redirects.md)
 - [Styling](styling/)
 
