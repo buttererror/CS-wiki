@@ -47,7 +47,7 @@ These concepts are framework-independent and describe how browsers execute, rend
 - **[Structured Clone](../../../frontend-development/data-across-boundaries/serialization.md#serialization-is-format-specific)**: The browser algorithm used to deep-copy complex JavaScript values across worker, postMessage, and storage boundaries.
 - **[Boundary Data Minimization](../../../frontend-development/data-across-boundaries/serialization.md#relationship-to-server-rendering)**: Passing only the minimal data fields required by the client across the server/client boundary to reduce payload size and prevent secret leakage.
 
-### State and Reactivity
+### State, Reactivity, and Paradigms
 
 - **[Reactivity System](../../../frontend-development/state-and-reactivity/reactivity-mechanisms.md)**: An architecture where modifications to a data source automatically propagate to dependent computations, templates, or effects.
 - **[Reactive Source](../../../frontend-development/state-and-reactivity/reactivity-mechanisms.md#vocabulary-of-a-reactivity-system)**: A data container whose read operations can be observed and whose mutations trigger dependent work.
@@ -57,6 +57,19 @@ These concepts are framework-independent and describe how browsers execute, rend
 - **[Derived State / Computed Values](../../../frontend-development/state-and-reactivity/reactivity-mechanisms.md#vocabulary-of-a-reactivity-system)**: Values calculated from other state that automatically update or invalidate when their source dependencies change.
 - **[Effects and Side Effects](../../../frontend-development/state-and-reactivity/reactivity-mechanisms.md#vocabulary-of-a-reactivity-system)**: Operations triggered by reactive changes that interact with outside systems (DOM updates, timers, network requests, storage).
 - **[Stream-Based Reactivity](../../../frontend-development/state-and-reactivity/reactivity-mechanisms.md#relationship-to-stream-based-reactivity)**: Managing state and event sequences as composable asynchronous pipelines of observables or event streams.
+- **Imperative UI vs. Declarative UI**:
+  - *Imperative UI*: Manually executing step-by-step mutation commands (*HOW* to update the interface, e.g. `element.appendChild()`, `dialog.showModal()`).
+  - *Declarative UI*: Describing the target interface structure as a pure function of current state (*WHAT* to render, e.g. `<Modal isOpen={isOpen} />`), letting the framework or engine reconcile DOM changes.
+- **Event-Driven vs. Effect-Driven Action**: Executing user-triggered actions directly inside explicit event handlers (`onClick`, `onSubmit`) rather than reacting to cascading state or route transitions inside reactive lifecycle effects (`useEffect`).
+
+### Overlays, Modals, and the Top Layer
+
+- **Top Layer**: A dedicated browser rendering layer managed above all document DOM elements, completely independent of parent `z-index`, `overflow: hidden`, or stacking contexts, used by native `<dialog>`, fullscreen, and Popover elements.
+- **HTML5 `<dialog>` (`.showModal()`, `.close()`)**: The standard browser overlay element providing built-in modal lifecycles, Top Layer promotion, native backdrop pseudo-elements (`::backdrop`), focus trapping, inert background documents, and keyboard dismissal.
+- **Light Dismiss**: An interaction pattern where clicking or tapping outside an active overlay (on its backdrop) or pressing standard platform dismiss keys (`Escape`) automatically closes the overlay.
+- **Focus Trapping**: Constraining keyboard navigation (`Tab` / `Shift+Tab`) strictly within an active modal or dialog to prevent keyboard and screen reader users from navigating to inert background content.
+- **Focus Restoration**: An accessibility requirement where dismissing an overlay automatically returns keyboard focus to the trigger button that originally opened it.
+- **Body Scroll Locking**: An overlay coordination technique that temporarily sets `document.body.style.overflow = 'hidden'` while a modal is active to prevent background scrolling behind the overlay, restoring the original overflow upon dismissal.
 
 ### Routing, Forms, and Interaction
 
