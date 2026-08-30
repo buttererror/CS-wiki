@@ -263,7 +263,7 @@ general frontend development is a subset of tooling.
 | Topic | What it covers |
 | --- | --- |
 | [Software Development Practices](software-development-practices/) | Ways of organizing, validating, delivering, and evolving software |
-| [Software Testing](software-development-practices/testing/) | Test boundaries, execution modes, purposes, subjects under test, dependency control, and test-double terminology |
+| [Software Testing](software-development-practices/testing/) | Test boundaries, execution modes, purposes, subjects under test, dependency control, test doubles, and state observation probes |
 | [Testing Infrastructure and Strategy](software-development-practices/testing/testing-infrastructure.md) | Testing layers, backend database E2E, test database isolation, reset strategies, and browser E2E deferral |
 | [Repository Organization](software-development-practices/repository-organization/) | Repository boundaries and their distinction from tooling and architecture |
 | [Version Control](software-development-practices/version-control/) | Commit graphs, branches, merges, recovery, and detached `HEAD` states |

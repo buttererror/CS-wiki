@@ -219,6 +219,10 @@ export default withPwa(defineConfig({
                                             link: '/computer-science-foundations/software-engineering/terminology/deduplication',
                                         },
                                         {
+                                            text: 'Probe',
+                                            link: '/computer-science-foundations/software-engineering/terminology/probe',
+                                        },
+                                        {
                                             text: 'Frontend Terminology',
                                             link: '/computer-science-foundations/software-engineering/terminology/frontend-terminology',
                                         },

@@ -6,7 +6,8 @@ E2E, manual testing, automated testing, smoke test, acceptance test, regression
 test, exploratory testing, authentication transport verification, refresh
 persistence, subject under test, system under test, SUT, dependency, external
 dependency, controlled dependency, dependency replacement, test double, dummy,
-stub, spy, mock, fake, controlled persistence, in-memory fake
+stub, spy, mock, fake, controlled persistence, in-memory fake, probe, test probe,
+observer probe
 
 ## Purpose
 
@@ -55,8 +56,8 @@ test level.
 
 Testing is the broad practice. Related terms describe the selected boundary,
 the behavior or system being tested, which participants remain real, which
-dependencies are controlled, how replacements behave, and what evidence the
-test evaluates.
+dependencies are controlled, how replacements behave, how internal state is
+observed, and what evidence the test evaluates.
 
 ```text
 Software Testing
@@ -79,6 +80,8 @@ Software Testing
 │       ├── spy
 │       ├── mock
 │       └── fake
+├── Internal state observation
+│   └── test probe
 └── Test evidence
     ├── returned value or response
     ├── state change
@@ -153,6 +156,12 @@ This boundary can prove that the application request pipeline cooperates. It
 does not prove real queries, constraints, migrations, transactions, network
 behavior, or database-engine behavior. Those require a test whose boundary
 includes the real infrastructure.
+
+### Test Probes and State Observation
+
+A [**test probe**](../../computer-science-foundations/software-engineering/terminology/probe.md) is a lightweight observer helper injected into a component tree, state container, or test harness to **read and expose internal state for assertions without replacing or mocking system behavior**.
+
+While a **test double** substitutes a dependency, a **test probe** observes real internal execution. For example, mounting a probe component inside a test router context allows tests to query the current URL from the DOM without mocking router internals or inspecting private library state.
 
 ## Boundary or Test Level
 
@@ -277,6 +286,7 @@ boundary, execution method, and protected behavior clear.
 
 - [Software Development Practices](../README.md)
 - [Software Engineering Terminology](../../computer-science-foundations/software-engineering/terminology/README.md)
+- [Probe](../../computer-science-foundations/software-engineering/terminology/probe.md)
 - [Software Engineering Foundations](../../computer-science-foundations/software-engineering/README.md)
 - [Communication Patterns](../../computer-science-foundations/software-engineering/communication-patterns/README.md)
 - [Security](../../security/README.md)
