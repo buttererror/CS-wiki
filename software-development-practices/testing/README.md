@@ -102,8 +102,7 @@ Software Testing
   **controlled dependency** is configured, isolated, observed, or replaced so
   the test can determine its behavior reliably.
 - **Dependency replacement** substitutes a real dependency with a controlled
-  test implementation. Dependency injection, module replacement, monkey
-  patching, and framework mock APIs are mechanisms that can perform the
+  test implementation. Dependency injection, module replacement, [monkey patching](../../computer-science-foundations/software-engineering/terminology/patching.md), and framework mock APIs are mechanisms that can perform the
   replacement; they are not themselves test-double categories.
 
 ### Test Double and Related Roles
@@ -287,6 +286,7 @@ boundary, execution method, and protected behavior clear.
 - [Software Development Practices](../README.md)
 - [Software Engineering Terminology](../../computer-science-foundations/software-engineering/terminology/README.md)
 - [Probe](../../computer-science-foundations/software-engineering/terminology/probe.md)
+- [Patching](../../computer-science-foundations/software-engineering/terminology/patching.md)
 - [Software Engineering Foundations](../../computer-science-foundations/software-engineering/README.md)
 - [Communication Patterns](../../computer-science-foundations/software-engineering/communication-patterns/README.md)
 - [Security](../../security/README.md)

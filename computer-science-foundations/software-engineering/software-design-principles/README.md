@@ -7,14 +7,13 @@ Software design principles are broad guidelines for making design decisions. The
 ## Examples
 
 - [Inversion of Control](inversion-of-control.md) — delegates parts of construction, execution, or lifecycle control to an external mechanism.
+- [SOLID Design Principles](solid-principles.md) — five foundational principles (SRP, OCP, LSP, ISP, DIP) for flexible and maintainable object-oriented and modular designs.
 - Separation of Concerns — keeps different responsibilities conceptually distinct.
 - Modularity — organizes software into focused, replaceable, and understandable parts.
 - Information Hiding — conceals design decisions that other parts of the system do not need to know.
 - Composition — builds larger behavior by combining smaller parts.
-- Dependency Inversion Principle — encourages high-level policy to depend on abstractions rather than concrete low-level details.
-- Single Responsibility Principle — encourages a module to have one focused reason to change.
 
-Only Inversion of Control currently has a dedicated document in this directory. The remaining examples indicate where future learning notes may belong.
+Inversion of Control and SOLID Design Principles currently have dedicated documents in this directory. The remaining examples indicate where future learning notes may belong.
 
 Some principles, including the SOLID principles, were popularized through object-oriented design. Software design principles as a category are not limited to Object-Oriented Programming.
 
@@ -81,6 +80,7 @@ These relationships are not strict one-to-one mappings. One principle can guide 
 ## Document Index
 
 - [Inversion of Control](inversion-of-control.md)
+- [SOLID Design Principles](solid-principles.md)
 
 ## Related Concepts
 

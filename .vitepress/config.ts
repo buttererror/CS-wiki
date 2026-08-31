@@ -100,16 +100,36 @@ export default withPwa(defineConfig({
                                     link: '/computer-science-foundations/programming-languages/javascript/',
                                     items: [
                                         {
+                                            text: 'Hoisting and Binding Initialization',
+                                            link: '/computer-science-foundations/programming-languages/javascript/hoisting',
+                                        },
+                                        {
+                                            text: 'Functions & Execution Context',
+                                            link: '/computer-science-foundations/programming-languages/javascript/functions',
+                                        },
+                                        {
+                                            text: 'Closures & Lexical Scope',
+                                            link: '/computer-science-foundations/programming-languages/javascript/closures',
+                                        },
+                                        {
+                                            text: 'Objects & Property Descriptors',
+                                            link: '/computer-science-foundations/programming-languages/javascript/objects',
+                                        },
+                                        {
+                                            text: 'Prototypes & The Prototype Chain',
+                                            link: '/computer-science-foundations/programming-languages/javascript/prototypes',
+                                        },
+                                        {
+                                            text: 'Prototypal vs. Classical Inheritance',
+                                            link: '/computer-science-foundations/programming-languages/javascript/inheritance',
+                                        },
+                                        {
                                             text: 'Set, Map, and Object',
                                             link: '/computer-science-foundations/programming-languages/javascript/set-map-and-object',
                                         },
                                         {
                                             text: 'Functions, Closures, and Identity',
                                             link: '/computer-science-foundations/programming-languages/javascript/functions-closures-and-identity',
-                                        },
-                                        {
-                                            text: 'Hoisting and Binding Initialization',
-                                            link: '/computer-science-foundations/programming-languages/javascript/hoisting',
                                         },
                                     ],
                                 },
@@ -151,6 +171,10 @@ export default withPwa(defineConfig({
                                             link: '/computer-science-foundations/software-engineering/programming-paradigms/programming-paradigm',
                                         },
                                         {
+                                            text: 'Object-Oriented Programming',
+                                            link: '/computer-science-foundations/software-engineering/programming-paradigms/object-oriented-programming',
+                                        },
+                                        {
                                             text: 'Reactive Programming',
                                             link: '/computer-science-foundations/software-engineering/programming-paradigms/reactive-programming',
                                         },
@@ -163,6 +187,10 @@ export default withPwa(defineConfig({
                                         {
                                             text: 'Inversion of Control',
                                             link: '/computer-science-foundations/software-engineering/software-design-principles/inversion-of-control',
+                                        },
+                                        {
+                                            text: 'SOLID Design Principles',
+                                            link: '/computer-science-foundations/software-engineering/software-design-principles/solid-principles',
                                         },
                                     ],
                                 },
@@ -221,6 +249,10 @@ export default withPwa(defineConfig({
                                         {
                                             text: 'Probe',
                                             link: '/computer-science-foundations/software-engineering/terminology/probe',
+                                        },
+                                        {
+                                            text: 'Patching',
+                                            link: '/computer-science-foundations/software-engineering/terminology/patching',
                                         },
                                         {
                                             text: 'Frontend Terminology',

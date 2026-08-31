@@ -9,6 +9,7 @@ A programming paradigm is broader than a design pattern or communication pattern
 ## Document Index
 
 - [Programming Paradigm](programming-paradigm.md) — introduces object-oriented, functional, and reactive programming.
+- [Object-Oriented Programming](object-oriented-programming.md) — encapsulation, abstraction, inheritance, polymorphism, and class-based vs. prototype-based models.
 - [Reactive Programming](reactive-programming.md) — explains programs that react to values and events changing over time.
 
 ## Related Concepts

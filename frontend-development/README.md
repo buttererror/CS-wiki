@@ -1,26 +1,25 @@
 # Frontend Development
 
-## Purpose
+## Purpose & Architectural Distinction
 
-Frontend Development is the applied engineering area concerned with building
-user-facing software that executes in a browser or another client UI runtime.
-It combines browser behavior, rendering, interaction, state, networking,
-accessibility, styling, performance, and delivery.
+Frontend Development is the applied engineering area concerned with building user-facing software that executes in a browser or client UI runtime. It manages browser behavior, DOM manipulation, rendering pipelines, interaction, state, networking, accessibility, styling, performance, and delivery.
 
-This directory owns transferable frontend concepts. Concrete frameworks,
-libraries, and build tools live under
-[Frontend Frameworks and Tooling](../framework-tooling/frontend/).
+### Language vs. Host Environment Boundary
+
+A critical distinction in web engineering is separating the **Programming Language** from the **Host Platform**:
+
+- **Programming Language Semantics** ([JavaScript Foundations](../computer-science-foundations/programming-languages/javascript/)): Memory models, execution contexts, lexical closures, objects, prototype delegation, and `this` binding. These behave identically across browsers, Node.js, and serverless environments.
+- **Frontend Host Platform** (This Directory): Web APIs, DOM trees (`document`, `<dialog>`), CSSOM, event loops, rendering engines (Blink, Gecko, WebKit), web storage, and client-side networking.
+
+This directory owns transferable frontend concepts. Concrete frameworks, libraries, and build tools live under [Frontend Frameworks and Tooling](../framework-tooling/frontend/).
 
 ## Classification
 
 - **Primary area:** Applied software engineering
-- **Scope:** Browser-based user interfaces and related delivery concerns
+- **Scope:** Browser-based user interfaces, web platform APIs, and related delivery concerns
 - **Abstraction level:** Framework-independent concepts and mechanisms
 
-Frontend Development overlaps with Software Engineering, Human–Computer
-Interaction, Web Platform standards, accessibility, security, networking, and
-framework tooling. Its directory is a primary navigation home, not a claim of
-exclusive academic ownership.
+Frontend Development overlaps with Software Engineering, Human–Computer Interaction, Web Platform standards, accessibility, security, networking, and framework tooling. Its directory is a primary navigation home, not a claim of exclusive academic ownership.
 
 ## Area Map
 

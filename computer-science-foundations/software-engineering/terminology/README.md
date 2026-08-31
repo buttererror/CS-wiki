@@ -36,6 +36,7 @@ of duplicating it.
 - [Status-Transition Matrix](status-transition-matrix.md) — a two-dimensional grid or lookup model defining permitted and forbidden transitions between lifecycle states.
 - [Deduplication](deduplication.md) — the process or technique of identifying and eliminating redundant copies of identical or equivalent data, operations, requests, or events.
 - [Probe](probe.md) — a lightweight observer, sensor, or diagnostic helper injected into a system to measure, read, or report internal state without altering its behavior.
+- [Patching](patching.md) — the modification or replacement of software behavior at runtime (monkey patching / polyfills) or at the source level (diffs / hotfixes).
 - [Post-Authentication Redirects](../../../frontend-development/routing-and-interaction/post-authentication-redirects.md) — a return-to navigation pattern that resumes a validated internal destination after sign-in.
 - [Testing Terminology](../../../software-development-practices/testing/#testing-terminology-umbrella) — the relationship among test boundaries, the subject under test, real and controlled dependencies, dependency replacement, test doubles, dummy, stub, spy, mock, fake, controlled persistence, and test evidence.
 - [Frontend Terminology](frontend-terminology.md) — a two-layer index organizing general transferable frontend principles and framework/library-specific terms.
@@ -43,7 +44,7 @@ of duplicating it.
 - Component — a distinguishable part of a larger software structure.
 - Runtime — the environment and period in which a program executes.
 
-Mechanism, Atomicity, Pattern, Style, Client, Route Map, Cache Invalidation, Caveat, Narrowing, Unbounded, Status-Transition Matrix, Deduplication, Probe, and Frontend Terminology currently have dedicated
+Mechanism, Atomicity, Pattern, Style, Client, Route Map, Cache Invalidation, Caveat, Narrowing, Unbounded, Status-Transition Matrix, Deduplication, Probe, Patching, and Frontend Terminology currently have dedicated
 documents. The remaining examples indicate possible future terminology notes.
 
 ## Relationship to the Knowledge Base
@@ -74,6 +75,7 @@ Topic documents
 - [Status-Transition Matrix](status-transition-matrix.md)
 - [Deduplication](deduplication.md)
 - [Probe](probe.md)
+- [Patching](patching.md)
 - [Testing Terminology](../../../software-development-practices/testing/#testing-terminology-umbrella)
 - [Frontend Terminology](frontend-terminology.md)
 
