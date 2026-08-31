@@ -483,6 +483,22 @@ export default withPwa(defineConfig({
                             ],
                         },
                         {
+                            text: 'Accessibility',
+                            link: '/frontend-development/accessibility/',
+                            items: [
+                                {
+                                    text: 'Accessibility Overview',
+                                    link: '/frontend-development/accessibility/',
+                                    sidebarDepth: 1,
+                                },
+                                {
+                                    text: 'WCAG',
+                                    link: '/frontend-development/accessibility/wcag',
+                                    sidebarDepth: 1,
+                                },
+                            ],
+                        },
+                        {
                             text: 'Styling',
                             link: '/frontend-development/styling/',
                         },

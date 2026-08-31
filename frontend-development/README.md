@@ -9,7 +9,37 @@ Frontend Development is the applied engineering area concerned with building use
 A critical distinction in web engineering is separating the **Programming Language** from the **Host Platform**:
 
 - **Programming Language Semantics** ([JavaScript Foundations](../computer-science-foundations/programming-languages/javascript/)): Memory models, execution contexts, lexical closures, objects, prototype delegation, and `this` binding. These behave identically across browsers, Node.js, and serverless environments.
-- **Frontend Host Platform** (This Directory): Web APIs, DOM trees (`document`, `<dialog>`), CSSOM, event loops, rendering engines (Blink, Gecko, WebKit), web storage, and client-side networking.
+- **Frontend Host Platform** (This Directory): Web APIs, DOM trees (`document`, `<dialog>`), CSSOM, event loops, rendering engines (Blink, Gecko, WebKit), web storage, accessibility trees, and client-side networking.
+
+---
+
+## Web Standards & Platform Specifications
+
+Modern frontend development is governed by five major international standardization bodies that define how browsers, runtimes, and user agents operate:
+
+```text
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 1. TC39 / Ecma International (ECMA-262)                                    │
+│    • Standardizes the core JavaScript language syntax, types, and semantics.│
+│    • Canonical home: computer-science-foundations/programming-languages/   │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 2. WHATWG (Web Hypertext Application Technology Working Group)              │
+│    • Maintains the HTML Living Standard, DOM Standard, Fetch, & Web Storage.│
+│    • Canonical home: frontend-development/browser-runtime/ & rendering/     │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 3. W3C CSS Working Group                                                    │
+│    • Standardizes CSS Cascading, Box Model, Flexbox, Grid, & Top Layer.     │
+│    • Canonical home: frontend-development/styling/                          │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 4. W3C WAI (Web Accessibility Initiative)                                   │
+│    • Standardizes Web Content Accessibility Guidelines (WCAG) and WAI-ARIA. │
+│    • Canonical home: frontend-development/accessibility/                    │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ 5. IETF (Internet Engineering Task Force)                                   │
+│    • Standardizes underlying network protocols: HTTP/1.1, HTTP/2, HTTP/3,   │
+│      TLS, and Cookie state management (RFC 6265).                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
 
 This directory owns transferable frontend concepts. Concrete frameworks, libraries, and build tools live under [Frontend Frameworks and Tooling](../framework-tooling/frontend/).
 
@@ -26,20 +56,23 @@ Frontend Development overlaps with Software Engineering, Human–Computer Intera
 ```text
 Frontend Development
 │
-├── Browser runtime
-├── Rendering
-│   ├── Client rendering
-│   ├── Server rendering
-│   ├── Static generation and ISR
-│   └── Hydration
-├── Data across boundaries
-├── State and reactivity
-├── Styling and presentation
-├── Routing, forms, and interaction
-├── Networking, APIs, and authentication
-├── Accessibility and browser compatibility
-├── Performance and progressive delivery
-└── Offline behavior and service workers
+├── 🌐 Web Standards & Platform Specifications
+│   ├── Language Standards (TC39 / ECMA-262)
+│   ├── Living HTML & DOM Standards (WHATWG)
+│   ├── Presentation & Layout Standards (W3C CSS WG)
+│   ├── Accessibility & WAI Standards (W3C WAI)
+│   │   ├── WCAG (Web Content Accessibility Guidelines)
+│   │   └── WAI-ARIA Semantics & Accessibility Tree
+│   └── Network & Transport Protocols (IETF HTTP)
+│
+├── 🖥️ Browser Runtime & Execution (Event loop, Web APIs, Timers)
+├── 🎨 Rendering & Delivery (CSR, SSR, SSG, ISR, Hydration)
+├── ♿ Accessibility (a11y) & Focus Management
+├── ⚡ State, Reactivity, & Data Flow
+├── 💅 Styling & Presentation (CSS Grid, Flexbox, Units)
+├── 🔀 Routing, Forms, & User Interaction
+├── 📡 Data Across Boundaries & Serialization
+└── 📦 Progressive Delivery & Offline Caching (PWA, Service Workers)
 ```
 
 ## Suggested Reading Path
@@ -56,6 +89,8 @@ Serialization across boundaries
 Hydration
         ↓
 State and Reactivity
+        ↓
+Accessibility & Focus Management
         ↓
 Framework-specific implementations
 ```
@@ -77,11 +112,15 @@ Framework-specific implementations
    server-rendered markup.
 8. [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)
    compares automatic dependency tracking, explicit updates, and streams.
+9. [Web Accessibility (a11y)](accessibility/) explains the Accessibility Tree,
+   screen reader semantics, focus lifecycles, and WCAG standards.
 
 ## Document Index
 
 - [Browser Runtime](browser-runtime/)
 - [Timers and Event Scheduling](browser-runtime/timers-and-event-scheduling.md)
+- [Accessibility Overview](accessibility/)
+- [WCAG — Web Content Accessibility Guidelines](accessibility/wcag.md)
 - [Progressive Web Apps, Service Workers, and Offline Caching](offline-web-apps/)
 - [Rendering](rendering/)
 - [Server and Client Rendering](rendering/server-and-client-rendering.md)
