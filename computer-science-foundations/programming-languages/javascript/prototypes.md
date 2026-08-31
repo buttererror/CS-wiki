@@ -59,14 +59,39 @@ Much confusion in JavaScript stems from three related concepts with similar name
 
 ---
 
-## The Prototype Lookup Algorithm
+## The Prototype Lookup Algorithm & DOM Hierarchy
 
 When evaluating `object.property`:
 
 1. **Own Properties:** Does `object` contain an own property named `property`? If yes, return it.
 2. **Prototype Traversal:** Follow `object`'s `[[Prototype]]` link. Does the parent object contain `property`? If yes, execute/return it.
-3. **Chain Ascent:** Repeat traversal up the chain:
-   $$\text{Instance} \longrightarrow \text{Type.prototype} \longrightarrow \text{ParentType.prototype} \longrightarrow \text{Object.prototype} \longrightarrow \text{null}$$
+3. **Chain Ascent:** Traversal ascends through successive prototypes until found or reaching `null`.
+
+```text
+<dialog id="mobile-nav">     (DOM instance object)
+   │
+   ▼ [[Prototype]]
+HTMLDialogElement.prototype  (.showModal(), .close(), .open)
+   │
+   ▼ [[Prototype]]
+HTMLElement.prototype        (.style, .hidden, .focus(), .blur())
+   │
+   ▼ [[Prototype]]
+Element.prototype            (.querySelector(), .setAttribute(), .classList)
+   │
+   ▼ [[Prototype]]
+Node.prototype               (.appendChild(), .parentNode)
+   │
+   ▼ [[Prototype]]
+EventTarget.prototype        (.addEventListener(), .dispatchEvent())
+   │
+   ▼ [[Prototype]]
+Object.prototype             (.toString(), .hasOwnProperty())
+   │
+   ▼ [[Prototype]]
+  null
+```
+
 4. **End of Chain:** If `null` is reached without finding the property, return `undefined` (or throw `TypeError` if invoked as a function).
 
 ---
