@@ -89,6 +89,8 @@ Progressive Web Apps and Offline Caching
         ↓
 Server and Client Rendering
         ↓
+Contracts and schemas across boundaries
+        ↓
 Serialization across boundaries
         ↓
 Hydration
@@ -111,11 +113,14 @@ Framework-specific implementations
    explains where UI output can be produced.
 6. [SSR versus ISR](rendering/ssr-and-isr.md) compares request-time rendering
    with cached output that can be regenerated.
-7. [Serialization](data-across-boundaries/serialization.md) explains how data
+7. [Contracts, Boundaries, Schemas, And Adapters](data-across-boundaries/contracts-boundaries-schemas-and-adapters.md)
+   explains boundary-specific representations, runtime schemas, inferred types,
+   semantic adapters, and feature-oriented organization.
+8. [Serialization](data-across-boundaries/serialization.md) explains how data
    crosses storage, network, process, and server/client boundaries.
-8. [Hydration](rendering/hydration.md) explains how a client framework adopts
+9. [Hydration](rendering/hydration.md) explains how a client framework adopts
    server-rendered markup.
-9. [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)
+10. [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)
    compares automatic dependency tracking, explicit updates, and streams.
 
 ## Document Index
@@ -136,6 +141,8 @@ Framework-specific implementations
 - [Server and Client Rendering](rendering/server-and-client-rendering.md)
 - [SSR versus ISR](rendering/ssr-and-isr.md)
 - [Hydration](rendering/hydration.md)
+- [Data Across Frontend Boundaries](data-across-boundaries/)
+- [Contracts, Boundaries, Schemas, And Adapters](data-across-boundaries/contracts-boundaries-schemas-and-adapters.md)
 - [Serialization](data-across-boundaries/serialization.md)
 - [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)
 - [Routing and Interaction](routing-and-interaction/)

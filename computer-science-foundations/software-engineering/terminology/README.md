@@ -32,6 +32,7 @@ of duplicating it.
 - [Cache Invalidation](cache-invalidation.md) — the process of declaring cached representations stale when the source of truth changes.
 - [Caveat](caveat.md) — a warning, non-obvious limitation, or specific condition associated with a design choice, API, or framework feature.
 - [Narrowing](narrowing.md) — restricting a broad domain, requirement scope, fault space, or type into a precise, well-bounded subset.
+- [Feature, Boundary, Contract, Schema, Type, And Adapter](feature-boundary-contract-schema-type-adapter.md) — cross-topic vocabulary connecting feature ownership, responsibility changes, expected representations, optional runtime verification, compile-time knowledge, and translation between contracts.
 - [Unbounded](unbounded.md) — having no relevant enforced upper limit on size, duration, count, growth, or resource consumption.
 - [Status-Transition Matrix](status-transition-matrix.md) — a two-dimensional grid or lookup model defining permitted and forbidden transitions between lifecycle states.
 - [Deduplication](deduplication.md) — the process or technique of identifying and eliminating redundant copies of identical or equivalent data, operations, requests, or events.
@@ -44,7 +45,7 @@ of duplicating it.
 - Component — a distinguishable part of a larger software structure.
 - Runtime — the environment and period in which a program executes.
 
-Mechanism, Atomicity, Pattern, Style, Client, Route Map, Cache Invalidation, Caveat, Narrowing, Unbounded, Status-Transition Matrix, Deduplication, Probe, Patching, and Frontend Terminology currently have dedicated
+Mechanism, Atomicity, Pattern, Style, Client, Route Map, Cache Invalidation, Caveat, Narrowing, Feature/Boundary/Contract/Schema/Type/Adapter, Unbounded, Status-Transition Matrix, Deduplication, Probe, Patching, and Frontend Terminology currently have dedicated
 documents. The remaining examples indicate possible future terminology notes.
 
 ## Relationship to the Knowledge Base
@@ -71,6 +72,7 @@ Topic documents
 - [Cache Invalidation](cache-invalidation.md)
 - [Caveat](caveat.md)
 - [Narrowing](narrowing.md)
+- [Feature, Boundary, Contract, Schema, Type, And Adapter](feature-boundary-contract-schema-type-adapter.md)
 - [Unbounded](unbounded.md)
 - [Status-Transition Matrix](status-transition-matrix.md)
 - [Deduplication](deduplication.md)

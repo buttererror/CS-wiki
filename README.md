@@ -218,6 +218,7 @@ general frontend development is a subset of tooling.
 | [Server and Client Rendering](frontend-development/rendering/server-and-client-rendering.md) | Client rendering, server rendering, static generation, and Server Components |
 | [SSR versus ISR](frontend-development/rendering/ssr-and-isr.md) | Request-time rendering versus cached output with time-based or on-demand regeneration; currently marked not read yet |
 | [Hydration](frontend-development/rendering/hydration.md) | Client adoption of server-rendered markup and mismatch causes |
+| [Frontend Contracts, Boundaries, Schemas, And Adapters](frontend-development/data-across-boundaries/contracts-boundaries-schemas-and-adapters.md) | Boundary-specific contracts, runtime schemas, inferred types, semantic adapters, and feature-oriented organization |
 | [Serialization](frontend-development/data-across-boundaries/serialization.md) | Transferable representations across frontend boundaries |
 | [Reactivity Mechanisms](frontend-development/state-and-reactivity/reactivity-mechanisms.md) | Proxy tracking, explicit updates, and stream-based models |
 | [Styling](frontend-development/styling/) | Style isolation, layout, and component-oriented styling architecture |

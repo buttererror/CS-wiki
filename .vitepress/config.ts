@@ -237,6 +237,10 @@ export default withPwa(defineConfig({
                                             link: '/computer-science-foundations/software-engineering/terminology/narrowing',
                                         },
                                         {
+                                            text: 'Feature, Boundary, Contract, Schema, Type, & Adapter',
+                                            link: '/computer-science-foundations/software-engineering/terminology/feature-boundary-contract-schema-type-adapter',
+                                        },
+                                        {
                                             text: 'Unbounded',
                                             link: '/computer-science-foundations/software-engineering/terminology/unbounded',
                                         },
@@ -520,7 +524,12 @@ export default withPwa(defineConfig({
                         },
                         {
                             text: 'Data Across Boundaries',
+                            link: '/frontend-development/data-across-boundaries/',
                             items: [
+                                {
+                                    text: 'Contracts, Boundaries, Schemas, & Adapters',
+                                    link: '/frontend-development/data-across-boundaries/contracts-boundaries-schemas-and-adapters',
+                                },
                                 {
                                     text: 'Serialization',
                                     link: '/frontend-development/data-across-boundaries/serialization',
