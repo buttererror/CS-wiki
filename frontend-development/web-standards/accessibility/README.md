@@ -80,7 +80,9 @@ Accessibility ensures seamless operation across diverse human modalities:
 
 ## Related Areas
 
-- [Browser Runtime](../browser-runtime/)
-- [Routing and Interaction](../routing-and-interaction/)
-- [Styling](../styling/)
-- [Software Development Practices: Testing](../../software-development-practices/testing/)
+- [Standards Governance & Adoption](../)
+- [W3C WAI Specifications](../w3c-wai.md)
+- [Browser Runtime](../../browser-runtime/)
+- [Routing and Interaction](../../routing-and-interaction/)
+- [Styling](../../styling/)
+- [Software Development Practices: Testing](../../../software-development-practices/testing/)

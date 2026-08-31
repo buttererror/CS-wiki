@@ -56,28 +56,33 @@ Frontend Development overlaps with Software Engineering, Human–Computer Intera
 ```text
 Frontend Development
 │
-├── 🌐 Web Standards & Platform Specifications
-│   ├── Language Standards (TC39 / ECMA-262)
-│   ├── Living HTML & DOM Standards (WHATWG)
-│   ├── Presentation & Layout Standards (W3C CSS WG)
-│   ├── Accessibility & WAI Standards (W3C WAI)
-│   │   ├── WCAG (Web Content Accessibility Guidelines)
-│   │   └── WAI-ARIA Semantics & Accessibility Tree
-│   └── Network & Transport Protocols (IETF HTTP)
+├── 🌐 Web Standards & Specifications (web-standards/)
+│   ├── Standards Governance & Adoption (README.md)
+│   ├── WHATWG HTML & DOM Living Standards (whatwg-html-dom.md)
+│   ├── W3C CSS Specifications (w3c-css.md)
+│   ├── W3C WAI Specifications (w3c-wai.md)
+│   │   └── ♿ Web Accessibility & WCAG (accessibility/)
+│   ├── TC39 ECMAScript Process (tc39-ecmascript.md)
+│   └── IETF Web Protocols & Cookies (ietf-web-protocols.md)
 │
-├── 🖥️ Browser Runtime & Execution (Event loop, Web APIs, Timers)
-├── 🎨 Rendering & Delivery (CSR, SSR, SSG, ISR, Hydration)
-├── ♿ Accessibility (a11y) & Focus Management
-├── ⚡ State, Reactivity, & Data Flow
-├── 💅 Styling & Presentation (CSS Grid, Flexbox, Units)
-├── 🔀 Routing, Forms, & User Interaction
-├── 📡 Data Across Boundaries & Serialization
-└── 📦 Progressive Delivery & Offline Caching (PWA, Service Workers)
+├── 🖥️ Browser Runtime (browser-runtime/)
+├── 🎨 Rendering (rendering/)
+├── ⚡ State and Reactivity (state-and-reactivity/)
+├── 💅 Styling (styling/)
+├── 🔀 Routing and Interaction (routing-and-interaction/)
+├── 📡 Data Across Boundaries (data-across-boundaries/)
+└── 📦 Offline Web Apps (offline-web-apps/)
 ```
 
 ## Suggested Reading Path
 
 ```text
+Standards Governance & Adoption
+        ↓
+WHATWG HTML & DOM / W3C CSS
+        ↓
+W3C WAI & Web Accessibility
+        ↓
 Browser Runtime
         ↓
 Progressive Web Apps and Offline Caching
@@ -90,37 +95,42 @@ Hydration
         ↓
 State and Reactivity
         ↓
-Accessibility & Focus Management
-        ↓
 Framework-specific implementations
 ```
 
-1. [Browser Runtime](browser-runtime/) explains where frontend code
+1. [Web Standards & Specifications](web-standards/) explains the governance
+   and adoption of standards by WHATWG, W3C, TC39, and IETF.
+2. [Browser Runtime](browser-runtime/) explains where frontend code
    executes and what the environment provides.
-2. [Timers and Event Scheduling](browser-runtime/timers-and-event-scheduling.md)
+3. [Timers and Event Scheduling](browser-runtime/timers-and-event-scheduling.md)
    explains browser timers, task queues, and timing controls.
-3. [Progressive Web Apps, Service Workers, and Offline Caching](offline-web-apps/)
+4. [Progressive Web Apps, Service Workers, and Offline Caching](offline-web-apps/)
    explains service-worker lifecycles, precaching, installability, updates, and
    offline testing.
-4. [Server and Client Rendering](rendering/server-and-client-rendering.md)
+5. [Server and Client Rendering](rendering/server-and-client-rendering.md)
    explains where UI output can be produced.
-5. [SSR versus ISR](rendering/ssr-and-isr.md) compares request-time rendering
+6. [SSR versus ISR](rendering/ssr-and-isr.md) compares request-time rendering
    with cached output that can be regenerated.
-6. [Serialization](data-across-boundaries/serialization.md) explains how data
+7. [Serialization](data-across-boundaries/serialization.md) explains how data
    crosses storage, network, process, and server/client boundaries.
-7. [Hydration](rendering/hydration.md) explains how a client framework adopts
+8. [Hydration](rendering/hydration.md) explains how a client framework adopts
    server-rendered markup.
-8. [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)
+9. [Reactivity Mechanisms](state-and-reactivity/reactivity-mechanisms.md)
    compares automatic dependency tracking, explicit updates, and streams.
-9. [Web Accessibility (a11y)](accessibility/) explains the Accessibility Tree,
-   screen reader semantics, focus lifecycles, and WCAG standards.
 
 ## Document Index
 
+- [Web Standards & Specifications](web-standards/)
+  - [Standards Governance & Adoption](web-standards/)
+  - [WHATWG HTML & DOM Living Standards](web-standards/whatwg-html-dom.md)
+  - [W3C CSS Specifications](web-standards/w3c-css.md)
+  - [W3C WAI Specifications](web-standards/w3c-wai.md)
+  - [TC39 ECMAScript Process](web-standards/tc39-ecmascript.md)
+  - [IETF Web Protocols & Cookies](web-standards/ietf-web-protocols.md)
+  - [Web Accessibility Overview](web-standards/accessibility/)
+  - [WCAG — Web Content Accessibility Guidelines](web-standards/accessibility/wcag.md)
 - [Browser Runtime](browser-runtime/)
 - [Timers and Event Scheduling](browser-runtime/timers-and-event-scheduling.md)
-- [Accessibility Overview](accessibility/)
-- [WCAG — Web Content Accessibility Guidelines](accessibility/wcag.md)
 - [Progressive Web Apps, Service Workers, and Offline Caching](offline-web-apps/)
 - [Rendering](rendering/)
 - [Server and Client Rendering](rendering/server-and-client-rendering.md)

@@ -148,6 +148,8 @@ By querying elements by their accessible roles and asserting focus states, autom
 ## Related Documents
 
 - [Web Accessibility Overview (a11y)](README.md)
-- [Routing and Interaction](../routing-and-interaction/)
-- [Browser Runtime](../browser-runtime/)
-- [Frontend Testing Practices](../../software-development-practices/testing/)
+- [Standards Governance & Adoption](../)
+- [W3C WAI Specifications](../w3c-wai.md)
+- [Routing and Interaction](../../routing-and-interaction/)
+- [Browser Runtime](../../browser-runtime/)
+- [Frontend Testing Practices](../../../software-development-practices/testing/)

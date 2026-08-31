@@ -98,6 +98,7 @@ export default withPwa(defineConfig({
                                 {
                                     text: 'JavaScript',
                                     link: '/computer-science-foundations/programming-languages/javascript/',
+                                    collapsed: false,
                                     items: [
                                         {
                                             text: 'Hoisting and Binding Initialization',
@@ -197,6 +198,7 @@ export default withPwa(defineConfig({
                                 {
                                     text: 'Terminology',
                                     link: '/computer-science-foundations/software-engineering/terminology/',
+                                    collapsed: false,
                                     items: [
                                         {
                                             text: 'Cache Invalidation',
@@ -419,6 +421,58 @@ export default withPwa(defineConfig({
                     link: '/frontend-development/',
                     items: [
                         {
+                            text: 'Web Standards & Specifications',
+                            link: '/frontend-development/web-standards/',
+                            items: [
+                                {
+                                    text: 'Standards Governance & Adoption',
+                                    link: '/frontend-development/web-standards/',
+                                    sidebarDepth: 1,
+                                },
+                                {
+                                    text: 'WHATWG HTML & DOM Living Standards',
+                                    link: '/frontend-development/web-standards/whatwg-html-dom',
+                                    sidebarDepth: 1,
+                                },
+                                {
+                                    text: 'W3C CSS Specifications',
+                                    link: '/frontend-development/web-standards/w3c-css',
+                                    sidebarDepth: 1,
+                                },
+                                {
+                                    text: 'W3C WAI Specifications',
+                                    link: '/frontend-development/web-standards/w3c-wai',
+                                    sidebarDepth: 1,
+                                },
+                                {
+                                    text: 'TC39 ECMAScript Process',
+                                    link: '/frontend-development/web-standards/tc39-ecmascript',
+                                    sidebarDepth: 1,
+                                },
+                                {
+                                    text: 'IETF Web Protocols & Cookies',
+                                    link: '/frontend-development/web-standards/ietf-web-protocols',
+                                    sidebarDepth: 1,
+                                },
+                                {
+                                    text: 'Web Accessibility',
+                                    link: '/frontend-development/web-standards/accessibility/',
+                                    items: [
+                                        {
+                                            text: 'Accessibility Overview',
+                                            link: '/frontend-development/web-standards/accessibility/',
+                                            sidebarDepth: 1,
+                                        },
+                                        {
+                                            text: 'WCAG',
+                                            link: '/frontend-development/web-standards/accessibility/wcag',
+                                            sidebarDepth: 1,
+                                        },
+                                    ],
+                                },
+                            ],
+                        },
+                        {
                             text: 'Browser Runtime',
                             link: '/frontend-development/browser-runtime/',
                             items: [
@@ -479,22 +533,6 @@ export default withPwa(defineConfig({
                                 {
                                     text: 'Reactivity Mechanisms',
                                     link: '/frontend-development/state-and-reactivity/reactivity-mechanisms',
-                                },
-                            ],
-                        },
-                        {
-                            text: 'Accessibility',
-                            link: '/frontend-development/accessibility/',
-                            items: [
-                                {
-                                    text: 'Accessibility Overview',
-                                    link: '/frontend-development/accessibility/',
-                                    sidebarDepth: 1,
-                                },
-                                {
-                                    text: 'WCAG',
-                                    link: '/frontend-development/accessibility/wcag',
-                                    sidebarDepth: 1,
                                 },
                             ],
                         },
