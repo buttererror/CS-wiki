@@ -17,16 +17,18 @@ These core language rules apply consistently across all JavaScript host environm
 
 ## Reading Path
 
-1. [Hoisting and Binding Initialization](hoisting.md)
-2. [JavaScript Functions & this Binding](functions.md)
-3. [JavaScript Closures & Lexical Scope](closures.md)
-4. [JavaScript Objects & Property Descriptors](objects.md)
-5. [JavaScript Prototypes & The Prototype Chain](prototypes.md)
-6. [JavaScript Prototypal vs. Classical Inheritance](inheritance.md)
-7. [JavaScript `Set`, `Map`, and `Object`](set-map-and-object.md)
+1. [Expressions and Statements](expressions-and-statements.md)
+2. [Hoisting and Binding Initialization](hoisting.md)
+3. [JavaScript Functions & this Binding](functions.md)
+4. [JavaScript Closures & Lexical Scope](closures.md)
+5. [JavaScript Objects & Property Descriptors](objects.md)
+6. [JavaScript Prototypes & The Prototype Chain](prototypes.md)
+7. [JavaScript Prototypal vs. Classical Inheritance](inheritance.md)
+8. [JavaScript `Set`, `Map`, and `Object`](set-map-and-object.md)
 
 ## Document Index
 
+- [Expressions and Statements](expressions-and-statements.md) — evaluation semantics, value production, statement control flow, expression statements, and syntax contexts.
 - [Hoisting and Binding Initialization](hoisting.md) — declaration processing, initialization timing, and the temporal dead zone.
 - [JavaScript Functions & this Binding](functions.md) — function objects, declarations, expressions, arrow functions, dynamic `this` call-site binding vs. lexical `this`.
 - [JavaScript Closures & Lexical Scope](closures.md) — lexical environments, environment records, outer scope retention, and memory/garbage-collection considerations.
