@@ -39,6 +39,7 @@ of duplicating it.
 - [Idempotency](idempotency.md) — an operational property where repeated executions produce the identical system state as a single execution.
 - [Probe](probe.md) — a lightweight observer, sensor, or diagnostic helper injected into a system to measure, read, or report internal state without altering its behavior.
 - [Patching](patching.md) — the modification or replacement of software behavior at runtime (monkey patching / polyfills) or at the source level (diffs / hotfixes).
+- [Regression](regression.md) — a defect or bug where a code change causes previously working functionality, performance, or UI stability to break or degrade.
 - [Post-Authentication Redirects](../../../frontend-development/routing-and-interaction/post-authentication-redirects.md) — a return-to navigation pattern that resumes a validated internal destination after sign-in.
 - [Testing Terminology](../../../software-development-practices/testing/#testing-terminology-umbrella) — the relationship among test boundaries, the subject under test, real and controlled dependencies, dependency replacement, test doubles, dummy, stub, spy, mock, fake, controlled persistence, and test evidence.
 - [Frontend Terminology](frontend-terminology.md) — a two-layer index organizing general transferable frontend principles and framework/library-specific terms.
@@ -46,7 +47,7 @@ of duplicating it.
 - Component — a distinguishable part of a larger software structure.
 - Runtime — the environment and period in which a program executes.
 
-Mechanism, Atomicity, Pattern, Style, Client, Route Map, Cache Invalidation, Caveat, Narrowing, Feature/Boundary/Contract/Schema/Type/Adapter, Unbounded, Status-Transition Matrix, Deduplication, Idempotency, Probe, Patching, and Frontend Terminology currently have dedicated
+Mechanism, Atomicity, Pattern, Style, Client, Route Map, Cache Invalidation, Caveat, Narrowing, Feature/Boundary/Contract/Schema/Type/Adapter, Unbounded, Status-Transition Matrix, Deduplication, Idempotency, Probe, Patching, Regression, and Frontend Terminology currently have dedicated
 documents. The remaining examples indicate possible future terminology notes.
 
 ## Relationship to the Knowledge Base
@@ -80,6 +81,7 @@ Topic documents
 - [Idempotency](idempotency.md)
 - [Probe](probe.md)
 - [Patching](patching.md)
+- [Regression](regression.md)
 - [Testing Terminology](../../../software-development-practices/testing/#testing-terminology-umbrella)
 - [Frontend Terminology](frontend-terminology.md)
 

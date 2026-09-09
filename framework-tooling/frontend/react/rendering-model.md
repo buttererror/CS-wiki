@@ -1,5 +1,7 @@
 # React Rendering Model
 
+**Keywords:** React rendering model, reconciliation, render and commit, pure rendering, component identity, component-identity regression, identity regression, keys, concurrency, StrictMode
+
 ## Components and Elements
 
 A React component describes UI from inputs such as props, state, and context.
@@ -61,11 +63,12 @@ React to skip some child work when inputs are unchanged.
 
 ## Identity and Keys
 
-React associates state with a component's type and position in the render
-tree. Changing that identity can preserve or reset state depending on the
-resulting tree.
+React associates state with a component's **type** (function or class reference) and **position in the render tree**. Changing that identity can preserve or reset state depending on the resulting tree:
 
-Keys help React identify siblings across updates:
+1. **Same type at the same tree position:** React preserves the existing component instance, keeps its local state (`useState`, `useReducer`, `useRef`), and updates its props.
+2. **Different type or changed position:** React unmounts the old component instance, destroys its local state and DOM tree, and mounts a brand-new instance.
+
+Keys help React identify siblings across dynamic updates:
 
 ```jsx
 items.map((item) => (
@@ -73,13 +76,41 @@ items.map((item) => (
 ))
 ```
 
-A good key is stable among siblings and comes from the data. An array index can
-be acceptable for a static list, but it is unsafe as identity when items can be
-inserted, removed, or reordered.
+A good key is stable among siblings and comes from the underlying domain data (such as an entity ID). An array index can be acceptable for a strictly static list, but it is unsafe as identity when items can be inserted, removed, filtered, or reordered.
 
-Lists are commonly rendered with JavaScript array methods such as `map()`.
-Fragments (`<>...</>`) group adjacent children without introducing an extra DOM
-wrapper.
+Lists are commonly rendered with JavaScript array methods such as `map()`. Fragments (`<>...</>`) group adjacent children without introducing an extra DOM wrapper.
+
+### Component-Identity Regressions
+
+A **component-identity regression** is a defect introduced when a code change accidentally breaks the stable identity of a component between renders. When identity stability is lost, the reconciler treats what should be the *same* continuous component as a brand-new instance on every render pass.
+
+#### Common Causes
+
+- **Defining Components Inside Render Functions:**
+  Declaring a child component function inside the body of a parent component creates a new function reference in memory on every render pass (`prevType !== nextType`). React unmounts and remounts the child on every update.
+  ```tsx
+  // ❌ Defect: New function reference on every Parent render
+  function Parent() {
+    function Child() {
+      return <input />;
+    }
+    return <Child />;
+  }
+  ```
+  *Solution:* Hoist the child component declaration to module scope or pass data through props.
+- **Dynamic or Unstable Keys:**
+  Using non-deterministic keys (e.g. `key={Math.random()}` or `key={Date.now()}`) forces React to treat the element as new every render.
+- **Inline Higher-Order Components (HOCs) or Styled Components:**
+  Wrapping components via HOCs (e.g., `const Wrapped = withAuth(Base)`) or calling `styled(...)` inside a render function generates a new component type every render.
+- **Accidental Structural Shifts:**
+  Conditionally wrapping an element in a container div without a matching stable key changes its tree depth and position, causing state to reset.
+
+#### Observable Symptoms
+
+- **Input Focus Loss ("One-Keystroke Bug"):** As the user types into an input field, each keystroke triggers a render, which unmounts the old DOM input node and mounts a new one, immediately blurring keyboard focus.
+- **State Wipes:** Local component state (`useState`, `useReducer`, `useRef`) unexpectedly resets to initial values.
+- **Effect Thrashing:** `useEffect` and `useLayoutEffect` cleanup and setup run on every render pass, ignoring dependency arrays because the component is unmounting and remounting continuously.
+- **Visual Flickering:** CSS enter transitions and mount animations re-trigger repeatedly on each parent state update.
 
 ## Commit versus Browser Paint
 
