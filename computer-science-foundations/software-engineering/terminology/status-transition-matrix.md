@@ -40,7 +40,7 @@ NO_SHOW        [ Invalid ]  [ Invalid ]  [ Invalid ]  [ Invalid ]  [  No-Op  ]
 1. **Explicit Exhaustiveness:** Every cell represents a deliberate architectural decision. If a cell is blank or unlisted, it defaults to forbidden.
 2. **Directionality:** Transitions are one-way unless explicitly configured in both directions. Moving from `SCHEDULED` to `CANCELLED` does not imply moving from `CANCELLED` to `SCHEDULED` is allowed.
 3. **Terminal States (Sinks):** States like `COMPLETED`, `CANCELLED`, or `ARCHIVED` have no outgoing valid transitions. Their rows contain only forbidden cells.
-4. **Idempotency Policy:** The diagonal cells (`Current === Target`) define whether requesting the current status is treated as a safe no-op or a rejected error.
+4. **[Idempotency](idempotency.md) Policy:** The diagonal cells (`Current === Target`) define whether requesting the current status is treated as a safe no-op or a rejected error.
 
 ---
 
@@ -159,3 +159,4 @@ A status-transition matrix serves as an automated test matrix for complete behav
 - [Mechanism](mechanism.md)
 - [Pattern](pattern.md)
 - [Atomicity](atomicity.md)
+- [Idempotency](idempotency.md)

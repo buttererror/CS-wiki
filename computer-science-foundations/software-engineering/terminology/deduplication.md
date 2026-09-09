@@ -123,7 +123,7 @@ Avoiding redundant processing:
 | Concept | Primary Focus | Distinction from Deduplication |
 | :--- | :--- | :--- |
 | **Deduplication** | Eliminating redundant copies or duplicate concurrent actions. | Focuses on uniqueness and coalescing duplicate units into one canonical entity. |
-| **Idempotency** | Ensuring repeated executions produce the identical end state. | A mathematical and operational property of an API/operation; deduplication is one mechanism used to achieve idempotency. |
+| **[Idempotency](idempotency.md)** | Ensuring repeated executions produce the identical end state. | A mathematical and operational property of an API/operation; deduplication is one mechanism used to achieve idempotency. |
 | **Caching** | Retaining results over time for future fast retrieval. | Caching retains data across time; in-flight deduplication coalesces concurrent requests across simultaneous callers. |
 | **Compression** | Re-encoding data to use fewer bits. | Compression transforms the representation of data; deduplication replaces identical whole items or chunks with shared references. |
 
@@ -157,6 +157,7 @@ Avoiding redundant processing:
 - [Software Engineering Terminology](./)
 - [Mechanism](mechanism.md)
 - [Atomicity](atomicity.md)
+- [Idempotency](idempotency.md)
 - [Cache Invalidation](cache-invalidation.md)
 - [Unbounded](unbounded.md)
 - [JavaScript `Set`, `Map`, and `Object`](../../programming-languages/javascript/set-map-and-object.md)
