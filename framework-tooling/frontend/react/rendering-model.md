@@ -97,7 +97,9 @@ A **component-identity regression** is a defect introduced when a code change ac
     return <Child />;
   }
   ```
-  *Solution:* Hoist the child component declaration to module scope or pass data through props.
+- **The `useCallback` Component Trap:**
+  Wrapping an inline component in `useCallback` (e.g. `const Form = useCallback(({ children }) => ..., [isEditing])`) does *not* provide component identity stability. Any time dependencies change, `useCallback` returns a new function reference. When used as `<Form>`, React detects `prevType !== nextType` and unmounts the entire `<Form>` tree along with all nested children.
+  *Solution:* Do not create dynamic component definitions. Compute a plain React element (slot) and pass it as a prop (e.g. `const form = isEditing ? <EditForm /> : <CreateForm />; return <Drawer drawer={form} />`).
 - **Dynamic or Unstable Keys:**
   Using non-deterministic keys (e.g. `key={Math.random()}` or `key={Date.now()}`) forces React to treat the element as new every render.
 - **Inline Higher-Order Components (HOCs) or Styled Components:**
