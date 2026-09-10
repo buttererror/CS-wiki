@@ -111,6 +111,7 @@ This distinction is crucial when registering/unregistering event listeners or ma
 
 ## Related Concepts
 
+- [JavaScript Callbacks & Inversion of Control](callbacks.md)
 - [Closures and Lexical Scope](closures.md)
 - [JavaScript Prototypes](prototypes.md)
 - [Hoisting and Binding Initialization](hoisting.md)

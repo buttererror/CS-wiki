@@ -20,17 +20,19 @@ These core language rules apply consistently across all JavaScript host environm
 1. [Expressions and Statements](expressions-and-statements.md)
 2. [Hoisting and Binding Initialization](hoisting.md)
 3. [JavaScript Functions & this Binding](functions.md)
-4. [JavaScript Closures & Lexical Scope](closures.md)
-5. [JavaScript Objects & Property Descriptors](objects.md)
-6. [JavaScript Prototypes & The Prototype Chain](prototypes.md)
-7. [JavaScript Prototypal vs. Classical Inheritance](inheritance.md)
-8. [JavaScript `Set`, `Map`, and `Object`](set-map-and-object.md)
+4. [JavaScript Callbacks & Inversion of Control](callbacks.md)
+5. [JavaScript Closures & Lexical Scope](closures.md)
+6. [JavaScript Objects & Property Descriptors](objects.md)
+7. [JavaScript Prototypes & The Prototype Chain](prototypes.md)
+8. [JavaScript Prototypal vs. Classical Inheritance](inheritance.md)
+9. [JavaScript `Set`, `Map`, and `Object`](set-map-and-object.md)
 
 ## Document Index
 
 - [Expressions and Statements](expressions-and-statements.md) — evaluation semantics, value production, statement control flow, expression statements, and syntax contexts.
 - [Hoisting and Binding Initialization](hoisting.md) — declaration processing, initialization timing, and the temporal dead zone.
 - [JavaScript Functions & this Binding](functions.md) — function objects, declarations, expressions, arrow functions, dynamic `this` call-site binding vs. lexical `this`.
+- [JavaScript Callbacks & Inversion of Control](callbacks.md) — first-class functions, direct vs. delegated invocation, the parentheses trap, synchronous vs. asynchronous callbacks, error-first conventions, and inversion of control.
 - [JavaScript Closures & Lexical Scope](closures.md) — lexical environments, environment records, outer scope retention, and memory/garbage-collection considerations.
 - [JavaScript Objects & Property Descriptors](objects.md) — data vs. accessor properties, descriptors (`writable`, `enumerable`, `configurable`), and `Object.create`.
 - [JavaScript Prototypes & The Prototype Chain](prototypes.md) — `[[Prototype]]` internal engine slot vs. `.prototype` property vs. `__proto__`, prototype lookup chain, and runtime monkey patching.

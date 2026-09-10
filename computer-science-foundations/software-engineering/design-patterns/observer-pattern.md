@@ -454,6 +454,7 @@ It helps explain:
 
 ## Related Concepts
 
+- [JavaScript Callbacks & Inversion of Control](../../programming-languages/javascript/callbacks.md)
 - [Software Taxonomy](../software-taxonomy.md)
 - [Gang of Four Design Patterns](gang-of-four-design-patterns.md)
 - [Reactive Programming](../programming-paradigms/reactive-programming.md)
