@@ -90,6 +90,9 @@ and Effects. Custom Hooks compose reusable stateful logic.
 
 ## Related Frontend Concepts
 
+- [JavaScript Callbacks & Inversion of Control](../../../computer-science-foundations/programming-languages/javascript/callbacks.md)
+  — first-class functions, execution delegation, upward domain events, and
+  inversion of control via render props / slot projection.
 - [Post-Authentication Redirects](../../../frontend-development/routing-and-interaction/post-authentication-redirects.md)
   — a framework-independent return-to navigation pattern with a React Router
   implementation example.

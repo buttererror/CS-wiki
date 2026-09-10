@@ -7,7 +7,7 @@
 This page explains browser-provided timing and scheduling APIs. JavaScript
 defines functions and closures; the browser supplies timers, event dispatch,
 and rendering opportunities. The general JavaScript concepts used by callback
-code are covered in [Functions, Closures, and Identity](../../computer-science-foundations/programming-languages/javascript/functions-closures-and-identity.md).
+code are covered in [JavaScript Callbacks & Inversion of Control](../../computer-science-foundations/programming-languages/javascript/callbacks.md) and [Functions, Closures, and Identity](../../computer-science-foundations/programming-languages/javascript/functions-closures-and-identity.md).
 
 ## A Timer Schedules Eligible Work
 
@@ -130,6 +130,7 @@ The React-specific application is covered in
 ## Related Concepts
 
 - [Browser Runtime](./)
+- [JavaScript Callbacks & Inversion of Control](../../computer-science-foundations/programming-languages/javascript/callbacks.md)
 - [Functions, Closures, and Identity](../../computer-science-foundations/programming-languages/javascript/functions-closures-and-identity.md)
 - [React Debouncing](../../framework-tooling/frontend/react/debouncing.md)
 
