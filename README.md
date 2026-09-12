@@ -187,6 +187,7 @@ current filenames, scope, and placement should not be read as final taxonomy.
 | [Software Engineering Foundations](computer-science-foundations/software-engineering/) | Mindset and map for relating software concepts without imposing rigid boundaries |
 | [Software Taxonomy](computer-science-foundations/software-engineering/software-taxonomy.md) | Paradigms, principles, patterns, architectures, tools, and implementations |
 | [Software Architecture](computer-science-foundations/software-engineering/software-architecture.md) | Systems, architectures, architectural styles, and architectural patterns |
+| [Driven Paradigms and Communication Models](computer-science-foundations/software-engineering/driven-paradigms-comparison.md) | Comparison of "-driven" concepts (data-driven, domain-driven, event-driven), RPC, REST, EDA, UML, and DSLs |
 | [Programming Paradigms](computer-science-foundations/software-engineering/programming-paradigms/) | Object-oriented, functional, and reactive ways of expressing programs |
 | [Software Design Principles](computer-science-foundations/software-engineering/software-design-principles/) | Guidelines for reasoning about responsibilities, dependencies, change, and control |
 | [Software Engineering Terminology](computer-science-foundations/software-engineering/terminology/) | Recurring field terms whose meanings depend on abstraction level or context |

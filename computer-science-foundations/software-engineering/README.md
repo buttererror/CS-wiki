@@ -100,6 +100,7 @@ For example, a system may combine Object-Oriented and Functional Programming, fo
 
 - [Software Taxonomy](software-taxonomy.md) — primary concept categories and the questions they answer.
 - [Software Architecture](software-architecture.md) — systems, concrete architectures, architectural styles, and architectural patterns.
+- [Driven Paradigms and Architectural Communication Models](driven-paradigms-comparison.md) — comparative analysis of "-driven" concepts (data-driven, domain-driven, event-driven), RPC, REST, EDA, UML, and DSLs.
 - [Programming Paradigms](programming-paradigms/) — fundamental ways of expressing programs.
 - [Software Design Principles](software-design-principles/) — broad guidelines for design decisions.
 - [Design Patterns](design-patterns/) — reusable object- and component-level design solutions.
