@@ -16,6 +16,7 @@ technology-specific behavior belongs with the relevant framework or tool.
 | Area or language | Focus | Reading status |
 | --- | --- | --- |
 | [Type Systems](type-systems.md) | Static and dynamic checking, inference, narrowing, generics, and runtime boundaries | Not read yet |
+| [Sum Types and Unions](sum-types-and-unions.md) | Disjoint sums, product vs. sum state spaces, untagged, tagged, and set-theoretic unions | Not read yet |
 | [JavaScript](javascript/) | Objects, keyed collections, functions, callbacks, closures, identity, and binding initialization | Not read yet |
 | [TypeScript](typescript/) | JavaScript with static type-system foundations and a local toolchain | Not read yet |
 

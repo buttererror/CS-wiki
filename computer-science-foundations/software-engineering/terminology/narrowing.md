@@ -51,7 +51,7 @@ In testing, operations, and troubleshooting, narrowing isolates the root cause o
 At the code level, static type checkers apply **type narrowing** via control flow analysis to refine union types (`string | number`) down to specific subtypes (`string`) inside runtime conditional blocks (`typeof`, `instanceof`, or type guards).
 
 - **Benefit:** Eliminates unchecked type casts while providing compile-time type safety.
-- **Reference:** [Type Systems](../../programming-languages/type-systems.md) and [TypeScript Type-System Foundations](../../programming-languages/typescript/type-system.md)
+- **Reference:** [Type Systems](../../programming-languages/type-systems.md), [Sum Types and Unions](../../programming-languages/sum-types-and-unions.md), and [TypeScript Type-System Foundations](../../programming-languages/typescript/type-system.md)
 
 ---
 

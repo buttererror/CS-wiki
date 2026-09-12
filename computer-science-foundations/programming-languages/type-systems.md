@@ -70,6 +70,7 @@ necessary at system boundaries.
 ## Related Concepts
 
 - [Programming Languages](./)
+- [Sum Types and Unions](sum-types-and-unions.md)
 - [JavaScript](javascript/)
 - [Browser Runtime](../../frontend-development/browser-runtime/)
 
