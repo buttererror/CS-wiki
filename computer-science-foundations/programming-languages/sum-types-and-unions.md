@@ -207,7 +207,7 @@ them into business logic.
 - [Type Systems](type-systems.md)
 - [Narrowing](../software-engineering/terminology/narrowing.md)
 - [Collections and Data Structures](../algorithms-and-data-structures/collections.md)
-- [Software Design Principles](../../../dev-learning-log/foundations/software-design-principles.md)
+- [Software Design Principles](../software-engineering/software-design-principles/)
 
 ## Sources
 

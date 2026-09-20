@@ -81,6 +81,9 @@ Practices and design still influence one another. For example, repository struct
   Git state and how to recover or reuse the commit.
 - [Monorepo](repository-organization/monorepo.md) — organizes multiple related
   projects in one version-control repository.
+- [Delta Review](../computer-science-foundations/software-engineering/terminology/delta-review.md) —
+  evaluates incremental changes against a prior reviewed snapshot or baseline in
+  code review and compliance workflows.
 
 ## Future Topics
 

@@ -261,6 +261,10 @@ export default withPwa(defineConfig({
                                             link: '/computer-science-foundations/software-engineering/terminology/patching',
                                         },
                                         {
+                                            text: 'Delta Review',
+                                            link: '/computer-science-foundations/software-engineering/terminology/delta-review',
+                                        },
+                                        {
                                             text: 'Frontend Terminology',
                                             link: '/computer-science-foundations/software-engineering/terminology/frontend-terminology',
                                         },
