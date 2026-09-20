@@ -81,6 +81,8 @@ Practices and design still influence one another. For example, repository struct
   Git state and how to recover or reuse the commit.
 - [Monorepo](repository-organization/monorepo.md) — organizes multiple related
   projects in one version-control repository.
+- [Continuous Integration & Delivery](ci-cd/) — explains automated development
+  quality gates (pre-commit, pre-push, CI) and validation boundaries.
 - [Delta Review](../computer-science-foundations/software-engineering/terminology/delta-review.md) —
   evaluates incremental changes against a prior reviewed snapshot or baseline in
   code review and compliance workflows.
@@ -90,7 +92,7 @@ Practices and design still influence one another. For example, repository struct
 - Polyrepo.
 - Workspace and build management.
 - Code review.
-- CI/CD and release strategies.
+- Release strategies.
 - Documentation practices.
 
 Future documents should be added when the topics are discussed in sufficient depth rather than creating empty placeholders.
